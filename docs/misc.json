@@ -1,0 +1,5 @@
+[
+  { "quest": "Guten Tag",          "answer": "Добрый день" },
+  { "quest": "Guten Abend",        "answer": "Добрый вечер" },
+  { "quest": "Guten Appetit",      "answer": "Приятного аппетита" }
+]

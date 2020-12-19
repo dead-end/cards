@@ -249,7 +249,6 @@ $(document).ready(function () {
     next() {
       let idx = Math.floor(Math.random() * this.unlearned.length);
       this.current = this.unlearned[idx];
-      console.log("rand: " + idx + " idx: " + JSON.stringify(this.current));
       this.showNext();
     }
 

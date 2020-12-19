@@ -513,9 +513,6 @@ $(document).ready(function () {
     // The function is triggered if the start button is pressed.
     // ------------------------------------------------------------------------
     start() {
-      $("#btn-answer-correct").hide();
-      $("#btn-answer-wrong").hide();
-
       eventDis.hideAnswer();
 
       pool.next();

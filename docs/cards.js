@@ -318,7 +318,7 @@ $(document).ready(function () {
       $("#pool-current").html(this.current.idx);
       $("#pool-correct").html(this.current.count);
 
-      $(".state-show-answer").toggle();
+      eventDis.hideAnswer();
     }
 
     print() {
@@ -476,8 +476,16 @@ $(document).ready(function () {
     // The event is triggered if the show answer button is pressed.
     // ------------------------------------------------------------------------
     showAnswer() {
-      $("#btn-answer-show").hide();
       $(".state-answer-show").show();
+      $("#btn-answer-show").hide();
+    }
+
+    // ------------------------------------------------------------------------
+    // The function is called on different events.
+    // ------------------------------------------------------------------------
+    hideAnswer() {
+      $(".state-answer-show").hide();
+      $("#btn-answer-show").show();
     }
 
     // ------------------------------------------------------------------------
@@ -505,10 +513,10 @@ $(document).ready(function () {
     // The function is triggered if the start button is pressed.
     // ------------------------------------------------------------------------
     start() {
-      $("#btn-answer-show").show();
       $("#btn-answer-correct").hide();
       $("#btn-answer-wrong").hide();
-      $(".state-answer-show").hide();
+
+      eventDis.hideAnswer();
 
       pool.next();
 

@@ -383,6 +383,8 @@ $(document).ready(function () {
       $("#container-file").hide();
 
       $("#state-ready-to-start").hide();
+
+      // $("#div-answer").hide();
     }
 
     // ------------------------------------------------------------------------
@@ -469,7 +471,8 @@ $(document).ready(function () {
     // The event is triggered if the show answer button is pressed.
     // ------------------------------------------------------------------------
     showAnswer() {
-      $(".state-show-answer").toggle();
+      $("#btn-answer-show").hide();
+      $(".state-answer-show").show();
     }
 
     // ------------------------------------------------------------------------
@@ -497,10 +500,10 @@ $(document).ready(function () {
     // The function is triggered if the start button is pressed.
     // ------------------------------------------------------------------------
     start() {
-      $("#div-answer").hide();
       $("#btn-answer-show").show();
       $("#btn-answer-correct").hide();
       $("#btn-answer-wrong").hide();
+      $(".state-answer-show").hide();
 
       pool.next();
 
@@ -541,5 +544,5 @@ $(document).ready(function () {
   $("#btn-quest-stop").click(eventDis.stop);
   $("#btn-answer-show").click(eventDis.showAnswer);
   $("#btn-answer-correct").click(eventDis.handlerAnswer);
-  $("#btn-answer-wrong").click(eventDis.answerHandler);
+  $("#btn-answer-wrong").click(eventDis.handlerAnswer);
 });

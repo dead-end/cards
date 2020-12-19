@@ -8,7 +8,12 @@ $(document).ready(function () {
     d.setTime(d.getTime() + expdays * 24 * 60 * 60 * 1000);
 
     document.cookie =
-      name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
+      name +
+      "=" +
+      value +
+      ";expires=" +
+      d.toUTCString() +
+      ";path=/;SameSite=Strict";
 
     //
     // TODO: remove

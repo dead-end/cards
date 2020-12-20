@@ -100,6 +100,28 @@ $(document).ready(function () {
   }
 
   /*****************************************************************************
+   * The class generates random numbers.
+   ****************************************************************************/
+  class Random {
+    constructor() {
+      this.last = -1;
+    }
+    next(max) {
+      let num = Math.floor(Math.random() * max);
+
+      //
+      // Avoid generating the same number twice.
+      //
+      if (num === this.last) {
+        num = Math.floor(Math.random() * max);
+      }
+      this.last = num;
+
+      return num;
+    }
+  }
+
+  /*****************************************************************************
    * The class adds an error message to the dom.
    ****************************************************************************/
 
@@ -174,7 +196,6 @@ $(document).ready(function () {
    ****************************************************************************/
   class Pool {
     constructor() {}
-
     // ------------------------------------------------------------------------
     // The function updates the pool with a new set of questions and its answer
     // status.
@@ -252,8 +273,7 @@ $(document).ready(function () {
     // The function selects a random answer from the unlearned array.
     // ------------------------------------------------------------------------
     next() {
-      let idx = Math.floor(Math.random() * this.unlearned.length);
-      this.current = this.unlearned[idx];
+      this.current = this.unlearned[random.next(this.unlearned.length)];
       this.showNext();
     }
 
@@ -542,6 +562,7 @@ $(document).ready(function () {
   let status = new Status();
   let errorMsg = new ErrorMsg();
   let eventDis = new EventDis();
+  let random = new Random();
 
   errorMsg.clear();
 

@@ -1,0 +1,38 @@
+[
+    { "quest": "leben",           "answer": "жить" },
+
+    { "quest": "Italien",         "answer": "Италия" },
+    { "quest": "Türkei",          "answer": "Турция" },
+    { "quest": "Frankreich",      "answer": "Франция" },
+    { "quest": "Holland",         "answer": "Голландия" },
+    { "quest": "Spanien",         "answer": "Испания" },
+    { "quest": "England",         "answer": "Англия" },
+    { "quest": "Ukraine",         "answer": "Украина" },
+    { "quest": "Norwegen",        "answer": "Норвегия" },
+    { "quest": "Österreich",      "answer": "Австрия" },
+
+    { "quest": "sprechen",        "answer": "говорить" },
+
+    { "quest": "(auf) Russisch",  "answer": "по-русски" },
+    { "quest": "Polen",           "answer": "Польша" },
+    { "quest": "Tunesien",        "answer": "Тунис" },
+    { "quest": "Japan",           "answer": "Япония" },
+    { "quest": "Usbekistan",      "answer": "Узбекистан" },
+
+    { "quest": "sie",             "answer": "они" },
+    { "quest": "aber",            "answer": "но" },
+    { "quest": "(auf) Deutsch",   "answer": "по-немецки" },
+    { "quest": "(auf) Englisch",  "answer": "по-английски" },
+    { "quest": "leider",          "answer": "к сожалению" },
+    { "quest": "(auf) Spanisch",  "answer": "по-испански" },
+    { "quest": "ein wenig",       "answer": "немного" },
+    { "quest": "noch",            "answer": "ещё" },
+
+    { "quest": "natürlich",         "answer": "конечно" },
+    { "quest": "Kanada",            "answer": "Канада" },
+
+    { "quest": "(auf) Französisch", "answer": "по-французски" },
+    { "quest": "in / im",           "answer": "в" },
+
+    { "quest": "jetzt, gerade",     "answer": "сейчас" }
+  ]

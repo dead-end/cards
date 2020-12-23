@@ -19,61 +19,86 @@
       <p id="error-reason"></p>
     </div>
 
-    <!-- Select box to select a file -->
-    <div class="container state-quest-start">
-      <div class="block select">
-        <select id="select-file"></select>
-      </div>
-    </div>
-
     <!-- Container that is shown if a file is selected -->
-    <div class="container" id="container-file">
+    <div class="container">
 
       <div class="block">
         <div class="columns">
 
           <!-- File data -->
           <div class="column">
-            <table class="table">
-              <tr>
-                <td>Title</td>
-                <td id="status-title"></td>
-              </tr>
-              <tr>
-                <td>File</td>
-                <td id="status-file"></td>
-              </tr>
-            </table>
+
+            <!-- Select box to select a file -->
+            <div class="block" id="c-status-select-div">
+              <div class="block select">
+                <select id="c-status-select-file"></select>
+              </div>
+            </div>
+
+            <!-- file info, if a file is selected -->
+            <div class="block" id="c-status-info">
+              <table class="table">
+                <tr>
+                  <td>Title</td>
+                  <td id="c-status-title"></td>
+                </tr>
+                <tr>
+                  <td>File</td>
+                  <td id="c-status-file"></td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Readay to start -->
+            <div class="block" id="state-ready-to-start">
+              <button class="button is-light" id="btn-quest-start">Start</button>
+            </div>
           </div>
 
           <!-- Pool answer statistic -->
-          <div class="column">
+          <div class="column" id="c-pool-comp">
             <table class="table">
               <tr>
                 <td>Pool size</td>
-                <td id="pool-size"></td>
+                <td id="c-pool-size"></td>
+              </tr>
+              <tr>
+                <td>No correct Answers</td>
+                <td id="c-pool-0"></td>
+                <td><button class="button is-light c-pool-btn" id="c-pool-0-btn">Add all</button></td>
+              </tr>
+              <tr>
+                <td>One correct Answer</td>
+                <td id="c-pool-1"></td>
+                <td><button class="button is-light c-pool-btn" id="c-pool-1-btn">Add all</button></td>
+              </tr>
+              <tr>
+                <td>Two correct Answers</td>
+                <td id="c-pool-2"></td>
+                <td><button class="button is-light c-pool-btn" id="c-pool-2-btn">Add all</button></td>
               </tr>
               <tr>
                 <td>Learned</td>
-                <td id="pool-learned"></td>
-              </tr>
-              <tr>
-                <td>Not learned</td>
-                <td id="pool-unlearned"></td>
+                <td id="c-pool-3"></td>
+                <td><button class="button is-light c-pool-btn" id="c-pool-3-btn">Add all</button></td>
               </tr>
             </table>
           </div>
 
-          <!-- Currently selected question -->
-          <div class="column" id="state-quest-selected">
+          <!-- Question info -->
+          <div class="column" id="c-quest-info">
             <table class="table">
               <tr>
-                <td>Question</td>
-                <td id="pool-current"></td>
+                <td>No.</td>
+                <td id="c-quest-info-no"></td>
               </tr>
               <tr>
                 <td>Correct</td>
-                <td id="pool-correct"></td>
+                <td id="c-quest-info-correct"></td>
+              </tr>
+              <tr>
+                <td>Attempt</td>
+                <td id="c-quest-info-attempt"></td>
               </tr>
             </table>
           </div>
@@ -81,31 +106,28 @@
         </div>
       </div>
 
-      <!-- Readay to start -->
-      <div class="block" id="state-ready-to-start">
-        <button class="button is-light" id="btn-quest-start">Start</button>
-        <button class="button is-light" id="btn-quest-reset">Reset</button>
-      </div>
     </div>
 
     <!-- Container with the questions ans the answers -->
-    <div class="container state-quest-start" id="container-quest">
+    <div class="container" id="c-quest-div">
       <div class="block">
 
         <!-- Questions -->
         <div class="columns">
           <div class="column is-half">
-            <div class="box">
+            <div class="bock notification is-light is-info">
               <h5 class="title is-5">Question</h5>
-              <p id="question">dummy-question</p>
+              <hr />
+              <p id="c-quest-question">dummy-question</p>
             </div>
           </div>
 
           <!-- Answers -->
           <div class="column">
-            <div class="box state-answer-show" id="div-answer">
+            <div class="bock notification is-light is-info state-answer-show" id="div-answer">
               <h5 class="title is-5">Answer</h5>
-              <p id="answer">dummy-answer</p>
+              <hr />
+              <p id="c-quest-answer">dummy-answer</p>
             </div>
           </div>
         </div>

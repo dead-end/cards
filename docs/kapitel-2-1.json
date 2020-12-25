@@ -1,0 +1,30 @@
+[
+
+  { "quest": "wir",                      "answer": "мы" },
+  { "quest": "aus",                      "answer": "из" },
+  { "quest": "Machen Sie sich bekannt!", "answer": "Познакомьтесь!" },
+  { "quest": "bitte",                    "answer": "пожалуйста" },
+  { "quest": "wie",                      "answer": "как" },
+  { "quest": "Wie heißen Sie?",          "answer": "как вас зовут?" },
+  { "quest": "Ichh heiße Volker.",       "answer": "Меня зовут Фолькер." },
+  { "quest": "sehr",                     "answer": "очень" },
+  { "quest": "angenehm",                 "answer": "приятно" },
+  { "quest": "Wie heißt du?",            "answer": "Как тебя зовут?" },
+  { "quest": "Machen wir uns bekannt!",  "answer": "Давайте познакомимся!" },
+  { "quest": "Wie geht es Ihnen?",       "answer": "Как Ваши дела?" },
+  { "quest": "Danke!",                   "answer": "Спасибо!" },
+  { "quest": "Mir geht es gut.",         "answer": "У меня всё хорошо." },
+  { "quest": "alles",                    "answer": "всё" },
+  { "quest": "gut",                      "answer": "хорошо" },
+  { "quest": "Alles in Ordnung!",        "answer": "Всё в порядке!" },
+  { "quest": "Wie geht es dir?",         "answer": "Как твои дела?" },
+  { "quest": "hier: es geht",            "answer": "ничего" },
+  { "quest": "Wie geht es dir?",         "answer": "Как у тебя дела?" },
+  { "quest": "normal",                   "answer": "нормально" },
+  { "quest": "Wie gehts?",               "answer": "Как дела?" },
+  { "quest": "Wie geht es Ihnen?",       "answer": "Как у Вас дела?" },
+  { "quest": "nicht",                    "answer": "не" },
+  { "quest": "nicht besonders",          "answer": "не очень" }
+
+]
+  

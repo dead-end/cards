@@ -1,0 +1,29 @@
+[
+
+  { "quest": "auch",                       "answer": "тоже" },
+  { "quest": "schlecht",                   "answer": "плохо" },
+  { "quest": "woher",                      "answer": "откуда" },
+  { "quest": "Sag!",                       "answer": "скажи" },
+  { "quest": "Sagen Sie!",                 "answer": "скажите" },
+  { "quest": "wo",                         "answer": "где" },
+  { "quest": "hier: da, hier (ist, sind)", "answer": "вот" },
+  { "quest": "interessant",                "answer": "интересно" },
+  { "quest": "wahrscheinlich",             "answer": "наверное" },
+  { "quest": "Russe / Russin",             "answer": "русский / русская" },
+  { "quest": "Deutscher / Deutsche",       "answer": "немец / немка" },
+  { "quest": "Welche Nationalität hast du / haben Sie?", "answer": "Кто вы (ты) по национальности?" },
+  { "quest": "Nationalität",                             "answer": "Национальность" },
+  { "quest": "Entschuldigen Sie! / Enschuldigt!",        "answer": "извините" },
+  { "quest": "dort",                       "answer": "там" },
+  { "quest": "Deutschland",                "answer": "Германия" },
+  { "quest": "ja",                         "answer": "да" },
+  { "quest": "Goldener Ring",              "answer": "Золотое кольцо" },
+  { "quest": "heute",                      "answer": "сегодня" },
+  { "quest": "Exkursion",                  "answer": "экскурсия" },
+  { "quest": "Kloster",                    "answer": "монастырь" },
+  { "quest": "Kirche",                     "answer": "церковь" },
+  { "quest": "Dom, Kathedrale",            "answer": "собор" },
+  { "quest": "Fastnachtswoche",            "answer": "масленица" }
+
+]
+  

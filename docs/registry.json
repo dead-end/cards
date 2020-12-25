@@ -1,13 +1,4 @@
 [
-  {
-    "file": "verbs.json",
-    "title": "Verben - Test"
-  },
-
-  {
-    "file": "misc.json",
-    "title": "Sonstiges - Test"
-  },
 
   {
     "file": "kapitel-2-1.json",
@@ -47,5 +38,10 @@
   {
     "file": "verben-2.json",
     "title": "Verben 2"
+  },
+
+  {
+    "file": "misc.json",
+    "title": "Sonstiges - Test"
   }
 ]

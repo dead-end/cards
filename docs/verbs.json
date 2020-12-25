@@ -1,8 +1,0 @@
-[
-  { "quest": "ich gehe",           "answer": "я иду" },
-  { "quest": "du gehst",           "answer": "ты идёшь" },
-  { "quest": "er / sie / es geht", "answer": "он / она / оно идёт" },
-  { "quest": "wir gehen",          "answer": "мы идём" },
-  { "quest": "ihr geht",           "answer": "вы идёте" },
-  { "quest": "sie gehen",          "answer": "они идут" }
-]

@@ -1,84 +1,123 @@
-$(document).ready(function () {
+(function () {
   /*****************************************************************************
-   * The function sets a cookie. No parameters are encoded
+   * The function implements an ajax GET request.
    ****************************************************************************/
+  function ajaxGet(url, fktOk, fktFail) {
+    var request = new XMLHttpRequest();
 
-  function cookieSet(name, value, expdays) {
-    let d = new Date();
-    d.setTime(d.getTime() + expdays * 24 * 60 * 60 * 1000);
+    request.open("GET", url);
 
-    document.cookie =
-      name +
-      "=" +
-      value +
-      ";expires=" +
-      d.toUTCString() +
-      ";path=/;SameSite=Strict";
-
-    //
-    // TODO: remove
-    //
-    console.log(document.cookie);
-  }
-
-  /*****************************************************************************
-   * The function returns the value of a cookie. No parameters are decoded. An
-   * empty string is returned if no cookie with the given name was found.
-   ****************************************************************************/
-
-  function cookieGet(name) {
-    let pattern = name + "=";
-    let arr = document.cookie.split("; ");
-
-    for (let i = 0; i < arr.length; i++) {
-      let c = arr[i];
-      if (c.startsWith(pattern)) {
-        return c.substring(pattern.length, c.length);
+    request.onreadystatechange = function () {
+      if (request.readyState == XMLHttpRequest.DONE) {
+        if (request.status == 200) {
+          fktOk(request.responseText);
+        } else {
+          fktFail(
+            "Unable to load URL: " + url,
+            `Status: ${request.status} Msg: ${request.statusText}`
+          );
+        }
       }
-    }
-    return "";
+    };
+
+    request.send();
+  }
+  /*****************************************************************************
+   * The function implements an ajax GET request, that returns a JSON object.
+   ****************************************************************************/
+  function ajaxGetJson(url, fktOk, fktFail) {
+    ajaxGet(
+      url,
+      function (data) {
+        try {
+          fktOk(JSON.parse(data));
+        } catch (e) {
+          fktFail("Unable to parse: " + e.fileName, e.message);
+        }
+      },
+      fktFail
+    );
+  }
+  /*****************************************************************************
+   * The function loads the requstry, which is a json file.
+   ****************************************************************************/
+  function loadRegistry() {
+    ajaxGetJson(
+      "registry.json",
+      function (arr) {
+        eventDis.onLoadedRegistry(arr);
+      },
+      function (data) {
+        errorComp.update(err, reason);
+      }
+    );
   }
 
   /*****************************************************************************
-   * The function is called with a char: '0', '1', '2', '3' and returns the
-   * integer value.
+   * The class persists data in the local storage (web storage). The data is the
+   * state of a question pool and the key is the name of the file corresponding
+   * to that pool.
    ****************************************************************************/
-
-  function char2Int03(c) {
-    if (!c || c.length > 1) {
-      throw "Input is not a char: " + c;
+  class Persist {
+    save(id, arr) {
+      if (!arr || !Array.isArray(arr)) {
+        throw "Object is not an array: " + JSON.stringify(arr);
+      }
+      localStorage.setItem(id, JSON.stringify(arr));
     }
 
-    let i = c.charCodeAt(0) - "0".charCodeAt(0);
+    // -------------------------------------------------------------------------
+    // The function loads an array with a given length from the local storage.
+    // If the array was not found or has an other length, the function returns
+    // an arry with the requested size which is initialized to 0.
+    // -------------------------------------------------------------------------
+    load(id, len) {
+      let arr = [];
 
-    if (i < 0 || i > 3) {
-      throw "Invalid char is not between 0 and 3: " + c;
+      let data = localStorage.getItem(id);
+
+      if (data) {
+        arr = JSON.parse(data);
+        if (Array.isArray(arr) && arr.length === len) {
+          return arr;
+        }
+      }
+
+      arr = [];
+      for (let i = 0; i < len; i++) {
+        arr[i] = 0;
+      }
+      return arr;
     }
 
-    return i;
-  }
+    // -------------------------------------------------------------------------
+    // The function is a callback function for the "onLoadedRegistry" event. It
+    // is called with an array of the elements of the registry. The member
+    // "file" is the interesting part,because it is the key for the local
+    // storage.
+    //
+    // The function ensures that all elements from the localstorage are removed,
+    // that are not part of the registry.
+    // -------------------------------------------------------------------------
+    onLoadedRegistry(arr) {
+      //
+      // Get an array with the file names
+      //
+      let files = [];
+      for (let i = 0; i < arr.length; i++) {
+        files.push(arr[i].file);
+      }
 
-  /*****************************************************************************
-   * The function is called with an integer: 0, 1, 2, 3 and returns the
-   * corresponding char.
-   ****************************************************************************/
+      //
+      // Remove all items that are not in the registry.
+      //
+      for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
 
-  function int2char03(i) {
-    switch (i) {
-      case 0:
-        return "0";
-
-      case 1:
-        return "1";
-
-      case 2:
-        return "2";
-
-      case 3:
-        return "3";
-
-      default:
-        throw "Invalid int is not between 0 and 3: " + i;
+        if (!files.includes(key)) {
+          localStorage.removeItem(key);
+        }
+      }
     }
   }
 
@@ -138,14 +177,14 @@ $(document).ready(function () {
     }
 
     _show() {
-      $("#error-div").show();
-      $("#error-msg").html(this.msg);
-      $("#error-reason").html(this.reason);
+      document.getElementById("error-div").style.display = "";
+      document.getElementById("error-msg").innerText = this.msg;
+      document.getElementById("error-reason").innerText = this.reason;
     }
 
     clear() {
       if (this.msg) {
-        $("#error-div").hide();
+        document.getElementById("error-div").style.display = "none";
       }
 
       this.msg = "";
@@ -154,7 +193,7 @@ $(document).ready(function () {
   }
 
   /*****************************************************************************
-   *
+   * The class implements a component with the start and stop button.
    ****************************************************************************/
   class StartStopComp {
     constructor() {
@@ -165,11 +204,6 @@ $(document).ready(function () {
     update(pool) {
       this.pool = pool;
       this._show();
-    }
-
-    _initButtons() {
-      $("#btn-quest-start").click(eventDis.onStart);
-      $("#btn-quest-stop").click(eventDis.onStop);
     }
 
     onStart() {
@@ -184,19 +218,23 @@ $(document).ready(function () {
 
     _show() {
       if (!this.pool || this.running) {
-        $("#state-ready-to-start").hide();
+        document.getElementById("btn-quest-start").style.display = "none";
       } else if (this.pool && this.pool.isLearned()) {
-        $("#state-ready-to-start").hide();
+        document.getElementById("btn-quest-start").style.display = "none";
       } else {
-        $("#state-ready-to-start").show();
+        document.getElementById("btn-quest-start").style.display = "";
       }
+    }
+
+    _initButtons() {
+      document.getElementById("btn-quest-start").onclick = eventDis.onStart;
+      document.getElementById("btn-quest-stop").onclick = eventDis.onStop;
     }
   }
 
   /*****************************************************************************
    * The class implements a component that adds a pool statistic to the dom.
    ****************************************************************************/
-
   class PoolStatComp {
     constructor() {
       this.size = 0;
@@ -217,11 +255,17 @@ $(document).ready(function () {
     }
 
     onStart() {
-      $(".c-pool-btn").hide();
+      let elems = document.getElementsByClassName("c-pool-btn");
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = "none";
+      }
     }
 
     onStop() {
-      $(".c-pool-btn").show();
+      let elems = document.getElementsByClassName("c-pool-btn");
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = "";
+      }
     }
 
     // -------------------------------------------------------------------------
@@ -247,7 +291,7 @@ $(document).ready(function () {
           break;
 
         default:
-          throw "Unknown button id: " + event.target.id;
+          throw "Unknown button id: " + id;
       }
 
       if (this.correct[count] == this.size) {
@@ -265,23 +309,24 @@ $(document).ready(function () {
 
     _show() {
       if (this.size > 0) {
-        $("#c-pool-size").html(this.size);
-        $("#c-pool-0").html(this.correct[0]);
-        $("#c-pool-1").html(this.correct[1]);
-        $("#c-pool-2").html(this.correct[2]);
-        $("#c-pool-3").html(this.correct[3]);
+        document.getElementById("c-pool-size").innerText = this.size;
 
-        $("#c-pool-comp").show();
+        document.getElementById("c-pool-0").innerText = this.correct[0];
+        document.getElementById("c-pool-1").innerText = this.correct[1];
+        document.getElementById("c-pool-2").innerText = this.correct[2];
+        document.getElementById("c-pool-3").innerText = this.correct[3];
+
+        document.getElementById("c-pool-comp").style.display = "";
       } else {
-        $("#c-pool-comp").hide();
+        document.getElementById("c-pool-comp").style.display = "none";
       }
     }
 
     _initButtons() {
-      $("#c-pool-0-btn").click(eventDis.onAddAll);
-      $("#c-pool-1-btn").click(eventDis.onAddAll);
-      $("#c-pool-2-btn").click(eventDis.onAddAll);
-      $("#c-pool-3-btn").click(eventDis.onAddAll);
+      document.getElementById("c-pool-0-btn").onclick = eventDis.onAddAll;
+      document.getElementById("c-pool-1-btn").onclick = eventDis.onAddAll;
+      document.getElementById("c-pool-2-btn").onclick = eventDis.onAddAll;
+      document.getElementById("c-pool-3-btn").onclick = eventDis.onAddAll;
     }
   }
 
@@ -300,17 +345,21 @@ $(document).ready(function () {
     }
 
     onStop() {
-      $("#c-quest-info").hide();
+      document.getElementById("c-quest-info").style.display = "none";
     }
 
     onStart() {
-      $("#c-quest-info").show();
+      document.getElementById("c-quest-info").style.display = "";
     }
 
     _show() {
-      $("#c-quest-info-no").html(this.quest.idx);
-      $("#c-quest-info-correct").html(this.quest.count);
-      $("#c-quest-info-attempt").html(this.quest.attempt);
+      document.getElementById("c-quest-info-no").innerText = this.quest.idx;
+      document.getElementById(
+        "c-quest-info-correct"
+      ).innerText = this.quest.count;
+      document.getElementById(
+        "c-quest-info-attempt"
+      ).innerText = this.quest.attempt;
     }
   }
 
@@ -329,34 +378,45 @@ $(document).ready(function () {
     }
 
     _hideAnswer() {
-      $(".state-answer-show").hide();
-      $("#btn-answer-show").show();
+      document.getElementById("btn-answer-show").style.display = "";
+
+      let elems = document.getElementsByClassName("state-answer-show");
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = "none";
+      }
     }
 
     onShowAnswer() {
-      $(".state-answer-show").show();
-      $("#btn-answer-show").hide();
+      document.getElementById("btn-answer-show").style.display = "none";
+
+      let elems = document.getElementsByClassName("state-answer-show");
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = "";
+      }
     }
 
     onStop() {
-      $("#c-quest-div").hide();
+      document.getElementById("c-quest-div").style.display = "none";
     }
 
     onStart() {
-      $("#c-quest-div").show();
-    }
-
-    _initButtons() {
-      $("#btn-answer-show").click(eventDis.onShowAnswer);
-      $("#btn-answer-correct").click(eventDis.onAnswerCorrect);
-      $("#btn-answer-wrong").click(eventDis.onAnswerWrong);
+      document.getElementById("c-quest-div").style.display = "";
     }
 
     _show() {
-      $("#c-quest-question").html(this.quest.quest);
-      $("#c-quest-answer").html(this.quest.answer);
-
+      document.getElementById("c-quest-question").innerText = this.quest.quest;
+      document.getElementById("c-quest-answer").innerText = this.quest.answer;
       this._hideAnswer();
+    }
+
+    _initButtons() {
+      document.getElementById("btn-answer-show").onclick =
+        eventDis.onShowAnswer;
+      document.getElementById("btn-answer-correct").onclick =
+        eventDis.onAnswerCorrect;
+
+      document.getElementById("btn-answer-wrong").onclick =
+        eventDis.onAnswerWrong;
     }
   }
 
@@ -400,43 +460,40 @@ $(document).ready(function () {
 
   /*****************************************************************************
    * The class represents a pool of questions that is read from a file. The
-   * corresponding answer status of each question is stored in a cookie. A valid
-   * answer status is: 0, 1, 2, 3. A value of 3 means that the question is
-   * learned. The answer status from the cookie is a string of 0-3 values. The
-   * index of the char is the index of the question in the pool.
+   * corresponding answer status of each question is stored in the local
+   * storage. A valid answer status is: 0, 1, 2, 3. A value of 3 means that the
+   * question is learned. The answer status from the cookie is a string of 0-3
+   * values. The index of the char is the index of the question in the pool.
    ****************************************************************************/
   class Pool {
     constructor() {}
 
-    // -------------------------------------------------------------------------
-    // The function updates the pool with a new set of questions and its answer
-    // status.
-    // -------------------------------------------------------------------------
-    _update(quests, answerStatusStr) {
+    _update(quests, stateArr) {
       this.pool = [];
 
-      let fkt = this._answerStatusFkt(quests, answerStatusStr);
-
       for (let i = 0; i < quests.length; i++) {
-        this.pool[i] = new Quest(quests[i].quest, quests[i].answer, i, fkt(i));
+        this.pool[i] = new Quest(
+          quests[i].quest,
+          quests[i].answer,
+          i,
+          stateArr[i]
+        );
       }
 
       this._poolChanged(false);
     }
 
-    // -------------------------------------------------------------------------
-    // -------------------------------------------------------------------------
     load(file) {
-      $.getJSON(encodeURIComponent(file), function (quests) {
-        pool._update(quests, cookieGet(file));
-      }).fail(function (data) {
-        errorComp.update("Unable to load file: " + file, JSON.stringify(data));
-      });
+      ajaxGetJson(
+        encodeURIComponent(file),
+        function (quests) {
+          pool._update(quests, persist.load(file, quests.length));
+        },
+        function (err, reason) {
+          errorComp.update(err, reason);
+        }
+      );
     }
-
-    // -------------------------------------------------------------------------
-    // The function sets all questions in the pool as unlearned.
-    // -------------------------------------------------------------------------
 
     addAll(count) {
       for (let i = 0; i < this.pool.length; i++) {
@@ -445,10 +502,6 @@ $(document).ready(function () {
       this._poolChanged(true);
     }
 
-    // -------------------------------------------------------------------------
-    // The function is called if a user marks the answer as correct. The
-    // function returns true if the number of learned answers changed.
-    // -------------------------------------------------------------------------
     onAnswerCorrect() {
       this.current.correct();
       this._poolChanged(true);
@@ -460,35 +513,21 @@ $(document).ready(function () {
       }
     }
 
-    // -------------------------------------------------------------------------
-    // The function is called if a user marks the answer as wrong. The function
-    // returns true if the number of unlearned answers changed.
-    // -------------------------------------------------------------------------
     onAnswerWrong() {
       this.current.wrong();
       this._poolChanged(true);
       this.next();
     }
 
-    // -------------------------------------------------------------------------
-    // The function selects a random answer from the unlearned array.
-    // -------------------------------------------------------------------------
     next() {
       this.current = this.unlearned[random.next(this.unlearned.length)];
-      eventDis.onQuestChanged();
+      eventDis.onQuestChanged(this.current);
     }
 
-    // -------------------------------------------------------------------------
-    // The function returns if the pool is learned.
-    // -------------------------------------------------------------------------
     isLearned() {
       return this.unlearned.length === 0;
     }
 
-    // -------------------------------------------------------------------------
-    // The function fills the learned / unlearned arrays with the index values
-    // from the pool.
-    // -------------------------------------------------------------------------
     _updateLearned() {
       this.learned = [];
       this.unlearned = [];
@@ -502,54 +541,29 @@ $(document).ready(function () {
       }
     }
 
-    // -------------------------------------------------------------------------
-    // The function computes a status string to be stored in a cookie.
-    // -------------------------------------------------------------------------
-    _cookieValue() {
-      let result = "";
+    _persistValue() {
+      let result = [];
 
       for (let i = 0; i < this.pool.length; i++) {
-        result += int2char03(this.pool[i].count);
+        result.push(this.pool[i].count);
       }
 
       return result;
     }
 
-    // -------------------------------------------------------------------------
-    // The function is called if the pool has changed.
-    // -------------------------------------------------------------------------
     _poolChanged(doPersist) {
       this._updateLearned();
       if (doPersist) {
-        cookieSet(status.file, this._cookieValue(), 30);
+        persist.save(statusComp.file, this._persistValue());
       }
-      eventDis.onPoolChanged();
-    }
-
-    // -------------------------------------------------------------------------
-    // The function returns a function that gives the answer status of a
-    // question from a cookie or a default value.
-    // -------------------------------------------------------------------------
-    _answerStatusFkt(quests, answerStatusStr) {
-      if (answerStatusStr === "" || answerStatusStr.length !== quests.length) {
-        return function (i) {
-          return 0;
-        };
-      }
-
-      return function (i) {
-        return char2Int03(answerStatusStr.charAt(i));
-      };
+      eventDis.onPoolChanged(this);
     }
   }
 
   /*****************************************************************************
    * The class defines the status of the current file.
    ****************************************************************************/
-  class Status {
-    // -------------------------------------------------------------------------
-    // The constructor initilizes the component with empty data.
-    // -------------------------------------------------------------------------
+  class StatusComp {
     constructor() {
       this.file = "";
       this.title = "";
@@ -558,68 +572,59 @@ $(document).ready(function () {
       this._loadRegistry();
     }
 
-    // -------------------------------------------------------------------------
-    // The function loads the files from the registry and creates the select box
-    // with the data.
-    // -------------------------------------------------------------------------
-    _loadRegistry() {
-      $.getJSON("registry.json", function (arr) {
-        let options =
-          '<option disabled="disabled" selected="selected">--- Select File ---</option>';
-        for (let i in arr) {
-          options += `<option value="${arr[i].file}">${arr[i].title}</option>`;
-        }
+    onLoadedRegistry(arr) {
+      let options =
+        '<option disabled="disabled" selected="selected">--- Select File ---</option>';
+      for (let i in arr) {
+        options += `<option value="${arr[i].file}">${arr[i].title}</option>`;
+      }
 
-        $("#c-status-select-file")
-          .html(options)
-          .change(eventDis.onFileSelected);
-      }).fail(function (data) {
-        errorComp.update("Unable to load registry", JSON.stringify(data));
-      });
+      let elem = document.getElementById("c-status-select-file");
+      elem.innerHTML = options;
+      elem.onchange = eventDis.onFileSelected;
     }
 
-    // -------------------------------------------------------------------------
-    // Event: file was selected
-    // -------------------------------------------------------------------------
     onFileSelected() {
-      this.title = $("#c-status-select-file option:selected").text();
-      this.file = $("#c-status-select-file option:selected").val();
+      let elem = document.getElementById("c-status-select-file");
+
+      this.title = elem.options[elem.selectedIndex].text;
+      this.file = elem.options[elem.selectedIndex].value;
+
       this._show();
     }
 
-    // -------------------------------------------------------------------------
-    // Event: start button clicked.
-    // -------------------------------------------------------------------------
     onStart() {
-      $("#c-status-select-div").hide();
+      document.getElementById("c-status-select-div").style.display = "none";
     }
 
-    // -------------------------------------------------------------------------
-    // Event: stop button clicked.
-    // -------------------------------------------------------------------------
     onStop() {
-      $("#c-status-select-div").show();
+      document.getElementById("c-status-select-div").style.display = "";
     }
 
-    // -------------------------------------------------------------------------
-    // The function shows the file infos.
-    // -------------------------------------------------------------------------
     _show() {
       if (this.file) {
-        $("#c-status-title").html(this.title);
-        $("#c-status-file").html(this.file);
-        $("#c-status-info").show();
+        document.getElementById("c-status-title").innerText = this.title;
+        document.getElementById("c-status-file").innerText = this.file;
+        document.getElementById("c-status-info").style.display = "";
       } else {
-        $("#c-status-info").hide();
+        document.getElementById("c-status-info").style.display = "none";
       }
     }
   }
 
   /*****************************************************************************
-   *
+   * The class implements an event dispatcher.
    ****************************************************************************/
   class EventDis {
     constructor() {}
+
+    // -------------------------------------------------------------------------
+    // Event: registry was loaded.
+    // -------------------------------------------------------------------------
+    onLoadedRegistry(arr) {
+      statusComp.onLoadedRegistry(arr);
+      persist.onLoadedRegistry(arr);
+    }
 
     // -------------------------------------------------------------------------
     // Event: a file is selected.
@@ -629,16 +634,14 @@ $(document).ready(function () {
       // Remove previous error messages.
       //
       errorComp.clear();
-
-      status.onFileSelected();
-
-      pool.load(status.file);
+      statusComp.onFileSelected();
+      pool.load(statusComp.file);
     }
 
     // -------------------------------------------------------------------------
     // Event: new question pool is loaded
     // -------------------------------------------------------------------------
-    onPoolChanged() {
+    onPoolChanged(pool) {
       startStopComp.update(pool);
       poolStatComp.update(pool);
     }
@@ -646,9 +649,9 @@ $(document).ready(function () {
     // -------------------------------------------------------------------------
     // Event: new question was selected.
     // -------------------------------------------------------------------------
-    onQuestChanged() {
-      questComp.update(pool.current);
-      questInfoComp.update(pool.current);
+    onQuestChanged(quest) {
+      questComp.update(quest);
+      questInfoComp.update(quest);
     }
 
     // -------------------------------------------------------------------------
@@ -677,7 +680,7 @@ $(document).ready(function () {
     // -------------------------------------------------------------------------
     onStart() {
       pool.next();
-      status.onStart();
+      statusComp.onStart();
       questComp.onStart();
       questInfoComp.onStart();
       startStopComp.onStart();
@@ -688,7 +691,7 @@ $(document).ready(function () {
     // Event: stop button is clicked.
     // -------------------------------------------------------------------------
     onStop() {
-      status.onStop();
+      statusComp.onStop();
       questComp.onStop();
       questInfoComp.onStop();
       startStopComp.onStop();
@@ -699,11 +702,10 @@ $(document).ready(function () {
     // Event: one of the add all buttons is clicked.
     // -------------------------------------------------------------------------
     onAddAll(event) {
+      //
+      // The method returns -1 if nothing changed.
+      //
       let count = poolStatComp.getCount(event.target.id);
-
-      //
-      // Ensure that something changes.
-      //
       if (count < 0) {
         return;
       }
@@ -714,7 +716,7 @@ $(document).ready(function () {
   /*****************************************************************************
    * Main
    ****************************************************************************/
-
+  let persist = new Persist();
   let eventDis = new EventDis();
 
   let errorComp = new ErrorComp();
@@ -726,5 +728,7 @@ $(document).ready(function () {
   let random = new Random();
 
   let pool = new Pool();
-  let status = new Status();
-});
+  let statusComp = new StatusComp();
+
+  loadRegistry();
+})();

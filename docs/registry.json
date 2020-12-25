@@ -30,7 +30,12 @@
   },
 
   {
-    "file": "verben.json",
+    "file": "verben-1.json",
     "title": "Verben 1"
+  },
+
+  {
+    "file": "verben-2.json",
+    "title": "Verben 2"
   }
 ]

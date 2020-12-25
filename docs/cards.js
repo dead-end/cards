@@ -569,7 +569,6 @@
       this.title = "";
       this.onStop();
       this._show();
-      this._loadRegistry();
     }
 
     onLoadedRegistry(arr) {

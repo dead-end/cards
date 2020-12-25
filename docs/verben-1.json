@@ -53,6 +53,6 @@
   { "quest": "er / sie / es schreibt", "answer": "он / она / оно пишет" },
   { "quest": "wir schreiben",          "answer": "мы пишем" },
   { "quest": "ihr schreibt",           "answer": "вы пишете" },
-  { "quest": "sie schreiben",          "answer": "они пишут" },
+  { "quest": "sie schreiben",          "answer": "они пишут" }
 
 ]

@@ -405,7 +405,18 @@
 
     _show() {
       document.getElementById("c-quest-question").innerText = this.quest.quest;
-      document.getElementById("c-quest-answer").innerText = this.quest.answer;
+      let answer;
+      if (Array.isArray(this.quest.answer)) {
+        answer = "<ul>";
+        for (let i = 0; i < this.quest.answer.length; i++) {
+          answer += `<li>${this.quest.answer[i]}</li>`;
+        }
+        answer += "</ul>";
+      } else {
+        answer = this.quest.answer;
+      }
+
+      document.getElementById("c-quest-answer").innerHTML = answer;
       this._hideAnswer();
     }
 

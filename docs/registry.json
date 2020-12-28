@@ -32,12 +32,22 @@
 
   {
     "file": "verben-1.json",
-    "title": "Verben 1"
+    "title": "Verben 1 (einzeln)"
+  },
+
+  {
+    "file": "verben-1-list.json",
+    "title": "Verben 1 (Liste)"
   },
 
   {
     "file": "verben-2.json",
-    "title": "Verben 2"
+    "title": "Verben 2 (einzeln)"
+  },
+
+  {
+    "file": "verben-2-list.json",
+    "title": "Verben 2 (Liste)"
   },
 
   {

@@ -2,57 +2,22 @@ import MsgComp from "./modules/msg-comp.js";
 
 (function () {
   /*****************************************************************************
-   * The function implements an ajax GET request.
-   ****************************************************************************/
-  function ajaxGet(url, fktOk, fktFail) {
-    var request = new XMLHttpRequest();
-
-    request.open("GET", url);
-
-    request.onreadystatechange = function () {
-      if (request.readyState == XMLHttpRequest.DONE) {
-        if (request.status == 200) {
-          fktOk(request.responseText);
-        } else {
-          fktFail(
-            "Unable to load URL: " + url,
-            `Status: ${request.status} Msg: ${request.statusText}`
-          );
-        }
-      }
-    };
-
-    request.send();
-  }
-  /*****************************************************************************
-   * The function implements an ajax GET request, that returns a JSON object.
-   ****************************************************************************/
-  function ajaxGetJson(url, fktOk, fktFail) {
-    ajaxGet(
-      url,
-      function (data) {
-        try {
-          fktOk(JSON.parse(data));
-        } catch (e) {
-          fktFail("Unable to parse: " + e.fileName, e.message);
-        }
-      },
-      fktFail
-    );
-  }
-  /*****************************************************************************
    * The function loads the requstry, which is a json file.
    ****************************************************************************/
   function loadRegistry() {
-    ajaxGetJson(
-      "registry.json",
-      function (arr) {
-        eventDis.onLoadedRegistry(arr);
-      },
-      function (data) {
-        msgComp.update(err, reason);
-      }
-    );
+    fetch("registry.json")
+      .then((response) => {
+        if (response.status != 200) {
+          throw Error(response.statusText);
+        }
+        return response.json();
+      })
+      .then((json) => {
+        eventDis.onLoadedRegistry(json);
+      })
+      .catch((error) => {
+        msgComp.update("Unable to load file: " + file, error);
+      });
   }
 
   /*****************************************************************************
@@ -464,15 +429,19 @@ import MsgComp from "./modules/msg-comp.js";
     }
 
     load(file) {
-      ajaxGetJson(
-        encodeURIComponent(file),
-        function (quests) {
-          pool._update(quests, persist.load(file, quests.length));
-        },
-        function (err, reason) {
-          msgComp.update(err, reason);
-        }
-      );
+      fetch(encodeURIComponent(file))
+        .then((response) => {
+          if (response.status != 200) {
+            throw Error(response.statusText);
+          }
+          return response.json();
+        })
+        .then((json) => {
+          pool._update(json, persist.load(file, json.length));
+        })
+        .catch((error) => {
+          msgComp.update("Unable to load file: " + file, error);
+        });
     }
 
     addAll(count) {

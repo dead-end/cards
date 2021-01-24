@@ -1,7 +1,7 @@
 [
 
   { "quest": "Herzlich willkommen",             "answer": "Добро пожаловать"},
-  { "quest": "Guten Tag (iungeduzt)",           "answer": "Здравствуйте!"},
+  { "quest": "Guten Tag (ungeduzt)",           "answer": "Здравствуйте!"},
   { "quest": "ich",                             "answer": "я"},
   { "quest": "und (als Gegensatz)",             "answer": "а"},
   { "quest": "wer",                             "answer": "кто"},

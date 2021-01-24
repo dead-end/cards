@@ -4,11 +4,9 @@
  * to that pool.
  ****************************************************************************/
 export default class Persist {
-  static save(id, arr) {
-    if (!arr || !Array.isArray(arr)) {
-      throw "Object is not an array: " + JSON.stringify(arr);
-    }
-    localStorage.setItem(id, JSON.stringify(arr));
+  static save(id, obj) {
+    obj.lastmodified = Date.now();
+    localStorage.setItem(id, JSON.stringify(obj));
   }
 
   // -------------------------------------------------------------------------
@@ -17,22 +15,23 @@ export default class Persist {
   // an arry with the requested size which is initialized to 0.
   // -------------------------------------------------------------------------
   static load(id, len) {
-    let arr = [];
-
     let data = localStorage.getItem(id);
 
     if (data) {
-      arr = JSON.parse(data);
-      if (Array.isArray(arr) && arr.length === len) {
-        return arr;
+      let obj = JSON.parse(data);
+      if (Array.isArray(obj.answer) && obj.answer.length === len) {
+        return obj;
       }
     }
 
-    arr = [];
+    let obj = {
+      answer: [],
+    };
+
     for (let i = 0; i < len; i++) {
-      arr[i] = 0;
+      obj.answer[i] = 0;
     }
-    return arr;
+    return obj;
   }
 
   // -------------------------------------------------------------------------

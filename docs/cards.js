@@ -2,6 +2,16 @@ import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 
 (function () {
+  function formatTimestamp(lastmodified) {
+    if (!lastmodified) {
+      return "";
+    }
+
+    let d = new Date();
+    d.setTime(lastmodified);
+
+    return `${d.getDate()}.${d.getMonth()}.${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
+  }
   /*****************************************************************************
    * The function loads the requstry, which is a json file.
    ****************************************************************************/
@@ -105,6 +115,7 @@ import Persist from "./modules/persist.js";
     constructor() {
       this.size = 0;
       this.correct = [];
+      this.lastmodified;
       this._reset();
       this._initButtons();
       this._show();
@@ -117,6 +128,7 @@ import Persist from "./modules/persist.js";
       for (let i = 0; i < pool.pool.length; i++) {
         this.correct[pool.pool[i].count]++;
       }
+      this.lastmodified = pool.lastmodified;
       this._show();
     }
 
@@ -176,6 +188,10 @@ import Persist from "./modules/persist.js";
     _show() {
       if (this.size > 0) {
         document.getElementById("c-pool-size").innerText = this.size;
+
+        document.getElementById("c-pool-time").innerText = formatTimestamp(
+          this.lastmodified
+        );
 
         document.getElementById("c-pool-0").innerText = this.correct[0];
         document.getElementById("c-pool-1").innerText = this.correct[1];
@@ -345,15 +361,16 @@ import Persist from "./modules/persist.js";
   class Pool {
     constructor() {}
 
-    _update(quests, stateArr) {
+    _update(quests, obj) {
       this.pool = [];
+      this.lastmodified = obj.lastmodified;
 
       for (let i = 0; i < quests.length; i++) {
         this.pool[i] = new Quest(
           quests[i].quest,
           quests[i].answer,
           i,
-          stateArr[i]
+          obj.answer[i]
         );
       }
 
@@ -423,19 +440,23 @@ import Persist from "./modules/persist.js";
     }
 
     _persistValue() {
-      let result = [];
+      let obj = {
+        answer: [],
+      };
 
       for (let i = 0; i < this.pool.length; i++) {
-        result.push(this.pool[i].count);
+        obj.answer.push(this.pool[i].count);
       }
 
-      return result;
+      return obj;
     }
 
     _poolChanged(doPersist) {
       this._updateLearned();
       if (doPersist) {
-        Persist.save(statusComp.file, this._persistValue());
+        let perist = this._persistValue();
+        Persist.save(statusComp.file, perist);
+        this.lastmodified = perist.lastmodified;
       }
       eventDis.onPoolChanged(this);
     }

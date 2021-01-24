@@ -177,14 +177,19 @@
     }
 
     _show() {
-      document.getElementById("error-div").style.display = "";
-      document.getElementById("error-msg").innerText = this.msg;
-      document.getElementById("error-reason").innerText = this.reason;
+      var temp = document.getElementById("tmpl-error-div");
+      var clon = temp.content.cloneNode(true);
+
+      clon.getElementById("error-msg").innerText = this.msg;
+      clon.getElementById("error-reason").innerText = this.reason;
+
+      document.getElementById("main").prepend(clon);
     }
 
     clear() {
-      if (this.msg) {
-        document.getElementById("error-div").style.display = "none";
+      let elem = document.getElementById("error-div");
+      if (elem) {
+        elem.parentNode.removeChild(elem);
       }
 
       this.msg = "";

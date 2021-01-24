@@ -112,17 +112,16 @@ import MsgComp from "./modules/msg-comp.js";
       this.last = -1;
     }
     next(max) {
-      let num = Math.floor(Math.random() * max);
+      for (let i = 0; i < 3; i++) {
+        let num = Math.floor(Math.random() * max);
 
-      //
-      // Avoid generating the same number twice.
-      //
-      if (num === this.last) {
-        num = Math.floor(Math.random() * max);
+        if (num !== this.last) {
+          this.last = num;
+          break;
+        }
       }
-      this.last = num;
 
-      return num;
+      return this.last;
     }
   }
 

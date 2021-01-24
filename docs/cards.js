@@ -1,3 +1,5 @@
+import MsgComp from "./modules/msg-comp.js";
+
 (function () {
   /*****************************************************************************
    * The function implements an ajax GET request.
@@ -48,7 +50,7 @@
         eventDis.onLoadedRegistry(arr);
       },
       function (data) {
-        errorComp.update(err, reason);
+        msgComp.update(err, reason);
       }
     );
   }
@@ -156,44 +158,6 @@
       this.last = num;
 
       return num;
-    }
-  }
-
-  /*****************************************************************************
-   * The class implements an error component, that adds an error message to the
-   * dom.
-   ****************************************************************************/
-  class ErrorComp {
-    constructor() {
-      this.msg = "remove-me";
-      this.clear();
-    }
-
-    update(msg, reason) {
-      this.msg = msg;
-      this.reason = reason;
-
-      this._show();
-    }
-
-    _show() {
-      var temp = document.getElementById("tmpl-error-div");
-      var clon = temp.content.cloneNode(true);
-
-      clon.getElementById("error-msg").innerText = this.msg;
-      clon.getElementById("error-reason").innerText = this.reason;
-
-      document.getElementById("main").prepend(clon);
-    }
-
-    clear() {
-      let elem = document.getElementById("error-div");
-      if (elem) {
-        elem.parentNode.removeChild(elem);
-      }
-
-      this.msg = "";
-      this.reason = "";
     }
   }
 
@@ -506,7 +470,7 @@
           pool._update(quests, persist.load(file, quests.length));
         },
         function (err, reason) {
-          errorComp.update(err, reason);
+          msgComp.update(err, reason);
         }
       );
     }
@@ -648,7 +612,7 @@
       //
       // Remove previous error messages.
       //
-      errorComp.clear();
+      msgComp.clear();
       statusComp.onFileSelected();
       pool.load(statusComp.file);
     }
@@ -734,7 +698,7 @@
   let persist = new Persist();
   let eventDis = new EventDis();
 
-  let errorComp = new ErrorComp();
+  let msgComp = new MsgComp();
   let poolStatComp = new PoolStatComp();
   let questComp = new QuestComp();
   let questInfoComp = new QuestInfoComp();

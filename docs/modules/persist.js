@@ -4,7 +4,7 @@
  * to that pool.
  ****************************************************************************/
 export default class Persist {
-  save(id, arr) {
+  static save(id, arr) {
     if (!arr || !Array.isArray(arr)) {
       throw "Object is not an array: " + JSON.stringify(arr);
     }
@@ -16,7 +16,7 @@ export default class Persist {
   // If the array was not found or has an other length, the function returns
   // an arry with the requested size which is initialized to 0.
   // -------------------------------------------------------------------------
-  load(id, len) {
+  static load(id, len) {
     let arr = [];
 
     let data = localStorage.getItem(id);
@@ -44,7 +44,7 @@ export default class Persist {
   // The function ensures that all elements from the localstorage are removed,
   // that are not part of the registry.
   // -------------------------------------------------------------------------
-  onLoadedRegistry(arr) {
+  static onLoadedRegistry(arr) {
     //
     // Get an array with the file names
     //

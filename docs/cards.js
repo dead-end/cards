@@ -369,7 +369,7 @@ import Persist from "./modules/persist.js";
           return response.json();
         })
         .then((json) => {
-          pool._update(json, persist.load(file, json.length));
+          pool._update(json, Persist.load(file, json.length));
         })
         .catch((error) => {
           msgComp.update("Unable to load file: " + file, error);
@@ -435,7 +435,7 @@ import Persist from "./modules/persist.js";
     _poolChanged(doPersist) {
       this._updateLearned();
       if (doPersist) {
-        persist.save(statusComp.file, this._persistValue());
+        Persist.save(statusComp.file, this._persistValue());
       }
       eventDis.onPoolChanged(this);
     }
@@ -503,7 +503,7 @@ import Persist from "./modules/persist.js";
     // -------------------------------------------------------------------------
     onLoadedRegistry(arr) {
       statusComp.onLoadedRegistry(arr);
-      persist.onLoadedRegistry(arr);
+      Persist.onLoadedRegistry(arr);
     }
 
     // -------------------------------------------------------------------------
@@ -596,7 +596,6 @@ import Persist from "./modules/persist.js";
   /*****************************************************************************
    * Main
    ****************************************************************************/
-  let persist = new Persist();
   let eventDis = new EventDis();
 
   let msgComp = new MsgComp();

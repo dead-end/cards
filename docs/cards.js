@@ -2,6 +2,10 @@ import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 
 (function () {
+  /*****************************************************************************
+   * The function formats a timestamp. If the timestamp is undefined it returns
+   * an empty string.
+   ****************************************************************************/
   function formatTimestamp(lastmodified) {
     if (!lastmodified) {
       return "";
@@ -128,7 +132,7 @@ import Persist from "./modules/persist.js";
       for (let i = 0; i < pool.pool.length; i++) {
         this.correct[pool.pool[i].count]++;
       }
-      this.lastmodified = pool.lastmodified;
+      this.lastmodified = pool.obj.lastmodified;
       this._show();
     }
 
@@ -363,14 +367,14 @@ import Persist from "./modules/persist.js";
 
     _update(quests, obj) {
       this.pool = [];
-      this.lastmodified = obj.lastmodified;
+      this.persist = obj;
 
       for (let i = 0; i < quests.length; i++) {
         this.pool[i] = new Quest(
           quests[i].quest,
           quests[i].answer,
           i,
-          obj.answer[i]
+          this.persist.answer[i]
         );
       }
 
@@ -439,24 +443,15 @@ import Persist from "./modules/persist.js";
       }
     }
 
-    _persistValue() {
-      let obj = {
-        answer: [],
-      };
-
-      for (let i = 0; i < this.pool.length; i++) {
-        obj.answer.push(this.pool[i].count);
-      }
-
-      return obj;
-    }
-
     _poolChanged(doPersist) {
       this._updateLearned();
+
       if (doPersist) {
-        let perist = this._persistValue();
-        Persist.save(statusComp.file, perist);
-        this.lastmodified = perist.lastmodified;
+        for (let i = 0; i < this.pool.length; i++) {
+          this.persist[i] = this.pool[i].count;
+        }
+
+        Persist.save(statusComp.file, this.persist);
       }
       eventDis.onPoolChanged(this);
     }

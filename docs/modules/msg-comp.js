@@ -4,7 +4,6 @@
 
 export default class MsgComp {
   constructor() {
-    this.msg = "remove-me";
     this.clear();
   }
 

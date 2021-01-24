@@ -132,7 +132,7 @@ import Persist from "./modules/persist.js";
       for (let i = 0; i < pool.pool.length; i++) {
         this.correct[pool.pool[i].count]++;
       }
-      this.lastmodified = pool.obj.lastmodified;
+      this.lastmodified = pool.persist.lastmodified;
       this._show();
     }
 

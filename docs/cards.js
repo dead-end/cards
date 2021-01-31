@@ -249,6 +249,9 @@ class Quest {
  * values. The index of the char is the index of the question in the pool.
  ****************************************************************************/
 class Pool {
+  constructor(dispatcher) {
+    this.dispatcher = dispatcher;
+  }
   _update(quests, obj) {
     this.pool = [];
     this.persist = obj;
@@ -278,7 +281,7 @@ class Pool {
       .then((json) => {
         let persist = Persist.load(this.id, json.length);
         this._update(json, persist);
-        eventDis.onStart(file);
+        this.dispatcher.onStart(file);
       })
       .catch((error) => {
         msgComp.update("Unable to load file: " + this.id, error);
@@ -297,7 +300,7 @@ class Pool {
     this._poolChanged(true);
 
     if (this.isLearned()) {
-      eventDis.onStop();
+      this.dispatcher.onStop();
     } else {
       this.next();
     }
@@ -311,7 +314,7 @@ class Pool {
 
   next() {
     this.current = this.unlearned[random.next(this.unlearned.length)];
-    eventDis.onQuestChanged(this.current);
+    this.dispatcher.onQuestChanged(this.current);
   }
 
   isLearned() {
@@ -341,7 +344,7 @@ class Pool {
 
       Persist.save(this.id, this.persist);
     }
-    eventDis.onPoolChanged(this);
+    this.dispatcher.onPoolChanged(this);
   }
 }
 
@@ -486,7 +489,7 @@ let questInfoComp = new QuestInfoComp();
 
 let random = new Random();
 
-let pool = new Pool();
+let pool = new Pool(eventDis);
 let statusComp = new StatusComp();
 
 let poolList = new PoolList(eventDis);

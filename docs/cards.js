@@ -266,7 +266,9 @@ class Pool {
   }
 
   load(file) {
-    fetch(encodeURIComponent(file.file))
+    this.id = file.file;
+
+    fetch(encodeURIComponent(this.id))
       .then((response) => {
         if (response.status != 200) {
           throw Error(response.statusText);
@@ -274,12 +276,12 @@ class Pool {
         return response.json();
       })
       .then((json) => {
-        let persist = Persist.load(file.file, json.length);
+        let persist = Persist.load(this.id, json.length);
         this._update(json, persist);
         eventDis.onStart(file);
       })
       .catch((error) => {
-        msgComp.update("Unable to load file: " + file.file, error);
+        msgComp.update("Unable to load file: " + this.id, error);
       });
   }
 
@@ -337,7 +339,7 @@ class Pool {
         this.persist.answer[i] = this.pool[i].count;
       }
 
-      Persist.save(statusComp.file, this.persist);
+      Persist.save(this.id, this.persist);
     }
     eventDis.onPoolChanged(this);
   }

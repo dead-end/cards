@@ -8,6 +8,9 @@ export default class Persist {
    * The function saves the object and updates the last modified data.
    ***************************************************************************/
   static save(id, obj) {
+    if (!id) {
+      throw Error("No id!");
+    }
     obj.lastmodified = Date.now();
     localStorage.setItem(id, JSON.stringify(obj));
   }

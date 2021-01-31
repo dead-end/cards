@@ -145,7 +145,6 @@ export default class PoolList {
    * Callback function for the stop event.
    ***************************************************************************/
   onStart() {
-    console.log(this.selected);
     //
     // Show the component
     //

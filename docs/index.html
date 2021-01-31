@@ -17,6 +17,49 @@
     </div>
   </template>
 
+  <template id="tmpl-pool-list">
+    <div class="block" id="tpl-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>File</th>
+            <th>Size</th>
+            <th>Status</th>
+            <th>Modified</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="pool-list-body">
+        </tbody>
+      </table>
+    </div>
+  </template>
+
+  <template id="tpl-entry">
+    <tr>
+      <td class="tpl-title">Title</td>
+      <td class="tpl-file">File</td>
+      <td class="tpl-size">Size</td>
+      <td class="tpl-status">Status</td>
+      <td class="tpl-modified">Status</td>
+      <td>
+        <div class="select">
+          <select class="tpl-set">
+            <option value="">-- Select --</option>
+            <option value="0">Set 0</option>
+            <option value="1">Set 1</option>
+            <option value="2">Set 2</option>
+            <option value="3">Set 3</option>
+          </select>
+        </div>
+
+        <button class="button is-light tpl-start">Start</button>
+      </td>
+    </tr>
+  </template>
+
+
   <div class="container">
     <h2 class="title">Cards</h2>
 
@@ -31,13 +74,6 @@
             <!-- File data -->
             <div class="column">
 
-              <!-- Select box to select a file -->
-              <div class="block" id="c-status-select-div">
-                <div class="block select">
-                  <select id="c-status-select-file"></select>
-                </div>
-              </div>
-
               <!-- file info, if a file is selected -->
               <div class="block" id="c-status-info">
                 <table class="table">
@@ -50,11 +86,6 @@
                     <td id="c-status-file"></td>
                   </tr>
                 </table>
-              </div>
-
-              <!-- Readay to start -->
-              <div class="block" id="state-ready-to-start">
-                <button class="button is-light" id="btn-quest-start">Start</button>
               </div>
             </div>
 
@@ -72,22 +103,18 @@
                 <tr>
                   <td>No correct Answers</td>
                   <td id="c-pool-0"></td>
-                  <td><button class="button is-light c-pool-btn" id="c-pool-0-btn">Add all</button></td>
                 </tr>
                 <tr>
                   <td>One correct Answer</td>
                   <td id="c-pool-1"></td>
-                  <td><button class="button is-light c-pool-btn" id="c-pool-1-btn">Add all</button></td>
                 </tr>
                 <tr>
                   <td>Two correct Answers</td>
                   <td id="c-pool-2"></td>
-                  <td><button class="button is-light c-pool-btn" id="c-pool-2-btn">Add all</button></td>
                 </tr>
                 <tr>
                   <td>Learned</td>
                   <td id="c-pool-3"></td>
-                  <td><button class="button is-light c-pool-btn" id="c-pool-3-btn">Add all</button></td>
                 </tr>
               </table>
             </div>
@@ -143,7 +170,7 @@
           <button class="button is-light" id="btn-answer-show">Show answer</button>
           <button class="button is-light is-success state-answer-show" id="btn-answer-correct">Correct answer</button>
           <button class="button is-light is-danger state-answer-show" id="btn-answer-wrong">Wrong answer</button>
-          <button class="button is-light" id="btn-quest-stop">Stop</button>
+          <button class="button is-light" id="btn-answer-stop">Stop</button>
         </div>
       </div>
     </div>

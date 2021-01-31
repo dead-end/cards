@@ -2,9 +2,9 @@ import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
 
-/*****************************************************************************
+/******************************************************************************
  * The function loads the requstry, which is a json file.
- ****************************************************************************/
+ *****************************************************************************/
 function loadRegistry() {
   fetch("registry.json")
     .then((response) => {
@@ -14,17 +14,17 @@ function loadRegistry() {
       return response.json();
     })
     .then((json) => {
-      eventDis.onLoadedRegistry(json);
+      dispatcher.onLoadedRegistry(json);
     })
     .catch((error) => {
       msgComp.update("Unable to load file: registry.json", error);
     });
 }
 
-/*****************************************************************************
+/******************************************************************************
  * The function returns an array where the elements with the given value are
  * removed.
- ****************************************************************************/
+ *****************************************************************************/
 function removeFromArray(array, value) {
   let result = [];
 
@@ -37,9 +37,9 @@ function removeFromArray(array, value) {
   return result;
 }
 
-/*****************************************************************************
+/******************************************************************************
  * The class generates random numbers.
- ****************************************************************************/
+ *****************************************************************************/
 class Random {
   constructor() {
     this.last = -1;
@@ -58,60 +58,64 @@ class Random {
   }
 }
 
-/*****************************************************************************
+/******************************************************************************
  * The class defines the status of the current file.
- ****************************************************************************/
-class StatusComp {
-  onStart(file) {
-    document.getElementById("c-status-title").innerText = file.title;
-    document.getElementById("c-status-file").innerText = file.file;
+ *****************************************************************************/
+class InfoComp {
+  constructor() {
+    this.onStop();
   }
 
-  onPoolChanged(pool) {
-    document.getElementById("c-status-size").innerText =
+  onStart(file) {
+    document.getElementById("c-info").style.display = "";
+
+    document.getElementById("c-info-title").innerText = file.title;
+    document.getElementById("c-info-file").innerText = file.file;
+  }
+
+  onStop() {
+    document.getElementById("c-info").style.display = "none";
+  }
+
+  onQuestChanged(quest) {
+    document.getElementById("c-info-quest-no").innerText = quest.idx;
+    document.getElementById("c-info-quest-correct").innerText = quest.count;
+    document.getElementById("c-info-quest-attempt").innerText = quest.attempt;
+  }
+
+  _updatePoolData(pool) {
+    document.getElementById("c-info-size").innerText =
       pool.persist.answer.length;
 
     let modified = "";
     if (pool.persist.lastmodified) {
       modified = new Date(pool.persist.lastmodified).toLocaleString();
     }
-    document.getElementById("c-status-modified").innerText = modified;
+    document.getElementById("c-info-modified").innerText = modified;
   }
-}
 
-/*****************************************************************************
- * The class implements a component that adds a pool statistic to the dom.
- ****************************************************************************/
-class PoolStatComp {
-  onPoolChanged(pool) {
+  _updatePoolStatus(pool) {
     let correct = [0, 0, 0, 0];
 
     for (let i = 0; i < pool.pool.length; i++) {
       correct[pool.pool[i].count]++;
     }
 
-    document.getElementById("c-pool-0").innerText = correct[0];
-    document.getElementById("c-pool-1").innerText = correct[1];
-    document.getElementById("c-pool-2").innerText = correct[2];
-    document.getElementById("c-pool-3").innerText = correct[3];
+    document.getElementById("c-info-pool-0").innerText = correct[0];
+    document.getElementById("c-info-pool-1").innerText = correct[1];
+    document.getElementById("c-info-pool-2").innerText = correct[2];
+    document.getElementById("c-info-pool-3").innerText = correct[3];
+  }
+
+  onPoolChanged(pool) {
+    this._updatePoolData(pool);
+    this._updatePoolStatus(pool);
   }
 }
 
-/*****************************************************************************
- * The class implements a component that shows informations about the current
- * question.
- ****************************************************************************/
-class QuestInfoComp {
-  onQuestChanged(quest) {
-    document.getElementById("c-quest-info-no").innerText = quest.idx;
-    document.getElementById("c-quest-info-correct").innerText = quest.count;
-    document.getElementById("c-quest-info-attempt").innerText = quest.attempt;
-  }
-}
-
-/*****************************************************************************
+/******************************************************************************
  * The class implements the component, that shows the questions and answers.
- ****************************************************************************/
+ *****************************************************************************/
 class QuestComp {
   constructor() {
     this.onStop();
@@ -167,21 +171,22 @@ class QuestComp {
   }
 
   _initButtons() {
-    document.getElementById("btn-answer-show").onclick = eventDis.onShowAnswer;
+    document.getElementById("btn-answer-show").onclick =
+      dispatcher.onShowAnswer;
     document.getElementById("btn-answer-correct").onclick =
-      eventDis.onAnswerCorrect;
+      dispatcher.onAnswerCorrect;
 
     document.getElementById("btn-answer-wrong").onclick =
-      eventDis.onAnswerWrong;
+      dispatcher.onAnswerWrong;
 
-    document.getElementById("btn-answer-stop").onclick = eventDis.onStop;
+    document.getElementById("btn-answer-stop").onclick = dispatcher.onStop;
   }
 }
 
-/*****************************************************************************
+/******************************************************************************
  * The function contains a question, the answer, the index in the pool and the
  * number of times the user sets the correct answer.
- ****************************************************************************/
+ *****************************************************************************/
 class Quest {
   constructor(quest, answer, idx, count) {
     this.quest = quest;
@@ -216,13 +221,13 @@ class Quest {
   }
 }
 
-/*****************************************************************************
+/******************************************************************************
  * The class represents a pool of questions that is read from a file. The
  * corresponding answer status of each question is stored in the local
  * storage. A valid answer status is: 0, 1, 2, 3. A value of 3 means that the
  * question is learned. The answer status from the cookie is a string of 0-3
  * values. The index of the char is the index of the question in the pool.
- ****************************************************************************/
+ *****************************************************************************/
 class Pool {
   constructor(dispatcher) {
     this.dispatcher = dispatcher;
@@ -323,121 +328,69 @@ class Pool {
   }
 }
 
-/*****************************************************************************
+/******************************************************************************
  * The class implements an event dispatcher.
- ****************************************************************************/
-class EventDis {
-  onInit() {
-    document.getElementById("c-info").style.display = "none";
-  }
-
-  // -------------------------------------------------------------------------
-  // Event: registry was loaded.
-  // -------------------------------------------------------------------------
+ *****************************************************************************/
+class Dispatcher {
   onLoadedRegistry(files) {
     Persist.onLoadedRegistry(files);
     poolList.onLoadedRegistry(files);
   }
 
-  // -------------------------------------------------------------------------
-  // Event: a file is selected.
-  // -------------------------------------------------------------------------
   onFileSelected(file) {
     msgComp.clear();
     pool.load(file);
   }
 
-  // -------------------------------------------------------------------------
-  // Event: new question pool is loaded
-  // -------------------------------------------------------------------------
   onPoolChanged(pool) {
-    poolStatComp.onPoolChanged(pool);
-    statusComp.onPoolChanged(pool);
+    infoComp.onPoolChanged(pool);
   }
 
-  // -------------------------------------------------------------------------
-  // Event: new question was selected.
-  // -------------------------------------------------------------------------
   onQuestChanged(quest) {
     questComp.onQuestChanged(quest);
-    questInfoComp.onQuestChanged(quest);
+    infoComp.onQuestChanged(quest);
   }
 
-  // -------------------------------------------------------------------------
-  // Event: show answer button is clicked
-  // -------------------------------------------------------------------------
   onShowAnswer() {
     questComp.onShowAnswer();
   }
 
-  // -------------------------------------------------------------------------
-  // Event: correct answer button is clicked
-  // -------------------------------------------------------------------------
   onAnswerCorrect(event) {
     pool.onAnswerCorrect();
   }
 
-  // -------------------------------------------------------------------------
-  // Event: wrong answer button is clicked
-  // -------------------------------------------------------------------------
   onAnswerWrong(event) {
     pool.onAnswerWrong();
   }
 
-  // -------------------------------------------------------------------------
-  // Event: start button is clicked.
-  // -------------------------------------------------------------------------
   onStart(file) {
-    document.getElementById("c-info").style.display = "";
-
     pool.next();
     questComp.onStart();
     poolList.onStart();
-    statusComp.onStart(file);
+    infoComp.onStart(file);
   }
 
-  // -------------------------------------------------------------------------
-  // Event: stop button is clicked.
-  // -------------------------------------------------------------------------
   onStop() {
-    document.getElementById("c-info").style.display = "none";
-
     pool.next();
     questComp.onStop();
     poolList.onStop();
-  }
-
-  // -------------------------------------------------------------------------
-  // Event: one of the add all buttons is clicked.
-  // -------------------------------------------------------------------------
-  onAddAll(event) {
-    //
-    // The method returns -1 if nothing changed.
-    //
-    let count = poolStatComp.getCount(event.target.id);
-    if (count < 0) {
-      return;
-    }
-    pool.addAll(count);
+    infoComp.onStop();
   }
 }
 
-/*****************************************************************************
+/******************************************************************************
  * Main
- ****************************************************************************/
-let eventDis = new EventDis();
+ *****************************************************************************/
+let dispatcher = new Dispatcher();
 
 let msgComp = new MsgComp();
-let poolStatComp = new PoolStatComp();
 let questComp = new QuestComp();
-let questInfoComp = new QuestInfoComp();
 
 let random = new Random();
 
-let pool = new Pool(eventDis);
-let statusComp = new StatusComp();
+let pool = new Pool(dispatcher);
+let infoComp = new InfoComp();
 
-let poolList = new PoolList(eventDis);
+let poolList = new PoolList(dispatcher);
 
-eventDis.onInit();
 loadRegistry();

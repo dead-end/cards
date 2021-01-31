@@ -356,9 +356,7 @@ class StatusComp {
     this.onStop();
   }
 
-  onStart(file, persist) {
-    document.getElementById("c-status-info").style.display = "";
-
+  onStart(file) {
     document.getElementById("c-status-title").innerText = file.title;
     document.getElementById("c-status-file").innerText = file.file;
   }
@@ -373,16 +371,16 @@ class StatusComp {
     }
     document.getElementById("c-status-modified").innerText = modified;
   }
-
-  onStop() {
-    document.getElementById("c-status-info").style.display = "none";
-  }
 }
 
 /*****************************************************************************
  * The class implements an event dispatcher.
  ****************************************************************************/
 class EventDis {
+  onInit() {
+    document.getElementById("c-info").style.display = "none";
+  }
+
   // -------------------------------------------------------------------------
   // Event: registry was loaded.
   // -------------------------------------------------------------------------
@@ -443,6 +441,8 @@ class EventDis {
   // Event: start button is clicked.
   // -------------------------------------------------------------------------
   onStart(file) {
+    document.getElementById("c-info").style.display = "";
+
     pool.next();
     questComp.onStart();
     questInfoComp.onStart();
@@ -455,11 +455,13 @@ class EventDis {
   // Event: stop button is clicked.
   // -------------------------------------------------------------------------
   onStop() {
+    document.getElementById("c-info").style.display = "none";
+
+    pool.next();
     questComp.onStop();
     questInfoComp.onStop();
     poolStatComp.onStop();
     poolList.onStop();
-    statusComp.onStop();
   }
 
   // -------------------------------------------------------------------------
@@ -494,4 +496,5 @@ let statusComp = new StatusComp();
 
 let poolList = new PoolList(eventDis);
 
+eventDis.onInit();
 loadRegistry();

@@ -59,45 +59,41 @@ class Random {
 }
 
 /*****************************************************************************
- * The class implements a component that adds a pool statistic to the dom.
+ * The class defines the status of the current file.
  ****************************************************************************/
-class PoolStatComp {
-  constructor() {
-    this.correct = [];
-
-    this.onStop();
+class StatusComp {
+  onStart(file) {
+    document.getElementById("c-status-title").innerText = file.title;
+    document.getElementById("c-status-file").innerText = file.file;
   }
 
   onPoolChanged(pool) {
-    this._reset();
+    document.getElementById("c-status-size").innerText =
+      pool.persist.answer.length;
+
+    let modified = "";
+    if (pool.persist.lastmodified) {
+      modified = new Date(pool.persist.lastmodified).toLocaleString();
+    }
+    document.getElementById("c-status-modified").innerText = modified;
+  }
+}
+
+/*****************************************************************************
+ * The class implements a component that adds a pool statistic to the dom.
+ ****************************************************************************/
+class PoolStatComp {
+  onPoolChanged(pool) {
+    let correct = [0, 0, 0, 0];
 
     for (let i = 0; i < pool.pool.length; i++) {
-      this.correct[pool.pool[i].count]++;
+      correct[pool.pool[i].count]++;
     }
 
-    this._show();
-  }
-
-  onStart() {
-    document.getElementById("c-pool-comp").style.display = "";
-  }
-
-  onStop() {
-    document.getElementById("c-pool-comp").style.display = "none";
-  }
-
-  _reset() {
-    this.correct[0] = 0;
-    this.correct[1] = 0;
-    this.correct[2] = 0;
-    this.correct[3] = 0;
-  }
-
-  _show() {
-    document.getElementById("c-pool-0").innerText = this.correct[0];
-    document.getElementById("c-pool-1").innerText = this.correct[1];
-    document.getElementById("c-pool-2").innerText = this.correct[2];
-    document.getElementById("c-pool-3").innerText = this.correct[3];
+    document.getElementById("c-pool-0").innerText = correct[0];
+    document.getElementById("c-pool-1").innerText = correct[1];
+    document.getElementById("c-pool-2").innerText = correct[2];
+    document.getElementById("c-pool-3").innerText = correct[3];
   }
 }
 
@@ -106,31 +102,10 @@ class PoolStatComp {
  * question.
  ****************************************************************************/
 class QuestInfoComp {
-  constructor() {
-    this.onStop();
-  }
-
-  update(quest) {
-    this.quest = quest;
-    this._show();
-  }
-
-  onStop() {
-    document.getElementById("c-quest-info").style.display = "none";
-  }
-
-  onStart() {
-    document.getElementById("c-quest-info").style.display = "";
-  }
-
-  _show() {
-    document.getElementById("c-quest-info-no").innerText = this.quest.idx;
-    document.getElementById(
-      "c-quest-info-correct"
-    ).innerText = this.quest.count;
-    document.getElementById(
-      "c-quest-info-attempt"
-    ).innerText = this.quest.attempt;
+  onQuestChanged(quest) {
+    document.getElementById("c-quest-info-no").innerText = quest.idx;
+    document.getElementById("c-quest-info-correct").innerText = quest.count;
+    document.getElementById("c-quest-info-attempt").innerText = quest.attempt;
   }
 }
 
@@ -143,7 +118,7 @@ class QuestComp {
     this._initButtons();
   }
 
-  update(quest) {
+  onQuestChanged(quest) {
     this.quest = quest;
     this._show();
   }
@@ -349,31 +324,6 @@ class Pool {
 }
 
 /*****************************************************************************
- * The class defines the status of the current file.
- ****************************************************************************/
-class StatusComp {
-  constructor() {
-    this.onStop();
-  }
-
-  onStart(file) {
-    document.getElementById("c-status-title").innerText = file.title;
-    document.getElementById("c-status-file").innerText = file.file;
-  }
-
-  onPoolChanged(pool) {
-    document.getElementById("c-status-size").innerText =
-      pool.persist.answer.length;
-
-    let modified = "";
-    if (pool.persist.lastmodified) {
-      modified = new Date(pool.persist.lastmodified).toLocaleString();
-    }
-    document.getElementById("c-status-modified").innerText = modified;
-  }
-}
-
-/*****************************************************************************
  * The class implements an event dispatcher.
  ****************************************************************************/
 class EventDis {
@@ -393,9 +343,6 @@ class EventDis {
   // Event: a file is selected.
   // -------------------------------------------------------------------------
   onFileSelected(file) {
-    //
-    // Remove previous error messages.
-    //
     msgComp.clear();
     pool.load(file);
   }
@@ -412,8 +359,8 @@ class EventDis {
   // Event: new question was selected.
   // -------------------------------------------------------------------------
   onQuestChanged(quest) {
-    questComp.update(quest);
-    questInfoComp.update(quest);
+    questComp.onQuestChanged(quest);
+    questInfoComp.onQuestChanged(quest);
   }
 
   // -------------------------------------------------------------------------
@@ -445,8 +392,6 @@ class EventDis {
 
     pool.next();
     questComp.onStart();
-    questInfoComp.onStart();
-    poolStatComp.onStart();
     poolList.onStart();
     statusComp.onStart(file);
   }
@@ -459,8 +404,6 @@ class EventDis {
 
     pool.next();
     questComp.onStop();
-    questInfoComp.onStop();
-    poolStatComp.onStop();
     poolList.onStop();
   }
 

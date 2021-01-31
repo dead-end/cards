@@ -63,21 +63,18 @@ class Random {
  ****************************************************************************/
 class PoolStatComp {
   constructor() {
-    this.size = 0;
     this.correct = [];
-    this.lastmodified;
 
     this.onStop();
   }
 
-  update(pool) {
-    this.size = pool.pool.length;
+  onPoolChanged(pool) {
     this._reset();
 
     for (let i = 0; i < pool.pool.length; i++) {
       this.correct[pool.pool[i].count]++;
     }
-    this.lastmodified = pool.persist.lastmodified;
+
     this._show();
   }
 
@@ -97,15 +94,6 @@ class PoolStatComp {
   }
 
   _show() {
-    document.getElementById("c-pool-size").innerText = this.size;
-
-    if (this.lastmodified) {
-      document.getElementById("c-pool-time").innerText = new Date(
-        this.lastmodified
-      ).toLocaleString();
-    } else {
-      document.getElementById("c-pool-time").innerText = "";
-    }
     document.getElementById("c-pool-0").innerText = this.correct[0];
     document.getElementById("c-pool-1").innerText = this.correct[1];
     document.getElementById("c-pool-2").innerText = this.correct[2];
@@ -278,7 +266,7 @@ class Pool {
   }
 
   load(file) {
-    fetch(encodeURIComponent(file))
+    fetch(encodeURIComponent(file.file))
       .then((response) => {
         if (response.status != 200) {
           throw Error(response.statusText);
@@ -286,11 +274,12 @@ class Pool {
         return response.json();
       })
       .then((json) => {
-        this._update(json, Persist.load(file, json.length));
-        eventDis.onStart();
+        let persist = Persist.load(file.file, json.length);
+        this._update(json, persist);
+        eventDis.onStart(file);
       })
       .catch((error) => {
-        msgComp.update("Unable to load file: " + file, error);
+        msgComp.update("Unable to load file: " + file.file, error);
       });
   }
 
@@ -359,22 +348,25 @@ class Pool {
  ****************************************************************************/
 class StatusComp {
   constructor() {
-    this.file = "";
-    this.title = "";
-
     this.onStop();
   }
 
-  onFileSelected(selected) {
-    this.title = selected.title;
-    this.file = selected.file;
+  onStart(file, persist) {
+    document.getElementById("c-status-info").style.display = "";
 
-    document.getElementById("c-status-title").innerText = this.title;
-    document.getElementById("c-status-file").innerText = this.file;
+    document.getElementById("c-status-title").innerText = file.title;
+    document.getElementById("c-status-file").innerText = file.file;
   }
 
-  onStart() {
-    document.getElementById("c-status-info").style.display = "";
+  onPoolChanged(pool) {
+    document.getElementById("c-status-size").innerText =
+      pool.persist.answer.length;
+
+    let modified = "";
+    if (pool.persist.lastmodified) {
+      modified = new Date(pool.persist.lastmodified).toLocaleString();
+    }
+    document.getElementById("c-status-modified").innerText = modified;
   }
 
   onStop() {
@@ -397,20 +389,20 @@ class EventDis {
   // -------------------------------------------------------------------------
   // Event: a file is selected.
   // -------------------------------------------------------------------------
-  onFileSelected(selected) {
+  onFileSelected(file) {
     //
     // Remove previous error messages.
     //
     msgComp.clear();
-    statusComp.onFileSelected(selected);
-    pool.load(selected.file);
+    pool.load(file);
   }
 
   // -------------------------------------------------------------------------
   // Event: new question pool is loaded
   // -------------------------------------------------------------------------
   onPoolChanged(pool) {
-    poolStatComp.update(pool);
+    poolStatComp.onPoolChanged(pool);
+    statusComp.onPoolChanged(pool);
   }
 
   // -------------------------------------------------------------------------
@@ -445,13 +437,13 @@ class EventDis {
   // -------------------------------------------------------------------------
   // Event: start button is clicked.
   // -------------------------------------------------------------------------
-  onStart() {
+  onStart(file) {
     pool.next();
     questComp.onStart();
     questInfoComp.onStart();
     poolStatComp.onStart();
     poolList.onStart();
-    statusComp.onStart();
+    statusComp.onStart(file);
   }
 
   // -------------------------------------------------------------------------

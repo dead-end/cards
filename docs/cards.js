@@ -371,7 +371,6 @@ class Dispatcher {
   }
 
   onStop() {
-    pool.next();
     questComp.onStop();
     poolList.onStop();
     infoComp.onStop();

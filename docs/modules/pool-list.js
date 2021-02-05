@@ -31,6 +31,19 @@ export default class PoolList {
   }
 
   /****************************************************************************
+   * The function checks if the start button is active. This requires that
+   * there are unanswered questions.
+   ***************************************************************************/
+  _isInActive(arr, max) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== max) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /****************************************************************************
    * The function updates a file if the persisted data changed.
    ***************************************************************************/
   _updatePersist(entry, id) {
@@ -46,6 +59,14 @@ export default class PoolList {
       entry.querySelector(".tpl-modified").innerText = new Date(
         persist.lastmodified
       ).toLocaleString();
+
+      //
+      // disable the start button if all questions are learned.
+      //
+      entry.querySelector(".tpl-start").disabled = this._isInActive(
+        persist.answer,
+        3
+      );
     } else {
       entry.querySelector(".tpl-size").innerText = "";
       entry.querySelector(".tpl-status").innerText = "";

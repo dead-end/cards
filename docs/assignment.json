@@ -1,0 +1,54 @@
+[
+  {
+    "quest": "Aufgabe",
+    "answer": "задача"
+  },
+  {
+    "quest": "noch einmal",
+    "answer": "ещё раз"
+  },
+  {
+    "quest": "vervollständigen die Tabelle",
+    "answer": "дополните таблицу"
+  },
+  {
+    "quest": "Dialoge",
+    "answer": "диалоги"
+  },
+  {
+    "quest": "Texte",
+    "answer": "тексты"
+  },
+  {
+    "quest": "Tabelle",
+    "answer": "таблица"
+  },
+  {
+    "quest": "notieren / notieren Sie",
+    "answer": [
+      "написать",
+      "напишите"
+    ]
+  },
+  {
+    "quest": "ergänzen / ergänzen Sie",
+    "answer": [
+      "дополнять",
+      "дополните"
+    ]
+  },
+  {
+    "quest": "hören / hören Sie",
+    "answer": [
+      "слушать",
+      "слушайте"
+    ]
+  },
+  {
+    "quest": "lesen / lesen Sie",
+    "answer": [
+      "читать",
+      "читайте"
+    ]
+  }
+]

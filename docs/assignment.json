@@ -50,5 +50,45 @@
       "читать",
       "читайте"
     ]
+  },
+  {
+    "quest": "Thema",
+    "answer": "Тема:"
+  },
+  {
+    "quest": "Wiederholung",
+    "answer": "Повторение"
+  },
+  {
+    "quest": "lernen",
+    "answer": "учить"
+  },
+  {
+    "quest": "Sprache",
+    "answer": "язык"
+  },
+  {
+    "quest": "Frage",
+    "answer": "вопрос"
+  },
+  {
+    "quest": "Antwort",
+    "answer": "ответ"
+  },
+  {
+    "quest": "markieren / ankreuzen",
+    "answer": "отметить"
+  },
+  {
+    "quest": "Zahl / Zahlen",
+    "answer": "число / числа"
+  },
+  {
+    "quest": "richtig",
+    "answer": "пра́вильно"
+  },
+  {
+    "quest": "vergleichen",
+    "answer": "сравни́ть"
   }
 ]

@@ -32,8 +32,12 @@
     "title": "Kapitel 4 Teil 1"
   },
   {
-    "file": "time.json",
-    "title": "Zahlen und Zeiten"
+    "file": "dates.json",
+    "title": "Datum"
+  },
+  {
+    "file": "numbers.json",
+    "title": "Zahlen"
   },
   {
     "file": "assignment.json",

@@ -1,0 +1,98 @@
+[
+  {
+    "quest": "Montag",
+    "answer": "понедельник"
+  },
+  {
+    "quest": "Dienstag",
+    "answer": "вторник"
+  },
+  {
+    "quest": "Mittwoch",
+    "answer": "среда"
+  },
+  {
+    "quest": "Donnerstag",
+    "answer": "четверг"
+  },
+  {
+    "quest": "Freitag",
+    "answer": "пятница"
+  },
+  {
+    "quest": "Samstag",
+    "answer": "суббота"
+  },
+  {
+    "quest": "Sonntag",
+    "answer": "воскресенье"
+  },
+  {
+    "quest": "Minute",
+    "answer": "минута"
+  },
+  {
+    "quest": "Stunde",
+    "answer": "час"
+  },
+  {
+    "quest": "Tag",
+    "answer": "день"
+  },
+  {
+    "quest": "Woche",
+    "answer": "неделя"
+  },
+  {
+    "quest": "Wochentag",
+    "answer": "день недели"
+  },
+  {
+    "quest": "Wochenende",
+    "answer": "выходные"
+  },
+  {
+    "quest": "Monat",
+    "answer": "месяц"
+  },
+  {
+    "quest": "Jahr",
+    "answer": "год"
+  },
+  {
+    "quest": "Feierabend",
+    "answer": "конец рабочего дня"
+  },
+  {
+    "quest": "Frühling",
+    "answer": "весна"
+  },
+  {
+    "quest": "Sommer",
+    "answer": "лето"
+  },
+  {
+    "quest": "Herbst",
+    "answer": "осень"
+  },
+  {
+    "quest": "Winter",
+    "answer": "зима"
+  },
+  {
+    "quest": "gestern",
+    "answer": "вчера"
+  },
+  {
+    "quest": "heute",
+    "answer": "сегодня"
+  },
+  {
+    "quest": "morgen",
+    "answer": "завтра"
+  },
+  {
+    "quest": "übermorgen",
+    "answer": "послезавтра"
+  }
+]

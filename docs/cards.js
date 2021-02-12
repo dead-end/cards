@@ -1,6 +1,7 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
+import { strOrList, fmtDate } from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.
@@ -87,11 +88,9 @@ class InfoComp {
     document.getElementById("c-info-size").innerText =
       pool.persist.answer.length;
 
-    let modified = "";
-    if (pool.persist.lastmodified) {
-      modified = new Date(pool.persist.lastmodified).toLocaleString();
-    }
-    document.getElementById("c-info-modified").innerText = modified;
+    document.getElementById("c-info-modified").innerText = fmtDate(
+      pool.persist.lastmodified
+    );
   }
 
   _updatePoolStatus(pool) {
@@ -154,25 +153,20 @@ class QuestComp {
   }
 
   _show() {
-    document.getElementById("c-quest-question").innerText = this.quest.quest;
-    let answer;
-    if (Array.isArray(this.quest.answer)) {
-      answer = "<ul>";
-      for (let i = 0; i < this.quest.answer.length; i++) {
-        answer += `<li>${this.quest.answer[i]}</li>`;
-      }
-      answer += "</ul>";
-    } else {
-      answer = this.quest.answer;
-    }
+    document.getElementById("c-quest-question").innerHTML = strOrList(
+      this.quest.quest
+    );
 
-    document.getElementById("c-quest-answer").innerHTML = answer;
+    document.getElementById("c-quest-answer").innerHTML = strOrList(
+      this.quest.answer
+    );
     this._hideAnswer();
   }
 
   _initButtons() {
     document.getElementById("btn-answer-show").onclick =
       dispatcher.onShowAnswer;
+
     document.getElementById("btn-answer-correct").onclick =
       dispatcher.onAnswerCorrect;
 

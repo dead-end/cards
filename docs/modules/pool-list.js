@@ -1,4 +1,5 @@
 import Persist from "./persist.js";
+import { fmtDate } from "./utils.js";
 
 /******************************************************************************
  * The class implements a list with files that contain the question pools.
@@ -56,9 +57,9 @@ export default class PoolList {
         3
       );
 
-      entry.querySelector(".tpl-modified").innerText = new Date(
+      entry.querySelector(".tpl-modified").innerText = fmtDate(
         persist.lastmodified
-      ).toLocaleString();
+      );
 
       //
       // disable the start button if all questions are learned.

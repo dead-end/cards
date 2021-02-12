@@ -1,7 +1,7 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
-import { strOrList, fmtDate } from "./modules/utils.js";
+import { strOrList, fmtDate, removeFromArray } from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.
@@ -20,22 +20,6 @@ function loadRegistry() {
     .catch((error) => {
       msgComp.update("Unable to load file: registry.json", error);
     });
-}
-
-/******************************************************************************
- * The function returns an array where the elements with the given value are
- * removed.
- *****************************************************************************/
-function removeFromArray(array, value) {
-  let result = [];
-
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] !== value) {
-      result.push(array[i]);
-    }
-  }
-
-  return result;
 }
 
 /******************************************************************************

@@ -25,3 +25,19 @@ export function fmtDate(date) {
 
   return `${d.getDate()}.${d.getMonth()}.${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
 }
+
+/******************************************************************************
+ * The function returns an array where the elements with the given value are
+ * removed.
+ *****************************************************************************/
+export function removeFromArray(array, value) {
+  let result = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] !== value) {
+      result.push(array[i]);
+    }
+  }
+
+  return result;
+}

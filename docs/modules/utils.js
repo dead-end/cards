@@ -30,7 +30,7 @@ export function fmtDate(date) {
  * The function returns an array where the elements with the given value are
  * removed.
  *****************************************************************************/
-export function removeFromArray(array, value) {
+export function arrRemove(array, value) {
   let result = [];
 
   for (let i = 0; i < array.length; i++) {
@@ -40,4 +40,17 @@ export function removeFromArray(array, value) {
   }
 
   return result;
+}
+
+/****************************************************************************
+ * The function checks if all elements of an array have a given value.
+ ***************************************************************************/
+
+export function arrValueIs(arr, value) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== value) {
+      return false;
+    }
+  }
+  return true;
 }

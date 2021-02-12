@@ -1,7 +1,7 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
-import { strOrList, fmtDate, removeFromArray } from "./modules/utils.js";
+import { strOrList, fmtDate, arrRemove } from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.

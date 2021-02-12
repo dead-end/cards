@@ -1,5 +1,5 @@
 import Persist from "./persist.js";
-import { fmtDate } from "./utils.js";
+import { arrValueIs, fmtDate } from "./utils.js";
 
 /******************************************************************************
  * The class implements a list with files that contain the question pools.
@@ -32,19 +32,6 @@ export default class PoolList {
   }
 
   /****************************************************************************
-   * The function checks if the start button is active. This requires that
-   * there are unanswered questions.
-   ***************************************************************************/
-  _isInActive(arr, max) {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] !== max) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  /****************************************************************************
    * The function updates a file if the persisted data changed.
    ***************************************************************************/
   _updatePersist(entry, id) {
@@ -64,7 +51,7 @@ export default class PoolList {
       //
       // disable the start button if all questions are learned.
       //
-      entry.querySelector(".tpl-start").disabled = this._isInActive(
+      entry.querySelector(".tpl-start").disabled = arrValueIs(
         persist.answer,
         3
       );

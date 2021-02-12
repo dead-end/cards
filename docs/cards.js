@@ -23,27 +23,6 @@ function loadRegistry() {
 }
 
 /******************************************************************************
- * The class generates random numbers.
- *****************************************************************************/
-/* class Random {
-  constructor() {
-    this.last = -1;
-  }
-  next(max) {
-    for (let i = 0; i < 3; i++) {
-      let num = Math.floor(Math.random() * max);
-
-      if (num !== this.last) {
-        this.last = num;
-        break;
-      }
-    }
-
-    return this.last;
-  }
-} */
-
-/******************************************************************************
  * The class defines the status of the current file.
  *****************************************************************************/
 class InfoComp {
@@ -271,30 +250,35 @@ class Pool {
   }
 
   next() {
-    let nextUnlearned;
-
-    for (let i = 0; i < 3; i++) {
-      nextUnlearned = this.unlearned[
-        Math.floor(Math.random() * this.unlearned.length)
-      ];
-
-      //
-      // Initially nothing is set and at the end only one question is left.
-      //
-      if (!this.current || this.unlearned.length == 1) {
-        break;
-      }
-
-      //
-      // Ensure that we do not have the same question.
-      //
-      if (this.current != nextUnlearned) {
-        console.log("found: " + JSON.stringify(nextUnlearned));
-        break;
-      }
+    //
+    // If we have only one question left we need no random selection.
+    //
+    if (this.unlearned.length == 1) {
+      this.current = this.unlearned[0];
     }
 
-    this.current = nextUnlearned;
+    //
+    // Here we have at least two questions remaining and we have to select one randomly.
+    //
+    else {
+      let nextUnlearned;
+
+      for (let i = 0; i < 3; i++) {
+        nextUnlearned = this.unlearned[
+          Math.floor(Math.random() * this.unlearned.length)
+        ];
+
+        //
+        // Ensure that we do not had the same question last time. Initially
+        // nothing is set.
+        //
+        if (!this.current || this.current != nextUnlearned) {
+          break;
+        }
+      }
+
+      this.current = nextUnlearned;
+    }
     this.dispatcher.onQuestChanged(this.current);
   }
 
@@ -385,8 +369,6 @@ let dispatcher = new Dispatcher();
 
 let msgComp = new MsgComp();
 let questComp = new QuestComp();
-
-let random = new Random();
 
 let pool = new Pool(dispatcher);
 let infoComp = new InfoComp();

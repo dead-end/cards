@@ -1,5 +1,5 @@
 import Persist from "./persist.js";
-import { arrValueIs, fmtDate } from "./utils.js";
+import { fmtDate, arrValueIs, arrPercentage } from "./utils.js";
 
 /******************************************************************************
  * The class implements a list with files that contain the question pools.
@@ -17,21 +17,6 @@ export default class PoolList {
   }
 
   /****************************************************************************
-   * The function is called with an array of integers. Each can have a max
-   * value. The function computes a percentage string from the values. 100%
-   * means that all entries have the max value.
-   ***************************************************************************/
-  _percentage(arr, max) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      sum += arr[i];
-    }
-
-    let result = (sum * 100) / (arr.length * max);
-    return result.toFixed(0) + "%";
-  }
-
-  /****************************************************************************
    * The function updates a file if the persisted data changed.
    ***************************************************************************/
   _updatePersist(entry, id) {
@@ -39,7 +24,7 @@ export default class PoolList {
 
     if (persist) {
       entry.querySelector(".tpl-size").innerText = persist.answer.length;
-      entry.querySelector(".tpl-status").innerText = this._percentage(
+      entry.querySelector(".tpl-status").innerText = arrPercentage(
         persist.answer,
         3
       );

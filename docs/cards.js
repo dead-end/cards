@@ -16,16 +16,16 @@ function loadRegistry() {
     })
     .then((json) => {
       dispatcher.onLoadedRegistry(json);
-    })
-    .catch((error) => {
-      msgComp.update("Unable to load file: registry.json", error);
     });
+  /*     .catch((error) => {
+      msgComp.update("Unable to load file: registry.json", error);
+    }); */
 }
 
 /******************************************************************************
  * The class generates random numbers.
  *****************************************************************************/
-class Random {
+/* class Random {
   constructor() {
     this.last = -1;
   }
@@ -41,7 +41,7 @@ class Random {
 
     return this.last;
   }
-}
+} */
 
 /******************************************************************************
  * The class defines the status of the current file.
@@ -240,10 +240,10 @@ class Pool {
         let persist = Persist.load(this.id, json.length);
         this._update(json, persist);
         this.dispatcher.onStart(file);
-      })
-      .catch((error) => {
-        msgComp.update("Unable to load file: " + this.id, error);
       });
+    /*       .catch((error) => {
+        msgComp.update("Unable to load file: " + this.id, error);
+      }); */
   }
 
   addAll(count) {
@@ -271,7 +271,30 @@ class Pool {
   }
 
   next() {
-    this.current = this.unlearned[random.next(this.unlearned.length)];
+    let nextUnlearned;
+
+    for (let i = 0; i < 3; i++) {
+      nextUnlearned = this.unlearned[
+        Math.floor(Math.random() * this.unlearned.length)
+      ];
+
+      //
+      // Initially nothing is set and at the end only one question is left.
+      //
+      if (!this.current || this.unlearned.length == 1) {
+        break;
+      }
+
+      //
+      // Ensure that we do not have the same question.
+      //
+      if (this.current != nextUnlearned) {
+        console.log("found: " + JSON.stringify(nextUnlearned));
+        break;
+      }
+    }
+
+    this.current = nextUnlearned;
     this.dispatcher.onQuestChanged(this.current);
   }
 

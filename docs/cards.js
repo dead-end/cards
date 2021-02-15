@@ -211,6 +211,9 @@ class Pool {
         this.dispatcher.onStart(file);
         this._update(json, persist);
         this.next();
+      })
+      .catch((error) => {
+        msgComp.update("Unable to load file: " + this.id, error);
       });
   }
 

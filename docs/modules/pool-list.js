@@ -1,5 +1,5 @@
 import Persist from "./persist.js";
-import { fmtDate, arrValueIs, arrPercentage } from "./utils.js";
+import { fmtDate, arrValueIs, arrPercentage, elemRemoveById } from "./utils.js";
 
 /******************************************************************************
  * The class implements a list with files that contain the question pools.
@@ -140,9 +140,9 @@ export default class PoolList {
    ***************************************************************************/
   onStart() {
     //
-    // Show the component
+    // On start remove the table
     //
-    document.getElementById("tpl-table").style.display = "none";
+    elemRemoveById("tpl-table");
   }
 
   /****************************************************************************
@@ -150,9 +150,9 @@ export default class PoolList {
    ***************************************************************************/
   onStop() {
     //
-    // Hide the component
+    // On stop show the table.
     //
-    document.getElementById("tpl-table").style.display = "";
+    this._show();
 
     //
     // Update the result

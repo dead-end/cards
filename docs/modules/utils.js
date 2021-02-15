@@ -68,3 +68,26 @@ export function arrPercentage(arr, max) {
   let result = (sum * 100) / (arr.length * max);
   return result.toFixed(0) + "%";
 }
+
+/******************************************************************************
+ * The function removes an element with a given id from the dom.
+ *****************************************************************************/
+export function elemRemoveById(id) {
+  let elem = document.getElementById(id);
+  elem.parentNode.removeChild(elem);
+}
+
+/******************************************************************************
+ * The function clones a template and adds it to the dom. A function can be
+ * given, to process the clone
+ *****************************************************************************/
+export function elemAppendTmpl(idTmpl, idParent, fct) {
+  let temp = document.getElementById(idTmpl);
+  let clone = temp.content.cloneNode(true);
+
+  if (fct) {
+    fct(clone);
+  }
+
+  document.getElementById(idParent).appendChild(clone);
+}

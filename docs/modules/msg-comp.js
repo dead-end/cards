@@ -1,36 +1,26 @@
+import { elemAppendTmpl, elemRemoveById } from "./utils.js";
+
 /*****************************************************************************
  * The class implements an message component, that adds a message to the dom.
  ****************************************************************************/
-
 export default class MsgComp {
   constructor() {
-    this.clear();
+    this.doShow = false;
   }
 
   update(msg, details) {
-    this.msg = msg;
-    this.details = details;
+    this.doShow = true;
 
-    this._show();
-  }
-
-  _show() {
-    var temp = document.getElementById("tmpl-msg-div");
-    var clon = temp.content.cloneNode(true);
-
-    clon.getElementById("msg-msg").innerText = this.msg;
-    clon.getElementById("msg-details").innerText = this.details;
-
-    document.getElementById("main").prepend(clon);
+    elemAppendTmpl("tmpl-msg-div", "main", (clone) => {
+      clone.getElementById("msg-msg").innerText = msg;
+      clone.getElementById("msg-details").innerText = details;
+    });
   }
 
   clear() {
-    let elem = document.getElementById("msg-div");
-    if (elem) {
-      elem.parentNode.removeChild(elem);
+    if (this.doShow) {
+      elemRemoveById("msg-div");
+      this.doShow = false;
     }
-
-    this.msg = "";
-    this.details = "";
   }
 }

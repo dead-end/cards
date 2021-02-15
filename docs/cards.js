@@ -1,7 +1,13 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
-import { strOrList, fmtDate, arrRemove } from "./modules/utils.js";
+import {
+  strOrList,
+  fmtDate,
+  arrRemove,
+  elemRemoveById,
+  elemAppendTmpl,
+} from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.
@@ -17,28 +23,21 @@ function loadRegistry() {
     .then((json) => {
       dispatcher.onLoadedRegistry(json);
     });
-  /*     .catch((error) => {
-      msgComp.update("Unable to load file: registry.json", error);
-    }); */
 }
 
 /******************************************************************************
  * The class defines the status of the current file.
  *****************************************************************************/
 class InfoComp {
-  constructor() {
-    this.onStop();
-  }
-
   onStart(file) {
-    document.getElementById("c-info").style.display = "";
-
-    document.getElementById("c-info-title").innerText = file.title;
-    document.getElementById("c-info-file").innerText = file.file;
+    elemAppendTmpl("tmpl-info", "main", (clone) => {
+      clone.getElementById("c-info-title").innerText = file.title;
+      clone.getElementById("c-info-file").innerText = file.file;
+    });
   }
 
   onStop() {
-    document.getElementById("c-info").style.display = "none";
+    elemRemoveById("c-info-cont");
   }
 
   onQuestChanged(quest) {
@@ -79,11 +78,6 @@ class InfoComp {
  * The class implements the component, that shows the questions and answers.
  *****************************************************************************/
 class QuestComp {
-  constructor() {
-    this.onStop();
-    this._initButtons();
-  }
-
   onQuestChanged(quest) {
     this.quest = quest;
     this._show();
@@ -108,11 +102,21 @@ class QuestComp {
   }
 
   onStop() {
-    document.getElementById("c-quest-div").style.display = "none";
+    elemRemoveById("c-quest-cont");
   }
 
   onStart() {
-    document.getElementById("c-quest-div").style.display = "";
+    elemAppendTmpl("tmpl-quest", "main", (clon) => {
+      clon.getElementById("btn-answer-show").onclick = dispatcher.onShowAnswer;
+
+      clon.getElementById("btn-answer-correct").onclick =
+        dispatcher.onAnswerCorrect;
+
+      clon.getElementById("btn-answer-wrong").onclick =
+        dispatcher.onAnswerWrong;
+
+      clon.getElementById("btn-answer-stop").onclick = dispatcher.onStop;
+    });
   }
 
   _show() {
@@ -124,19 +128,6 @@ class QuestComp {
       this.quest.answer
     );
     this._hideAnswer();
-  }
-
-  _initButtons() {
-    document.getElementById("btn-answer-show").onclick =
-      dispatcher.onShowAnswer;
-
-    document.getElementById("btn-answer-correct").onclick =
-      dispatcher.onAnswerCorrect;
-
-    document.getElementById("btn-answer-wrong").onclick =
-      dispatcher.onAnswerWrong;
-
-    document.getElementById("btn-answer-stop").onclick = dispatcher.onStop;
   }
 }
 
@@ -217,12 +208,10 @@ class Pool {
       })
       .then((json) => {
         let persist = Persist.load(this.id, json.length);
-        this._update(json, persist);
         this.dispatcher.onStart(file);
+        this._update(json, persist);
+        this.next();
       });
-    /*       .catch((error) => {
-        msgComp.update("Unable to load file: " + this.id, error);
-      }); */
   }
 
   addAll(count) {
@@ -349,10 +338,9 @@ class Dispatcher {
   }
 
   onStart(file) {
-    pool.next();
+    infoComp.onStart(file);
     questComp.onStart();
     poolList.onStart();
-    infoComp.onStart(file);
   }
 
   onStop() {

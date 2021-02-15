@@ -59,120 +59,119 @@
     </tr>
   </template>
 
+  <template id="tmpl-info">
+    <div class="container" id="c-info-cont">
+
+      <div class="block">
+        <div class="columns">
+
+          <!-- File data -->
+          <div class="column">
+
+            <!-- file info, if a file is selected -->
+            <div class="block">
+              <table class="table">
+                <tr>
+                  <td>Title</td>
+                  <td id="c-info-title"></td>
+                </tr>
+                <tr class="is-hidden-mobile">
+                  <td>File</td>
+                  <td id="c-info-file"></td>
+                </tr>
+                <tr class="is-hidden-mobile">
+                  <td>Size</td>
+                  <td id="c-info-size"></td>
+                </tr>
+                <tr class="is-hidden-mobile">
+                  <td>Modified</td>
+                  <td id="c-info-modified"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pool answer statistic -->
+          <div class="column is-hidden-mobile">
+            <table class="table">
+              <tr>
+                <td>No correct Answers</td>
+                <td id="c-info-pool-0"></td>
+              </tr>
+              <tr>
+                <td>One correct Answer</td>
+                <td id="c-info-pool-1"></td>
+              </tr>
+              <tr>
+                <td>Two correct Answers</td>
+                <td id="c-info-pool-2"></td>
+              </tr>
+              <tr>
+                <td>Learned</td>
+                <td id="c-info-pool-3"></td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Question info -->
+          <div class="column is-hidden-mobile">
+            <table class="table">
+              <tr>
+                <td>No.</td>
+                <td id="c-info-quest-no"></td>
+              </tr>
+              <tr>
+                <td>Correct</td>
+                <td id="c-info-quest-correct"></td>
+              </tr>
+              <tr>
+                <td>Attempt</td>
+                <td id="c-info-quest-attempt"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tmpl-quest">
+    <div class="container" id="c-quest-cont">
+      <div class="block">
+
+        <!-- Questions -->
+        <div class="columns">
+          <div class="column is-half">
+            <div class="bock notification is-light is-info">
+              <h5 class="title is-5">Question</h5>
+              <hr />
+              <p id="c-quest-question" class="content">dummy-question</p>
+            </div>
+          </div>
+
+          <!-- Answers -->
+          <div class="column">
+            <div class="bock notification is-light is-info state-answer-show" id="div-answer">
+              <h5 class="title is-5">Answer</h5>
+              <hr />
+              <p id="c-quest-answer" class="content">dummy-answer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons related to questions and answers -->
+        <button class="button is-light" id="btn-answer-show">Show answer</button>
+        <button class="button is-light is-success state-answer-show" id="btn-answer-correct">Correct answer</button>
+        <button class="button is-light is-danger state-answer-show" id="btn-answer-wrong">Wrong answer</button>
+        <button class="button is-light" id="btn-answer-stop">Stop</button>
+        <div class="block">&nbsp;</div>
+      </div>
+    </div>
+  </template>
+
   <div class="container">
     <h2 class="title">Cards</h2>
-
-    <div id="main">
-
-      <!-- Container that is shown if a file is selected -->
-      <div class="container" id="c-info">
-
-        <div class="block">
-          <div class="columns">
-
-            <!-- File data -->
-            <div class="column">
-
-              <!-- file info, if a file is selected -->
-              <div class="block">
-                <table class="table">
-                  <tr>
-                    <td>Title</td>
-                    <td id="c-info-title"></td>
-                  </tr>
-                  <tr class="is-hidden-mobile">
-                    <td>File</td>
-                    <td id="c-info-file"></td>
-                  </tr>
-                  <tr class="is-hidden-mobile">
-                    <td>Size</td>
-                    <td id="c-info-size"></td>
-                  </tr>
-                  <tr class="is-hidden-mobile">
-                    <td>Modified</td>
-                    <td id="c-info-modified"></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-
-            <!-- Pool answer statistic -->
-            <div class="column is-hidden-mobile">
-              <table class="table">
-                <tr>
-                  <td>No correct Answers</td>
-                  <td id="c-info-pool-0"></td>
-                </tr>
-                <tr>
-                  <td>One correct Answer</td>
-                  <td id="c-info-pool-1"></td>
-                </tr>
-                <tr>
-                  <td>Two correct Answers</td>
-                  <td id="c-info-pool-2"></td>
-                </tr>
-                <tr>
-                  <td>Learned</td>
-                  <td id="c-info-pool-3"></td>
-                </tr>
-              </table>
-            </div>
-
-            <!-- Question info -->
-            <div class="column is-hidden-mobile">
-              <table class="table">
-                <tr>
-                  <td>No.</td>
-                  <td id="c-info-quest-no"></td>
-                </tr>
-                <tr>
-                  <td>Correct</td>
-                  <td id="c-info-quest-correct"></td>
-                </tr>
-                <tr>
-                  <td>Attempt</td>
-                  <td id="c-info-quest-attempt"></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Container with the questions ans the answers -->
-      <div class="container" id="c-quest-div">
-        <div class="block">
-
-          <!-- Questions -->
-          <div class="columns">
-            <div class="column is-half">
-              <div class="bock notification is-light is-info">
-                <h5 class="title is-5">Question</h5>
-                <hr />
-                <p id="c-quest-question" class="content">dummy-question</p>
-              </div>
-            </div>
-
-            <!-- Answers -->
-            <div class="column">
-              <div class="bock notification is-light is-info state-answer-show" id="div-answer">
-                <h5 class="title is-5">Answer</h5>
-                <hr />
-                <p id="c-quest-answer" class="content">dummy-answer</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Buttons related to questions and answers -->
-          <button class="button is-light" id="btn-answer-show">Show answer</button>
-          <button class="button is-light is-success state-answer-show" id="btn-answer-correct">Correct answer</button>
-          <button class="button is-light is-danger state-answer-show" id="btn-answer-wrong">Wrong answer</button>
-          <button class="button is-light" id="btn-answer-stop">Stop</button>
-          <div class="block">&nbsp;</div>
-        </div>
-      </div>
-
-    </div>
+    <div id="main"></div>
   </div>
 
   <script type="module" src="cards.js"></script>

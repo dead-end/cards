@@ -135,8 +135,8 @@
     </div>
   </template>
 
-  <template id="tmpl-quest">
-    <div class="container" id="c-quest-cont">
+  <template id="tmpl-qa">
+    <div class="container" id="cont-qa">
       <div class="block">
 
         <!-- Questions -->
@@ -151,7 +151,7 @@
 
           <!-- Answers -->
           <div class="column">
-            <div class="bock notification is-light is-info state-answer-show" id="div-answer">
+            <div class="bock notification is-light is-info qa-show-answer" id="div-answer">
               <h5 class="title is-5">Answer</h5>
               <hr />
               <p id="c-quest-answer" class="content">dummy-answer</p>
@@ -160,10 +160,10 @@
         </div>
 
         <!-- Buttons related to questions and answers -->
-        <button class="button is-light" id="btn-answer-show">Show answer</button>
-        <button class="button is-light is-success state-answer-show" id="btn-answer-correct">Correct answer</button>
-        <button class="button is-light is-danger state-answer-show" id="btn-answer-wrong">Wrong answer</button>
-        <button class="button is-light" id="btn-answer-stop">Stop</button>
+        <button class="button is-light" id="cq-btn-show">Show answer</button>
+        <button class="button is-light is-success qa-show-answer" id="qa-btn-is-correct">Correct answer</button>
+        <button class="button is-light is-danger qa-show-answer" id="qa-btn-is-wrong">Wrong answer</button>
+        <button class="button is-light" id="qa-btn-stop">Stop</button>
         <div class="block">&nbsp;</div>
       </div>
     </div>

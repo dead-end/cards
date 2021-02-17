@@ -29,14 +29,14 @@ function loadRegistry() {
  * The class defines the status of the current file.
  *****************************************************************************/
 class InfoComp {
-  onStart(file) {
+  doShow(file) {
     elemAppendTmpl("tmpl-info", "main", (clone) => {
       clone.getElementById("c-info-title").innerText = file.title;
       clone.getElementById("c-info-file").innerText = file.file;
     });
   }
 
-  onStop() {
+  doHide() {
     elemRemoveById("c-info-cont");
   }
 
@@ -78,54 +78,48 @@ class InfoComp {
  * The class implements the component, that shows the questions and answers.
  *****************************************************************************/
 class QuestComp {
-  onQuestChanged(quest) {
-    this.quest = quest;
-    this._show();
-  }
-
   _hideAnswer() {
-    document.getElementById("btn-answer-show").style.display = "";
+    document.getElementById("cq-btn-show").style.display = "";
 
-    let elems = document.getElementsByClassName("state-answer-show");
+    let elems = document.getElementsByClassName("qa-show-answer");
     for (let i = 0; i < elems.length; i++) {
       elems[i].style.display = "none";
     }
   }
 
   onShowAnswer() {
-    document.getElementById("btn-answer-show").style.display = "none";
+    document.getElementById("cq-btn-show").style.display = "none";
 
-    let elems = document.getElementsByClassName("state-answer-show");
+    let elems = document.getElementsByClassName("qa-show-answer");
     for (let i = 0; i < elems.length; i++) {
       elems[i].style.display = "";
     }
   }
 
-  onStop() {
-    elemRemoveById("c-quest-cont");
-  }
+  doShow() {
+    elemAppendTmpl("tmpl-qa", "main", (clon) => {
+      clon.getElementById("cq-btn-show").onclick = dispatcher.onShowAnswer;
 
-  onStart() {
-    elemAppendTmpl("tmpl-quest", "main", (clon) => {
-      clon.getElementById("btn-answer-show").onclick = dispatcher.onShowAnswer;
-
-      clon.getElementById("btn-answer-correct").onclick =
+      clon.getElementById("qa-btn-is-correct").onclick =
         dispatcher.onAnswerCorrect;
 
-      clon.getElementById("btn-answer-wrong").onclick =
-        dispatcher.onAnswerWrong;
+      clon.getElementById("qa-btn-is-wrong").onclick = dispatcher.onAnswerWrong;
 
-      clon.getElementById("btn-answer-stop").onclick = dispatcher.onStop;
+      clon.getElementById("qa-btn-stop").onclick = dispatcher.onStop;
     });
   }
 
-  _show() {
+  doHide() {
+    elemRemoveById("cont-qa");
+  }
+
+  onQuestChanged(quest) {
     document.getElementById("c-quest-question").innerHTML = strOrList(
-      this.quest.quest
+      quest.quest
     );
 
     document.getElementById("c-quest-answer").innerHTML = strOrList(
-      this.quest.answer
+      quest.answer
     );
     this._hideAnswer();
   }
@@ -341,15 +335,15 @@ class Dispatcher {
   }
 
   onStart(file) {
-    infoComp.onStart(file);
-    questComp.onStart();
-    poolList.onStart();
+    infoComp.doShow(file);
+    questComp.doShow();
+    poolList.doHide();
   }
 
   onStop() {
-    questComp.onStop();
-    poolList.onStop();
-    infoComp.onStop();
+    questComp.doHide();
+    poolList.doShow();
+    infoComp.doHide();
   }
 }
 

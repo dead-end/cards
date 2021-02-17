@@ -138,7 +138,7 @@ export default class PoolList {
   /****************************************************************************
    * Callback function for the stop event.
    ***************************************************************************/
-  onStart() {
+  doHide() {
     //
     // On start remove the table
     //
@@ -148,7 +148,7 @@ export default class PoolList {
   /****************************************************************************
    * Callback function for the stop event.
    ***************************************************************************/
-  onStop() {
+  doShow() {
     //
     // On stop show the table.
     //

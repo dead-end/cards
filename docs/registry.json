@@ -32,35 +32,39 @@
     "title": "Kapitel 4 Teil 1"
   },
   {
-    "file": "dates.json",
+    "file": "data/dates.json",
     "title": "Datum"
   },
   {
-    "file": "numbers.json",
+    "file": "data/numbers.json",
     "title": "Zahlen"
   },
   {
-    "file": "assignment.json",
+    "file": "data/assignment.json",
     "title": "Aufgaben"
   },
   {
-    "file": "verben-1.json",
+    "file": "data/adage.json",
+    "title": "Aufgaben"
+  },
+  {
+    "file": "data/verben-1.json",
     "title": "Verben 1 (einzeln)"
   },
   {
-    "file": "verben-1-list.json",
+    "file": "data/verben-1-list.json",
     "title": "Verben 1 (Liste)"
   },
   {
-    "file": "verben-2.json",
+    "file": "data/verben-2.json",
     "title": "Verben 2 (einzeln)"
   },
   {
-    "file": "verben-2-list.json",
+    "file": "data/verben-2-list.json",
     "title": "Verben 2 (Liste)"
   },
   {
-    "file": "misc.json",
+    "file": "data/misc.json",
     "title": "Sonstiges - Test"
   }
 ]

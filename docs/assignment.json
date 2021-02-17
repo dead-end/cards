@@ -1,7 +1,7 @@
 [
   {
     "quest": "Aufgabe",
-    "answer": "задача"
+    "answer": "задание"
   },
   {
     "quest": "noch einmal",
@@ -24,28 +24,40 @@
     "answer": "таблица"
   },
   {
-    "quest": "notieren / notieren Sie",
+    "quest": [
+      "notieren",
+      "notieren Sie"
+    ],
     "answer": [
       "написать",
       "напишите"
     ]
   },
   {
-    "quest": "ergänzen / ergänzen Sie",
+    "quest": [
+      "ergänzen",
+      "ergänzen Sie"
+    ],
     "answer": [
       "дополнять",
       "дополните"
     ]
   },
   {
-    "quest": "hören / hören Sie",
+    "quest": [
+      "hören",
+      "hören Sie"
+    ],
     "answer": [
       "слушать",
       "слушайте"
     ]
   },
   {
-    "quest": "lesen / lesen Sie",
+    "quest": [
+      "lesen",
+      "lesen Sie"
+    ],
     "answer": [
       "читать",
       "читайте"
@@ -53,11 +65,11 @@
   },
   {
     "quest": "Thema",
-    "answer": "Тема:"
+    "answer": "тема"
   },
   {
     "quest": "Wiederholung",
-    "answer": "Повторение"
+    "answer": "повторение"
   },
   {
     "quest": "lernen",
@@ -80,8 +92,14 @@
     "answer": "отметить"
   },
   {
-    "quest": "Zahl / Zahlen",
-    "answer": "число / числа"
+    "quest": [
+      "Zahl",
+      "Zahlen"
+    ],
+    "answer": [
+      "число",
+      "числа"
+    ]
   },
   {
     "quest": "richtig",

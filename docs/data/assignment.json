@@ -107,6 +107,18 @@
   },
   {
     "quest": "vergleichen",
-    "answer": "сравни́ть"
+    "answer": "сравнить"
+  },
+  {
+    "quest": "weiter",
+    "answer": "дальше"
+  },
+  {
+    "quest": "Wort",
+    "answer": "слово"
+  },
+  {
+    "quest": "Buchstabe",
+    "answer": "буква"
   }
 ]

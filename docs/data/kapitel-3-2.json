@@ -1,41 +1,126 @@
 [
-    { "quest": "hier",           "answer": "здесь" },
-    { "quest": "so",             "answer": "так" },
-    { "quest": "Schau!",         "answer": "Посмотри!" },
-    { "quest": "Stadt",          "answer": "город" },
-    { "quest": "Norden",         "answer": "север" },
-    { "quest": "im Norden",      "answer": "на севере" },
-
-    { "quest": "Zentrum",                  "answer": "центр" },
-    { "quest": "Stadtmitte, Stadtzentrum", "answer": "центр города" },
-
-    { "quest": "Hotel",           "answer": "гостиница" },
-    { "quest": "Flughafen",       "answer": "аэропорт" },
-
-    { "quest": "es ist / wird Zeit für mich", "answer": "мне пора" },
-    { "quest": "bald",           "answer": "скоро" },
-    { "quest": "Flugzeug",       "answer": "самолёт" },
-    { "quest": "oder",           "answer": "или" },
-    { "quest": "mein",           "answer": "мой" },
-    { "quest": "Süden",          "answer": "юг" },
-    { "quest": "im Süden",       "answer": "на юге" },
-
-    { "quest": "Belgien",                 "answer": "Бельгия" },
-    { "quest": "Mach dich bekannt!",      "answer": "Познакомься!" },
-    { "quest": "Das kann nicht (wahr) sein! Das gibt's doch nicht!", "answer": "Не может быть!" },
-
-    { "quest": "Telefon, Telefonnummer",           "answer": "телефон" },
-    { "quest": "Nummer",                           "answer": "номер" },
-    { "quest": "Welche Telefonnummer hast du?",    "answer": "Какой у тебя номер телефона?" },
-    { "quest": "Welche Telefonnummer haben Sie / ihr?",  "answer": "Какой у вас номер телефона?" },
-
-    { "quest": "Straße",            "answer": "улица" },
-    { "quest": "Haus",              "answer": "дом" },
-    { "quest": "Wohnung",           "answer": "квартира" },
-
-    { "quest": "Wie ist deine Adresse?",       "answer": "Какой у тебя адрес?" },
-    { "quest": "Wie ist Ihre / eure Adresse?", "answer": "Какой у вас адрес?" },
-    { "quest": "Adresse",                      "answer": "адрес" },
-    { "quest": "Das ist eine Überraschung",    "answer": "Вот это сюрприз!" }
+    {
+        "quest": "hier",
+        "answer": "здесь"
+    },
+    {
+        "quest": "so",
+        "answer": "так"
+    },
+    {
+        "quest": "Schau!",
+        "answer": "Посмотри!"
+    },
+    {
+        "quest": "Stadt",
+        "answer": "город"
+    },
+    {
+        "quest": "Norden",
+        "answer": "север"
+    },
+    {
+        "quest": "im Norden",
+        "answer": "на севере"
+    },
+    {
+        "quest": "Zentrum",
+        "answer": "центр"
+    },
+    {
+        "quest": "Stadtmitte, Stadtzentrum",
+        "answer": "центр города"
+    },
+    {
+        "quest": "Hotel",
+        "answer": "гостиница"
+    },
+    {
+        "quest": "Flughafen",
+        "answer": "аэропорт"
+    },
+    {
+        "quest": "es ist / wird Zeit für mich",
+        "answer": "мне пора"
+    },
+    {
+        "quest": "bald",
+        "answer": "скоро"
+    },
+    {
+        "quest": "Flugzeug",
+        "answer": "самолёт"
+    },
+    {
+        "quest": "oder",
+        "answer": "или"
+    },
+    {
+        "quest": "mein",
+        "answer": "мой"
+    },
+    {
+        "quest": "Süden",
+        "answer": "юг"
+    },
+    {
+        "quest": "im Süden",
+        "answer": "на юге"
+    },
+    {
+        "quest": "Belgien",
+        "answer": "Бельгия"
+    },
+    {
+        "quest": "Mach dich bekannt!",
+        "answer": "Познакомься!"
+    },
+    {
+        "quest": "Das kann nicht (wahr) sein! Das gibt's doch nicht!",
+        "answer": "Не может быть!"
+    },
+    {
+        "quest": "Telefon, Telefonnummer",
+        "answer": "телефон"
+    },
+    {
+        "quest": "Nummer",
+        "answer": "номер"
+    },
+    {
+        "quest": "Welche Telefonnummer hast du?",
+        "answer": "Какой у тебя номер телефона?"
+    },
+    {
+        "quest": "Welche Telefonnummer haben Sie / ihr?",
+        "answer": "Какой у вас номер телефона?"
+    },
+    {
+        "quest": "Straße",
+        "answer": "улица"
+    },
+    {
+        "quest": "Haus",
+        "answer": "дом"
+    },
+    {
+        "quest": "Wohnung",
+        "answer": "квартира"
+    },
+    {
+        "quest": "Wie ist deine Adresse?",
+        "answer": "Какой у тебя адрес?"
+    },
+    {
+        "quest": "Wie ist Ihre / eure Adresse?",
+        "answer": "Какой у вас адрес?"
+    },
+    {
+        "quest": "meine Adresse",
+        "answer": "мой адрес"
+    },
+    {
+        "quest": "Das ist eine Überraschung",
+        "answer": "Вот это сюрприз!"
+    }
 ]
-  

@@ -1,32 +1,122 @@
 [
-  { "quest": "Überraschung",                 "answer": "сюрприз" },
-  { "quest": "Bis bald!",                    "answer": "до встречи!" },
-  { "quest": "Hallo! (am Telefon)",          "answer": "Алло!" },
-  { "quest": "Das ist aber toll!",           "answer": "Вот здорово!" },
-  { "quest": "Lass uns treffen!",            "answer": "давай встретимся" },
-  { "quest": "Bahnhof",                      "answer": "вокзал" },
-  { "quest": "Guten Abend!",                 "answer": "Добрый вечер!" },
-  { "quest": "Einen Augenblick!",            "answer": "Минуточку!" },
-  { "quest": "ihr, euer",                    "answer": "ваш" },
-  { "quest": "Pass, Ausweis",                "answer": "паспорт" },
-  { "quest": "Hotelzimmer",                  "answer": "номер" },
-  { "quest": "Schlüssel",                    "answer": "ключ" },
-  { "quest": "Aufzug",                       "answer": "лифт" },
-  { "quest": "rechts",                       "answer": "справа" },
-  { "quest": "links",                        "answer": "слева" },
-  { "quest": "(Hotel-) Formular für Gäste",  "answer": "карта гостя" },
-  { "quest": "Nachname",                     "answer": "фамилия" },
-  { "quest": "Vorname",                      "answer": "имя" },
-  { "quest": "Geburtsdatum",                 "answer": "дата рождения" },
-  { "quest": "Datum",                        "answer": "дата" },
-  { "quest": "Land",                         "answer": "страна" },
-  { "quest": "Unterschrift",                 "answer": "подпись" },
-  { "quest": "Tee",                          "answer": "чай" },
-  { "quest": "Hafen",                        "answer": "порт" },
-  { "quest": "Jazz",                         "answer": "джаз" },
-  { "quest": "Mönch",                        "answer": "монах" },
-  { "quest": "Meer",                         "answer": "море" },
-  { "quest": "Vater",                        "answer": "отец" },
-  { "quest": "Präsident, -in",               "answer": "президент" },
-  { "quest": "über",                         "answer": "о" }
+  {
+    "quest": "Überraschung",
+    "answer": "сюрприз"
+  },
+  {
+    "quest": "Bis bald!",
+    "answer": "до встречи!"
+  },
+  {
+    "quest": "Hallo! (am Telefon)",
+    "answer": "Алло!"
+  },
+  {
+    "quest": "Das ist aber toll!",
+    "answer": "Вот здорово!"
+  },
+  {
+    "quest": "Lass uns treffen!",
+    "answer": "давай встретимся"
+  },
+  {
+    "quest": "Bahnhof",
+    "answer": "вокзал"
+  },
+  {
+    "quest": "Guten Abend!",
+    "answer": "Добрый вечер!"
+  },
+  {
+    "quest": "Einen Augenblick!",
+    "answer": "Минуточку!"
+  },
+  {
+    "quest": "ihr, euer",
+    "answer": "ваш"
+  },
+  {
+    "quest": "Pass, Ausweis",
+    "answer": "паспорт"
+  },
+  {
+    "quest": "Hotelzimmer",
+    "answer": "номер"
+  },
+  {
+    "quest": "Schlüssel",
+    "answer": "ключ"
+  },
+  {
+    "quest": "Aufzug",
+    "answer": "лифт"
+  },
+  {
+    "quest": "rechts",
+    "answer": "справа"
+  },
+  {
+    "quest": "links",
+    "answer": "слева"
+  },
+  {
+    "quest": "(Hotel-) Formular für Gäste",
+    "answer": "карта гостя"
+  },
+  {
+    "quest": "mein Nachname",
+    "answer": "моя фамилия"
+  },
+  {
+    "quest": "mein Vorname",
+    "answer": "моё имя"
+  },
+  {
+    "quest": "Geburtsdatum",
+    "answer": "дата рождения"
+  },
+  {
+    "quest": "Datum",
+    "answer": "дата"
+  },
+  {
+    "quest": "Land",
+    "answer": "страна"
+  },
+  {
+    "quest": "Unterschrift",
+    "answer": "подпись"
+  },
+  {
+    "quest": "Tee",
+    "answer": "чай"
+  },
+  {
+    "quest": "Hafen",
+    "answer": "порт"
+  },
+  {
+    "quest": "Jazz",
+    "answer": "джаз"
+  },
+  {
+    "quest": "Mönch",
+    "answer": "монах"
+  },
+  {
+    "quest": "Meer",
+    "answer": "море"
+  },
+  {
+    "quest": "Vater",
+    "answer": "отец"
+  },
+  {
+    "quest": "Präsident, -in",
+    "answer": "президент"
+  },
+  {
+    "quest": "über",
+    "answer": "о"
+  }
 ]

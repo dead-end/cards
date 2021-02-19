@@ -23,7 +23,12 @@ export function fmtDate(date) {
   let d = new Date();
   d.setTime(date);
 
-  return `${d.getDate()}.${d.getMonth()}.${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
+  let day = d.getDate() > 9 ? d.getDate() : "0" + d.getDate();
+  let month = d.getMonth() > 9 ? d.getMonth() : "0" + d.getMonth();
+  let hour = d.getHours() > 9 ? d.getHours() : "0" + d.getHours();
+  let minute = d.getMinutes() > 9 ? d.getMinutes() : "0" + d.getMinutes();
+
+  return `${day}.${month}.${d.getFullYear()} ${hour}:${minute}`;
 }
 
 /******************************************************************************

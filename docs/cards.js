@@ -1,13 +1,8 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
-import {
-  strOrList,
-  fmtDate,
-  arrRemove,
-  elemRemoveById,
-  elemAppendTmpl,
-} from "./modules/utils.js";
+import ShowFile from "./modules/show-file.js";
+import { strOrList, elemRemoveById, elemAppendTmpl } from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.
@@ -23,48 +18,6 @@ function loadRegistry() {
     .then((json) => {
       dispatcher.onLoadedRegistry(json);
     });
-}
-
-/******************************************************************************
- *
- *****************************************************************************/
-
-class ShowFile {
-  constructor(dispatcher) {
-    this.dispatcher = dispatcher;
-  }
-
-  doShow(file, pool) {
-    this.pool = pool;
-    this.file = file;
-
-    this._show();
-  }
-
-  doHide() {
-    elemRemoveById("cont-sf");
-  }
-
-  _show() {
-    elemAppendTmpl("tmpl-sf", "main", (clone) => {
-      clone.getElementById("sf-title").innerText = this.file.title;
-      clone.getElementById("sf-file").innerText = this.file.file;
-      clone.getElementById(
-        "sf-size"
-      ).innerText = this.pool.persist.answer.length;
-      clone.getElementById("sf-modified").innerText = fmtDate(
-        this.pool.persist.lastmodified
-      );
-
-      //
-      // Add button listeners
-      //
-      clone.getElementById("sf-start").onclick = () => {
-        dispatcher.onStart(this.file, this.pool);
-      };
-      clone.getElementById("sf-back").onclick = dispatcher.onHideFile;
-    });
-  }
 }
 
 /******************************************************************************

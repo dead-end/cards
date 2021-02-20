@@ -26,51 +26,44 @@ function loadRegistry() {
 }
 
 /******************************************************************************
- * The class defines the status of the current file.
+ *
  *****************************************************************************/
-class InfoComp {
-  doShow(file) {
-    elemAppendTmpl("tmpl-info", "main", (clone) => {
-      clone.getElementById("c-info-title").innerText = file.title;
-      clone.getElementById("c-info-file").innerText = file.file;
-    });
+
+class ShowFile {
+  constructor(dispatcher) {
+    this.dispatcher = dispatcher;
+  }
+
+  doShow(file, pool) {
+    this.pool = pool;
+    this.file = file;
+
+    this._show();
   }
 
   doHide() {
-    elemRemoveById("c-info-cont");
+    elemRemoveById("cont-sf");
   }
 
-  onQuestChanged(quest) {
-    document.getElementById("c-info-quest-no").innerText = quest.idx;
-    document.getElementById("c-info-quest-correct").innerText = quest.count;
-    document.getElementById("c-info-quest-attempt").innerText = quest.attempt;
-  }
+  _show() {
+    elemAppendTmpl("tmpl-sf", "main", (clone) => {
+      clone.getElementById("sf-title").innerText = this.file.title;
+      clone.getElementById("sf-file").innerText = this.file.file;
+      clone.getElementById(
+        "sf-size"
+      ).innerText = this.pool.persist.answer.length;
+      clone.getElementById("sf-modified").innerText = fmtDate(
+        this.pool.persist.lastmodified
+      );
 
-  _updatePoolData(pool) {
-    document.getElementById("c-info-size").innerText =
-      pool.persist.answer.length;
-
-    document.getElementById("c-info-modified").innerText = fmtDate(
-      pool.persist.lastmodified
-    );
-  }
-
-  _updatePoolStatus(pool) {
-    let correct = [0, 0, 0, 0];
-
-    for (let i = 0; i < pool.pool.length; i++) {
-      correct[pool.pool[i].count]++;
-    }
-
-    document.getElementById("c-info-pool-0").innerText = correct[0];
-    document.getElementById("c-info-pool-1").innerText = correct[1];
-    document.getElementById("c-info-pool-2").innerText = correct[2];
-    document.getElementById("c-info-pool-3").innerText = correct[3];
-  }
-
-  onPoolChanged(pool) {
-    this._updatePoolData(pool);
-    this._updatePoolStatus(pool);
+      //
+      // Add button listeners
+      //
+      clone.getElementById("sf-start").onclick = () => {
+        dispatcher.onStart(this.file, this.pool);
+      };
+      clone.getElementById("sf-back").onclick = dispatcher.onHideFile;
+    });
   }
 }
 
@@ -78,6 +71,10 @@ class InfoComp {
  * The class implements the component, that shows the questions and answers.
  *****************************************************************************/
 class QuestComp {
+  constructor() {
+    this.visible = false;
+  }
+
   _hideAnswer() {
     document.getElementById("cq-btn-show").style.display = "";
 
@@ -96,8 +93,10 @@ class QuestComp {
     }
   }
 
-  doShow() {
+  doShow(file, pool) {
     elemAppendTmpl("tmpl-qa", "main", (clon) => {
+      clon.getElementById("qa-pool").innerHTML = file.title;
+
       clon.getElementById("cq-btn-show").onclick = dispatcher.onShowAnswer;
 
       clon.getElementById("qa-btn-is-correct").onclick =
@@ -107,10 +106,17 @@ class QuestComp {
 
       clon.getElementById("qa-btn-stop").onclick = dispatcher.onStop;
     });
+
+    this.visible = true;
+    //
+    // Update with the current pool.
+    //
+    this.onPoolChanged(pool);
   }
 
   doHide() {
     elemRemoveById("cont-qa");
+    this.visible = false;
   }
 
   onQuestChanged(quest) {
@@ -121,7 +127,25 @@ class QuestComp {
     document.getElementById("c-quest-answer").innerHTML = strOrList(
       quest.answer
     );
+
+    document.getElementById("qa-no").innerHTML = quest.idx;
+    document.getElementById("qa-correct").innerHTML = quest.count;
+    document.getElementById("qa-attempt").innerHTML = quest.attempt;
+
     this._hideAnswer();
+  }
+
+  onPoolChanged(pool) {
+    if (!this.visible) {
+      return;
+    }
+
+    const correct = pool.getCorrect();
+
+    document.getElementById("qa-pool-0").innerText = correct[0];
+    document.getElementById("qa-pool-1").innerText = correct[1];
+    document.getElementById("qa-pool-2").innerText = correct[2];
+    document.getElementById("qa-pool-3").innerText = correct[3];
   }
 }
 
@@ -201,10 +225,9 @@ class Pool {
         return response.json();
       })
       .then((json) => {
-        let persist = Persist.load(this.id, json.length);
-        this.dispatcher.onStart(file);
+        const persist = Persist.load(this.id, json.length);
         this._update(json, persist);
-        this.next();
+        this.dispatcher.onShowFile(file, this);
       })
       .catch((error) => {
         msgComp.update("Unable to load file: " + this.id, error);
@@ -297,6 +320,16 @@ class Pool {
     }
     this.dispatcher.onPoolChanged(this);
   }
+
+  getCorrect() {
+    let correct = [0, 0, 0, 0];
+
+    for (let i = 0; i < pool.pool.length; i++) {
+      correct[this.pool[i].count]++;
+    }
+
+    return correct;
+  }
 }
 
 /******************************************************************************
@@ -314,12 +347,11 @@ class Dispatcher {
   }
 
   onPoolChanged(pool) {
-    infoComp.onPoolChanged(pool);
+    questComp.onPoolChanged(pool);
   }
 
   onQuestChanged(quest) {
     questComp.onQuestChanged(quest);
-    infoComp.onQuestChanged(quest);
   }
 
   onShowAnswer() {
@@ -334,16 +366,31 @@ class Dispatcher {
     pool.onAnswerWrong();
   }
 
-  onStart(file) {
-    infoComp.doShow(file);
-    questComp.doShow();
-    poolList.doHide();
+  //
+  // Start questions
+  //
+  onStart(file, pool) {
+    showFile.doHide();
+    questComp.doShow(file, pool);
+    pool.next();
   }
 
   onStop() {
     questComp.doHide();
     poolList.doShow();
-    infoComp.doHide();
+  }
+
+  //
+  // Show file
+  //
+  onShowFile(file, pool) {
+    poolList.doHide();
+    showFile.doShow(file, pool);
+  }
+
+  onHideFile() {
+    showFile.doHide();
+    poolList.doShow();
   }
 }
 
@@ -356,8 +403,9 @@ let msgComp = new MsgComp();
 let questComp = new QuestComp();
 
 let pool = new Pool(dispatcher);
-let infoComp = new InfoComp();
 
 let poolList = new PoolList(dispatcher);
+
+let showFile = new ShowFile(dispatcher);
 
 loadRegistry();

@@ -59,78 +59,45 @@
     </tr>
   </template>
 
-  <template id="tmpl-info">
-    <div class="container" id="c-info-cont">
+  <template id="tmpl-sf">
+    <div class="container" id="cont-sf">
 
       <div class="block">
+
+        <div>
+          <h1 class="title is-5" id="sf-title"></h1>
+        </div>
+
         <div class="columns">
 
-          <!-- File data -->
           <div class="column">
 
-            <!-- file info, if a file is selected -->
             <div class="block">
               <table class="table">
                 <tr>
                   <td>Title</td>
-                  <td id="c-info-title"></td>
+                  <td id="sf-title2"></td>
                 </tr>
                 <tr class="is-hidden-mobile">
                   <td>File</td>
-                  <td id="c-info-file"></td>
+                  <td id="sf-file"></td>
                 </tr>
                 <tr class="is-hidden-mobile">
                   <td>Size</td>
-                  <td id="c-info-size"></td>
+                  <td id="sf-size"></td>
                 </tr>
                 <tr class="is-hidden-mobile">
                   <td>Modified</td>
-                  <td id="c-info-modified"></td>
+                  <td id="sf-modified"></td>
                 </tr>
               </table>
             </div>
           </div>
 
-          <!-- Pool answer statistic -->
-          <div class="column is-hidden-mobile">
-            <table class="table">
-              <tr>
-                <td>No correct Answers</td>
-                <td id="c-info-pool-0"></td>
-              </tr>
-              <tr>
-                <td>One correct Answer</td>
-                <td id="c-info-pool-1"></td>
-              </tr>
-              <tr>
-                <td>Two correct Answers</td>
-                <td id="c-info-pool-2"></td>
-              </tr>
-              <tr>
-                <td>Learned</td>
-                <td id="c-info-pool-3"></td>
-              </tr>
-            </table>
-          </div>
-
-          <!-- Question info -->
-          <div class="column is-hidden-mobile">
-            <table class="table">
-              <tr>
-                <td>No.</td>
-                <td id="c-info-quest-no"></td>
-              </tr>
-              <tr>
-                <td>Correct</td>
-                <td id="c-info-quest-correct"></td>
-              </tr>
-              <tr>
-                <td>Attempt</td>
-                <td id="c-info-quest-attempt"></td>
-              </tr>
-            </table>
-          </div>
         </div>
+
+        <button class="button is-light" id="sf-start">Start</button>
+        <button class="button is-light" id="sf-back">Back</button>
       </div>
     </div>
   </template>
@@ -141,19 +108,61 @@
 
         <!-- Questions -->
         <div class="columns">
-          <div class="column is-half">
+
+          <div class="column">
+            <div class="bock">
+              <h1 class="title is-5" id="qa-pool"></h1>
+              <h1 class="title is-6">Question <span id="qa-no"></span></h1>
+            </div>
+          </div>
+
+          <div class="column  is-hidden-mobile">
+            <div class="bock">
+              <table class="table">
+                <tr>
+                  <td>Correct</td>
+                  <td id="qa-correct"></td>
+                </tr>
+                <tr>
+                  <td>Attempts</td>
+                  <td id="qa-attempt"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="column is-hidden-mobile">
+            <table class="table">
+              <tr>
+                <td>No correct Answers</td>
+                <td id="qa-pool-0"></td>
+              </tr>
+              <tr>
+                <td>One correct Answer</td>
+                <td id="qa-pool-1"></td>
+              </tr>
+              <tr>
+                <td>Two correct Answers</td>
+                <td id="qa-pool-2"></td>
+              </tr>
+              <tr>
+                <td>Learned</td>
+                <td id="qa-pool-3"></td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="columns">
+          <div class="column">
             <div class="bock notification is-light is-info">
-              <h5 class="title is-5">Question</h5>
-              <hr />
               <p id="c-quest-question" class="content">dummy-question</p>
             </div>
           </div>
 
-          <!-- Answers -->
           <div class="column">
             <div class="bock notification is-light is-info qa-show-answer" id="div-answer">
-              <h5 class="title is-5">Answer</h5>
-              <hr />
               <p id="c-quest-answer" class="content">dummy-answer</p>
             </div>
           </div>

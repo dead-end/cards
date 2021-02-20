@@ -28,22 +28,21 @@ class QuestComp {
     this.visible = false;
   }
 
-  _hideAnswer() {
-    document.getElementById("cq-btn-show").style.display = "";
+  _visAnswer(doShow) {
+    document.getElementById("cq-btn-show").style.display = doShow ? "none" : "";
 
     let elems = document.getElementsByClassName("qa-show-answer");
     for (let i = 0; i < elems.length; i++) {
-      elems[i].style.display = "none";
+      elems[i].style.display = doShow ? "" : "none";
     }
   }
 
-  onShowAnswer() {
-    document.getElementById("cq-btn-show").style.display = "none";
+  _hideAnswer() {
+    this._visAnswer(false);
+  }
 
-    let elems = document.getElementsByClassName("qa-show-answer");
-    for (let i = 0; i < elems.length; i++) {
-      elems[i].style.display = "";
-    }
+  onShowAnswer() {
+    this._visAnswer(true);
   }
 
   doShow(file, pool) {

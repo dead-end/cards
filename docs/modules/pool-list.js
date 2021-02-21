@@ -23,7 +23,6 @@ export default class PoolList {
     let persist = Persist.get(id);
 
     if (persist) {
-      entry.querySelector(".tpl-size").innerText = persist.answer.length;
       entry.querySelector(".tpl-status").innerText = arrPercentage(
         persist.answer,
         3
@@ -41,7 +40,6 @@ export default class PoolList {
         3
       );
     } else {
-      entry.querySelector(".tpl-size").innerText = "";
       entry.querySelector(".tpl-status").innerText = "";
       entry.querySelector(".tpl-modified").innerText = "";
     }
@@ -54,14 +52,13 @@ export default class PoolList {
     let temp = document.getElementById("tmpl-pool-list");
     let tplEnty = document.getElementById("tpl-entry");
 
-    let clon = temp.content.cloneNode(true);
-    let body = clon.getElementById("pool-list-body");
+    let clone = temp.content.cloneNode(true);
+    let body = clone.getElementById("pool-list-body");
 
     for (let i = 0; i < this.files.length; i++) {
       let entry = tplEnty.content.cloneNode(true);
 
       entry.querySelector(".tpl-title").innerText = this.files[i].title;
-      entry.querySelector(".tpl-file").innerText = this.files[i].file;
 
       this._updatePersist(entry, this.files[i].file);
 
@@ -86,7 +83,7 @@ export default class PoolList {
       body.lastElementChild.id = "tplid-" + this.files[i].file;
     }
 
-    document.getElementById("main").prepend(clon);
+    document.getElementById("main").prepend(clone);
   }
 
   /****************************************************************************

@@ -2,6 +2,7 @@ import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
 import ShowFile from "./modules/show-file.js";
+import Listing from "./modules/listing.js";
 import { strOrList, elemRemoveById, elemAppendTmpl } from "./modules/utils.js";
 
 /******************************************************************************
@@ -80,9 +81,9 @@ class QuestComp {
       quest.answer
     );
 
-    document.getElementById("qa-no").innerHTML = quest.idx;
-    document.getElementById("qa-correct").innerHTML = quest.count;
-    document.getElementById("qa-attempt").innerHTML = quest.attempt;
+    document.getElementById("qa-no").innerText = quest.idx;
+    document.getElementById("qa-correct").innerText = quest.count;
+    document.getElementById("qa-attempt").innerText = quest.attempt;
 
     this._hideAnswer();
   }
@@ -344,6 +345,19 @@ class Dispatcher {
     showFile.doHide();
     poolList.doShow();
   }
+
+  //
+  // Show Listing
+  //
+  onShowListing(file, pool) {
+    showFile.doHide();
+    listing.doShow(file, pool);
+  }
+
+  onHideListing(file, pool) {
+    listing.doHide();
+    showFile.doShow(file, pool);
+  }
 }
 
 /******************************************************************************
@@ -359,5 +373,7 @@ let pool = new Pool(dispatcher);
 let poolList = new PoolList(dispatcher);
 
 let showFile = new ShowFile(dispatcher);
+
+let listing = new Listing(dispatcher);
 
 loadRegistry();

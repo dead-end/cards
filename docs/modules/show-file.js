@@ -43,6 +43,9 @@ export default class ShowFile {
         this.dispatcher.onStart(this.file, this.pool);
       };
       clone.getElementById("sf-back").onclick = this.dispatcher.onHideFile;
+      clone.getElementById("sf-listing").onclick = () => {
+        this.dispatcher.onShowListing(this.file, this.pool);
+      };
     });
   }
 }

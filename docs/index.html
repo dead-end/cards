@@ -17,6 +17,33 @@
     </div>
   </template>
 
+  <!-- The template for the listing of the pool -->
+  <template id="tmpl-listing">
+    <div class="container" id="listing-cont">
+      <div class="block" id="listing-wrap">
+      </div>
+      <div class="block">
+        <button class="button is-light" id="listing-back">Back</button>
+      </div>
+    </div>
+  </template>
+
+  <!-- The template for a question / answer pair for the pool listing -->
+  <template id="tmpl-listing-entry">
+    <div class="columns">
+      <div class="column">
+        <div class="bock notification is-light is-info">
+          <p class="listing-quest"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bock notification is-light is-info">
+          <p class="listing-answer"></p>
+        </div>
+      </div>
+    </div>
+  </template>
+
   <template id="tmpl-pool-list">
     <div class="block" id="tpl-table">
       <table class="table">
@@ -96,8 +123,9 @@
 
         </div>
 
-        <button class="button is-light" id="sf-start">Start</button>
         <button class="button is-light" id="sf-back">Back</button>
+        <button class="button is-light" id="sf-listing">Listing</button>
+        <button class="button is-light" id="sf-start">Start</button>
       </div>
     </div>
   </template>

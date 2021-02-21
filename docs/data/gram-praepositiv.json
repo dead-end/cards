@@ -1,0 +1,86 @@
+[
+    {
+        "quest": [
+            "Stadt",
+            "Geschlecht",
+            "Präpositiv - in der Stadt"
+        ],
+        "answer": [
+            "город",
+            "Maskulinum",
+            "в городе"
+        ]
+    },
+    {
+        "quest": [
+            "Norden",
+            "Geschlecht",
+            "Präpositiv - im Norden"
+        ],
+        "answer": [
+            "север",
+            "Maskulinum",
+            "на севере"
+        ]
+    },
+    {
+        "quest": [
+            "Moskau",
+            "Geschlecht",
+            "Präpositiv - in Moskau"
+        ],
+        "answer": [
+            "Москва",
+            "Femininum",
+            "в Москве"
+        ]
+    },
+    {
+        "quest": [
+            "Hotel",
+            "Geschlecht",
+            "Präpositiv - im Hotel"
+        ],
+        "answer": [
+            "гостиница",
+            "Femininum",
+            "в гостинице"
+        ]
+    },
+    {
+        "quest": [
+            "Straße",
+            "Geschlecht",
+            "Präpositiv - auf der Straße"
+        ],
+        "answer": [
+            "улица",
+            "Femininum",
+            "на улице"
+        ]
+    },
+    {
+        "quest": [
+            "Sommer",
+            "Geschlecht",
+            "Präpositiv - im Sommer"
+        ],
+        "answer": [
+            "лето",
+            "Neutrum",
+            "в летое"
+        ]
+    },
+    {
+        "quest": [
+            "Meer",
+            "Geschlecht",
+            "Präpositiv - am Meer"
+        ],
+        "answer": [
+            "море",
+            "Neutrum",
+            "на море"
+        ]
+    }
+]

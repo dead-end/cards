@@ -1,0 +1,98 @@
+[
+    {
+        "quest": [
+            "Park",
+            "Geschlecht",
+            "Genitiv - aus dem Park"
+        ],
+        "answer": [
+            "парка",
+            "Maskulinum",
+            "из парка"
+        ]
+    },
+    {
+        "quest": [
+            "Rubel",
+            "Geschlecht",
+            "Genitiv - des Rubels"
+        ],
+        "answer": [
+            "рубль",
+            "Maskulinum",
+            "рубля"
+        ]
+    },
+    {
+        "quest": [
+            "Museum",
+            "Geschlecht",
+            "Genitiv - des Museums"
+        ],
+        "answer": [
+            "музей",
+            "Maskulinum",
+            "музея"
+        ]
+    },
+    {
+        "quest": [
+            "Wort",
+            "Geschlecht",
+            "Genitiv - des Wortes"
+        ],
+        "answer": [
+            "слово",
+            "Neutrum",
+            "слова"
+        ]
+    },
+    {
+        "quest": [
+            "Meer",
+            "Geschlecht",
+            "Genitiv - des Meers"
+        ],
+        "answer": [
+            "море",
+            "Neutrum",
+            "моря"
+        ]
+    },
+    {
+        "quest": [
+            "Firma",
+            "Geschlecht",
+            "Genitiv - der Firmen"
+        ],
+        "answer": [
+            "фирма",
+            "Femininum",
+            "фирмы"
+        ]
+    },
+    {
+        "quest": [
+            "Woche",
+            "Geschlecht",
+            "Genitiv - der Woche"
+        ],
+        "answer": [
+            "неделя",
+            "Femininum",
+            "из недели"
+        ]
+    },
+    {
+        "quest": [
+            "Russland",
+            "Geschlecht",
+            "Genitiv - aus Russland"
+        ],
+        "answer": [
+            "Россия",
+            "Femininum",
+            "из России"
+        ]
+    }
+]

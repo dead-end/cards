@@ -64,6 +64,14 @@
     "title": "Verben 2 (Liste)"
   },
   {
+    "file": "data/gram-genitiv.json",
+    "title": "Grammatik - Genitiv"
+  },
+  {
+    "file": "data/gram-praepositiv.json",
+    "title": "Grammatik - Präpositiv"
+  },
+  {
     "file": "data/misc.json",
     "title": "Sonstiges - Test"
   }

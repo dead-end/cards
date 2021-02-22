@@ -32,7 +32,9 @@ export default class PoolShow {
       //
       // Add the click handler to start the question / answer loop.
       //
-      clone.getElementById("sf-start").onclick = () => {
+      let button = clone.getElementById("sf-start");
+      button.disabled = pool.isLearned();
+      button.onclick = () => {
         this.dispatcher.onStart(file, pool);
       };
 
@@ -66,6 +68,7 @@ export default class PoolShow {
         // Update this view with the new percentage.
         //
         document.getElementById("sf-status").innerText = pool.getPercentage();
+        document.getElementById("sf-start").disabled = pool.isLearned();
       });
     });
   }

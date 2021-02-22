@@ -5,7 +5,7 @@ import { elemRemoveById, strOrList } from "./utils.js";
  * pool.
  *****************************************************************************/
 
-export default class Listing {
+export default class PoolListing {
   /****************************************************************************
    * The constructor saves the dispatcher for the event handling.
    ***************************************************************************/

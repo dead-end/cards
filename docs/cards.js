@@ -1,9 +1,15 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
-import ShowFile from "./modules/show-file.js";
-import Listing from "./modules/listing.js";
-import { strOrList, elemRemoveById, elemAppendTmpl } from "./modules/utils.js";
+import PoolShow from "./modules/pool-show.js";
+import PoolListing from "./modules/pool-listing.js";
+import {
+  strOrList,
+  elemRemoveById,
+  elemAppendTmpl,
+  arrPercentage,
+  fmtDate,
+} from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.
@@ -187,6 +193,10 @@ class Pool {
       });
   }
 
+  /****************************************************************************
+   * The function sets the number of correct answers to all questions of the
+   * pool.
+   ***************************************************************************/
   addAll(count) {
     for (let i = 0; i < this.pool.length; i++) {
       this.pool[i].count = count;
@@ -283,6 +293,14 @@ class Pool {
 
     return correct;
   }
+
+  getPercentage() {
+    return arrPercentage(this.persist.answer, 3);
+  }
+
+  getLastmodifiedFmt() {
+    return fmtDate(this.persist.lastmodified);
+  }
 }
 
 /******************************************************************************
@@ -323,7 +341,7 @@ class Dispatcher {
   // Start questions
   //
   onStart(file, pool) {
-    showFile.doHide();
+    poolShow.doHide();
     questComp.doShow(file, pool);
     pool.next();
   }
@@ -338,11 +356,11 @@ class Dispatcher {
   //
   onShowFile(file, pool) {
     poolList.doHide();
-    showFile.doShow(file, pool);
+    poolShow.doShow(file, pool);
   }
 
   onHideFile() {
-    showFile.doHide();
+    poolShow.doHide();
     poolList.doShow();
   }
 
@@ -350,13 +368,13 @@ class Dispatcher {
   // Show Listing
   //
   onShowListing(file, pool) {
-    showFile.doHide();
-    listing.doShow(file, pool);
+    poolShow.doHide();
+    poolListing.doShow(file, pool);
   }
 
   onHideListing(file, pool) {
-    listing.doHide();
-    showFile.doShow(file, pool);
+    poolListing.doHide();
+    poolShow.doShow(file, pool);
   }
 }
 
@@ -372,8 +390,8 @@ let pool = new Pool(dispatcher);
 
 let poolList = new PoolList(dispatcher);
 
-let showFile = new ShowFile(dispatcher);
+let poolShow = new PoolShow(dispatcher);
 
-let listing = new Listing(dispatcher);
+let poolListing = new PoolListing(dispatcher);
 
 loadRegistry();

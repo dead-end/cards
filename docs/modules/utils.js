@@ -48,18 +48,6 @@ export function arrRemove(array, value) {
 }
 
 /******************************************************************************
- * The function checks if all elements of an array have a given value.
- *****************************************************************************/
-export function arrValueIs(arr, value) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== value) {
-      return false;
-    }
-  }
-  return true;
-}
-
-/******************************************************************************
  * The function is called with an array of integers. Each can have a max value.
  * The function computes a percentage string from the values. 100% means that
  * all entries have the max value.

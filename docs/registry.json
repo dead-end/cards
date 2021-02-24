@@ -72,6 +72,10 @@
     "title": "Grammatik - Präpositiv"
   },
   {
+    "file": "data/gram-Genus.json",
+    "title": "Grammatik - Genus"
+  },
+  {
     "file": "data/misc.json",
     "title": "Sonstiges - Test"
   }

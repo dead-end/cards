@@ -1,0 +1,106 @@
+[
+    {
+        "quest": "Maskulinum",
+        "answer": [
+            "(endungslos)",
+            "-Konsonant",
+            "-ь",
+            "-й"
+        ]
+    },
+    {
+        "quest": "Femininum",
+        "answer": [
+            "-а",
+            "-я",
+            "-ия",
+            "-ь"
+        ]
+    },
+    {
+        "quest": "Neutrum",
+        "answer": [
+            "-о",
+            "-е",
+            "-ие"
+            "-мя"
+        ]
+    },
+    {
+        "quest": "Film",
+        "answer": [
+            "фильм",
+            "Maskulinum"
+        ]
+    },
+    {
+        "quest": "Rubel",
+        "answer": [
+            "рубль",
+            "Maskulinum"
+        ]
+    },
+    {
+        "quest": "Museum",
+        "answer": [
+            "музей",
+            "Maskulinum"
+        ]
+    },
+    {
+        "quest": "Firma",
+        "answer": [
+            "фирма",
+            "Femininum"
+        ]
+    },
+    {
+        "quest": "Woche",
+        "answer": [
+            "неделя",
+            "Femininum"
+        ]
+    },
+    {
+        "quest": "Station",
+        "answer": [
+            "станция",
+            "Femininum"
+        ]
+    },
+    {
+        "quest": "Platz",
+        "answer": [
+            "площадь",
+            "Femininum"
+        ]
+    },
+    {
+        "quest": "Wort",
+        "answer": [
+            "слово",
+            "Neutrum"
+        ]
+    },
+    {
+        "quest": "Meer",
+        "answer": [
+            "море",
+            "Neutrum"
+        ]
+    },
+    {
+        "quest": "Ereignis",
+        "answer": [
+            "событие",
+            "Neutrum"
+        ]
+    },
+    {
+        "quest": "Vorname",
+        "answer": [
+            "имя",
+            "Neutrum"
+        ]
+    }
+]

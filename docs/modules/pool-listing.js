@@ -28,22 +28,29 @@ export default class PoolListing {
     //
     // We are only interested in the array with the questions and answers.
     //
-    let qa = pool.pool;
+    const qa = pool.pool;
 
     //
     // Select the templates from the html.
     //
-    let tmplListing = document.getElementById("tmpl-listing");
-    let tmplEntry = document.getElementById("tmpl-listing-entry");
+    const tmplListing = document.getElementById("tmpl-listing");
+    const tmplEntry = document.getElementById("tmpl-listing-entry");
 
-    let cloneListing = tmplListing.content.cloneNode(true);
-    let wrapper = cloneListing.getElementById("listing-wrap");
+    const cloneListing = tmplListing.content.cloneNode(true);
+    const wrapper = cloneListing.getElementById("listing-wrap");
 
     //
     // Clone the template for each question.
     //
     for (let i = 0; i < qa.length; i++) {
-      let cloneEntry = tmplEntry.content.cloneNode(true);
+      const cloneEntry = tmplEntry.content.cloneNode(true);
+
+      const clazz = i % 2 ? "is-info" : "is-primary";
+
+      const list = cloneEntry.querySelectorAll(".listing-column");
+      for (let i = 0; i < list.length; i++) {
+        list[i].classList.add(clazz);
+      }
 
       cloneEntry.querySelector(".listing-quest").innerHTML = strOrList(
         qa[i].quest

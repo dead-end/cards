@@ -1,0 +1,34 @@
+[
+  {
+    "quest": "ich heiße ...",
+    "answer": "меня зовут ..."
+  },
+  {
+    "quest": "du heißt ...",
+    "answer": "тебя зовут ..."
+  },
+  {
+    "quest": "er heißt ...",
+    "answer": "его зовут ..."
+  },
+  {
+    "quest": "sie heißt ... (weibliche Person)",
+    "answer": "её зовут ..."
+  },
+  {
+    "quest": "es heißt ...",
+    "answer": "его зовут ???"
+  },
+  {
+    "quest": "wir heißen ...",
+    "answer": "нас зовут ..."
+  },
+  {
+    "quest": "ihre heißt ...",
+    "answer": "вас зовут ..."
+  },
+  {
+    "quest": "sie heißen ... (mehrere Personen)",
+    "answer": "их зовут ..."
+  }
+]

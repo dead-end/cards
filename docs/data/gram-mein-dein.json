@@ -1,0 +1,59 @@
+[
+    {
+        "quest": "mein Bruder",
+        "answer": "мой брат"
+    },
+    {
+        "quest": "dein Sohn",
+        "answer": "твой сын"
+    },
+    {
+        "quest": "unser Vater",
+        "answer": "наш отец"
+    },
+    {
+        "quest": [
+            "euer Enkel",
+            "Ihr Enkel"
+        ],
+        "answer": "ваш внук"
+    },
+    {
+        "quest": "meine Schwester",
+        "answer": "моя сестра"
+    },
+    {
+        "quest": "deine Großmutter",
+        "answer": "твоя бабушка"
+    },
+    {
+        "quest": "unsere Mutter",
+        "answer": "наша мать"
+    },
+    {
+        "quest": [
+            "eure Tochter",
+            "Ihre Tochter"
+        ],
+        "answer": "ваша дочь"
+    },
+    {
+        "quest": "meine Kinder",
+        "answer": "мои дети"
+    },
+    {
+        "quest": "deine Eltern",
+        "answer": "твои родители"
+    },
+    {
+        "quest": "unsere Enkel",
+        "answer": "наши внуки"
+    },
+    {
+        "quest": [
+            "eure Freunde",
+            "Ihre Freunde"
+        ],
+        "answer": "ваши друзья"
+    },
+]

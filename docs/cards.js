@@ -3,13 +3,8 @@ import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
 import PoolShow from "./modules/pool-show.js";
 import PoolListing from "./modules/pool-listing.js";
-import {
-  strOrList,
-  elemRemoveById,
-  elemAppendTmpl,
-  arrPercentage,
-  fmtDate,
-} from "./modules/utils.js";
+import QuestComp from "./modules/quest-comp.js";
+import { arrPercentage, fmtDate } from "./modules/utils.js";
 
 /******************************************************************************
  * The function loads the requstry, which is a json file.
@@ -25,87 +20,6 @@ function loadRegistry() {
     .then((json) => {
       dispatcher.onLoadedRegistry(json);
     });
-}
-
-/******************************************************************************
- * The class implements the component, that shows the questions and answers.
- *****************************************************************************/
-class QuestComp {
-  constructor() {
-    this.visible = false;
-  }
-
-  _visAnswer(doShow) {
-    document.getElementById("cq-btn-show").style.display = doShow ? "none" : "";
-
-    let elems = document.getElementsByClassName("qa-show-answer");
-    for (let i = 0; i < elems.length; i++) {
-      elems[i].style.display = doShow ? "" : "none";
-    }
-  }
-
-  _hideAnswer() {
-    this._visAnswer(false);
-  }
-
-  onShowAnswer() {
-    this._visAnswer(true);
-  }
-
-  doShow(file, pool) {
-    elemAppendTmpl("tmpl-qa", "main", (clon) => {
-      clon.getElementById("qa-pool").innerHTML = file.title;
-
-      clon.getElementById("cq-btn-show").onclick = dispatcher.onShowAnswer;
-
-      clon.getElementById("qa-btn-is-correct").onclick =
-        dispatcher.onAnswerCorrect;
-
-      clon.getElementById("qa-btn-is-wrong").onclick = dispatcher.onAnswerWrong;
-
-      clon.getElementById("qa-btn-stop").onclick = dispatcher.onStop;
-    });
-
-    this.visible = true;
-    //
-    // Update with the current pool.
-    //
-    this.onPoolChanged(pool);
-  }
-
-  doHide() {
-    elemRemoveById("cont-qa");
-    this.visible = false;
-  }
-
-  onQuestChanged(quest) {
-    document.getElementById("c-quest-question").innerHTML = strOrList(
-      quest.quest
-    );
-
-    document.getElementById("c-quest-answer").innerHTML = strOrList(
-      quest.answer
-    );
-
-    document.getElementById("qa-no").innerText = quest.idx;
-    document.getElementById("qa-correct").innerText = quest.count;
-    document.getElementById("qa-attempt").innerText = quest.attempt;
-
-    this._hideAnswer();
-  }
-
-  onPoolChanged(pool) {
-    if (!this.visible) {
-      return;
-    }
-
-    const correct = pool.getCorrect();
-
-    document.getElementById("qa-pool-0").innerText = correct[0];
-    document.getElementById("qa-pool-1").innerText = correct[1];
-    document.getElementById("qa-pool-2").innerText = correct[2];
-    document.getElementById("qa-pool-3").innerText = correct[3];
-  }
 }
 
 /******************************************************************************
@@ -384,7 +298,8 @@ class Dispatcher {
 let dispatcher = new Dispatcher();
 
 let msgComp = new MsgComp();
-let questComp = new QuestComp();
+
+let questComp = new QuestComp(dispatcher);
 
 let pool = new Pool(dispatcher);
 

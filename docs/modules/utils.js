@@ -20,13 +20,13 @@ export function fmtDate(date) {
     return "";
   }
 
-  let d = new Date();
+  const d = new Date();
   d.setTime(date);
 
-  let day = d.getDate() > 9 ? d.getDate() : "0" + d.getDate();
-  let month = d.getMonth() > 9 ? d.getMonth() : "0" + d.getMonth();
-  let hour = d.getHours() > 9 ? d.getHours() : "0" + d.getHours();
-  let minute = d.getMinutes() > 9 ? d.getMinutes() : "0" + d.getMinutes();
+  const day = d.getDate() > 9 ? d.getDate() : "0" + d.getDate();
+  const month = d.getMonth() > 9 ? d.getMonth() : "0" + d.getMonth();
+  const hour = d.getHours() > 9 ? d.getHours() : "0" + d.getHours();
+  const minute = d.getMinutes() > 9 ? d.getMinutes() : "0" + d.getMinutes();
 
   return `${day}.${month}.${d.getFullYear()} ${hour}:${minute}`;
 }
@@ -58,7 +58,7 @@ export function arrPercentage(arr, max) {
     sum += arr[i];
   }
 
-  let result = (sum * 100) / (arr.length * max);
+  const result = (sum * 100) / (arr.length * max);
   return result.toFixed(0) + "%";
 }
 
@@ -66,7 +66,7 @@ export function arrPercentage(arr, max) {
  * The function removes an element with a given id from the dom.
  *****************************************************************************/
 export function elemRemoveById(id) {
-  let elem = document.getElementById(id);
+  const elem = document.getElementById(id);
   elem.parentNode.removeChild(elem);
 }
 
@@ -75,8 +75,8 @@ export function elemRemoveById(id) {
  * given, to process the clone
  *****************************************************************************/
 export function elemAppendTmpl(idTmpl, idParent, fct) {
-  let temp = document.getElementById(idTmpl);
-  let clone = temp.content.cloneNode(true);
+  const temp = document.getElementById(idTmpl);
+  const clone = temp.content.cloneNode(true);
 
   if (fct) {
     fct(clone);

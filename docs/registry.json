@@ -32,6 +32,10 @@
     "title": "Kapitel 4 Teil 1"
   },
   {
+    "file": "data/kapitel-4-2.json",
+    "title": "Kapitel 4 Teil 2"
+  },
+  {
     "file": "data/dates.json",
     "title": "Datum"
   },

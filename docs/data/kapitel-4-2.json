@@ -1,0 +1,172 @@
+[
+  {
+    "quest": [
+      "mein",
+      "meine"
+    ],
+    "answer": [
+      "мой",
+      "моя",
+      "мои"
+    ]
+  },
+  {
+    "quest": "alle zusammen",
+    "answer": "все вместе"
+  },
+  {
+    "quest": "sie heißen ... (mehrere Personen)",
+    "answer": "их зовут ..."
+  },
+  {
+    "quest": "sie heißt ... (eine weibliche Person)",
+    "answer": "её зовут ..."
+  },
+  {
+    "quest": [
+      "dein",
+      "deine"
+    ],
+    "answer": [
+      "твой",
+      "твоя",
+      "твои"
+    ]
+  },
+  {
+    "quest": "zusammen",
+    "answer": "вместе"
+  },
+  {
+    "quest": [
+      "euer",
+      "eure",
+      "ihr",
+      "ihre"
+    ],
+    "answer": [
+      "ваш",
+      "ваша",
+      "ваши"
+    ]
+  },
+  {
+    "quest": "du hast ...",
+    "answer": "у тебя есть ..."
+  },
+  {
+    "quest": "schon lange (zeitlich)",
+    "answer": "уже давно"
+  },
+  {
+    "quest": [
+      "von Beruf",
+      "beruflich"
+    ],
+    "answer": "по профессии"
+  },
+  {
+    "quest": "Beruf",
+    "answer": "профессия"
+  },
+  {
+    "quest": "Buchhalter",
+    "answer": "Бухгалтер"
+  },
+  {
+    "quest": "Journalistin",
+    "answer": "журналистка"
+  },
+  {
+    "quest": "wir haben ...",
+    "answer": "у нас есть ..."
+  },
+  {
+    "quest": "zwei Kinder",
+    "answer": "двое детей"
+  },
+  {
+    "quest": [
+      "Arzt",
+      "Ärztin"
+    ],
+    "answer": "врач"
+  },
+  {
+    "quest": "er hat ...",
+    "answer": "у него есть ..."
+  },
+  {
+    "quest": "eine eigene Familie",
+    "answer": "своя семья"
+  },
+  {
+    "quest": "wir haben keine / keinen",
+    "answer": "у нас нет ... + (GEN)"
+  },
+  {
+    "quest": "nun",
+    "answer": "теперь"
+  },
+  {
+    "quest": "ich habe ...",
+    "answer": "У меня есть ..."
+  },
+  {
+    "quest": "Jurist",
+    "answer": "юрист"
+  },
+  {
+    "quest": "weit (weg) von",
+    "answer": "далеко от + (GEN)"
+  },
+  {
+    "quest": "ich habe kein / keine / keinen ...",
+    "answer": "у меня нет ... + (GEN)"
+  },
+  {
+    "quest": "Katze",
+    "answer": "кошка"
+  },
+  {
+    "quest": "Liebling (weiblich)",
+    "answer": "любимица"
+  },
+  {
+    "quest": "Vatersnamen",
+    "answer": "отчество"
+  },
+  {
+    "quest": [
+      "längst",
+      "vor langer Zeit"
+    ],
+    "answer": "давно"
+  },
+  {
+    "quest": [
+      "weit",
+      "fern"
+    ],
+    "answer": "далеко"
+  },
+  {
+    "quest": [
+      "das bedeutet",
+      "das heißt"
+    ],
+    "answer": "значит"
+  },
+  {
+    "quest": "Ingenieur / -in",
+    "answer": "инженер"
+  },
+  {
+    "quest": "Programmierer / -in",
+    "answer": "программист"
+  },
+  {
+    "quest": "drei Kinder",
+    "answer": "трое детей"
+  }
+]

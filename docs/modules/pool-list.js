@@ -17,7 +17,7 @@ export default class PoolList {
    * The function updates a file if the persisted data changed.
    ***************************************************************************/
   _updatePersist(entry, id) {
-    let persist = Persist.get(id);
+    const persist = Persist.get(id);
 
     if (persist) {
       entry.querySelector(".tpl-status").innerText = arrPercentage(
@@ -38,11 +38,11 @@ export default class PoolList {
    * The function creates the tables from the templates.
    ***************************************************************************/
   doShow() {
-    let temp = document.getElementById("tmpl-pool-list");
-    let tplEnty = document.getElementById("tpl-entry");
+    const temp = document.getElementById("tmpl-pool-list");
+    const tplEnty = document.getElementById("tpl-entry");
 
-    let clone = temp.content.cloneNode(true);
-    let body = clone.getElementById("pool-list-body");
+    const clone = temp.content.cloneNode(true);
+    const body = clone.getElementById("pool-list-body");
 
     for (let i = 0; i < this.files.length; i++) {
       let entry = tplEnty.content.cloneNode(true);
@@ -57,7 +57,7 @@ export default class PoolList {
       let button = entry.querySelector(".tpl-show");
       button.setAttribute("data-file-idx", i);
       button.addEventListener("click", (e) => {
-        let idx = e.target.getAttribute("data-file-idx");
+        const idx = e.target.getAttribute("data-file-idx");
         this.dispatcher.onFileSelected(this.files[idx]);
       });
 

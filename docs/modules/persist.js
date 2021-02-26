@@ -73,7 +73,7 @@ export default class Persist {
     // Remove all items that are not in the registry.
     //
     for (let i = 0; i < localStorage.length; i++) {
-      let key = localStorage.key(i);
+      const key = localStorage.key(i);
 
       if (!files.includes(key)) {
         localStorage.removeItem(key);
@@ -85,7 +85,7 @@ export default class Persist {
    * The function sets all answers to a given value.
    ***************************************************************************/
   static setAll(id, val) {
-    let data = localStorage.getItem(id);
+    const data = localStorage.getItem(id);
 
     if (!data) {
       return;

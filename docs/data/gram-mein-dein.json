@@ -8,6 +8,30 @@
         "answer": "мой дедушка"
     },
     {
+        "quest": "meine Schwester",
+        "answer": "моя сестра"
+    },
+    {
+        "quest": "meine Ehefrau",
+        "answer": "моя жена"
+    },
+    {
+        "quest": "mein Meer",
+        "answer": "моё море"
+    },
+    {
+        "quest": "meine Milch",
+        "answer": "моё молоко"
+    },
+    {
+        "quest": "meine Kinder",
+        "answer": "мои дети"
+    },
+    {
+        "quest": "meine Brüder",
+        "answer": "мои братья"
+    },
+    {
         "quest": "dein Sohn",
         "answer": "твой сын"
     },
@@ -16,12 +40,60 @@
         "answer": "твой муж"
     },
     {
+        "quest": "deine Großmutter",
+        "answer": "твоя бабушка"
+    },
+    {
+        "quest": "deine Freundin",
+        "answer": "твоя подруга"
+    },
+    {
+        "quest": "dein Bier",
+        "answer": "твоё пиво"
+    },
+    {
+        "quest": "deine Freundin",
+        "answer": "твоё вино"
+    },
+    {
+        "quest": "deine Eltern",
+        "answer": "твои родители"
+    },
+    {
+        "quest": "deine Schwestern",
+        "answer": "твои сестры"
+    },
+    {
         "quest": "unser Vater",
         "answer": "наш отец"
     },
     {
         "quest": "unser Mönch",
         "answer": "наш монах"
+    },
+    {
+        "quest": "unsere Nationalität",
+        "answer": "наша национальность"
+    },
+    {
+        "quest": "unsere Firma",
+        "answer": "наша фирма"
+    },
+    {
+        "quest": "unser Platz",
+        "answer": "нашё место"
+    },
+    {
+        "quest": "unsere Aufgabe",
+        "answer": "нашё задание"
+    },
+    {
+        "quest": "unsere Enkel",
+        "answer": "наши внуки"
+    },
+    {
+        "quest": "unsere Söhne",
+        "answer": "наши сыновья"
     },
     {
         "quest": [
@@ -38,30 +110,6 @@
         "answer": "ваш папа"
     },
     {
-        "quest": "meine Schwester",
-        "answer": "моя сестра"
-    },
-    {
-        "quest": "meine Ehefrau",
-        "answer": "моя жена"
-    },
-    {
-        "quest": "deine Großmutter",
-        "answer": "твоя бабушка"
-    },
-    {
-        "quest": "deine Freundin",
-        "answer": "твоя подруга"
-    },
-    {
-        "quest": "unsere Mutter",
-        "answer": "наша мать"
-    },
-    {
-        "quest": "unsere Enkelin",
-        "answer": "наша внучка"
-    },
-    {
         "quest": [
             "eure Tochter",
             "Ihre Tochter"
@@ -76,28 +124,18 @@
         "answer": "ваша мама"
     },
     {
-        "quest": "meine Kinder",
-        "answer": "мои дети"
+        "quest": [
+            "eurer Vorname",
+            "Ihr Vorname"
+        ],
+        "answer": "вашё имя"
     },
     {
-        "quest": "meine Brüder",
-        "answer": "мои братья"
-    },
-    {
-        "quest": "deine Eltern",
-        "answer": "твои родители"
-    },
-    {
-        "quest": "deine Schwestern",
-        "answer": "твои сестры"
-    },
-    {
-        "quest": "unsere Enkel",
-        "answer": "наши внуки"
-    },
-    {
-        "quest": "unsere Söhne",
-        "answer": "наши сыновья"
+        "quest": [
+            "eurer Wort",
+            "Ihr Wort"
+        ],
+        "answer": "вашё слово"
     },
     {
         "quest": [

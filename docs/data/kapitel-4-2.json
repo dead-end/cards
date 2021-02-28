@@ -174,11 +174,11 @@
     "answer": "работать"
   },
   {
-    "quest": " Сколько лет, сколько зим!",
-    "answer": [
+    "quest": [
       "wörtl.: Wie viele Sommer, wie viele Winter! ",
       "(Ausruf, wenn man jmdn. lange nicht gesehen hat)"
-    ]
+    ],
+    "answer": " Сколько лет, сколько зим!"
   },
   {
     "quest": [

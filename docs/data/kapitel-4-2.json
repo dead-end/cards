@@ -168,5 +168,82 @@
   {
     "quest": "drei Kinder",
     "answer": "трое детей"
+  },
+  {
+    "quest": "arbeiten",
+    "answer": "работать"
+  },
+  {
+    "quest": " Сколько лет, сколько зим!",
+    "answer": [
+      "wörtl.: Wie viele Sommer, wie viele Winter! ",
+      "(Ausruf, wenn man jmdn. lange nicht gesehen hat)"
+    ]
+  },
+  {
+    "quest": [
+      "machen",
+      "tun "
+    ],
+    "answer": "делать"
+  },
+  {
+    "quest": [
+      "geschäftlich",
+      "dienst­lich"
+    ],
+    "answer": "по делам"
+  },
+  {
+    "quest": [
+      "Ach so!",
+      "Sieh mal einer an!"
+    ],
+    "answer": "Вот как!"
+  },
+  {
+    "quest": "Rentner ",
+    "answer": "пенсионер"
+  },
+  {
+    "quest": [
+      "wissen",
+      "kennen"
+    ],
+    "answer": "знать"
+  },
+  {
+    "quest": [
+      "Sekretär",
+      "­Sekretärin"
+    ],
+    "answer": "секретарь (m)"
+  },
+  {
+    "quest": "Büro ",
+    "answer": "офис"
+  },
+  {
+    "quest": "Hausfrau",
+    "answer": "домохозяйка"
+  },
+  {
+    "quest": [
+      "Fotograf",
+      "Fotograf­in"
+    ],
+    "answer": "фотограф"
+  },
+  {
+    "quest": "oft",
+    "answer": "часто"
+  },
+  {
+    "quest": "Dienstreise",
+    "answer": "командировка"
+  },
+  {
+    "quest": "deshalb",
+    "answer": "поэтому"
   }
 ]

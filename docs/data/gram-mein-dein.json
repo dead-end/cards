@@ -61,7 +61,7 @@
     },
     {
         "quest": "deine Schwestern",
-        "answer": "твои сестры"
+        "answer": "твои сёстры"
     },
     {
         "quest": "unser Vater",
@@ -81,11 +81,11 @@
     },
     {
         "quest": "unser Platz",
-        "answer": "нашё место"
+        "answer": "наше место"
     },
     {
         "quest": "unsere Aufgabe",
-        "answer": "нашё задание"
+        "answer": "наше задание"
     },
     {
         "quest": "unsere Enkel",
@@ -128,14 +128,14 @@
             "eurer Vorname",
             "Ihr Vorname"
         ],
-        "answer": "вашё имя"
+        "answer": "ваше имя"
     },
     {
         "quest": [
             "eurer Wort",
             "Ihr Wort"
         ],
-        "answer": "вашё слово"
+        "answer": "ваше слово"
     },
     {
         "quest": [

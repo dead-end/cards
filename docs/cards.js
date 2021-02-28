@@ -45,7 +45,7 @@ class Quest {
   }
 
   wrong() {
-    let changed = this.count !== 0;
+    const changed = this.count !== 0;
     this.count = 0;
     this.attempt++;
     return changed;
@@ -199,7 +199,7 @@ class Pool {
   }
 
   getCorrect() {
-    let correct = [0, 0, 0, 0];
+    const correct = [0, 0, 0, 0];
 
     for (let i = 0; i < pool.pool.length; i++) {
       correct[this.pool[i].count]++;
@@ -295,18 +295,18 @@ class Dispatcher {
 /******************************************************************************
  * Main
  *****************************************************************************/
-let dispatcher = new Dispatcher();
+const dispatcher = new Dispatcher();
 
-let msgComp = new MsgComp();
+const msgComp = new MsgComp();
 
-let questComp = new QuestComp(dispatcher);
+const questComp = new QuestComp(dispatcher);
 
-let pool = new Pool(dispatcher);
+const pool = new Pool(dispatcher);
 
-let poolList = new PoolList(dispatcher);
+const poolList = new PoolList(dispatcher);
 
-let poolShow = new PoolShow(dispatcher);
+const poolShow = new PoolShow(dispatcher);
 
-let poolListing = new PoolListing(dispatcher);
+const poolListing = new PoolListing(dispatcher);
 
 loadRegistry();

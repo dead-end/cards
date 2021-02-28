@@ -36,7 +36,7 @@ export function fmtDate(date) {
  * removed.
  *****************************************************************************/
 export function arrRemove(array, value) {
-  let result = [];
+  const result = [];
 
   for (let i = 0; i < array.length; i++) {
     if (array[i] !== value) {

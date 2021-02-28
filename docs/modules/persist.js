@@ -21,16 +21,16 @@ export default class Persist {
    * arry with the requested size which is initialized to 0.
    ***************************************************************************/
   static load(id, len) {
-    let data = localStorage.getItem(id);
+    const data = localStorage.getItem(id);
 
     if (data) {
-      let obj = JSON.parse(data);
+      const obj = JSON.parse(data);
       if (Array.isArray(obj.answer) && obj.answer.length === len) {
         return obj;
       }
     }
 
-    let obj = {
+    const obj = {
       answer: [],
     };
 
@@ -45,7 +45,7 @@ export default class Persist {
    * does not exist.
    ***************************************************************************/
   static get(id) {
-    let data = localStorage.getItem(id);
+    const data = localStorage.getItem(id);
 
     if (data) {
       return JSON.parse(data);
@@ -64,7 +64,7 @@ export default class Persist {
     //
     // Get an array with the file names
     //
-    let files = [];
+    const files = [];
     for (let i = 0; i < arr.length; i++) {
       files.push(arr[i].file);
     }
@@ -91,7 +91,7 @@ export default class Persist {
       return;
     }
 
-    let obj = JSON.parse(data);
+    const obj = JSON.parse(data);
 
     for (let i = 0; i < obj.answer.length; i++) {
       obj.answer[i] = val;

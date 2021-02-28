@@ -15,7 +15,7 @@ export default class QuestComp {
   _visAnswer(doShow) {
     document.getElementById("cq-btn-show").style.display = doShow ? "none" : "";
 
-    let elems = document.getElementsByClassName("qa-show-answer");
+    const elems = document.getElementsByClassName("qa-show-answer");
     for (let i = 0; i < elems.length; i++) {
       elems[i].style.display = doShow ? "" : "none";
     }

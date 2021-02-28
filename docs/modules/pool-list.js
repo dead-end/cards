@@ -45,7 +45,7 @@ export default class PoolList {
     const body = clone.getElementById("pool-list-body");
 
     for (let i = 0; i < this.files.length; i++) {
-      let entry = tplEnty.content.cloneNode(true);
+      const entry = tplEnty.content.cloneNode(true);
 
       entry.querySelector(".tpl-title").innerText = this.files[i].title;
 
@@ -54,7 +54,7 @@ export default class PoolList {
       //
       // Add the show button
       //
-      let button = entry.querySelector(".tpl-show");
+      const button = entry.querySelector(".tpl-show");
       button.setAttribute("data-file-idx", i);
       button.addEventListener("click", (e) => {
         const idx = e.target.getAttribute("data-file-idx");

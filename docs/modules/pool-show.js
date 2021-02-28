@@ -32,7 +32,7 @@ export default class PoolShow {
       //
       // Add the click handler to start the question / answer loop.
       //
-      let button = clone.getElementById("sf-start");
+      const button = clone.getElementById("sf-start");
       button.disabled = pool.isLearned();
       button.onclick = () => {
         this.dispatcher.onStart(file, pool);

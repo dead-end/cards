@@ -1,0 +1,174 @@
+[
+  {
+    "quest": "zu Hause",
+    "answer": "дома"
+  },
+  {
+    "quest": "wissen Sie was",
+    "answer": "знаете что ..."
+  },
+  {
+    "quest": [
+      "Lasst uns gehen! / Gehen wir!",
+      "Lassen Sie uns gehen!"
+    ],
+    "answer": [
+      "пойдём",
+      "пойдёмте"
+    ]
+  },
+  {
+    "quest": [
+      "Café",
+      "Kaffeehaus"
+    ],
+    "answer": "кафе"
+  },
+  {
+    "quest": [
+      "Lasst uns miteinander reden!",
+      "Lassen Sie uns miteinander reden!"
+    ],
+    "answer": "поговорим"
+  },
+  {
+    "quest": [
+      "gerne",
+      "mit Vergnügen"
+    ],
+    "answer": "с удовольствием"
+  },
+  {
+    "quest": "warum  ",
+    "answer": "почему"
+  },
+  {
+    "quest": "wie viel ",
+    "answer": "сколько"
+  },
+  {
+    "quest": "Student",
+    "answer": "студент"
+  },
+  {
+    "quest": [
+      "Rechtsanwalt",
+      "Rechts­anwältin"
+    ],
+    "answer": "адвокат"
+  },
+  {
+    "quest": "Schauspielerin",
+    "answer": "актриса"
+  },
+  {
+    "quest": "Flugbegleiterin",
+    "answer": "стюардесса"
+  },
+  {
+    "quest": [
+      "Fremdenführer",
+      "Fremdenführer­in"
+    ],
+    "answer": "гид"
+  },
+  {
+    "quest": "Schauspieler ",
+    "answer": "актёр"
+  },
+  {
+    "quest": "promovierte Lehrkraft",
+    "answer": "доцент"
+  },
+  {
+    "quest": "Journalist",
+    "answer": "журналист"
+  },
+  {
+    "quest": "Schüler",
+    "answer": "школьник"
+  },
+  {
+    "quest": [
+      "Ökonom",
+      "Ökonom­in"
+    ],
+    "answer": "экономист"
+  },
+  {
+    "quest": "Flugbegleiter",
+    "answer": "стюард"
+  },
+  {
+    "quest": "Rentnerin",
+    "answer": "пенсионерка"
+  },
+  {
+    "quest": "Verkäufer",
+    "answer": [
+      "продавец",
+      "продавца (Gen. Sg.)"
+    ]
+  },
+  {
+    "quest": "Schülerin",
+    "answer": "школьница"
+  },
+  {
+    "quest": "Lehrerin",
+    "answer": "учительница"
+  },
+  {
+    "quest": "Verkäuferin",
+    "answer": "продавщица"
+  },
+  {
+    "quest": [
+      "Diplomat",
+      "Diplomatin"
+    ],
+    "answer": "дипломат"
+  },
+  {
+    "quest": "Lehrer",
+    "answer": "учительm"
+  },
+  {
+    "quest": "Supermarkt",
+    "answer": "Supermarkt"
+  },
+  {
+    "quest": "Bank",
+    "answer": "банк"
+  },
+  {
+    "quest": [
+      "Werk ",
+      "Fabrik"
+    ],
+    "answer": "завод"
+  },
+  {
+    "quest": " Botschaft",
+    "answer": "посольство"
+  },
+  {
+    "quest": "Schule",
+    "answer": "школа"
+  },
+  {
+    "quest": "Redaktion",
+    "answer": "редакция"
+  },
+  {
+    "quest": [
+      "Unternehmen",
+      "Firma"
+    ],
+    "answer": "компания"
+  },
+  {
+    "quest": "Kino",
+    "answer": "кино"
+  }
+]

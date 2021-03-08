@@ -53,19 +53,23 @@
 
   <template id="pool-entry">
     <div class="column is-one-third">
-      <div class="notification is-info is-light content">
-        <h1 class="pool-entry-title title is-6">Title</h1>
-        <table>
-          <tr>
-            <td>Status</td>
-            <td class="pool-entry-status"></td>
-          </tr>
-          <tr>
-            <td>Mofified</td>
-            <td class="pool-entry-modified"></td>
-          </tr>
-        </table>
-        <button class="button pool-entry-show">Show</button>
+      <div class="card">
+        <div class="card-content">
+          <h1 class="title is-5 pool-entry-title">Card header</h1>
+          <table class="table">
+            <tr>
+              <td>Status</td>
+              <td class="pool-entry-status"></td>
+            </tr>
+            <tr>
+              <td>Mofified</td>
+              <td class="pool-entry-modified"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="card-footer-item pool-entry-show">Show</a>
+        </div>
       </div>
     </div>
   </template>
@@ -73,7 +77,7 @@
   <template id="tmpl-sf">
     <div class="container" id="cont-sf">
 
-      <div class="card">
+      <div class="box">
 
         <div>
           <h1 class="title is-5" id="sf-title"></h1>

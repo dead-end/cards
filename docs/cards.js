@@ -112,9 +112,9 @@ class Pool {
    * pool.
    ***************************************************************************/
   addAll(count) {
-    for (let i = 0; i < this.pool.length; i++) {
-      this.pool[i].count = count;
-    }
+    this.pool.forEach((elem) => {
+      elem.count = count;
+    });
     this._poolChanged(true);
   }
 
@@ -173,16 +173,8 @@ class Pool {
   }
 
   _updateLearned() {
-    this.learned = [];
-    this.unlearned = [];
-
-    for (let i = 0; i < this.pool.length; i++) {
-      if (this.pool[i].learned()) {
-        this.learned.push(this.pool[i]);
-      } else {
-        this.unlearned.push(this.pool[i]);
-      }
-    }
+    this.learned = this.pool.filter((elem) => elem.learned());
+    this.unlearned = this.pool.filter((elem) => !elem.learned());
   }
 
   _poolChanged(doPersist) {
@@ -201,9 +193,9 @@ class Pool {
   getCorrect() {
     const correct = [0, 0, 0, 0];
 
-    for (let i = 0; i < pool.pool.length; i++) {
-      correct[this.pool[i].count]++;
-    }
+    this.pool.forEach((elem) => {
+      correct[elem.count]++;
+    });
 
     return correct;
   }

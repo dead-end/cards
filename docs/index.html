@@ -45,29 +45,29 @@
   </template>
 
   <template id="tmpl-pool-list">
-    <div class="block" id="tpl-table">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Status</th>
-            <th>Modified</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="pool-list-body">
-        </tbody>
-      </table>
+    <div id="pool-list-wrapper">
+      <div class="columns is-multiline" id="pool-list-body">
+      </div>
     </div>
   </template>
 
-  <template id="tpl-entry">
-    <tr>
-      <td class="tpl-title">Title</td>
-      <td class="tpl-status">Status</td>
-      <td class="tpl-modified">Status</td>
-      <td><button class="button is-light tpl-show">Show</button></td>
-    </tr>
+  <template id="pool-entry">
+    <div class="column is-one-third">
+      <div class="notification is-info is-light content">
+        <h1 class="pool-entry-title title is-6">Title</h1>
+        <table>
+          <tr>
+            <td>Status</td>
+            <td class="pool-entry-status"></td>
+          </tr>
+          <tr>
+            <td>Mofified</td>
+            <td class="pool-entry-modified"></td>
+          </tr>
+        </table>
+        <button class="button pool-entry-show">Show</button>
+      </div>
+    </div>
   </template>
 
   <template id="tmpl-sf">

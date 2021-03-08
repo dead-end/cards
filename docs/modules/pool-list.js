@@ -20,17 +20,17 @@ export default class PoolList {
     const persist = Persist.get(id);
 
     if (persist) {
-      entry.querySelector(".tpl-status").innerText = arrPercentage(
+      entry.querySelector(".pool-entry-status").innerText = arrPercentage(
         persist.answer,
         3
       );
 
-      entry.querySelector(".tpl-modified").innerText = fmtDate(
+      entry.querySelector(".pool-entry-modified").innerText = fmtDate(
         persist.lastmodified
       );
     } else {
-      entry.querySelector(".tpl-status").innerText = "";
-      entry.querySelector(".tpl-modified").innerText = "";
+      entry.querySelector(".pool-entry-status").innerText = "";
+      entry.querySelector(".pool-entry-modified").innerText = "";
     }
   }
 
@@ -38,23 +38,23 @@ export default class PoolList {
    * The function creates the tables from the templates.
    ***************************************************************************/
   doShow() {
-    const temp = document.getElementById("tmpl-pool-list");
-    const tplEnty = document.getElementById("tpl-entry");
+    const tmplPoolList = document.getElementById("tmpl-pool-list");
+    const tmplPoolEntry = document.getElementById("pool-entry");
 
-    const clone = temp.content.cloneNode(true);
+    const clone = tmplPoolList.content.cloneNode(true);
     const body = clone.getElementById("pool-list-body");
 
     for (let i = 0; i < this.files.length; i++) {
-      const entry = tplEnty.content.cloneNode(true);
+      const entry = tmplPoolEntry.content.cloneNode(true);
 
-      entry.querySelector(".tpl-title").innerText = this.files[i].title;
+      entry.querySelector(".pool-entry-title").innerText = this.files[i].title;
 
       this._updatePersist(entry, this.files[i].file);
 
       //
       // Add the show button
       //
-      const button = entry.querySelector(".tpl-show");
+      const button = entry.querySelector(".pool-entry-show");
       button.setAttribute("data-file-idx", i);
       button.addEventListener("click", (e) => {
         const idx = e.target.getAttribute("data-file-idx");
@@ -65,7 +65,6 @@ export default class PoolList {
       // Add the result to the dom and the add the id
       //
       body.appendChild(entry);
-      body.lastElementChild.id = "tplid-" + this.files[i].file;
     }
 
     document.getElementById("main").prepend(clone);
@@ -84,6 +83,6 @@ export default class PoolList {
    * The function removes the content from the dom.
    ***************************************************************************/
   doHide() {
-    elemRemoveById("tpl-table");
+    elemRemoveById("pool-list-wrapper");
   }
 }

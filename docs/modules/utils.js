@@ -32,22 +32,6 @@ export function fmtDate(date) {
 }
 
 /******************************************************************************
- * The function returns an array where the elements with the given value are
- * removed.
- *****************************************************************************/
-export function arrRemove(array, value) {
-  const result = [];
-
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] !== value) {
-      result.push(array[i]);
-    }
-  }
-
-  return result;
-}
-
-/******************************************************************************
  * The function is called with an array of integers. Each can have a max value.
  * The function computes a percentage string from the values. 100% means that
  * all entries have the max value.

@@ -64,10 +64,7 @@ export default class Persist {
     //
     // Get an array with the file names
     //
-    const files = [];
-    for (let i = 0; i < arr.length; i++) {
-      files.push(arr[i].file);
-    }
+    const files = arr.map((elem) => elem.file);
 
     //
     // Remove all items that are not in the registry.
@@ -79,26 +76,5 @@ export default class Persist {
         localStorage.removeItem(key);
       }
     }
-  }
-
-  /****************************************************************************
-   * The function sets all answers to a given value.
-   ***************************************************************************/
-  static setAll(id, val) {
-    const data = localStorage.getItem(id);
-
-    if (!data) {
-      return;
-    }
-
-    const obj = JSON.parse(data);
-
-    for (let i = 0; i < obj.answer.length; i++) {
-      obj.answer[i] = val;
-    }
-
-    Persist.save(id, obj);
-
-    return obj;
   }
 }

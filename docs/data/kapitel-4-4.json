@@ -1,0 +1,149 @@
+[
+  {
+    "quest": [
+      "Kollege",
+      "Kollegin"
+    ],
+    "answer": "коллега"
+  },
+  {
+    "quest": [
+      "Manager",
+      "Manager­in"
+    ],
+    "answer": "менеджер"
+  },
+  {
+    "quest": [
+      "Partner",
+      "Partner­in "
+    ],
+    "answer": "партнёр"
+  },
+  {
+    "quest": "Ich freue mich sehr, Sie (dich, euch) kennenzulernen.",
+    "answer": "Очень рад познакомиться."
+  },
+  {
+    "quest": "froh ",
+    "answer": [
+      "рад",
+      "рада",
+      "рады"
+    ]
+  },
+  {
+    "quest": [
+      "Ich freue mich, Sie zu sehen.",
+      "Ich freue mich, euch zu sehen."
+    ],
+    "answer": "Рад вас видеть."
+  },
+  {
+    "quest": "Projekt",
+    "answer": "проект"
+  },
+  {
+    "quest": "Es geht gut (voran).",
+    "answer": "Дела идут хорошо."
+  },
+  {
+    "quest": "Mitarbeiterin",
+    "answer": "сотрудница"
+  },
+  {
+    "quest": "Danke für das Kompliment!",
+    "answer": "Спасибо за комплимент!"
+  },
+  {
+    "quest": [
+      "Direktor",
+      "Direktor­in"
+    ],
+    "answer": "директор"
+  },
+  {
+    "quest": [
+      "Übersetzerin",
+      "Dolmetscherin"
+    ],
+    "answer": "переводчица"
+  },
+  {
+    "quest": "Mitarbeiter",
+    "answer": "сотрудник"
+  },
+  {
+    "quest": [
+      "Übersetzer",
+      "Dol­metscher"
+    ],
+    "answer": "переводчик"
+  },
+  {
+    "quest": [
+      "Techniker­",
+      "Technikerin"
+    ],
+    "answer": "техник"
+  },
+  {
+    "quest": [
+      "Agent",
+      "Agent­in",
+      "Vertreter",
+      "Vertreter­in"
+    ],
+    "answer": "агент"
+  },
+  {
+    "quest": [
+      "Finanzfachmann",
+      "Finanzfachfrau"
+    ],
+    "answer": "финансист"
+  },
+  {
+    "quest": [
+      "schön",
+      "wunder­schön",
+      "wunderbar"
+    ],
+    "answer": "прекрасно"
+  },
+  {
+    "quest": "(kleine) Stadt",
+    "answer": [
+      "городок",
+      "городка (Gen.Sg.)"
+    ]
+  },
+  {
+    "quest": "Universität für Luft­ und Weltraumfahrt",
+    "answer": "Аэрокосмический университет"
+  },
+  {
+    "quest": "Flug­zeugfabrik",
+    "answer": "авиационный завод"
+  },
+  {
+    "quest": "Auto­mobilwerk",
+    "answer": "автомобильный завод"
+  },
+  {
+    "quest": "Opern ­und Balletttheater",
+    "answer": "театр оперы и балета"
+  },
+  {
+    "quest": "Frauenkloster",
+    "answer": "женский монастырь (m)"
+  },
+  {
+    "quest": "Synagoge",
+    "answer": "синагога"
+  },
+  {
+    "quest": "Gruschin­ Festival",
+    "answer": "Грушинский фестиваль (m)"
+  }
+]

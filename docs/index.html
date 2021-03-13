@@ -116,73 +116,75 @@
 
   <template id="tmpl-qa">
     <div class="container" id="cont-qa">
-      <div class="block">
+      <div class="card">
 
-        <!-- Questions -->
-        <div class="columns">
+        <div class="card-content">
+          <h5 class="title is-spaced is-5" id="qa-pool"></h5>
 
-          <div class="column">
-            <div class="content py-1">
-              <h1 class="title is-5" id="qa-pool"></h1>
-              <h1 class="title is-6">Question <span id="qa-no"></span></h1>
+          <!-- Questions -->
+          <div class="columns">
+
+            <div class="column is-hidden-mobile is-one-quarter">
+              <table class="table">
+                <tr>
+                  <td>No correct Answers</td>
+                  <td id="qa-pool-0"></td>
+                </tr>
+                <tr>
+                  <td>One correct Answer</td>
+                  <td id="qa-pool-1"></td>
+                </tr>
+                <tr>
+                  <td>Two correct Answers</td>
+                  <td id="qa-pool-2"></td>
+                </tr>
+                <tr>
+                  <td>Learned</td>
+                  <td id="qa-pool-3"></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="column  is-hidden-mobile is-one-quarter">
+              <table class="table">
+                <tr>
+                  <td>Correct</td>
+                  <td id="qa-correct"></td>
+                </tr>
+                <tr>
+                  <td>Attempts</td>
+                  <td id="qa-attempt"></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <h6 class="title is-6">Question <span id="qa-no"></span></h6>
+              <div class="notification is-light is-info">
+                <p id="c-quest-question" class="content">dummy-question</p>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="qa-show-answer">
+                <h6 class="title is-6">Answer</h6>
+                <div class="notification is-light is-info" id="div-answer">
+                  <p id="c-quest-answer" class="content">dummy-answer</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="column  is-hidden-mobile">
-            <table class="table">
-              <tr>
-                <td>Correct</td>
-                <td id="qa-correct"></td>
-              </tr>
-              <tr>
-                <td>Attempts</td>
-                <td id="qa-attempt"></td>
-              </tr>
-            </table>
-          </div>
-
-          <div class="column is-hidden-mobile">
-            <table class="table">
-              <tr>
-                <td>No correct Answers</td>
-                <td id="qa-pool-0"></td>
-              </tr>
-              <tr>
-                <td>One correct Answer</td>
-                <td id="qa-pool-1"></td>
-              </tr>
-              <tr>
-                <td>Two correct Answers</td>
-                <td id="qa-pool-2"></td>
-              </tr>
-              <tr>
-                <td>Learned</td>
-                <td id="qa-pool-3"></td>
-              </tr>
-            </table>
-          </div>
-
+          <!-- Buttons related to questions and answers -->
+          <button class="button is-light" id="cq-btn-show">Show answer</button>
+          <button class="button is-light is-success qa-show-answer" id="qa-btn-is-correct">Correct answer</button>
+          <button class="button is-light is-danger qa-show-answer" id="qa-btn-is-wrong">Wrong answer</button>
+          <button class="button is-light" id="qa-btn-stop">Stop</button>
         </div>
 
-        <div class="columns">
-          <div class="column">
-            <div class="notification is-light is-info">
-              <p id="c-quest-question" class="content">dummy-question</p>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="notification is-light is-info qa-show-answer" id="div-answer">
-              <p id="c-quest-answer" class="content">dummy-answer</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Buttons related to questions and answers -->
-        <button class="button is-light" id="cq-btn-show">Show answer</button>
-        <button class="button is-light is-success qa-show-answer" id="qa-btn-is-correct">Correct answer</button>
-        <button class="button is-light is-danger qa-show-answer" id="qa-btn-is-wrong">Wrong answer</button>
-        <button class="button is-light" id="qa-btn-stop">Stop</button>
       </div>
     </div>
   </template>
@@ -192,7 +194,7 @@
 
     <div id="main"></div>
 
-    <footer class="footer">
+    <footer class="my-5">
       <div class="content has-text-right">
         <p>by Volker Senkel 2021</p>
       </div>

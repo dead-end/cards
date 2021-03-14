@@ -85,6 +85,7 @@
   },
   {
     "file": "data/misc.json",
-    "title": "Sonstiges - Test"
+    "title": "Sonstiges - Test",
+    "desc": "Dies ist meine Beschreibung!"
   }
 ]

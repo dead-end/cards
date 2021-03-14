@@ -51,6 +51,10 @@ export default class PoolList {
 
       this._updatePersist(entry, this.files[i].file);
 
+      if (this.files[i].desc) {
+        entry.querySelector(".pool-entry-desc").innerText = this.files[i].desc;
+      }
+
       //
       // Add the show button
       //

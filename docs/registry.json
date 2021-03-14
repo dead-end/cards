@@ -60,12 +60,9 @@
     "title": "Sprichworte"
   },
   {
-    "file": "data/verben-1-list.json",
-    "title": "Verben 1 (Liste)"
-  },
-  {
-    "file": "data/verben-2-list.json",
-    "title": "Verben 2 (Liste)"
+    "file": "data/verben-1.json",
+    "title": "Verben 1 (Liste)",
+    "desc": "wohnen, sprechen, arbeiten, wissen / kennen, machen / tun"
   },
   {
     "file": "data/gram-genitiv.json",

@@ -32,7 +32,7 @@ class Quest {
     this.answer = answer;
     this.idx = idx;
     this.count = count;
-    this.attempt = 0;
+    this.error = 0;
   }
 
   correct() {
@@ -40,14 +40,13 @@ class Quest {
       return false;
     }
     this.count++;
-    this.attempt++;
     return this.count === 3;
   }
 
   wrong() {
     const changed = this.count !== 0;
     this.count = 0;
-    this.attempt++;
+    this.error++;
     return changed;
   }
 

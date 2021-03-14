@@ -152,24 +152,16 @@
               </table>
             </div>
 
-            <div class="column is-hidden-mobile is-4">
-              <table class="table">
-                <tr>
-                  <td>Correct</td>
-                  <td id="qa-correct"></td>
-                </tr>
-                <tr>
-                  <td>Attempts</td>
-                  <td id="qa-attempt"></td>
-                </tr>
-              </table>
-            </div>
-
           </div>
 
           <div class="columns">
             <div class="column">
-              <h6 class="title is-6">Question <span id="qa-no"></span></h6>
+              <h6 class="title is-6">Question <span id="qa-no"></span>
+                <span class="is-pulled-right">
+                  (<span class="has-text-success" id="qa-correct"></span> / <span class="has-text-danger"
+                    id="qa-wrong"></span>)
+                </span>
+              </h6>
               <div class="notification is-light is-info">
                 <p id="c-quest-question" class="content">dummy-question</p>
               </div>

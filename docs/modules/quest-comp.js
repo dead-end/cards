@@ -84,7 +84,7 @@ export default class QuestComp {
 
     document.getElementById("qa-no").innerText = quest.idx;
     document.getElementById("qa-correct").innerText = quest.count;
-    document.getElementById("qa-attempt").innerText = quest.attempt;
+    document.getElementById("qa-wrong").innerText = quest.error;
 
     this._hideAnswer();
   }

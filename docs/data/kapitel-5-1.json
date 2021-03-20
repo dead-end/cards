@@ -1,0 +1,375 @@
+[
+  {
+    "quest": [
+      "Geschäft",
+      "Laden"
+    ],
+    "answer": [
+      "магазин"
+    ]
+  },
+  {
+    "quest": [
+      "Brot"
+    ],
+    "answer": [
+      "хлеб"
+    ]
+  },
+  {
+    "quest": [
+      "Brötchen"
+    ],
+    "answer": [
+      "булочка"
+    ]
+  },
+  {
+    "quest": [
+      "Butter",
+      "Öl"
+    ],
+    "answer": [
+      "масло"
+    ]
+  },
+  {
+    "quest": [
+      "Käse"
+    ],
+    "answer": [
+      "сыр"
+    ]
+  },
+  {
+    "quest": [
+      "Wurst"
+    ],
+    "answer": [
+      "колбаса"
+    ]
+  },
+  {
+    "quest": [
+      "Schinken"
+    ],
+    "answer": [
+      "ветчина"
+    ]
+  },
+  {
+    "quest": [
+      "Ei"
+    ],
+    "answer": [
+      "яйцо",
+      "яйца (Nominativ Plural)"
+    ]
+  },
+  {
+    "quest": [
+      "Joghurt"
+    ],
+    "answer": [
+      "йогурт"
+    ]
+  },
+  {
+    "quest": [
+      "Honig"
+    ],
+    "answer": [
+      "мёд"
+    ]
+  },
+  {
+    "quest": [
+      "Kaffee"
+    ],
+    "answer": [
+      "кофе",
+      "(maskulin / indeklinabel)"
+    ]
+  },
+  {
+    "quest": [
+      "Konfitüre"
+    ],
+    "answer": [
+      "варенье"
+    ]
+  },
+  {
+    "quest": [
+      "Milch"
+    ],
+    "answer": [
+      "молоко"
+    ]
+  },
+  {
+    "quest": [
+      "Saft"
+    ],
+    "answer": [
+      "сок"
+    ]
+  },
+  {
+    "quest": [
+      "Wein"
+    ],
+    "answer": [
+      "вино"
+    ]
+  },
+  {
+    "quest": [
+      "Apfel"
+    ],
+    "answer": [
+      "яблоко"
+    ]
+  },
+  {
+    "quest": [
+      "Banane"
+    ],
+    "answer": [
+      "банан"
+    ]
+  },
+  {
+    "quest": [
+      "Tomate"
+    ],
+    "answer": [
+      "помидор"
+    ]
+  },
+  {
+    "quest": [
+      "hier: Lebensmittel",
+      "Nahrungsmittel"
+    ],
+    "answer": [
+      "продукты",
+      "(Plural)"
+    ]
+  },
+  {
+    "quest": [
+      "Mineral­wasser"
+    ],
+    "answer": [
+      "минеральная вода"
+    ]
+  },
+  {
+    "quest": [
+      "Kaviar"
+    ],
+    "answer": [
+      "икра"
+    ]
+  },
+  {
+    "quest": [
+      "Bier"
+    ],
+    "answer": [
+      "пиво"
+    ]
+  },
+  {
+    "quest": [
+      "Mehl"
+    ],
+    "answer": [
+      "мука"
+    ]
+  },
+  {
+    "quest": [
+      "Kartoffel"
+    ],
+    "answer": [
+      "картофель",
+      "(maskulin / nur Singular)"
+    ]
+  },
+  {
+    "quest": [
+      "Kohl"
+    ],
+    "answer": [
+      "капуста"
+    ]
+  },
+  {
+    "quest": [
+      "Möhre"
+    ],
+    "answer": [
+      "морковь",
+      "(feminin)"
+    ]
+  },
+  {
+    "quest": [
+      "Zwiebel"
+    ],
+    "answer": [
+      "лук"
+    ]
+  },
+  {
+    "quest": [
+      "Wasser"
+    ],
+    "answer": [
+      "вода"
+    ]
+  },
+  {
+    "quest": [
+      "Milchprodukte"
+    ],
+    "answer": [
+      "молочные продукты"
+    ]
+  },
+  {
+    "quest": [
+      "Fleisch"
+    ],
+    "answer": [
+      "мясо"
+    ]
+  },
+  {
+    "quest": [
+      "Fisch"
+    ],
+    "answer": [
+      "рыба"
+    ]
+  },
+  {
+    "quest": [
+      "Gemüse"
+    ],
+    "answer": [
+      "овощи",
+      "(Plural)"
+    ]
+  },
+  {
+    "quest": [
+      "Getränk"
+    ],
+    "answer": [
+      "напиток",
+      "напитка (Genitiv Singular)"
+    ]
+  },
+  {
+    "quest": [
+      "Praline",
+      "Bonbon"
+    ],
+    "answer": [
+      "конфета"
+    ]
+  },
+  {
+    "quest": [
+      "Birne"
+    ],
+    "answer": [
+      "груша"
+    ]
+  },
+  {
+    "quest": [
+      "(Wiener) Würstchen"
+    ],
+    "answer": [
+      "сосиска"
+    ]
+  },
+  {
+    "quest": [
+      "Kuchen"
+    ],
+    "answer": [
+      "пирог"
+    ]
+  },
+  {
+    "quest": [
+      "Salat"
+    ],
+    "answer": [
+      "сaлат"
+    ]
+  },
+  {
+    "quest": [
+      "Ananas"
+    ],
+    "answer": [
+      "ананас"
+    ]
+  },
+  {
+    "quest": [
+      "Gurke"
+    ],
+    "answer": [
+      "огурец",
+      "огурца (Gennitiv Singular)"
+    ]
+  },
+  {
+    "quest": [
+      "Kühlschrank"
+    ],
+    "answer": [
+      "холодильник"
+    ]
+  },
+  {
+    "quest": [
+      "saure Sahne"
+    ],
+    "answer": [
+      "сметана"
+    ]
+  },
+  {
+    "quest": [
+      "Quark"
+    ],
+    "answer": [
+      "творог"
+    ]
+  },
+  {
+    "quest": [
+      "Salz"
+    ],
+    "answer": [
+      "соль",
+      "(feminin)"
+    ]
+  },
+  {
+    "quest": [
+      "Zucker"
+    ],
+    "answer": [
+      "сахар"
+    ]
+  }
+]

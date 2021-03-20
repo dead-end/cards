@@ -8,6 +8,10 @@ export function strOrList(strOrArr) {
     return strOrArr;
   }
 
+  if (strOrArr.length === 1) {
+    return strOrArr[0];
+  }
+
   return `<ul>${strOrArr.map((elem) => `<li>${elem}</li>`).join("")}</ul>`;
 }
 

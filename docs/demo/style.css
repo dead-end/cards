@@ -1,10 +1,21 @@
 :root {
-  --margin-bottom-default: 1em;
-  --box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
-  --radius: 0.5rem;
+  --color-text: #3d3d3d;
 
-  --border: 1px solid #ccc;
-  --border-focus: 1px solid #999;
+  --color-primary-0: #a0a0ff;
+  --color-primary-1: #a5a5ff;
+  --color-primary-2: #9090ff;
+  /* 
+  --color-button: #999; */
+  --color-focus: #888;
+  --color-border: #ccc;
+
+  --margin-bottom-default: 1em;
+
+  --box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
+
+  --border-radius: 0.5rem;
+  --border-size: 1px;
+  --border: var(--border-size) solid var(--color-border);
 
   --break-point-sm: 320px;
   --break-point-md: 640px;
@@ -14,7 +25,7 @@
 
 body {
   background: #fff;
-  color: #3d3d3d;
+  color: var(--color-text);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", sans-serif;
   font-size: 1rem;
@@ -22,8 +33,8 @@ body {
 }
 
 /******************************************************************************
-   *
-   *****************************************************************************/
+ * Defintion of the header tags
+ *****************************************************************************/
 
 h1,
 h2,
@@ -66,118 +77,163 @@ h6,
   font-size: 0.8rem;
 }
 
-p {
-  margin: 0 0 1.2rem;
-}
-
 /******************************************************************************
-   *
-   *****************************************************************************/
+ *
+ *****************************************************************************/
 
 table {
+  /* ??? */
   border-spacing: 0;
-  text-align: left;
-  width: 100%;
+  border-top: var(--border);
 }
 
 td,
 th {
-  border-bottom: var(--border);
   padding: 0.5rem 0rem;
+  border-bottom: var(--border);
 }
 
 /******************************************************************************
-   *
-   *****************************************************************************/
+ * Definition of the container and the grid
+ *****************************************************************************/
 
 .container {
   max-width: var(--break-point-xl);
   margin: 0 auto;
 }
 
-.footer {
-  text-align: right;
-}
-
-.grid-container {
+.grid-4 {
   display: grid;
   grid-gap: 1rem 1rem;
   grid-template-columns: auto auto auto auto;
 }
 
-.card {
-  border: var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--box-shadow);
-
-  padding: 0rem 1rem;
-}
-
 @media (max-width: 1280px) {
-  .grid-container {
-    grid-template-columns: auto auto auto;
-  }
-
   .container {
     max-width: var(--break-point-lg);
+  }
+
+  .grid-4 {
+    grid-template-columns: auto auto auto;
   }
 }
 
 @media (max-width: 960px) {
-  .grid-container {
-    grid-template-columns: auto auto;
-  }
-
   .container {
     max-width: var(--break-point-md);
+  }
+
+  .grid-4 {
+    grid-template-columns: auto auto;
   }
 }
 
 @media (max-width: 640px) {
-  .grid-container {
-    grid-template-columns: auto;
-  }
   .container {
     max-width: var(--break-point-sm);
   }
+
+  .grid-4 {
+    grid-template-columns: auto;
+  }
 }
+
+/******************************************************************************
+ *
+ *****************************************************************************/
+
+input,
+textarea {
+  border: var(--border-size) solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  border: var(--border-size) solid var(--color-focus);
+  outline: 0px;
+}
+
+.button,
+button,
+select {
+  background-color: var(--color-primary-0);
+  border: var(--border-size) solid var(--color-primary-0);
+  border-radius: var(--border-radius);
+  padding: 0.4rem 1.5rem;
+}
+
+.button:hover,
+button:hover,
+select:hover {
+  background-color: var(--color-primary-1);
+  border: var(--border-size) solid var(--color-primary-1);
+}
+
+button:active,
+.button:active,
+select:active {
+  background-color: var(--color-primary-2);
+  border: var(--border-size) solid var(--color-primary-2);
+}
+
+.button:focus,
+button:focus,
+select:focus {
+  border: var(--border-size) solid var(--color-focus);
+  outline: 0px;
+}
+
+input[disabled],
+textarea[disabled],
+select[disabled],
+.disabled {
+  opacity: 0.6;
+}
+
+/******************************************************************************
+ * Definition of the margins
+ *****************************************************************************/
 
 table,
 .buttons,
-.grid-container {
+.grid-4 {
   margin-bottom: var(--margin-bottom-default);
 }
 
 /******************************************************************************
-   *
-   *****************************************************************************/
+ * Utility classes
+ *****************************************************************************/
 
-button,
-input,
-select,
-textarea {
-  border: var(--border);
-  border-radius: var(--radius);
+.is-full {
+  width: 100%;
 }
 
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  border: var(--border-focus);
-  outline: 0px;
+.is-text-right {
+  text-align: right;
 }
 
-input,
-textarea {
-  padding: 0.8rem;
+.is-text-left {
+  text-align: left;
 }
 
-button,
-select {
-  padding: 0.4rem 1.5rem;
+.is-text-center {
+  text-align: center;
+}
+
+.is-small {
+  font-size: 0.8rem;
 }
 
 /******************************************************************************
-   *
-   *****************************************************************************/
+ * Definition of cards
+ *****************************************************************************/
+
+.card {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  padding: 0rem 1rem;
+}

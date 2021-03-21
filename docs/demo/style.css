@@ -1,10 +1,13 @@
+/******************************************************************************
+ * Basic definitions
+ *****************************************************************************/
 :root {
   --color-text: #3d3d3d;
   --color-background: #fff;
 
-  --color-primary-0: #a0a0ff;
-  --color-primary-1: #a5a5ff;
-  --color-primary-2: #9090ff;
+  --color-primary-0: #c0c0ff;
+  --color-primary-1: #b5b5ff;
+  --color-primary-2: #a0a0ff;
 
   --color-focus: #888;
   --color-border: #ccc;
@@ -22,6 +25,10 @@
   --break-point-lg: 960px;
   --break-point-xl: 1280px;
 }
+
+/******************************************************************************
+ * Body definitions
+ *****************************************************************************/
 
 body {
   background: var(--color-background);
@@ -196,10 +203,11 @@ select[disabled],
  * Definition of the margins
  *****************************************************************************/
 
+p,
 table,
 .buttons,
 .grid-4 {
-  margin-bottom: var(--margin-bottom-default);
+  margin: 0rem 0rem var(--margin-bottom-default) 0rem;
 }
 
 /******************************************************************************

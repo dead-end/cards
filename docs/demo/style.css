@@ -1,0 +1,183 @@
+:root {
+  --margin-bottom-default: 1em;
+  --box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
+  --radius: 0.5rem;
+
+  --border: 1px solid #ccc;
+  --border-focus: 1px solid #999;
+
+  --break-point-sm: 320px;
+  --break-point-md: 640px;
+  --break-point-lg: 960px;
+  --break-point-xl: 1280px;
+}
+
+body {
+  background: #fff;
+  color: #3d3d3d;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+/******************************************************************************
+   *
+   *****************************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.6rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.4rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.2rem;
+}
+
+h5,
+.h5 {
+  font-size: 1rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  margin: 0 0 1.2rem;
+}
+
+/******************************************************************************
+   *
+   *****************************************************************************/
+
+table {
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: var(--border);
+  padding: 0.5rem 0rem;
+}
+
+/******************************************************************************
+   *
+   *****************************************************************************/
+
+.container {
+  max-width: var(--break-point-xl);
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 1rem 1rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card {
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow);
+
+  padding: 0rem 1rem;
+}
+
+@media (max-width: 1280px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container {
+    max-width: var(--break-point-lg);
+  }
+}
+
+@media (max-width: 960px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .container {
+    max-width: var(--break-point-md);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  .container {
+    max-width: var(--break-point-sm);
+  }
+}
+
+table,
+.buttons,
+.grid-container {
+  margin-bottom: var(--margin-bottom-default);
+}
+
+/******************************************************************************
+   *
+   *****************************************************************************/
+
+button,
+input,
+select,
+textarea {
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border: var(--border-focus);
+  outline: 0px;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+}
+
+button,
+select {
+  padding: 0.4rem 1.5rem;
+}
+
+/******************************************************************************
+   *
+   *****************************************************************************/

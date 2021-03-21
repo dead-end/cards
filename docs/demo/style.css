@@ -12,6 +12,8 @@
   --color-focus: #888;
   --color-border: #ccc;
 
+  --font-weight-bold: 600;
+
   --margin-bottom-default: 1em;
 
   --box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
@@ -51,7 +53,7 @@ h5,
 h6 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 h1,
@@ -203,7 +205,9 @@ select[disabled],
  * Definition of the margins
  *****************************************************************************/
 
+.box,
 p,
+label,
 table,
 .buttons,
 .grid-4 {
@@ -232,6 +236,33 @@ table,
 
 .is-small {
   font-size: 0.8rem;
+}
+
+.is-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.is-block {
+  display: block;
+}
+
+.is-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/******************************************************************************
+ * Misc ??
+ *****************************************************************************/
+
+hr {
+  border-top: var(--border-size) solid var(--color-border);
+  border-bottom: 0px;
+}
+
+label,
+select {
+  display: block;
 }
 
 /******************************************************************************

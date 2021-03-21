@@ -1,11 +1,11 @@
 :root {
   --color-text: #3d3d3d;
+  --color-background: #fff;
 
   --color-primary-0: #a0a0ff;
   --color-primary-1: #a5a5ff;
   --color-primary-2: #9090ff;
-  /* 
-  --color-button: #999; */
+
   --color-focus: #888;
   --color-border: #ccc;
 
@@ -24,7 +24,7 @@
 }
 
 body {
-  background: #fff;
+  background: var(--color-background);
   color: var(--color-text);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", sans-serif;

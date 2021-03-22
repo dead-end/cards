@@ -52,7 +52,7 @@
         "answer": "твоё пиво"
     },
     {
-        "quest": "deine Freundin",
+        "quest": "dein Wein",
         "answer": "твоё вино"
     },
     {
@@ -97,10 +97,10 @@
     },
     {
         "quest": [
-            "euer Enkel",
-            "Ihr Enkel"
+            "euer Lehrer",
+            "Ihr Lehrer"
         ],
-        "answer": "ваш внук"
+        "answer": "ваш учитель"
     },
     {
         "quest": [

@@ -26,6 +26,7 @@
   --font-weight-bold: 600;
 
   --margin-y: 1em;
+  --margin-y-sm: 0.5em;
 
   --box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
 
@@ -65,9 +66,6 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  /*
-  margin-bottom: 0.5rem;
-*/
   margin: 0rem 0rem var(--margin-y) 0rem;
   font-weight: var(--font-weight-bold);
 }
@@ -251,17 +249,35 @@ select[disabled],
 }
 
 /******************************************************************************
+ * Definition of a button group
+ *****************************************************************************/
+
+.buttons > button,
+.buttons > .button {
+  margin-right: var(--margin-y-sm);
+}
+
+.buttons > button:last-child,
+.buttons > .button:last-child {
+  margin-right: 0;
+}
+
+/******************************************************************************
  * Definition of the margins
  *****************************************************************************/
 
-.box,
 p,
 label,
 table,
+.box,
 .buttons,
 .grid-2,
 .grid-4 {
   margin: 0rem 0rem var(--margin-y) 0rem;
+}
+
+.content > :first-child {
+  margin-top: var(--margin-y);
 }
 
 /******************************************************************************
@@ -296,12 +312,6 @@ table,
   display: block;
 }
 
-/***DOES NOT WORK ON SAFARI */
-.is-flex {
-  display: flex;
-  gap: 1rem;
-}
-
 /******************************************************************************
  * Misc ??
  *****************************************************************************/
@@ -328,14 +338,6 @@ select {
 
 .card-shadow {
   box-shadow: var(--box-shadow);
-}
-
-/******************************************************************************
- *
- *****************************************************************************/
-
-.content > :first-child {
-  margin-top: var(--margin-y);
 }
 
 /******************************************************************************

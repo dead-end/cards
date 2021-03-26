@@ -5,22 +5,35 @@
   --color-text: #3d3d3d;
   --color-background: #fff;
 
-  --color-primary-0: #c0c0ff;
-  --color-primary-1: #b5b5ff;
-  --color-primary-2: #a0a0ff;
+  --color-primary-0: #ffc6b3;
+  --color-primary-1: #ffb399;
+  --color-primary-2: #ff9f80;
+
+  --color-success-0: #c2f0c2;
+  --color-success-1: #adebad;
+  --color-success-2: #99e699;
+
+  --color-danger-0: #ffb3b3;
+  --color-danger-1: #ff9999;
+  --color-danger-2: #ff8080;
+
+  --color-stripe-0: #f0f0f0;
+  --color-stripe-1: #ffece6;
 
   --color-focus: #888;
   --color-border: #ccc;
 
   --font-weight-bold: 600;
 
-  --margin-bottom-default: 1em;
+  --margin-y: 1em;
 
   --box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
 
-  --border-radius: 0.5rem;
+  --border-radius: 0.3rem;
   --border-size: 1px;
   --border: var(--border-size) solid var(--color-border);
+
+  --grid-gap: 1rem;
 
   --break-point-sm: 320px;
   --break-point-md: 640px;
@@ -37,7 +50,7 @@ body {
   color: var(--color-text);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-rendering: optimizeLegibility;
 }
 
@@ -52,7 +65,10 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+  /*
   margin-bottom: 0.5rem;
+*/
+  margin: 0rem 0rem var(--margin-y) 0rem;
   font-weight: var(--font-weight-bold);
 }
 
@@ -87,19 +103,23 @@ h6,
 }
 
 /******************************************************************************
- *
+ * Style for the table. We use a padding-right to separate the cells. This has
+ * to be removed on the last cell of a row.
  *****************************************************************************/
 
 table {
-  /* ??? */
-  border-spacing: 0;
   border-top: var(--border);
 }
 
 td,
 th {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem 0.5rem 0rem;
   border-bottom: var(--border);
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
 }
 
 /******************************************************************************
@@ -111,9 +131,16 @@ th {
   margin: 0 auto;
 }
 
-.grid-4 {
+.grid {
   display: grid;
-  grid-gap: 1rem 1rem;
+  grid-gap: var(--grid-gap) var(--grid-gap);
+}
+
+.grid-2 {
+  grid-template-columns: auto auto;
+}
+
+.grid-4 {
   grid-template-columns: auto auto auto auto;
 }
 
@@ -130,6 +157,10 @@ th {
 @media (max-width: 960px) {
   .container {
     max-width: var(--break-point-md);
+  }
+
+  .grid-2 {
+    grid-template-columns: auto;
   }
 
   .grid-4 {
@@ -165,30 +196,48 @@ textarea:focus {
 }
 
 .button,
-button,
 select {
   background-color: var(--color-primary-0);
-  border: var(--border-size) solid var(--color-primary-0);
+  border: var(--border-size) solid var(--color-border);
   border-radius: var(--border-radius);
-  padding: 0.4rem 1.5rem;
+  padding: 0.3rem 1rem;
 }
 
 .button:hover,
-button:hover,
 select:hover {
   background-color: var(--color-primary-1);
-  border: var(--border-size) solid var(--color-primary-1);
 }
 
-button:active,
 .button:active,
 select:active {
   background-color: var(--color-primary-2);
-  border: var(--border-size) solid var(--color-primary-2);
+}
+
+.button.is-success {
+  background-color: var(--color-success-0);
+}
+
+.button:hover.is-success {
+  background-color: var(--color-success-1);
+}
+
+.button:active.is-success {
+  background-color: var(--color-success-2);
+}
+
+.button.is-danger {
+  background-color: var(--color-danger-0);
+}
+
+.button:hover.is-danger {
+  background-color: var(--color-danger-1);
+}
+
+.button:active.is-danger {
+  background-color: var(--color-danger-2);
 }
 
 .button:focus,
-button:focus,
 select:focus {
   border: var(--border-size) solid var(--color-focus);
   outline: 0px;
@@ -210,8 +259,9 @@ p,
 label,
 table,
 .buttons,
+.grid-2,
 .grid-4 {
-  margin: 0rem 0rem var(--margin-bottom-default) 0rem;
+  margin: 0rem 0rem var(--margin-y) 0rem;
 }
 
 /******************************************************************************
@@ -246,6 +296,7 @@ table,
   display: block;
 }
 
+/***DOES NOT WORK ON SAFARI */
 .is-flex {
   display: flex;
   gap: 1rem;
@@ -272,7 +323,22 @@ select {
 .card {
   border: var(--border);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-
   padding: 0rem 1rem;
+}
+
+.card-content > :first-child {
+  margin-top: var(--margin-y);
+}
+
+.card-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+/* TODO: DOOF */
+.stripe-even {
+  background: var(--color-stripe-0);
+}
+
+.stripe-odd {
+  background: var(--color-stripe-1);
 }

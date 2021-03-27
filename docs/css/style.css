@@ -149,11 +149,11 @@ th:last-child {
 }
 
 .grid-2 {
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid-4 {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media (max-width: 1280px) {
@@ -162,7 +162,7 @@ th:last-child {
   }
 
   .grid-4 {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -172,11 +172,11 @@ th:last-child {
   }
 
   .grid-2 {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 
   .grid-4 {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -186,7 +186,7 @@ th:last-child {
   }
 
   .grid-4 {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 }
 

@@ -5,20 +5,25 @@
   --color-text: #3d3d3d;
   --color-background: #fff;
 
-  --color-primary-0: #ffc6b3;
-  --color-primary-1: #ffb399;
-  --color-primary-2: #ff9f80;
+  --color-primary-bg: hsl(0, 0%, 98%);
+  --color-primary-0: hsl(0, 0%, 95%);
+  --color-primary-1: hsl(0, 0%, 90%);
+  --color-primary-2: hsl(0, 0%, 85%);
 
-  --color-success-0: #c2f0c2;
-  --color-success-1: #adebad;
-  --color-success-2: #99e699;
+  --color-info-bg: hsl(240, 100%, 98%);
+  --color-info-0: hsl(240, 100%, 95%);
+  --color-info-1: hsl(240, 100%, 90%);
+  --color-info-2: hsl(240, 100%, 85%);
 
-  --color-danger-0: #ffb3b3;
-  --color-danger-1: #ff9999;
-  --color-danger-2: #ff8080;
+  --color-success-bg: hsl(120, 61%, 88%);
+  --color-success-0: hsl(120, 61%, 85%);
+  --color-success-1: hsl(120, 61%, 80%);
+  --color-success-2: hsl(120, 61%, 75%);
 
-  --color-primary: #f0f0f0;
-  --color-info: #ffece6;
+  --color-danger-bg: hsl(0, 100%, 88%);
+  --color-danger-0: hsl(0, 100%, 85%);
+  --color-danger-1: hsl(0, 100%, 80%);
+  --color-danger-2: hsl(0, 100%, 75%);
 
   --color-focus: #888;
   --color-border: #ccc;
@@ -225,6 +230,18 @@ select:active {
   background-color: var(--color-primary-2);
 }
 
+.button.is-info {
+  background-color: var(--color-info-0);
+}
+
+.button:hover.is-info {
+  background-color: var(--color-info-1);
+}
+
+.button:active.is-info {
+  background-color: var(--color-info-2);
+}
+
 .button.is-success {
   background-color: var(--color-success-0);
 }
@@ -267,19 +284,19 @@ select[disabled],
  *****************************************************************************/
 
 .is-primary {
-  background: var(--color-primary);
+  background: var(--color-primary-bg);
 }
 
 .is-info {
-  background: var(--color-info);
+  background: var(--color-info-bg);
 }
 
 .is-success {
-  background-color: var(--color-success-2);
+  background-color: var(--color-success-bg);
 }
 
 .is-danger {
-  background-color: var(--color-danger-0);
+  background-color: var(--color-danger-bg);
 }
 
 /******************************************************************************

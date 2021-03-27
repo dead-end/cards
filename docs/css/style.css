@@ -15,11 +15,13 @@
   --color-info-1: hsl(240, 100%, 90%);
   --color-info-2: hsl(240, 100%, 85%);
 
+  --color-success-fg: hsl(120, 61%, 40%);
   --color-success-bg: hsl(120, 61%, 88%);
   --color-success-0: hsl(120, 61%, 85%);
   --color-success-1: hsl(120, 61%, 80%);
   --color-success-2: hsl(120, 61%, 75%);
 
+  --color-danger-fg: hsl(0, 100%, 40%);
   --color-danger-bg: hsl(0, 100%, 88%);
   --color-danger-0: hsl(0, 100%, 85%);
   --color-danger-1: hsl(0, 100%, 80%);
@@ -65,11 +67,17 @@ body {
  *****************************************************************************/
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   line-height: 1.2;
   margin: 0rem 0rem var(--margin-y) 0rem;
   font-weight: var(--font-weight-bold);
@@ -299,6 +307,14 @@ select[disabled],
   background-color: var(--color-danger-bg);
 }
 
+.is-text-success {
+  color: var(--color-success-fg);
+}
+
+.is-text-danger {
+  color: var(--color-danger-fg);
+}
+
 /******************************************************************************
  * Definition of a button group. On Safari the flex gap does not work, so I 
  * added an inner margin.
@@ -374,6 +390,18 @@ table,
 
 .is-bold {
   font-weight: var(--font-weight-bold);
+}
+
+/******************************************************************************
+ * Classes for floating
+ *****************************************************************************/
+
+.is-pulled-left {
+  float: left !important;
+}
+
+.is-pulled-right {
+  float: right !important;
 }
 
 /******************************************************************************

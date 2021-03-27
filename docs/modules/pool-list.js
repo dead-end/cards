@@ -87,6 +87,6 @@ export default class PoolList {
    * The function removes the content from the dom.
    ***************************************************************************/
   doHide() {
-    elemRemoveById("pool-list-wrapper");
+    elemRemoveById("pool-list-body");
   }
 }

@@ -300,8 +300,13 @@ select[disabled],
 }
 
 /******************************************************************************
- * Definition of a button group. The main purpose is to set an inner margin.
+ * Definition of a button group. On Safari the flex gap does not work, so I 
+ * added an inner margin.
  *****************************************************************************/
+
+.buttons {
+  display: flex;
+}
 
 .buttons > button,
 .buttons > .button {

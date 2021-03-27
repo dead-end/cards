@@ -17,8 +17,8 @@
   --color-danger-1: #ff9999;
   --color-danger-2: #ff8080;
 
-  --color-stripe-0: #f0f0f0;
-  --color-stripe-1: #ffece6;
+  --color-primary: #f0f0f0;
+  --color-info: #ffece6;
 
   --color-focus: #888;
   --color-border: #ccc;
@@ -266,6 +266,14 @@ select[disabled],
  * Color definition.
  *****************************************************************************/
 
+.is-primary {
+  background: var(--color-primary);
+}
+
+.is-info {
+  background: var(--color-info);
+}
+
 .is-success {
   background-color: var(--color-success-2);
 }
@@ -358,17 +366,4 @@ table,
 
 .card-shadow {
   box-shadow: var(--box-shadow);
-}
-
-/******************************************************************************
- *
- *****************************************************************************/
-
-/* TODO: DOOF */
-.stripe-even {
-  background: var(--color-stripe-0);
-}
-
-.stripe-odd {
-  background: var(--color-stripe-1);
 }

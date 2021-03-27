@@ -58,6 +58,11 @@
     "desc": "Zahlen: 0-20, 30-90, 100, 200"
   },
   {
+    "file": "data/0-200.json",
+    "title": "Zahlen",
+    "desc": "Zahlen: 0-200"
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

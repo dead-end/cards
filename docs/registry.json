@@ -49,11 +49,13 @@
   },
   {
     "file": "data/dates.json",
-    "title": "Datum"
+    "title": "Datum",
+    "desc": "Wochentage, Jahreszeigen, usw."
   },
   {
     "file": "data/numbers.json",
-    "title": "Zahlen"
+    "title": "Zahlen",
+    "desc": "Zahlen von 0-200"
   },
   {
     "file": "data/assignment.json",

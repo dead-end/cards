@@ -22,7 +22,6 @@
   </template>
 
   <!-- The template for the listing of the pool -->
-  <!-- color missing -->
   <template id="tmpl-listing">
     <!-- TODO: necessary ?? -->
     <div class="card card-shadow content" id="listing-cont">
@@ -36,7 +35,6 @@
   </template>
 
   <!-- The template for a question / answer pair for the pool listing -->
-  <!-- color missing -->
   <template id="tmpl-listing-entry">
     <div class="card listing-column">
       <div class="content">
@@ -107,9 +105,7 @@
         </table>
 
         <div>
-          <!-- class label ? -->
-          <label class="label">Number of correct answers</label>
-          <!-- <div class="select"> -->
+          <label for="sf-set">Number of correct answers</label>
           <select id="sf-set">
             <option value="">-- Select --</option>
             <option value="0">Set 0</option>
@@ -117,7 +113,6 @@
             <option value="2">Set 2</option>
             <option value="3">Set 3</option>
           </select>
-          <!-- </div> -->
         </div>
 
       </div>
@@ -135,7 +130,7 @@
       <h4 id="qa-pool"></h4>
 
       <!-- Questions -->
-      <table class="table">
+      <table class="table hide-md">
         <tr>
           <td>No correct Answers</td>
           <td id="qa-pool-0"></td>

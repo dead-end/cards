@@ -177,6 +177,10 @@ th:last-child {
   .grid-4 {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .hide-xl {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -191,6 +195,11 @@ th:last-child {
   .grid-4 {
     grid-template-columns: 1fr 1fr;
   }
+
+  .hide-lg,
+  .hide-xl {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
@@ -200,6 +209,12 @@ th:last-child {
 
   .grid-4 {
     grid-template-columns: 1fr;
+  }
+
+  .hide-md,
+  .hide-lg,
+  .hide-xl {
+    display: none;
   }
 }
 

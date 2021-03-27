@@ -39,6 +39,8 @@ export default class PoolListing {
     const cloneListing = tmplListing.content.cloneNode(true);
     const wrapper = cloneListing.getElementById("listing-wrap");
 
+    cloneListing.getElementById("listing-title").innerText = file.title;
+
     //
     // Clone the template for each question.
     //

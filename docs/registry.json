@@ -55,7 +55,7 @@
   {
     "file": "data/numbers.json",
     "title": "Zahlen",
-    "desc": "Zahlen von 0-200"
+    "desc": "Zahlen: 0-20, 30-90, 100, 200"
   },
   {
     "file": "data/assignment.json",

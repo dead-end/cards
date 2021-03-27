@@ -39,7 +39,7 @@ export default class PoolList {
    ***************************************************************************/
   doShow() {
     const tmplPoolList = document.getElementById("tmpl-pool-list");
-    const tmplPoolEntry = document.getElementById("pool-entry");
+    const tmplPoolEntry = document.getElementById("tmpl-pool-entry");
 
     const clone = tmplPoolList.content.cloneNode(true);
     const body = clone.getElementById("pool-list-body");

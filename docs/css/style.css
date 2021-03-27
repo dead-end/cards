@@ -101,6 +101,20 @@ h6,
 }
 
 /******************************************************************************
+ * Misc ??
+ *****************************************************************************/
+
+hr {
+  border-top: var(--border-size) solid var(--color-border);
+  border-bottom: 0px;
+}
+
+label,
+select {
+  display: block;
+}
+
+/******************************************************************************
  * Style for the table. We use a padding-right to separate the cells. This has
  * to be removed on the last cell of a row.
  *****************************************************************************/
@@ -249,7 +263,19 @@ select[disabled],
 }
 
 /******************************************************************************
- * Definition of a button group
+ * Color definition.
+ *****************************************************************************/
+
+.is-success {
+  background-color: var(--color-success-2);
+}
+
+.is-danger {
+  background-color: var(--color-danger-0);
+}
+
+/******************************************************************************
+ * Definition of a button group. The main purpose is to set an inner margin.
  *****************************************************************************/
 
 .buttons > button,
@@ -288,6 +314,14 @@ table,
   width: 100%;
 }
 
+.is-block {
+  display: block;
+}
+
+/******************************************************************************
+ * Classes to align texts
+ *****************************************************************************/
+
 .is-text-right {
   text-align: right;
 }
@@ -300,30 +334,16 @@ table,
   text-align: center;
 }
 
+/******************************************************************************
+ * Classes for texts
+ *****************************************************************************/
+
 .is-small {
   font-size: 0.8rem;
 }
 
 .is-bold {
   font-weight: var(--font-weight-bold);
-}
-
-.is-block {
-  display: block;
-}
-
-/******************************************************************************
- * Misc ??
- *****************************************************************************/
-
-hr {
-  border-top: var(--border-size) solid var(--color-border);
-  border-bottom: 0px;
-}
-
-label,
-select {
-  display: block;
 }
 
 /******************************************************************************

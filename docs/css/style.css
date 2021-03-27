@@ -397,15 +397,13 @@ table,
 }
 
 /******************************************************************************
- * Classes for floating
+ * Classes is used for floating
  *****************************************************************************/
 
-.is-pulled-left {
-  float: left !important;
-}
-
-.is-pulled-right {
-  float: right !important;
+.is-flex-spread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /******************************************************************************

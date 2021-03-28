@@ -1,37 +1,138 @@
 [
-    { "quest": "Familie",           "answer": "семья" },
-    { "quest": "Vater, Vati",       "answer": "папа" },
-    { "quest": "Vater",             "answer": "отец" },
-    { "quest": "Mutter, Mutti",     "answer": "мама" },
-    { "quest": "Mutter",            "answer": "мать" },
-    { "quest": "Eltern",            "answer": "родители" },
-
-    { "quest": "Ehemann",           "answer": "муж" },
-    { "quest": "Ehefrau",           "answer": "жена" },
-
-    { "quest": "Sohn",              "answer": "сын" },
-    { "quest": "Tochter",           "answer": "дочь" },
-    { "quest": "(kleine) Tochter",  "answer": "дочка" },
-    { "quest": "Kinder",            "answer": "дети" },
-    { "quest": "Bruder",            "answer": "брат" },
-    { "quest": "Schwester",         "answer": "сестра" },
-
-    { "quest": "Großvater, Opa",    "answer": "дедушка" },
-    { "quest": "Großmutter, Oma",   "answer": "бабушка" },
-    { "quest": "Enkel",             "answer": "внук" },
-    { "quest": "Enkelin",           "answer": "внучка" },
-
-    { "quest": "Freund",                "answer": "друг" },
-    { "quest": "Freundin",              "answer": "подруга" },
-    { "quest": "Freunde",               "answer": "друзья" },
-    { "quest": "einträchtig, einmütig", "answer": "дружная" },
-
-    { "quest": "Moskauerin",            "answer": "москвичка" },
-    { "quest": "nicht weit von",        "answer": "недалеко от (+ gen)" },
-    { "quest": "U-Bahn-Station",        "answer": "станция метро" },
-    { "quest": "er heißt...",           "answer": "его зовут" },
-    { "quest": "unser, unsere",         "answer": "наш, наша, наши" },
-    { "quest": "Studentin",             "answer": "студентка" }
-
-  ]
-  
+  {
+    "quest": "Familie",
+    "answer": "семья"
+  },
+  {
+    "quest": "Vater, Vati",
+    "answer": [
+      "папа",
+      "Ausnahme: Maskulinum"
+    ]
+  },
+  {
+    "quest": "Vater",
+    "answer": [
+      "отец",
+      "отца (Genitiv Singular)"
+    ]
+  },
+  {
+    "quest": "Mutter, Mutti",
+    "answer": "мама"
+  },
+  {
+    "quest": "Mutter",
+    "answer": [
+      "мать",
+      "Femininum - Endung: ь"
+    ]
+  },
+  {
+    "quest": "Eltern",
+    "answer": [
+      "родители",
+      "Plural"
+    ]
+  },
+  {
+    "quest": "Ehemann",
+    "answer": "муж"
+  },
+  {
+    "quest": "Ehefrau",
+    "answer": "жена"
+  },
+  {
+    "quest": "Sohn",
+    "answer": "сын"
+  },
+  {
+    "quest": "Tochter",
+    "answer": [
+      "дочь",
+      "Femininum - Endung: ь"
+    ]
+  },
+  {
+    "quest": "(kleine) Tochter",
+    "answer": "дочка"
+  },
+  {
+    "quest": "Kinder",
+    "answer": [
+      "дети",
+      "Plural"
+    ]
+  },
+  {
+    "quest": "Bruder",
+    "answer": "брат"
+  },
+  {
+    "quest": "Schwester",
+    "answer": "сестра"
+  },
+  {
+    "quest": "Großvater, Opa",
+    "answer": [
+      "дедушка",
+      "Ausnahme: Maskulinum"
+    ]
+  },
+  {
+    "quest": "Großmutter, Oma",
+    "answer": "бабушка"
+  },
+  {
+    "quest": "Enkel",
+    "answer": "внук"
+  },
+  {
+    "quest": "Enkelin",
+    "answer": "внучка"
+  },
+  {
+    "quest": "Freund",
+    "answer": "друг"
+  },
+  {
+    "quest": "Freundin",
+    "answer": "подруга"
+  },
+  {
+    "quest": "Freunde",
+    "answer": [
+      "друзья",
+      "Plural"
+    ]
+  },
+  {
+    "quest": "einträchtig, einmütig",
+    "answer": "дружная"
+  },
+  {
+    "quest": "Moskauerin",
+    "answer": "москвичка"
+  },
+  {
+    "quest": "nicht weit von",
+    "answer": "недалеко от (+ Genitiv)"
+  },
+  {
+    "quest": "U-Bahn-Station",
+    "answer": "станция метро"
+  },
+  {
+    "quest": "er heißt...",
+    "answer": "его зовут"
+  },
+  {
+    "quest": "unser, unsere",
+    "answer": "наш, наша, наши"
+  },
+  {
+    "quest": "Studentin",
+    "answer": "студентка"
+  }
+]

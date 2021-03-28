@@ -102,7 +102,7 @@
   },
   {
     "quest": "wir haben keine / keinen",
-    "answer": "у нас нет ... + (GEN)"
+    "answer": "у нас нет ... (+ Genitiv)"
   },
   {
     "quest": "nun",
@@ -118,11 +118,11 @@
   },
   {
     "quest": "weit (weg) von",
-    "answer": "далеко от + (GEN)"
+    "answer": "далеко от ... (+ Genitiv)"
   },
   {
     "quest": "ich habe kein / keine / keinen ...",
-    "answer": "у меня нет ... + (GEN)"
+    "answer": "у меня нет ... (+ Genitiv)"
   },
   {
     "quest": "Katze",
@@ -217,7 +217,10 @@
       "Sekretär",
       "­Sekretärin"
     ],
-    "answer": "секретарь (m)"
+    "answer": [
+      "секретарь",
+      "Maskulinum - Endung: ь"
+    ]
   },
   {
     "quest": "Büro ",

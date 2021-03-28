@@ -69,7 +69,10 @@
   },
   {
     "quest": "mein Vorname",
-    "answer": "моё имя"
+    "answer": [
+      "моё имя",
+      "Ausnahme: Neutrum"
+    ]
   },
   {
     "quest": "Geburtsdatum",
@@ -85,7 +88,10 @@
   },
   {
     "quest": "Unterschrift",
-    "answer": "подпись"
+    "answer": [
+      "подпись",
+      "Femininum - Endung: ь"
+    ]
   },
   {
     "quest": "Tee",

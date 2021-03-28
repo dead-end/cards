@@ -22,7 +22,10 @@
       "Café",
       "Kaffeehaus"
     ],
-    "answer": "кафе"
+    "answer": [
+      "кафе",
+      "Neutrum - indeklinabel"
+    ]
   },
   {
     "quest": [
@@ -78,7 +81,10 @@
   },
   {
     "quest": "promovierte Lehrkraft",
-    "answer": "доцент"
+    "answer": [
+      "доцент",
+      "Maskulinum"
+    ]
   },
   {
     "quest": "Journalist",
@@ -107,7 +113,7 @@
     "quest": "Verkäufer",
     "answer": [
       "продавец",
-      "продавца (Gen. Sg.)"
+      "продавца (Genitiv Singular)"
     ]
   },
   {
@@ -131,7 +137,10 @@
   },
   {
     "quest": "Lehrer",
-    "answer": "учитель (m)"
+    "answer": [
+      "учитель",
+      "Maskulinum - Endung: ь"
+    ]
   },
   {
     "quest": "Supermarkt",
@@ -169,6 +178,9 @@
   },
   {
     "quest": "Kino",
-    "answer": "кино"
+    "answer": [
+      "кино",
+      "indeklinabel"
+    ]
   }
 ]

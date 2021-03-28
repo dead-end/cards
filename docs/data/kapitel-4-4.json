@@ -4,7 +4,10 @@
       "Kollege",
       "Kollegin"
     ],
-    "answer": "коллега"
+    "answer": [
+      "коллега",
+      "Maskulinum / Femininum"
+    ]
   },
   {
     "quest": [
@@ -115,7 +118,7 @@
     "quest": "(kleine) Stadt",
     "answer": [
       "городок",
-      "городка (Gen.Sg.)"
+      "городка (Genitiv Singular)"
     ]
   },
   {
@@ -136,7 +139,10 @@
   },
   {
     "quest": "Frauenkloster",
-    "answer": "женский монастырь (m)"
+    "answer": [
+      "женский монастырь",
+      "Maskulinum - Endung: ь"
+    ]
   },
   {
     "quest": "Synagoge",
@@ -144,6 +150,9 @@
   },
   {
     "quest": "Gruschin­ Festival",
-    "answer": "Грушинский фестиваль (m)"
+    "answer": [
+      "Грушинский фестиваль",
+      "Maskulinum - Endung: ь"
+    ]
   }
 ]

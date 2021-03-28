@@ -1,19 +1,19 @@
 [
     {
-        "quest": "mein Bruder",
-        "answer": "мой брат"
+        "quest": "mein Geschäft",
+        "answer": "мой магазин"
     },
     {
-        "quest": "mein Großvater",
-        "answer": "мой дедушка"
+        "quest": "mein Kühlschrank",
+        "answer": "мой холодильник"
     },
     {
-        "quest": "meine Schwester",
-        "answer": "моя сестра"
+        "quest": "mein Brötchen",
+        "answer": "моя булочка"
     },
     {
-        "quest": "meine Ehefrau",
-        "answer": "моя жена"
+        "quest": "meine Beruf",
+        "answer": "моя профессия"
     },
     {
         "quest": "mein Meer",
@@ -32,20 +32,20 @@
         "answer": "мои братья"
     },
     {
-        "quest": "dein Sohn",
-        "answer": "твой сын"
+        "quest": "dein Pass",
+        "answer": "твой паспорт"
     },
     {
-        "quest": "dein Ehemann",
-        "answer": "твой муж"
+        "quest": "dein Tee",
+        "answer": "твой чай"
     },
     {
-        "quest": "deine Großmutter",
-        "answer": "твоя бабушка"
+        "quest": "dein Hotel",
+        "answer": "твоя гости́ница"
     },
     {
-        "quest": "deine Freundin",
-        "answer": "твоя подруга"
+        "quest": "dein Foto",
+        "answer": "твоя фотогра́фия"
     },
     {
         "quest": "dein Bier",
@@ -64,12 +64,12 @@
         "answer": "твои сёстры"
     },
     {
-        "quest": "unser Vater",
-        "answer": "наш отец"
+        "quest": "unser Museum",
+        "answer": "наш музей"
     },
     {
-        "quest": "unser Mönch",
-        "answer": "наш монах"
+        "quest": "unsere Stadt",
+        "answer": "наш город"
     },
     {
         "quest": "unsere Nationalität",
@@ -97,38 +97,41 @@
     },
     {
         "quest": [
-            "euer Lehrer",
-            "Ihr Lehrer"
+            "euer Bahnhof",
+            "Ihr Bahnhof"
         ],
-        "answer": "ваш учитель"
+        "answer": "ваш вокзал"
     },
     {
         "quest": [
-            "euer Papa",
-            "Ihr Papa"
+            "euer Adresse",
+            "Ihre Adresse"
         ],
-        "answer": "ваш папа"
+        "answer": "ваш адрес"
     },
     {
         "quest": [
-            "eure Tochter",
-            "Ihre Tochter"
+            "eure Wohnung",
+            "Ihre Wohnung"
         ],
-        "answer": "ваша дочь"
+        "answer": "ваша квартира"
     },
     {
         "quest": [
-            "eure Mama",
-            "Ihre Mama"
+            "eure Land",
+            "Ihre Land"
         ],
-        "answer": "ваша мама"
+        "answer": "ваша страна"
     },
     {
         "quest": [
             "eurer Vorname",
             "Ihr Vorname"
         ],
-        "answer": "ваше имя"
+        "answer": [
+            "ваше имя",
+            "Neutrum"
+        ]
     },
     {
         "quest": [

@@ -1,35 +1,126 @@
 [
-
-  { "quest": "Herzlich willkommen",             "answer": "Добро пожаловать"},
-  { "quest": "Guten Tag (ungeduzt)",           "answer": "Здравствуйте!"},
-  { "quest": "ich",                             "answer": "я"},
-  { "quest": "und (als Gegensatz)",             "answer": "а"},
-  { "quest": "wer",                             "answer": "кто"},
-  { "quest": "Sie, ihr",                        "answer": "вы"},
-  { "quest": "du",                              "answer": "ты"},
-  { "quest": "Guten Tag!",                      "answer": "Добрый день"},
-  { "quest": "Guten Tag (geduzt)",              "answer": "Здравствуй!"},
-  { "quest": "Herr (Anrede)",                   "answer": "господин"},
-  { "quest": "Frau (Anrede)",                   "answer": "госпожа"},
-  { "quest": "Hallo",                           "answer": "Привет"},
-  { "quest": "das ist (das sind)",              "answer": "это"},
-  { "quest": "Auf wiedersehen",                 "answer": "До свидания"},
-  { "quest": "Tschüss",                         "answer": "пока"},
-  { "quest": "nein",                            "answer": "нет"},
-  { "quest": "was",                             "answer": "что"},
-  { "quest": "auf dem Foto",                    "answer": "на фотографии"},
-  { "quest": "auf",                             "answer": "на"},
-  { "quest": "Foto",                            "answer": "фотография"},
-  { "quest": "Firma",                           "answer": "фирма"},
-  { "quest": "Fabrik",                          "answer": "фабрика"},
-  { "quest": "Fontäne",                         "answer": "фонтан"},
-  { "quest": "Film",                            "answer": "Фильм"},
-  { "quest": "Charakter",                       "answer": "характер"},
-  { "quest": "Architektur",                     "answer": "архитектура"},
-  { "quest": "Zirkus",                          "answer": "цирк"},
-  { "quest": "Zentrum",                         "answer": "центр"},
-  { "quest": "Bühne",                           "answer": "сцена"},
-  { "quest": "Spezialist",                      "answer": "специалист"},
-  { "quest": "Champion",                        "answer": "чемпион"}
-
+  {
+    "quest": "Herzlich willkommen",
+    "answer": "Добро пожаловать"
+  },
+  {
+    "quest": "Guten Tag (ungeduzt)",
+    "answer": "Здравствуйте!"
+  },
+  {
+    "quest": "ich",
+    "answer": "я"
+  },
+  {
+    "quest": "und (als Gegensatz)",
+    "answer": "а"
+  },
+  {
+    "quest": "wer",
+    "answer": "кто"
+  },
+  {
+    "quest": "Sie, ihr",
+    "answer": "вы"
+  },
+  {
+    "quest": "du",
+    "answer": "ты"
+  },
+  {
+    "quest": "Guten Tag!",
+    "answer": "Добрый день"
+  },
+  {
+    "quest": "Guten Tag (geduzt)",
+    "answer": "Здравствуй!"
+  },
+  {
+    "quest": "Herr (Anrede)",
+    "answer": "господин"
+  },
+  {
+    "quest": "Frau (Anrede)",
+    "answer": "госпожа"
+  },
+  {
+    "quest": "Hallo",
+    "answer": "Привет"
+  },
+  {
+    "quest": "das ist (das sind)",
+    "answer": "это"
+  },
+  {
+    "quest": "Auf wiedersehen",
+    "answer": "До свидания"
+  },
+  {
+    "quest": "Tschüss",
+    "answer": "пока"
+  },
+  {
+    "quest": "nein",
+    "answer": "нет"
+  },
+  {
+    "quest": "was",
+    "answer": "что"
+  },
+  {
+    "quest": "auf dem Foto",
+    "answer": "на фотографии"
+  },
+  {
+    "quest": "auf",
+    "answer": "на"
+  },
+  {
+    "quest": "Foto",
+    "answer": "фотография"
+  },
+  {
+    "quest": "Firma",
+    "answer": "фирма"
+  },
+  {
+    "quest": "Fabrik",
+    "answer": "фабрика"
+  },
+  {
+    "quest": "Fontäne",
+    "answer": "фонтан"
+  },
+  {
+    "quest": "Film",
+    "answer": "Фильм"
+  },
+  {
+    "quest": "Charakter",
+    "answer": "характер"
+  },
+  {
+    "quest": "Architektur",
+    "answer": "архитектура"
+  },
+  {
+    "quest": "Zirkus",
+    "answer": "цирк"
+  },
+  {
+    "quest": "Zentrum",
+    "answer": "центр"
+  },
+  {
+    "quest": "Bühne",
+    "answer": "сцена"
+  },
+  {
+    "quest": "Spezialist",
+    "answer": "специалист"
+  },
+  {
+    "quest": "Champion",
+    "answer": "чемпион"
+  }
 ]

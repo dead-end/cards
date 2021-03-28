@@ -1,8 +1,8 @@
 import MsgComp from "./modules/msg-comp.js";
 import Persist from "./modules/persist.js";
 import PoolList from "./modules/pool-list.js";
-import PoolShow from "./modules/pool-show.js";
 import PoolListing from "./modules/pool-listing.js";
+import PoolShow from "./modules/pool-show.js";
 import QuestComp from "./modules/quest-comp.js";
 import { arrPercentage, fmtDate } from "./modules/utils.js";
 
@@ -234,11 +234,11 @@ class Dispatcher {
     questComp.onShowAnswer();
   }
 
-  onAnswerCorrect(event) {
+  onAnswerCorrect() {
     pool.onAnswerCorrect();
   }
 
-  onAnswerWrong(event) {
+  onAnswerWrong() {
     pool.onAnswerWrong();
   }
 

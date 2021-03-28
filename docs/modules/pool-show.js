@@ -1,4 +1,4 @@
-import { elemRemoveById, elemAppendTmpl } from "./utils.js";
+import { elemAppendTmpl, elemRemoveById } from "./utils.js";
 
 /******************************************************************************
  * The class shows the meta data of the pool.

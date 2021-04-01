@@ -1,4 +1,5 @@
-import { elemAppendTmpl, elemRemoveById, strOrList } from "./utils.js";
+import { elemAppendTmpl, elemRemoveById } from "./utils.js";
+import Markdown from "./Markdown.js";
 
 /******************************************************************************
  * The class implements the component, that shows the questions and answers.
@@ -7,6 +8,7 @@ export default class QuestComp {
   constructor(dispatcher) {
     this.dispatcher = dispatcher;
     this.visible = false;
+    this.md = new Markdown();
   }
 
   /****************************************************************************
@@ -74,11 +76,11 @@ export default class QuestComp {
    * The callback function in case the quest / answer changed.
    ***************************************************************************/
   onQuestChanged(quest) {
-    document.getElementById("c-quest-question").innerHTML = strOrList(
+    document.getElementById("c-quest-question").innerHTML = this.md.toHtml(
       quest.quest
     );
 
-    document.getElementById("c-quest-answer").innerHTML = strOrList(
+    document.getElementById("c-quest-answer").innerHTML = this.md.toHtml(
       quest.answer
     );
 

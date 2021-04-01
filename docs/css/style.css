@@ -27,6 +27,9 @@
   --color-danger-1: hsl(0, 100%, 80%);
   --color-danger-2: hsl(0, 100%, 75%);
 
+  --color-md-u: rgb(200, 0, 0);
+  --color-md-i: rgb(0, 0, 77);
+
   --color-focus: #888;
   --color-border: #ccc;
 
@@ -433,4 +436,21 @@ table,
 
 .card-shadow {
   box-shadow: var(--box-shadow);
+}
+
+/******************************************************************************
+ * Definition of markdown
+ *****************************************************************************/
+
+u {
+  color: var(--color-md-u);
+  text-decoration: none;
+}
+
+i {
+  color: var(--color-md-i);
+}
+
+b {
+  font-weight: 550;
 }

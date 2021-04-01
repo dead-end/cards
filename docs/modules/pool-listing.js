@@ -1,4 +1,5 @@
-import { elemRemoveById, strOrList } from "./utils.js";
+import { elemRemoveById } from "./utils.js";
+import Markdown from "./Markdown.js";
 
 /******************************************************************************
  * The class provides a listing of the questions and answers of the question
@@ -11,6 +12,7 @@ export default class PoolListing {
    ***************************************************************************/
   constructor(dispatcher) {
     this.dispatcher = dispatcher;
+    this.md = new Markdown();
   }
 
   /****************************************************************************
@@ -54,10 +56,10 @@ export default class PoolListing {
         list[i].classList.add(clazz);
       }
 
-      cloneEntry.querySelector(".listing-quest").innerHTML = strOrList(
+      cloneEntry.querySelector(".listing-quest").innerHTML = this.md.toHtml(
         qa[i].quest
       );
-      cloneEntry.querySelector(".listing-answer").innerHTML = strOrList(
+      cloneEntry.querySelector(".listing-answer").innerHTML = this.md.toHtml(
         qa[i].answer
       );
 

@@ -1,18 +1,18 @@
 [
   {
     "quest": "Herzlich willkommen",
-    "answer": "Добро пожаловать"
+    "answer": "Добр_о_ пож_а_ловать"
   },
   {
-    "quest": "Guten Tag (ungeduzt)",
-    "answer": "Здравствуйте!"
+    "quest": "Guten Tag ~- ungeduzt~",
+    "answer": "Здр_а_вствуйте!"
   },
   {
     "quest": "ich",
     "answer": "я"
   },
   {
-    "quest": "und (als Gegensatz)",
+    "quest": "und ~- als Gegensatz~",
     "answer": "а"
   },
   {
@@ -29,35 +29,35 @@
   },
   {
     "quest": "Guten Tag!",
-    "answer": "Добрый день"
+    "answer": "Д_о_брый день"
   },
   {
-    "quest": "Guten Tag (geduzt)",
-    "answer": "Здравствуй!"
+    "quest": "Guten Tag ~- geduzt~",
+    "answer": "Здр_а_вствуй!"
   },
   {
-    "quest": "Herr (Anrede)",
-    "answer": "господин"
+    "quest": "Herr ~- Anrede~",
+    "answer": "господ_и_н"
   },
   {
-    "quest": "Frau (Anrede)",
-    "answer": "госпожа"
+    "quest": "Frau ~- Anrede~",
+    "answer": "госпож_а_"
   },
   {
     "quest": "Hallo",
-    "answer": "Привет"
+    "answer": "Прив_е_т"
   },
   {
-    "quest": "das ist (das sind)",
-    "answer": "это"
+    "quest": "das ist / das sind",
+    "answer": "_э_то"
   },
   {
     "quest": "Auf wiedersehen",
-    "answer": "До свидания"
+    "answer": "До свид_а_ния"
   },
   {
     "quest": "Tschüss",
-    "answer": "пока"
+    "answer": "пок_а_"
   },
   {
     "quest": "nein",
@@ -69,7 +69,7 @@
   },
   {
     "quest": "auf dem Foto",
-    "answer": "на фотографии"
+    "answer": "на фотогр_а_фии"
   },
   {
     "quest": "auf",
@@ -77,19 +77,19 @@
   },
   {
     "quest": "Foto",
-    "answer": "фотография"
+    "answer": "фотогр_а_фия"
   },
   {
     "quest": "Firma",
-    "answer": "фирма"
+    "answer": "ф_и_рма"
   },
   {
     "quest": "Fabrik",
-    "answer": "фабрика"
+    "answer": "ф_а_брика"
   },
   {
     "quest": "Fontäne",
-    "answer": "фонтан"
+    "answer": "фонт_а_н"
   },
   {
     "quest": "Film",
@@ -97,11 +97,11 @@
   },
   {
     "quest": "Charakter",
-    "answer": "характер"
+    "answer": "хар_а_ктер"
   },
   {
     "quest": "Architektur",
-    "answer": "архитектура"
+    "answer": "архитект_у_ра"
   },
   {
     "quest": "Zirkus",
@@ -113,14 +113,14 @@
   },
   {
     "quest": "Bühne",
-    "answer": "сцена"
+    "answer": "сц_е_на"
   },
   {
     "quest": "Spezialist",
-    "answer": "специалист"
+    "answer": "специал_и_ст"
   },
   {
     "quest": "Champion",
-    "answer": "чемпион"
+    "answer": "чемпи_о_н"
   }
 ]

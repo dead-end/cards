@@ -117,7 +117,7 @@
   },
   {
     "quest": "nicht weit von",
-    "answer": "недалек_о_ от (+ Genitiv)"
+    "answer": "недалек_о_ от ~+ Genitiv~"
   },
   {
     "quest": "U-Bahn-Station",

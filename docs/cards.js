@@ -1,9 +1,9 @@
-import MsgComp from "./modules/msg-comp.js";
-import Persist from "./modules/persist.js";
-import PoolList from "./modules/pool-list.js";
-import PoolListing from "./modules/pool-listing.js";
-import PoolShow from "./modules/pool-show.js";
-import QuestComp from "./modules/quest-comp.js";
+import MsgComp from "./modules/MsgComp.js";
+import Persist from "./modules/Persist.js";
+import PoolList from "./modules/PoolList.js";
+import PoolListing from "./modules/PoolListing.js";
+import PoolShow from "./modules/PoolShow.js";
+import QuestComp from "./modules/QuestComp.js";
 import { arrPercentage, fmtDate } from "./modules/utils.js";
 
 /******************************************************************************

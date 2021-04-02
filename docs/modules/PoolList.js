@@ -1,4 +1,4 @@
-import Persist from "./persist.js";
+import Persist from "./Persist.js";
 import { fmtDate, arrPercentage, elemRemoveById } from "./utils.js";
 
 /******************************************************************************

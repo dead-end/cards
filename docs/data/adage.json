@@ -1,7 +1,13 @@
 [
     {
         "quest": "Fährst du langsam, kommst du weiter.",
-        "answer": "Тише едешь - дальше будешь."
+        "answer": [
+            "Т_и_ше _е_дешь - д_а_льше б_у_дешь.",
+            "- т_и_хий ~- leise / langsam~",
+            "- _е_хать ~- fahren~",
+            "- д_а_льше ~– weiter~",
+            "- быть ~– sein~"
+        ]
     },
     {
         "quest": "Ist der Kopf ab, weint man nicht um die Haare.",
@@ -9,7 +15,13 @@
     },
     {
         "quest": "Jeder verliert den Verstand auf seine Weise.",
-        "answer": "Каждый сходит с ума по свойму."
+        "answer": [
+            "К_а_ждый сходит с ума по свойму.",
+            "- к_а_ждый ~- alle / jeder~",
+            "- сход_и_ть ~– weggehen~",
+            "- ум  ~- Geist / Verstand~",
+            "- свой - ~-eigene / vgl. своя семья~"
+        ]
     },
     {
         "quest": "Kostenlosen Käse gibt's nur in der Mausefalle.",
@@ -20,11 +32,40 @@
         "answer": "В гостях хорошо, а дома лучше."
     },
     {
-        "quest": "Winter ist nicht Sommer - er trägt einen Pelzmantel.",
-        "answer": "Зима не лето - в шубу одета."
+        "quest": "Schnell aufgehobene zählt nicht als gefallen.",
+        "answer": [
+            "Быстро поднятое упавшим не считается.",
+            "- б_ы_стро ~– schnell~",
+            "- подн_я_ть ~- heben / aufheben~",
+            "- уп_а_сть ~- herunterfallen~",
+            "- счит_а_ться ~- gelten~"
+        ]
     },
     {
-        "quest": "Schnell aufgehobene zählt nicht als gefallen.",
-        "answer": "Быстро поднятое упавшим не считается."
+        "quest": "Wie der Anfang, so das Ende",
+        "answer": [
+            "Какое начало, такой и конец",
+            "- какой, какое ~- welcher, welches~",
+            "- начало ~– Anfang~",
+            "- такой ~- solcher~",
+            "- конец ~- Ende~"
+        ]
+    },
+    {
+        "quest": "Wenn die Familie zusammen ist und das Herz da ist.",
+        "answer": [
+            "Когда семья вместе, и сердце на месте.",
+            "- когда ~- wenn, wann~",
+            "- сердце ~- Herz~",
+            "- на месте (быть) ~- аn Ort und Stelle (sein)~"
+        ]
+    },
+    {
+        "quest": "Der Winter ist kein Sommer - er trägt einen Pelzmantel.",
+        "answer": [
+            "Зима не лето - в шубу одета",
+            "- шуба ~- Pelzmantel~",
+            "- одетая ~- angekleidet~"
+        ]
     }
 ]

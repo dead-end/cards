@@ -5,15 +5,15 @@
   },
   {
     "quest": "aus",
-    "answer": "из (+ Genitiv)"
+    "answer": "из ~+ Genitiv~"
   },
   {
     "quest": "Machen Sie sich bekannt!",
-    "answer": "Познакомьтесь!"
+    "answer": "Познак_о_мьтесь!"
   },
   {
     "quest": "bitte",
-    "answer": "пожалуйста"
+    "answer": "пож_а_луйста"
   },
   {
     "quest": "wie",
@@ -21,39 +21,39 @@
   },
   {
     "quest": "Wie heißen Sie?",
-    "answer": "как вас зовут?"
+    "answer": "как вас зов_у_т?"
   },
   {
     "quest": "Ichh heiße Volker.",
-    "answer": "Меня зовут Фолькер."
+    "answer": "Мен_я_ зов_у_т Фолькер."
   },
   {
     "quest": "sehr",
-    "answer": "очень"
+    "answer": "_о_чень"
   },
   {
     "quest": "angenehm",
-    "answer": "приятно"
+    "answer": "при_я_тно"
   },
   {
     "quest": "Wie heißt du?",
-    "answer": "Как тебя зовут?"
+    "answer": "Как теб_я_ зов_у_т?"
   },
   {
     "quest": "Machen wir uns bekannt!",
-    "answer": "Давайте познакомимся!"
+    "answer": "Дав_а_йте познак_о_мимся!"
   },
   {
     "quest": "Wie geht es Ihnen?",
-    "answer": "Как Ваши дела?"
+    "answer": "Как В_а_ши дел_а_?"
   },
   {
     "quest": "Danke!",
-    "answer": "Спасибо!"
+    "answer": "Спас_и_бо!"
   },
   {
     "quest": "Mir geht es gut.",
-    "answer": "У меня всё хорошо."
+    "answer": "У мен_я_ всё хорош_о_."
   },
   {
     "quest": "alles",
@@ -61,31 +61,31 @@
   },
   {
     "quest": "gut",
-    "answer": "хорошо"
+    "answer": "хорош_о_"
   },
   {
     "quest": "Alles in Ordnung!",
-    "answer": "Всё в порядке!"
+    "answer": "Всё в пор_я_дке!"
   },
   {
     "quest": "Wie geht es dir?",
-    "answer": "Как твои дела?"
+    "answer": "Как тво_и_ дел_а_?"
   },
   {
     "quest": "hier: es geht",
-    "answer": "ничего"
+    "answer": "ничег_о_"
   },
   {
     "quest": "Wie geht es dir?",
-    "answer": "Как у тебя дела?"
+    "answer": "Как у теб_я_ дел_а_?"
   },
   {
     "quest": "normal",
-    "answer": "нормально"
+    "answer": "норм_а_льно"
   },
   {
     "quest": "Wie gehts?",
-    "answer": "Как дела?"
+    "answer": "Как дел_а_?"
   },
   {
     "quest": "Wie geht es Ihnen?",
@@ -97,6 +97,6 @@
   },
   {
     "quest": "nicht besonders",
-    "answer": "не очень"
+    "answer": "не _о_чень"
   }
 ]

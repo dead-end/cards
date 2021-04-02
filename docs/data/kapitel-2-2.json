@@ -1,23 +1,23 @@
 [
   {
     "quest": "auch",
-    "answer": "тоже"
+    "answer": "т_о_же"
   },
   {
     "quest": "schlecht",
-    "answer": "плохо"
+    "answer": "пл_о_хо"
   },
   {
     "quest": "woher",
-    "answer": "откуда"
+    "answer": "отк_у_да"
   },
   {
     "quest": "Sag!",
-    "answer": "скажи"
+    "answer": "скаж_и_"
   },
   {
     "quest": "Sagen Sie!",
-    "answer": "скажите"
+    "answer": "скаж_и_те"
   },
   {
     "quest": "wo",
@@ -29,34 +29,34 @@
   },
   {
     "quest": "interessant",
-    "answer": "интересно"
+    "answer": "интер_е_сно"
   },
   {
     "quest": "wahrscheinlich",
-    "answer": "наверное"
+    "answer": "нав_е_рное"
   },
   {
     "quest": "Russe / Russin",
-    "answer": "русский / русская"
+    "answer": "р_у_сский / р_у_сская"
   },
   {
     "quest": "Deutscher / Deutsche",
-    "answer": "немец / немка"
+    "answer": "н_е_мец / н_е_мка"
   },
   {
     "quest": "Welche Nationalität hast du / haben Sie?",
-    "answer": "Кто вы (ты) по национальности?"
+    "answer": "Кто вы (ты) по национ_а_льности?"
   },
   {
     "quest": "Nationalität",
     "answer": [
-      "национальность",
-      "Femininum - Endung: ь"
+      "национ_а_льность",
+      "~Femininum - Endung: ь~"
     ]
   },
   {
     "quest": "Entschuldigen Sie! / Enschuldigt!",
-    "answer": "извините"
+    "answer": "извин_и_те"
   },
   {
     "quest": "dort",
@@ -64,7 +64,7 @@
   },
   {
     "quest": "Deutschland",
-    "answer": "Германия"
+    "answer": "Герм_а_ния"
   },
   {
     "quest": "ja",
@@ -72,36 +72,36 @@
   },
   {
     "quest": "Goldener Ring",
-    "answer": "Золотое кольцо"
+    "answer": "Золот_о_е кольц_о_"
   },
   {
     "quest": "heute",
-    "answer": "сегодня"
+    "answer": "сег_о_дня"
   },
   {
     "quest": "Exkursion",
-    "answer": "экскурсия"
+    "answer": "экск_у_рсия"
   },
   {
     "quest": "Kloster",
     "answer": [
-      "монастырь",
-      "Maskulinum - Endung: ь"
+      "монаст_ы_рь",
+      "~Maskulinum - Endung: ь~"
     ]
   },
   {
     "quest": "Kirche",
     "answer": [
-      "церковь",
-      "Femininum - Endung: ь"
+      "ц_е_рковь",
+      "~Femininum - Endung: ь~"
     ]
   },
   {
     "quest": "Dom, Kathedrale",
-    "answer": "собор"
+    "answer": "соб_о_р"
   },
   {
     "quest": "Fastnachtswoche",
-    "answer": "масленица"
+    "answer": "м_а_сленица"
   }
 ]

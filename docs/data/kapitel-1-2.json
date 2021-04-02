@@ -1,38 +1,138 @@
 [
-
-  { "quest": "Post",                    "answer": "почта"},
-  { "quest": "Theater",                 "answer": "театр"},
-  { "quest": "Museum",                  "answer": "музей"},
-  { "quest": "Kino",                    "answer": "кинотеатр"},
-  { "quest": "Geschäft / Laden",        "answer": "магазин"},
-  { "quest": "Universität",             "answer": "университет"},
-  { "quest": "Bibliothek",              "answer": "библиотека"},
-  { "quest": "Stadion",                 "answer": "стадион"},
-  { "quest": "Restaurant",              "answer": "ресторан"},
-  { "quest": "Kiosk",                   "answer": "киоск"},
-  { "quest": "U-Bahn",                  "answer": "метро"},
-  { "quest": "Park",                    "answer": "парк"},
-  { "quest": "Taxi",                    "answer": "такси"},
-  { "quest": "Wer ist das?",            "answer": "кто это?"},
-  { "quest": "Sportler",                "answer": "спортсмен"},
-  { "quest": "Politiker, -in",          "answer": "политик"},
-  { "quest": "Tennisspielerin",         "answer": "теннисистка"},
-  { "quest": "Primaballerina",          "answer": "прима-балерина"},
-  { "quest": "Kremel",                  "answer": "кремль"},
-  { "quest": "Subjekt",                 "answer": "субъект"},
-  { "quest": "Objekt",                  "answer": "объект"},
-  { "quest": "Objektiv",                "answer": "объектив"},
-  { "quest": "Geschäftskontakte",       "answer": "деловые контакты"},
-  { "quest": "Russland",                "answer": "Россия"},
-  { "quest": "für mich",                "answer": "для меня"},
-  { "quest": "Zar",                     "answer": "царь"},
-  { "quest": "und",                     "answer": "и"},
-  { "quest": "Vulkan",                  "answer": "вулкан"},
-  { "quest": "Sibirien",                "answer": "сибирь"},
-  { "quest": "Tundra",                  "answer": "тундра"},
-  { "quest": "Winter",                  "answer": "зима"},
-  { "quest": "Schwarzes Meer",          "answer": "чёрное море"},
-  { "quest": "Strand",                  "answer": "пляж"},
-  { "quest": "Früchte",                 "answer": "фрукты"}
-
+  {
+    "quest": "Post",
+    "answer": "п_о_чта"
+  },
+  {
+    "quest": "Theater",
+    "answer": "те_а_тр"
+  },
+  {
+    "quest": "Museum",
+    "answer": "муз_е_й"
+  },
+  {
+    "quest": "Kino",
+    "answer": "киноте_а_тр"
+  },
+  {
+    "quest": "Geschäft / Laden",
+    "answer": "магаз_и_н"
+  },
+  {
+    "quest": "Universität",
+    "answer": "университ_е_т"
+  },
+  {
+    "quest": "Bibliothek",
+    "answer": "библиот_е_ка"
+  },
+  {
+    "quest": "Stadion",
+    "answer": "стади_о_н"
+  },
+  {
+    "quest": "Restaurant",
+    "answer": "рестор_а_н"
+  },
+  {
+    "quest": "Kiosk",
+    "answer": "ки_о_ск"
+  },
+  {
+    "quest": "U-Bahn",
+    "answer": "метр_о_"
+  },
+  {
+    "quest": "Park",
+    "answer": "парк"
+  },
+  {
+    "quest": "Taxi",
+    "answer": "такс_и_"
+  },
+  {
+    "quest": "Wer ist das?",
+    "answer": "кто _э_то?"
+  },
+  {
+    "quest": "Sportler",
+    "answer": "спортсм_е_н"
+  },
+  {
+    "quest": "Politiker, -in",
+    "answer": "пол_и_тик"
+  },
+  {
+    "quest": "Tennisspielerin",
+    "answer": "теннис_и_стка"
+  },
+  {
+    "quest": "Primaballerina",
+    "answer": "пр_и_ма-балер_и_на"
+  },
+  {
+    "quest": "Kremel",
+    "answer": "кремль"
+  },
+  {
+    "quest": "Subjekt",
+    "answer": "субъ_е_кт"
+  },
+  {
+    "quest": "Objekt",
+    "answer": "объ_е_кт"
+  },
+  {
+    "quest": "Objektiv",
+    "answer": "объект_и_в"
+  },
+  {
+    "quest": "Geschäftskontakte",
+    "answer": "делов_ы_е конт_а_кты"
+  },
+  {
+    "quest": "Russland",
+    "answer": "Росс_и_я"
+  },
+  {
+    "quest": "für mich",
+    "answer": "для мен_я_"
+  },
+  {
+    "quest": "Zar",
+    "answer": "царь"
+  },
+  {
+    "quest": "und",
+    "answer": "и"
+  },
+  {
+    "quest": "Vulkan",
+    "answer": "вулк_а_н"
+  },
+  {
+    "quest": "Sibirien",
+    "answer": "сиб_и_рь"
+  },
+  {
+    "quest": "Tundra",
+    "answer": "т_у_ндра"
+  },
+  {
+    "quest": "Winter",
+    "answer": "зим_а_"
+  },
+  {
+    "quest": "Schwarzes Meer",
+    "answer": "чёрное м_о_ре"
+  },
+  {
+    "quest": "Strand",
+    "answer": "пл_я_ж"
+  },
+  {
+    "quest": "Früchte",
+    "answer": "фр_у_кты"
+  }
 ]

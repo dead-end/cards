@@ -5,8 +5,8 @@
       "Kollegin"
     ],
     "answer": [
-      "коллега",
-      "Maskulinum / Femininum"
+      "колл_е_га",
+      "~Maskulinum / Femininum~"
     ]
   },
   {
@@ -14,7 +14,7 @@
       "Manager",
       "Manager­in"
     ],
-    "answer": "менеджер"
+    "answer": "м_е_неджер"
   },
   {
     "quest": [
@@ -25,14 +25,14 @@
   },
   {
     "quest": "Ich freue mich sehr, Sie (dich, euch) kennenzulernen.",
-    "answer": "Очень рад познакомиться."
+    "answer": "_О_чень рад познак_о_миться."
   },
   {
     "quest": "froh ",
     "answer": [
       "рад",
-      "рада",
-      "рады"
+      "р_а_да",
+      "р_а_ды"
     ]
   },
   {
@@ -40,55 +40,55 @@
       "Ich freue mich, Sie zu sehen.",
       "Ich freue mich, euch zu sehen."
     ],
-    "answer": "Рад вас видеть."
+    "answer": "Рад вас в_и_деть."
   },
   {
     "quest": "Projekt",
-    "answer": "проект"
+    "answer": "про_е_кт"
   },
   {
     "quest": "Es geht gut (voran).",
-    "answer": "Дела идут хорошо."
+    "answer": "Дел_а_ ид_у_т хорош_о_."
   },
   {
     "quest": "Mitarbeiterin",
-    "answer": "сотрудница"
+    "answer": "сотр_у_дница"
   },
   {
     "quest": "Danke für das Kompliment!",
-    "answer": "Спасибо за комплимент!"
+    "answer": "Спас_и_бо за комплим_е_нт!"
   },
   {
     "quest": [
       "Direktor",
       "Direktor­in"
     ],
-    "answer": "директор"
+    "answer": "дир_е_ктор"
   },
   {
     "quest": [
       "Übersetzerin",
       "Dolmetscherin"
     ],
-    "answer": "переводчица"
+    "answer": "перев_о_дчица"
   },
   {
     "quest": "Mitarbeiter",
-    "answer": "сотрудник"
+    "answer": "сотр_у_дник"
   },
   {
     "quest": [
       "Übersetzer",
       "Dol­metscher"
     ],
-    "answer": "переводчик"
+    "answer": "перев_о_дчик"
   },
   {
     "quest": [
       "Techniker­",
       "Technikerin"
     ],
-    "answer": "техник"
+    "answer": "т_е_хник"
   },
   {
     "quest": [
@@ -97,14 +97,14 @@
       "Vertreter",
       "Vertreter­in"
     ],
-    "answer": "агент"
+    "answer": "аг_е_нт"
   },
   {
     "quest": [
       "Finanzfachmann",
       "Finanzfachfrau"
     ],
-    "answer": "финансист"
+    "answer": "финанс_и_ст"
   },
   {
     "quest": [
@@ -112,47 +112,47 @@
       "wunder­schön",
       "wunderbar"
     ],
-    "answer": "прекрасно"
+    "answer": "прекр_а_сно"
   },
   {
     "quest": "(kleine) Stadt",
     "answer": [
-      "городок",
-      "городка (Genitiv Singular)"
+      "город_о_к",
+      "городк_а_ (Genitiv Singular)"
     ]
   },
   {
     "quest": "Universität für Luft­ und Weltraumfahrt",
-    "answer": "Аэрокосмический университет"
+    "answer": "Аэрокосм_и_ческий университ_е_т"
   },
   {
     "quest": "Flug­zeugfabrik",
-    "answer": "авиационный завод"
+    "answer": "авиаци_о_нный зав_о_д"
   },
   {
     "quest": "Auto­mobilwerk",
-    "answer": "автомобильный завод"
+    "answer": "автомоб_и_льный зав_о_д"
   },
   {
     "quest": "Opern ­und Balletttheater",
-    "answer": "театр оперы и балета"
+    "answer": "те_а_тр _о_перы и бал_е_та"
   },
   {
     "quest": "Frauenkloster",
     "answer": [
-      "женский монастырь",
-      "Maskulinum - Endung: ь"
+      "ж_е_нский монаст_ы_рь",
+      "~Maskulinum - Endung: ь~"
     ]
   },
   {
     "quest": "Synagoge",
-    "answer": "синагога"
+    "answer": "синаг_о_га"
   },
   {
     "quest": "Gruschin­ Festival",
     "answer": [
-      "Грушинский фестиваль",
-      "Maskulinum - Endung: ь"
+      "Гр_у_шинский фестив_а_ль",
+      "~Maskulinum - Endung: ь~"
     ]
   }
 ]

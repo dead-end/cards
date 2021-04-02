@@ -1,11 +1,11 @@
 [
   {
     "quest": "zu Hause",
-    "answer": "дома"
+    "answer": "д_о_ма"
   },
   {
     "quest": "wissen Sie was",
-    "answer": "знаете что ..."
+    "answer": "зн_а_ете что ..."
   },
   {
     "quest": [
@@ -23,8 +23,8 @@
       "Kaffeehaus"
     ],
     "answer": [
-      "кафе",
-      "Neutrum - indeklinabel"
+      "каф_е_",
+      "~Neutrum - indeklinabel~"
     ]
   },
   {
@@ -32,41 +32,41 @@
       "Lasst uns miteinander reden!",
       "Lassen Sie uns miteinander reden!"
     ],
-    "answer": "поговорим"
+    "answer": "поговор_и_м"
   },
   {
     "quest": [
       "gerne",
       "mit Vergnügen"
     ],
-    "answer": "с удовольствием"
+    "answer": "с удов_о_льствием"
   },
   {
     "quest": "warum  ",
-    "answer": "почему"
+    "answer": "почем_у_"
   },
   {
     "quest": "wie viel ",
-    "answer": "сколько"
+    "answer": "ск_о_лько"
   },
   {
     "quest": "Student",
-    "answer": "студент"
+    "answer": "студ_е_нт"
   },
   {
     "quest": [
       "Rechtsanwalt",
       "Rechts­anwältin"
     ],
-    "answer": "адвокат"
+    "answer": "адвок_а_т"
   },
   {
     "quest": "Schauspielerin",
-    "answer": "актриса"
+    "answer": "актр_и_са"
   },
   {
     "quest": "Flugbegleiterin",
-    "answer": "стюардесса"
+    "answer": "стюард_е_сса"
   },
   {
     "quest": [
@@ -82,105 +82,105 @@
   {
     "quest": "promovierte Lehrkraft",
     "answer": [
-      "доцент",
-      "Maskulinum"
+      "доц_е_нт",
+      "~Maskulinum~"
     ]
   },
   {
     "quest": "Journalist",
-    "answer": "журналист"
+    "answer": "журнал_и_ст"
   },
   {
     "quest": "Schüler",
-    "answer": "школьник"
+    "answer": "шк_о_льник"
   },
   {
     "quest": [
       "Ökonom",
       "Ökonom­in"
     ],
-    "answer": "экономист"
+    "answer": "эконом_и_ст"
   },
   {
     "quest": "Flugbegleiter",
-    "answer": "стюард"
+    "answer": "ст_ю_ард"
   },
   {
     "quest": "Rentnerin",
-    "answer": "пенсионерка"
+    "answer": "пенсион_е_рка"
   },
   {
     "quest": "Verkäufer",
     "answer": [
-      "продавец",
-      "продавца (Genitiv Singular)"
+      "продав_е_ц",
+      "продавц_а_ ~- Genitiv Singular~"
     ]
   },
   {
     "quest": "Schülerin",
-    "answer": "школьница"
+    "answer": "шк_о_льница"
   },
   {
     "quest": "Lehrerin",
-    "answer": "учительница"
+    "answer": "уч_и_тельница"
   },
   {
     "quest": "Verkäuferin",
-    "answer": "продавщица"
+    "answer": "продавщ_и_ца"
   },
   {
     "quest": [
       "Diplomat",
       "Diplomatin"
     ],
-    "answer": "дипломат"
+    "answer": "диплом_а_т"
   },
   {
     "quest": "Lehrer",
     "answer": [
-      "учитель",
-      "Maskulinum - Endung: ь"
+      "уч_и_тель",
+      "~Maskulinum - Endung: ь~"
     ]
   },
   {
     "quest": "Supermarkt",
-    "answer": "суперма́ркет"
+    "answer": "суперм_а_ркет"
   },
   {
     "quest": "Bank",
-    "answer": "банк"
+    "answer": "б_а_нк"
   },
   {
     "quest": [
       "Werk ",
       "Fabrik"
     ],
-    "answer": "завод"
+    "answer": "зав_о_д"
   },
   {
     "quest": " Botschaft",
-    "answer": "посольство"
+    "answer": "пос_о_льство"
   },
   {
     "quest": "Schule",
-    "answer": "школа"
+    "answer": "шк_о_ла"
   },
   {
     "quest": "Redaktion",
-    "answer": "редакция"
+    "answer": "ред_а_кция"
   },
   {
     "quest": [
       "Unternehmen",
       "Firma"
     ],
-    "answer": "компания"
+    "answer": "комп_а_ния"
   },
   {
     "quest": "Kino",
     "answer": [
-      "кино",
-      "indeklinabel"
+      "кин_о_",
+      "~indeklinabel~"
     ]
   }
 ]

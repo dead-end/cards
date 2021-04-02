@@ -1,38 +1,38 @@
 [
   {
     "quest": "Familie",
-    "answer": "семья"
+    "answer": "семь_я_"
   },
   {
     "quest": "Vater, Vati",
     "answer": [
-      "папа",
-      "Ausnahme: Maskulinum"
+      "п_а_па",
+      "~Ausnahme: Maskulinum~"
     ]
   },
   {
     "quest": "Vater",
     "answer": [
-      "отец",
-      "отца (Genitiv Singular)"
+      "от_е_ц",
+      "отц_а_ ~- Genitiv Singular~"
     ]
   },
   {
     "quest": "Mutter, Mutti",
-    "answer": "мама"
+    "answer": "м_а_ма"
   },
   {
     "quest": "Mutter",
     "answer": [
       "мать",
-      "Femininum - Endung: ь"
+      "~Femininum - Endung: ь~"
     ]
   },
   {
     "quest": "Eltern",
     "answer": [
-      "родители",
-      "Plural"
+      "род_и_тели",
+      "~Plural~"
     ]
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "quest": "Ehefrau",
-    "answer": "жена"
+    "answer": "жен_а_"
   },
   {
     "quest": "Sohn",
@@ -56,13 +56,13 @@
   },
   {
     "quest": "(kleine) Tochter",
-    "answer": "дочка"
+    "answer": "д_о_чка"
   },
   {
     "quest": "Kinder",
     "answer": [
-      "дети",
-      "Plural"
+      "д_е_ти",
+      "~Plural~"
     ]
   },
   {
@@ -71,18 +71,18 @@
   },
   {
     "quest": "Schwester",
-    "answer": "сестра"
+    "answer": "сестр_а_"
   },
   {
     "quest": "Großvater, Opa",
     "answer": [
-      "дедушка",
-      "Ausnahme: Maskulinum"
+      "д_е_душка",
+      "~Ausnahme: Maskulinum~"
     ]
   },
   {
     "quest": "Großmutter, Oma",
-    "answer": "бабушка"
+    "answer": "б_а_бушка"
   },
   {
     "quest": "Enkel",
@@ -90,7 +90,7 @@
   },
   {
     "quest": "Enkelin",
-    "answer": "внучка"
+    "answer": "вн_у_чка"
   },
   {
     "quest": "Freund",
@@ -98,41 +98,41 @@
   },
   {
     "quest": "Freundin",
-    "answer": "подруга"
+    "answer": "подр_у_га"
   },
   {
     "quest": "Freunde",
     "answer": [
-      "друзья",
-      "Plural"
+      "друзь_я_",
+      "~Plural~"
     ]
   },
   {
     "quest": "einträchtig, einmütig",
-    "answer": "дружная"
+    "answer": "др_у_жная"
   },
   {
     "quest": "Moskauerin",
-    "answer": "москвичка"
+    "answer": "москв_и_чка"
   },
   {
     "quest": "nicht weit von",
-    "answer": "недалеко от (+ Genitiv)"
+    "answer": "недалек_о_ от (+ Genitiv)"
   },
   {
     "quest": "U-Bahn-Station",
-    "answer": "станция метро"
+    "answer": "ст_а_нция метр_о_"
   },
   {
     "quest": "er heißt...",
-    "answer": "его зовут"
+    "answer": "ег_о_ зов_у_т"
   },
   {
     "quest": "unser, unsere",
-    "answer": "наш, наша, наши"
+    "answer": "н_а_ш, н_а_ша, н_а_ши"
   },
   {
     "quest": "Studentin",
-    "answer": "студентка"
+    "answer": "студ_е_нтка"
   }
 ]

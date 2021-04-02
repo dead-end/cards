@@ -6,21 +6,27 @@
     ],
     "answer": [
       "мой",
-      "моя",
-      "мои"
+      "мо_я_",
+      "мо_и_"
     ]
   },
   {
     "quest": "alle zusammen",
-    "answer": "всё вместе"
+    "answer": "всё вм_е_сте"
   },
   {
-    "quest": "sie heißen ... (mehrere Personen)",
-    "answer": "их зовут ..."
+    "quest": [
+      "sie heißen ...",
+      "~mehrere Personen~"
+    ],
+    "answer": "их зов_у_т ..."
   },
   {
-    "quest": "sie heißt ... (eine weibliche Person)",
-    "answer": "её зовут ..."
+    "quest": [
+      "sie heißt ...",
+      "~eine weibliche Person"
+    ],
+    "answer": "её зов_у_т ..."
   },
   {
     "quest": [
@@ -29,13 +35,13 @@
     ],
     "answer": [
       "твой",
-      "твоя",
-      "твои"
+      "тво_я_",
+      "тво_и_"
     ]
   },
   {
     "quest": "zusammen",
-    "answer": "вместе"
+    "answer": "вм_е_сте"
   },
   {
     "quest": [
@@ -46,36 +52,36 @@
     ],
     "answer": [
       "ваш",
-      "ваша",
-      "ваши"
+      "в_а_ша",
+      "в_а_ши"
     ]
   },
   {
     "quest": "du hast ...",
-    "answer": "у тебя есть ..."
+    "answer": "у теб_я_ есть ..."
   },
   {
     "quest": "schon lange (zeitlich)",
-    "answer": "уже давно"
+    "answer": "уж_е_ давн_о_"
   },
   {
     "quest": [
       "von Beruf",
       "beruflich"
     ],
-    "answer": "по профессии"
+    "answer": "по проф_е_ссии"
   },
   {
     "quest": "Beruf",
-    "answer": "профессия"
+    "answer": "проф_е_ссия"
   },
   {
     "quest": "Buchhalter",
-    "answer": "Бухгалтер"
+    "answer": "Бухг_а_лтер"
   },
   {
     "quest": "Journalistin",
-    "answer": "журналистка"
+    "answer": "журнал_и_стка"
   },
   {
     "quest": "wir haben ...",
@@ -83,7 +89,7 @@
   },
   {
     "quest": "zwei Kinder",
-    "answer": "двое детей"
+    "answer": "дв_о_е дет_е_й"
   },
   {
     "quest": [
@@ -94,105 +100,121 @@
   },
   {
     "quest": "er hat ...",
-    "answer": "у него есть ..."
+    "answer": "у нег_о_ есть ..."
   },
   {
     "quest": "eine eigene Familie",
-    "answer": "своя семья"
+    "answer": "сво_я_ семь_я_"
   },
   {
     "quest": "wir haben keine / keinen",
-    "answer": "у нас нет ... (+ Genitiv)"
+    "answer": "у нас нет ... ~+ Genitiv~"
   },
   {
     "quest": "nun",
-    "answer": "теперь"
+    "answer": "теп_е_рь"
   },
   {
     "quest": "ich habe ...",
-    "answer": "У меня есть ..."
+    "answer": "У мен_я_ есть ..."
   },
   {
     "quest": "Jurist",
-    "answer": "юрист"
+    "answer": "юр_и_ст"
   },
   {
     "quest": "weit (weg) von",
-    "answer": "далеко от ... (+ Genitiv)"
+    "answer": "далек_о_ от ... ~+ Genitiv~"
   },
   {
     "quest": "ich habe kein / keine / keinen ...",
-    "answer": "у меня нет ... (+ Genitiv)"
+    "answer": "у мен_я_ нет ... ~+ Genitiv~"
   },
   {
     "quest": "Katze",
-    "answer": "кошка"
+    "answer": "к_о_шка"
   },
   {
     "quest": "Liebling (weiblich)",
-    "answer": "любимица"
+    "answer": "люб_и_мица"
   },
   {
     "quest": "Vatersnamen",
-    "answer": "отчество"
+    "answer": "_о_тчество"
   },
   {
     "quest": [
       "längst",
       "vor langer Zeit"
     ],
-    "answer": "давно"
+    "answer": "давн_о_"
   },
   {
     "quest": [
       "weit",
       "fern"
     ],
-    "answer": "далеко"
+    "answer": "далек_о_"
   },
   {
     "quest": [
       "das bedeutet",
       "das heißt"
     ],
-    "answer": "(это) значит"
+    "answer": "(это) зн_а_чит"
   },
   {
     "quest": "Ingenieur / -in",
-    "answer": "инженер"
+    "answer": "инжен_е_р"
   },
   {
     "quest": "Programmierer / -in",
-    "answer": "программист"
+    "answer": "программ_и_ст"
   },
   {
     "quest": "drei Kinder",
-    "answer": "трое детей"
+    "answer": "тр_о_е дет_е_й"
   },
   {
     "quest": "arbeiten",
-    "answer": "работать"
+    "answer": [
+      "раб_о_тать",
+      "- я раб_о_таю",
+      "- ты раб_о_таешь",
+      "- он раб_о_тает",
+      "- мы раб_о_таем",
+      "- вы раб_о_таете",
+      "- они раб_о_тают"
+    ]
   },
   {
     "quest": [
       "wörtl.: Wie viele Sommer, wie viele Winter! ",
       "(Ausruf, wenn man jmdn. lange nicht gesehen hat)"
     ],
-    "answer": " Сколько лет, сколько зим!"
+    "answer": " Ск_о_лько лет, ск_о_лько зим!"
   },
   {
     "quest": [
       "machen",
       "tun "
     ],
-    "answer": "делать"
+    "answer": [
+      "д_е_лать",
+      "- я д_е_лаю",
+      "- ты д_е_лаешь",
+      "- он д_е_лает",
+      "- мы д_е_лаем",
+      "- вы д_е_лаете",
+      "- они д_е_лают"
+    ]
   },
   {
     "quest": [
       "geschäftlich",
       "dienst­lich"
     ],
-    "answer": "по делам"
+    "answer": "по дел_а_м"
   },
   {
     "quest": [
@@ -203,14 +225,22 @@
   },
   {
     "quest": "Rentner ",
-    "answer": "пенсионер"
+    "answer": "пенсион_е_р"
   },
   {
     "quest": [
       "wissen",
       "kennen"
     ],
-    "answer": "знать"
+    "answer": [
+      "зн_а_ть",
+      "- я зн_а_ю",
+      "- ты зн_а_ешь",
+      "- он, она, оно зн_а_ет",
+      "- мы зн_а_ем",
+      "- вы зн_а_ете",
+      "- они зн_а_ют"
+    ]
   },
   {
     "quest": [
@@ -218,35 +248,35 @@
       "­Sekretärin"
     ],
     "answer": [
-      "секретарь",
-      "Maskulinum - Endung: ь"
+      "секрет_а_рь",
+      "~Maskulinum - Endung: ь~"
     ]
   },
   {
     "quest": "Büro ",
-    "answer": "офис"
+    "answer": "_о_фис"
   },
   {
     "quest": "Hausfrau",
-    "answer": "домохозяйка"
+    "answer": "домохоз_я_йка"
   },
   {
     "quest": [
       "Fotograf",
       "Fotograf­in"
     ],
-    "answer": "фотограф"
+    "answer": "фот_о_граф"
   },
   {
     "quest": "oft",
-    "answer": "часто"
+    "answer": "ч_а_сто"
   },
   {
     "quest": "Dienstreise",
-    "answer": "командировка"
+    "answer": "командир_о_вка"
   },
   {
     "quest": "deshalb",
-    "answer": "поэтому"
+    "answer": "по_э_тому"
   }
 ]

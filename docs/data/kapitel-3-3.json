@@ -1,35 +1,35 @@
 [
   {
     "quest": "Überraschung",
-    "answer": "сюрприз"
+    "answer": "сюрпр_и_з"
   },
   {
     "quest": "Bis bald!",
-    "answer": "до встречи!"
+    "answer": "до встр_е_чи!"
   },
   {
     "quest": "Hallo! (am Telefon)",
-    "answer": "Алло!"
+    "answer": "Алл_о_!"
   },
   {
     "quest": "Das ist aber toll!",
-    "answer": "Вот здорово!"
+    "answer": "Вот зд_о_рово!"
   },
   {
     "quest": "Lass uns treffen!",
-    "answer": "давай встретимся"
+    "answer": "дав_а_й встр_е_тимся"
   },
   {
     "quest": "Bahnhof",
-    "answer": "вокзал"
+    "answer": "вокз_а_л"
   },
   {
     "quest": "Guten Abend!",
-    "answer": "Добрый вечер!"
+    "answer": "Д_о_брый в_е_чер!"
   },
   {
     "quest": "Einen Augenblick!",
-    "answer": "Минуточку!"
+    "answer": "Мин_у_точку!"
   },
   {
     "quest": "ihr, euer",
@@ -37,11 +37,11 @@
   },
   {
     "quest": "Pass, Ausweis",
-    "answer": "паспорт"
+    "answer": "п_а_спорт"
   },
   {
     "quest": "Hotelzimmer",
-    "answer": "номер"
+    "answer": "н_о_мер"
   },
   {
     "quest": "Schlüssel",
@@ -53,44 +53,44 @@
   },
   {
     "quest": "rechts",
-    "answer": "справа"
+    "answer": "спр_а_ва"
   },
   {
     "quest": "links",
-    "answer": "слева"
+    "answer": "сл_е_ва"
   },
   {
     "quest": "(Hotel-) Formular für Gäste",
-    "answer": "карта гостя"
+    "answer": "к_а_рта г_о_стя"
   },
   {
     "quest": "mein Nachname",
-    "answer": "моя фамилия"
+    "answer": "мо_я_ фам_и_лия"
   },
   {
     "quest": "mein Vorname",
     "answer": [
-      "моё имя",
-      "Ausnahme: Neutrum"
+      "моё _и_мя",
+      "~Ausnahme: Neutrum~"
     ]
   },
   {
     "quest": "Geburtsdatum",
-    "answer": "дата рождения"
+    "answer": "д_а_та рожд_е_ния"
   },
   {
     "quest": "Datum",
-    "answer": "дата"
+    "answer": "д_а_та"
   },
   {
     "quest": "Land",
-    "answer": "страна"
+    "answer": "стран_а_"
   },
   {
     "quest": "Unterschrift",
     "answer": [
-      "подпись",
-      "Femininum - Endung: ь"
+      "п_о_дпись",
+      "~Femininum - Endung: ь~"
     ]
   },
   {
@@ -107,22 +107,22 @@
   },
   {
     "quest": "Mönch",
-    "answer": "монах"
+    "answer": "мон_а_х"
   },
   {
     "quest": "Meer",
-    "answer": "море"
+    "answer": "м_о_ре"
   },
   {
     "quest": "Vater",
-    "answer": "отец"
+    "answer": "от_е_ц"
   },
   {
     "quest": "Präsident, -in",
-    "answer": "президент"
+    "answer": "презид_е_нт"
   },
   {
     "quest": "über",
-    "answer": "о"
+    "answer": "о ~+ Präpositiv~"
   }
 ]

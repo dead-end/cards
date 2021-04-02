@@ -1,71 +1,87 @@
 [
   {
     "quest": "leben",
-    "answer": "жить"
+    "answer": [
+      "жить",
+      "- я жив_у_",
+      "- ты живёшь",
+      "- он, она, оно живёт",
+      "- мы живём",
+      "- вы живёте",
+      "- они жив_у_т"
+    ]
   },
   {
     "quest": "Italien",
-    "answer": "Италия"
+    "answer": "Ит_а_лия"
   },
   {
     "quest": "Türkei",
-    "answer": "Турция"
+    "answer": "Т_у_рция"
   },
   {
     "quest": "Frankreich",
-    "answer": "Франция"
+    "answer": "Фр_а_нция"
   },
   {
     "quest": "Holland",
-    "answer": "Голландия"
+    "answer": "Голл_а_ндия"
   },
   {
     "quest": "Spanien",
-    "answer": "Испания"
+    "answer": "Исп_а_ния"
   },
   {
     "quest": "England",
-    "answer": "Англия"
+    "answer": "_А_нглия"
   },
   {
     "quest": "Ukraine",
-    "answer": "Украина"
+    "answer": "Укра_и_на"
   },
   {
     "quest": "Norwegen",
-    "answer": "Норвегия"
+    "answer": "Норв_е_гия"
   },
   {
     "quest": "Österreich",
-    "answer": "Австрия"
+    "answer": "_А_встрия"
   },
   {
     "quest": "sprechen",
-    "answer": "говорить"
+    "answer": [
+      "говор_и_ть",
+      "- я говор_ю_",
+      "- ты говор_и_шь",
+      "- он, она, оно говор_и_т",
+      "- мы говор_и_м",
+      "- вы говор_и_те",
+      "- они говор_я_т"
+    ]
   },
   {
     "quest": "(auf) Russisch",
-    "answer": "по-русски"
+    "answer": "по-р_у_сски"
   },
   {
     "quest": "Polen",
-    "answer": "Польша"
+    "answer": "П_о_льша"
   },
   {
     "quest": "Tunesien",
-    "answer": "Тунис"
+    "answer": "Тун_и_с"
   },
   {
     "quest": "Japan",
-    "answer": "Япония"
+    "answer": "Яп_о_ния"
   },
   {
     "quest": "Usbekistan",
-    "answer": "Узбекистан"
+    "answer": "Узбекист_а_н"
   },
   {
     "quest": "sie",
-    "answer": "они"
+    "answer": "он_и_"
   },
   {
     "quest": "aber",
@@ -73,23 +89,23 @@
   },
   {
     "quest": "(auf) Deutsch",
-    "answer": "по-немецки"
+    "answer": "по-нем_е_цки"
   },
   {
     "quest": "(auf) Englisch",
-    "answer": "по-английски"
+    "answer": "по-англ_и_йски"
   },
   {
     "quest": "leider",
-    "answer": "к сожалению"
+    "answer": "к сожал_е_нию"
   },
   {
     "quest": "(auf) Spanisch",
-    "answer": "по-испански"
+    "answer": "по-исп_а_нски"
   },
   {
     "quest": "ein wenig",
-    "answer": "немного"
+    "answer": "немн_о_го"
   },
   {
     "quest": "noch",
@@ -97,24 +113,24 @@
   },
   {
     "quest": "natürlich",
-    "answer": "конечно"
+    "answer": "кон_е_чно"
   },
   {
     "quest": "Kanada",
-    "answer": "Канада"
+    "answer": "Кан_а_да"
   },
   {
     "quest": "(auf) Französisch",
-    "answer": "по-французски"
+    "answer": "по-франц_у_зски"
   },
   {
     "quest": "in / im",
     "answer": [
-      "в (+ Präpositiv)"
+      "в ~+ Präpositiv~"
     ]
   },
   {
     "quest": "jetzt, gerade",
-    "answer": "сейчас"
+    "answer": "сейч_а_с"
   }
 ]

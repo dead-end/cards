@@ -19,7 +19,7 @@ export default class PoolShow {
    * The function adds the component from the dom.
    ***************************************************************************/
   doShow(file, pool) {
-    elemAppendTmpl("tmpl-sf", "main", (clone) => {
+    elemAppendTmpl("tmpl-sf", "main", false, (clone) => {
       //
       // Add the pool informations
       //

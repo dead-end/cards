@@ -45,7 +45,7 @@ export function elemRemoveById(id) {
  * The function clones a template and adds it to the dom. A function can be
  * given, to process the clone
  *****************************************************************************/
-export function elemAppendTmpl(idTmpl, idParent, fct) {
+export function elemAppendTmpl(idTmpl, idParent, isPrepend, fct) {
   const temp = document.getElementById(idTmpl);
   const clone = temp.content.cloneNode(true);
 
@@ -53,5 +53,9 @@ export function elemAppendTmpl(idTmpl, idParent, fct) {
     fct(clone);
   }
 
-  document.getElementById(idParent).appendChild(clone);
+  if (isPrepend) {
+    document.getElementById(idParent).prepend(clone);
+  } else {
+    document.getElementById(idParent).append(clone);
+  }
 }

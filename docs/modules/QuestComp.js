@@ -41,7 +41,7 @@ export default class QuestComp {
    * The callback function adds a clone of the template to the dom.
    ***************************************************************************/
   doShow(file, pool) {
-    elemAppendTmpl("tmpl-qa", "main", (clon) => {
+    elemAppendTmpl("tmpl-qa", "main", false, (clon) => {
       clon.getElementById("qa-pool").innerHTML = file.title;
 
       clon.getElementById("cq-btn-show").onclick = this.dispatcher.onShowAnswer;

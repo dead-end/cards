@@ -1,157 +1,228 @@
 [
     {
         "quest": "mein Geschäft",
-        "answer": "мой магазин"
+        "answer": [
+            "мой магаз_и_н",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": "mein Kühlschrank",
-        "answer": "мой холодильник"
+        "answer": [
+            "мой холод_и_льник",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": "mein Brötchen",
-        "answer": "моя булочка"
+        "answer": [
+            "мо_я_ б_у_лочка",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": "meine Beruf",
-        "answer": "моя профессия"
+        "answer": [
+            "мо_я_ проф_е_ссия",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": "mein Meer",
-        "answer": "моё море"
+        "answer": [
+            "моё м_о_ре",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
     },
     {
         "quest": "meine Milch",
-        "answer": "моё молоко"
+        "answer": [
+            "моё молок_о_",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
     },
     {
         "quest": "meine Kinder",
-        "answer": "мои детей"
+        "answer": [
+            "мо_и_ дет_е_й"
+        ]
     },
     {
         "quest": "meine Brüder",
-        "answer": "мои братья"
+        "answer": "мо_и_ бр_а_тья"
     },
     {
         "quest": "dein Pass",
-        "answer": "твой паспорт"
+        "answer": [
+            "твой п_а_спорт",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": "dein Tee",
-        "answer": "твой чай"
+        "answer": [
+            "твой чай",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": "dein Hotel",
-        "answer": "твоя гости́ница"
+        "answer": [
+            "тво_я_ гост_и_ница",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": "dein Foto",
-        "answer": "твоя фотогра́фия"
+        "answer": [
+            "тво_я_ фотогр_а_фия",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": "dein Bier",
-        "answer": "твоё пиво"
+        "answer": [
+            "твоё п_и_во",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
     },
     {
         "quest": "dein Wein",
-        "answer": "твоё вино"
+        "answer": [
+            "твоё вин_о_",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
     },
     {
         "quest": "deine Eltern",
-        "answer": "твои родители"
+        "answer": "тво_и_ род_и_тели"
     },
     {
         "quest": "deine Schwestern",
-        "answer": "твои сёстры"
+        "answer": "тво_и_ сёстры"
     },
     {
         "quest": "unser Museum",
-        "answer": "наш музей"
+        "answer": [
+            "наш муз_е_й",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": "unsere Stadt",
-        "answer": "наш город"
+        "answer": [
+            "наш г_о_род",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": "unsere Nationalität",
-        "answer": "наша национальность"
+        "answer": [
+            "н_а_ша национ_а_льность",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": "unsere Firma",
-        "answer": "наша фирма"
+        "answer": [
+            "н_а_ша ф_и_рма",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": "unser Platz",
-        "answer": "наше место"
+        "answer": [
+            "н_а_ше м_е_сто",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
     },
     {
         "quest": "unsere Aufgabe",
-        "answer": "наше задание"
+        "answer": [
+            "н_а_ше зад_а_ние",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
     },
     {
         "quest": "unsere Enkel",
-        "answer": "наши внуки"
+        "answer": "н_а_ши внуки"
     },
     {
         "quest": "unsere Söhne",
-        "answer": "наши сыновья"
+        "answer": "н_а_ши сыновья"
     },
     {
         "quest": [
-            "euer Bahnhof",
-            "Ihr Bahnhof"
-        ],
-        "answer": "ваш вокзал"
-    },
-    {
-        "quest": [
-            "euer Adresse",
-            "Ihre Adresse"
-        ],
-        "answer": "ваш адрес"
-    },
-    {
-        "quest": [
-            "eure Wohnung",
-            "Ihre Wohnung"
-        ],
-        "answer": "ваша квартира"
-    },
-    {
-        "quest": [
-            "eure Land",
-            "Ihre Land"
-        ],
-        "answer": "ваша страна"
-    },
-    {
-        "quest": [
-            "eurer Vorname",
-            "Ihr Vorname"
+            "- euer Bahnhof",
+            "- Ihr Bahnhof"
         ],
         "answer": [
-            "ваше имя",
-            "Neutrum"
+            "ваш вокз_а_л",
+            "~Maskulinum - Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": [
-            "eurer Wort",
-            "Ihr Wort"
+            "- euer Adresse",
+            "- Ihre Adresse"
         ],
-        "answer": "ваше слово"
+        "answer": [
+            "ваш _а_дрес",
+            "~Maskulinum - Konsonanten, -й, -ь~"
+        ]
     },
     {
         "quest": [
-            "eure Freunde",
-            "Ihre Freunde"
+            "- eure Wohnung",
+            "- Ihre Wohnung"
         ],
-        "answer": "ваши друзья"
+        "answer": [
+            "в_а_ша кварт_и_ра",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
     },
     {
         "quest": [
-            "eure Töchter",
-            "Ihre Töchter"
+            "- eure Land",
+            "- Ihre Land"
         ],
-        "answer": "ваши дочери"
+        "answer": [
+            "в_а_ша стран_а_",
+            "~Femininum - Endung: -а / -я, -ия, -ь~"
+        ]
+    },
+    {
+        "quest": [
+            "- eurer Vorname",
+            "- Ihr Vorname"
+        ],
+        "answer": [
+            "в_а_ше _и_мя",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
+    },
+    {
+        "quest": [
+            "- eurer Wort",
+            "- Ihr Wort"
+        ],
+        "answer": [
+            "в_а_ше сл_о_во",
+            "~Neutrum - Endung: -о / -е, -ие -мя~"
+        ]
+    },
+    {
+        "quest": [
+            "- eure Freunde",
+            "- Ihre Freunde"
+        ],
+        "answer": "в_а_ши друзь_я_"
+    },
+    {
+        "quest": [
+            "- eure Töchter",
+            "- Ihre Töchter"
+        ],
+        "answer": "в_а_ши дочери"
     }
 ]

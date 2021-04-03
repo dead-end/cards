@@ -63,6 +63,11 @@
     "desc": "Zahlen: 0-200"
   },
   {
+    "file": "data/gram-mein-dein.json",
+    "title": "Übung - Mein - Dein",
+    "desc": "Übung zu Pronomen und zum Genus."
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },
@@ -86,10 +91,6 @@
   {
     "file": "data/gram-genus.json",
     "title": "Grammatik - Genus"
-  },
-  {
-    "file": "data/gram-mein-dein.json",
-    "title": "Grammatik - Mein - Dein"
   },
   {
     "file": "data/misc.json",

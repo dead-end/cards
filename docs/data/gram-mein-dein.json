@@ -3,42 +3,42 @@
         "quest": "mein Geschäft",
         "answer": [
             "мой магаз_и_н",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": "mein Kühlschrank",
         "answer": [
             "мой холод_и_льник",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": "mein Brötchen",
         "answer": [
             "мо_я_ б_у_лочка",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
         "quest": "meine Beruf",
         "answer": [
             "мо_я_ проф_е_ссия",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
         "quest": "mein Meer",
         "answer": [
             "моё м_о_ре",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
         "quest": "meine Milch",
         "answer": [
             "моё молок_о_",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
@@ -55,42 +55,42 @@
         "quest": "dein Pass",
         "answer": [
             "твой п_а_спорт",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": "dein Tee",
         "answer": [
             "твой чай",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": "dein Hotel",
         "answer": [
             "тво_я_ гост_и_ница",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
         "quest": "dein Foto",
         "answer": [
             "тво_я_ фотогр_а_фия",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
         "quest": "dein Bier",
         "answer": [
             "твоё п_и_во",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
         "quest": "dein Wein",
         "answer": [
             "твоё вин_о_",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
@@ -105,42 +105,42 @@
         "quest": "unser Museum",
         "answer": [
             "наш муз_е_й",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": "unsere Stadt",
         "answer": [
             "наш г_о_род",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinu: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
         "quest": "unsere Nationalität",
         "answer": [
             "н_а_ша национ_а_льность",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
         "quest": "unsere Firma",
         "answer": [
             "н_а_ша ф_и_рма",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
         "quest": "unser Platz",
         "answer": [
             "н_а_ше м_е_сто",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
         "quest": "unsere Aufgabe",
         "answer": [
             "н_а_ше зад_а_ние",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
@@ -158,7 +158,7 @@
         ],
         "answer": [
             "ваш вокз_а_л",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
@@ -168,7 +168,7 @@
         ],
         "answer": [
             "ваш _а_дрес",
-            "~Maskulinum - Konsonanten, -й, -ь~"
+            "~Maskulinum: endungslos, Konsonanten, -й, -ь~"
         ]
     },
     {
@@ -178,7 +178,7 @@
         ],
         "answer": [
             "в_а_ша кварт_и_ра",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
@@ -188,7 +188,7 @@
         ],
         "answer": [
             "в_а_ша стран_а_",
-            "~Femininum - Endung: -а / -я, -ия, -ь~"
+            "~Femininum: -а / -я, -ия, -ь~"
         ]
     },
     {
@@ -198,7 +198,7 @@
         ],
         "answer": [
             "в_а_ше _и_мя",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {
@@ -208,7 +208,7 @@
         ],
         "answer": [
             "в_а_ше сл_о_во",
-            "~Neutrum - Endung: -о / -е, -ие -мя~"
+            "~Neutrum: -о / -е, -ие -мя~"
         ]
     },
     {

@@ -41,7 +41,11 @@ class Dispatcher {
   }
 
   onQuestChanged(quest) {
-    questComp.onQuestChanged(quest);
+    try {
+      questComp.onQuestChanged(quest);
+    } catch (error) {
+      msgComp.update("Unable to show question / answer!", error.message);
+    }
   }
 
   onShowAnswer() {
@@ -87,8 +91,12 @@ class Dispatcher {
   // Show Listing
   //
   onShowListing(file, pool) {
-    poolShow.doHide();
-    poolListing.doShow(file, pool);
+    try {
+      poolShow.doHide();
+      poolListing.doShow(file, pool);
+    } catch (error) {
+      msgComp.update("Unable to show pool listing!", error.message);
+    }
   }
 
   onHideListing(file, pool) {

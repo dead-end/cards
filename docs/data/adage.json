@@ -5,27 +5,34 @@
             "Т_и_ше _е_дешь - д_а_льше б_у_дешь.",
             "- т_и_хий ~- leise / langsam~",
             "- _е_хать ~- fahren~",
-            "- д_а_льше ~– weiter~",
-            "- быть ~– sein~"
+            "- д_а_льше ~- weiter~",
+            "- быть ~- sein~"
+        ]
+    },
+    {
+        "quest": "Jeder verliert den Verstand auf seine Weise.",
+        "answer": [
+            "К_а_ждый сход_и_т с ум_а_ по свойму.",
+            "- к_а_ждый ~- alle / jeder~",
+            "- сход_и_ть ~- weggehen~",
+            "- ум  ~- Geist / Verstand~",
+            "- свой ~- eigene / vgl. своя семья~"
+        ]
+    },
+    {
+        "quest": "Kostenlosen Käse gibt's nur in der Mausefalle.",
+        "answer": [
+            "Беспл_а_тный сыр быв_а_ет только в мышеловке.",
+            "- беспл_а_тный ~- kostenlos~",
+            "- быв_а_ть ~- sein / geben~",
+            "- т_о_лько ~- nur~",
+            "- мышел_о_вка ~- Falle / Mausefalle~",
+            "- мышь ~-Maus~"
         ]
     },
     {
         "quest": "Ist der Kopf ab, weint man nicht um die Haare.",
         "answer": "Потеряв голову по волосам не плачут."
-    },
-    {
-        "quest": "Jeder verliert den Verstand auf seine Weise.",
-        "answer": [
-            "К_а_ждый сходит с ума по свойму.",
-            "- к_а_ждый ~- alle / jeder~",
-            "- сход_и_ть ~– weggehen~",
-            "- ум  ~- Geist / Verstand~",
-            "- свой - ~-eigene / vgl. своя семья~"
-        ]
-    },
-    {
-        "quest": "Kostenlosen Käse gibt's nur in der Mausefalle.",
-        "answer": "Бесплатный сыр бывает только в мышеловке."
     },
     {
         "quest": "Zu Gast sein ist schön, aber zu Hause ist es schöner.",

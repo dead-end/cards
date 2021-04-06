@@ -1,35 +1,35 @@
 [
   {
     "quest": "Montag",
-    "answer": "понедельник"
+    "answer": "понед_е_льник"
   },
   {
     "quest": "Dienstag",
-    "answer": "вторник"
+    "answer": "вт_о_рник"
   },
   {
     "quest": "Mittwoch",
-    "answer": "среда"
+    "answer": "сред_а_"
   },
   {
     "quest": "Donnerstag",
-    "answer": "четверг"
+    "answer": "четв_е_рг"
   },
   {
     "quest": "Freitag",
-    "answer": "пятница"
+    "answer": "п_я_тница"
   },
   {
     "quest": "Samstag",
-    "answer": "суббота"
+    "answer": "субб_о_та"
   },
   {
     "quest": "Sonntag",
-    "answer": "воскресенье"
+    "answer": "воскрес_е_нье"
   },
   {
     "quest": "Minute",
-    "answer": "минута"
+    "answer": "мин_у_та"
   },
   {
     "quest": "Stunde",
@@ -41,19 +41,19 @@
   },
   {
     "quest": "Woche",
-    "answer": "неделя"
+    "answer": "нед_е_ля"
   },
   {
     "quest": "Wochentag",
-    "answer": "день недели"
+    "answer": "день нед_е_ли"
   },
   {
     "quest": "Wochenende",
-    "answer": "выходные"
+    "answer": "выходн_ы_е"
   },
   {
     "quest": "Monat",
-    "answer": "месяц"
+    "answer": "м_е_сяц"
   },
   {
     "quest": "Jahr",
@@ -61,38 +61,38 @@
   },
   {
     "quest": "Feierabend",
-    "answer": "конец рабочего дня"
+    "answer": "кон_е_ц раб_о_чего дня"
   },
   {
     "quest": "Frühling",
-    "answer": "весна"
+    "answer": "весн_а_"
   },
   {
     "quest": "Sommer",
-    "answer": "лето"
+    "answer": "л_е_то"
   },
   {
     "quest": "Herbst",
-    "answer": "осень"
+    "answer": "_о_сень"
   },
   {
     "quest": "Winter",
-    "answer": "зима"
+    "answer": "зим_а_"
   },
   {
     "quest": "gestern",
-    "answer": "вчера"
+    "answer": "вчер_а_"
   },
   {
     "quest": "heute",
-    "answer": "сегодня"
+    "answer": "сег_о_дня"
   },
   {
     "quest": "morgen",
-    "answer": "завтра"
+    "answer": "з_а_втра"
   },
   {
     "quest": "übermorgen",
-    "answer": "послезавтра"
+    "answer": "послез_а_втра"
   }
 ]

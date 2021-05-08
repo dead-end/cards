@@ -1,0 +1,291 @@
+[
+  {
+    "quest": [
+      "Plus"
+    ],
+    "answer": [
+      "плюс"
+    ]
+  },
+  {
+    "quest": [
+      "Minus"
+    ],
+    "answer": [
+      "м_и_нус"
+    ]
+  },
+  {
+    "quest": [
+      "Wie viel kostet ...?"
+    ],
+    "answer": [
+      "Ск_о_лько ст_о_ит ...?"
+    ]
+  },
+  {
+    "quest": [
+      "Rubel"
+    ],
+    "answer": [
+      "рубль",
+      "~Maskulinum - Endung: ь~"
+    ]
+  },
+  {
+    "quest": [
+      "Euro"
+    ],
+    "answer": [
+      "_е_вро",
+      "~Maskulinum - Ausnahme"
+    ]
+  },
+  {
+    "quest": [
+      "Butter"
+    ],
+    "answer": [
+      "сл_и_вочное м_а_сло"
+    ]
+  },
+  {
+    "quest": [
+      "Schachtel"
+    ],
+    "answer": [
+      "кор_о_бка"
+    ]
+  },
+  {
+    "quest": [
+      "Gewicht"
+    ],
+    "answer": [
+      "вес"
+    ]
+  },
+  {
+    "quest": [
+      "Packung"
+    ],
+    "answer": [
+      "упак_о_вка"
+    ]
+  },
+  {
+    "quest": [
+      "Preis"
+    ],
+    "answer": [
+      "цен_а_"
+    ]
+  },
+  {
+    "quest": [
+      "Gramm"
+    ],
+    "answer": [
+      "грамм"
+    ]
+  },
+  {
+    "quest": [
+      "Päckchen"
+    ],
+    "answer": [
+      "п_а_чка"
+    ]
+  },
+  {
+    "quest": [
+      "Kilogramm"
+    ],
+    "answer": [
+      "килогр_а_мм"
+    ]
+  },
+  {
+    "quest": [
+      "Tüte",
+      "Beutel"
+    ],
+    "answer": [
+      "пак_е_т"
+    ]
+  },
+  {
+    "quest": [
+      "Liter"
+    ],
+    "answer": [
+      "литр"
+    ]
+  },
+  {
+    "quest": [
+      "Flasche"
+    ],
+    "answer": [
+      "бут_ы_лка"
+    ]
+  },
+  {
+    "quest": [
+      "Gib ...",
+      "Geben Sie ..."
+    ],
+    "answer": [
+      "Дай ...",
+      "Дайте ..."
+    ]
+  },
+  {
+    "quest": [
+      "Stück"
+    ],
+    "answer": [
+      "шт_у_кa"
+    ]
+  },
+  {
+    "quest": [
+      "Kann ich Ihnen helfen?"
+    ],
+    "answer": [
+      "Вам пом_о_чь?"
+    ]
+  },
+  {
+    "quest": [
+      "Das macht ... Rubel für Sie."
+    ],
+    "answer": [
+      "С вас ... рубль.",
+      "С вас ... рубле_й_."
+    ]
+  },
+  {
+    "quest": [
+      "Geld"
+    ],
+    "answer": [
+      "д_е_ньги",
+      "~Plural~"
+    ]
+  },
+  {
+    "quest": [
+      "Was noch?"
+    ],
+    "answer": [
+      "Что ещё?"
+    ]
+  },
+  {
+    "quest": [
+      "Das wäre alles."
+    ],
+    "answer": [
+      "_Э_то всё."
+    ]
+  },
+  {
+    "quest": [
+      "mit"
+    ],
+    "answer": [
+      "с"
+    ]
+  },
+  {
+    "quest": [
+      "Picknick"
+    ],
+    "answer": [
+      "пикн_и_к"
+    ]
+  },
+  {
+    "quest": [
+      "Abendbrot",
+      "Abendessen"
+    ],
+    "answer": [
+      "_у_жин"
+    ]
+  },
+  {
+    "quest": [
+      "Käufer"
+    ],
+    "answer": [
+      "покуп_а_тель",
+      "~Maskulinum - Endung: ь~"
+    ]
+  },
+  {
+    "quest": [
+      "Bürotechnik"
+    ],
+    "answer": [
+      "_о_фисная т_е_хника"
+    ]
+  },
+  {
+    "quest": [
+      "Kopierer"
+    ],
+    "answer": [
+      "кс_е_рокс"
+    ]
+  },
+  {
+    "quest": [
+      "Drucker"
+    ],
+    "answer": [
+      "пр_и_нтер"
+    ]
+  },
+  {
+    "quest": [
+      "Faxgerät"
+    ],
+    "answer": [
+      "факс"
+    ]
+  },
+  {
+    "quest": [
+      "Scanner"
+    ],
+    "answer": [
+      "ск_а_нер"
+    ]
+  },
+  {
+    "quest": [
+      "Installation"
+    ],
+    "answer": [
+      "устан_о_вка"
+    ]
+  },
+  {
+    "quest": [
+      "Garantie"
+    ],
+    "answer": [
+      "гар_а_нтия"
+    ]
+  },
+  {
+    "quest": [
+      "Service"
+    ],
+    "answer": [
+      "с_е_рвис"
+    ]
+  }
+]

@@ -24,7 +24,7 @@
     "answer": "как вас зов_у_т?"
   },
   {
-    "quest": "Ichh heiße Volker.",
+    "quest": "Ich heiße Volker.",
     "answer": "Мен_я_ зов_у_т Фолькер."
   },
   {
@@ -44,8 +44,14 @@
     "answer": "Дав_а_йте познак_о_мимся!"
   },
   {
-    "quest": "Wie geht es Ihnen?",
-    "answer": "Как В_а_ши дел_а_?"
+    "quest": [
+      "Wie geht es Ihnen?",
+      "~zwei Antworten~"
+    ],
+    "answer": [
+      "Как В_а_ши дел_а_?",
+      "Как у Вас дел_а_?"
+    ]
   },
   {
     "quest": "Danke!",
@@ -64,20 +70,25 @@
     "answer": "хорош_о_"
   },
   {
-    "quest": "Alles in Ordnung!",
+    "quest": [
+      "Alles in Ordnung!",
+      "~nicht einfache Antwort~"
+    ],
     "answer": "Всё в пор_я_дке!"
   },
   {
-    "quest": "Wie geht es dir?",
-    "answer": "Как тво_и_ дел_а_?"
+    "quest": [
+      "Wie geht es dir?",
+      "~zwei Antworten~"
+    ],
+    "answer": [
+      "Как тво_и_ дел_а_?",
+      "Как у теб_я_ дел_а_?"
+    ]
   },
   {
     "quest": "hier: es geht",
     "answer": "ничег_о_"
-  },
-  {
-    "quest": "Wie geht es dir?",
-    "answer": "Как у теб_я_ дел_а_?"
   },
   {
     "quest": "normal",
@@ -86,10 +97,6 @@
   {
     "quest": "Wie gehts?",
     "answer": "Как дел_а_?"
-  },
-  {
-    "quest": "Wie geht es Ihnen?",
-    "answer": "Как у Вас дел_а_?"
   },
   {
     "quest": "nicht",

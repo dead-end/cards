@@ -80,6 +80,7 @@ export function shuffleArr(arr) {
     console.log("i: " + i + " j: " + j + " len: " + arr.length);
 
     if (i === j) {
+      console.log("continue");
       continue;
     }
 

@@ -59,3 +59,19 @@ export function elemAppendTmpl(idTmpl, idParent, isPrepend, fct) {
     document.getElementById(idParent).append(clone);
   }
 }
+
+/******************************************************************************
+ * The function shuffles an array in place.
+ *****************************************************************************/
+export function shuffleArr(arr) {
+  console.log("before: " + arr);
+
+  for (let i = 0; i < arr.length; i++) {
+    let offset = Math.floor(Math.random() * (arr.length - 1))
+    let j = (i + offset) % (arr.length - 1)
+    
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  console.log("after:  " + arr);
+}

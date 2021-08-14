@@ -1,5 +1,5 @@
 import Persist from "./Persist.js";
-import { arrPercentage, fmtDate } from "./utils.js";
+import { arrPercentage, fmtDate, shuffleArr } from "./utils.js";
 
 /******************************************************************************
  * The function contains a question, the answer, the index in the pool and the
@@ -167,16 +167,8 @@ export default class Pool {
     let arr = this.pool
       .filter((elem) => !elem.learned())
       .map((elem) => elem.idx);
-    console.log("before: " + arr);
 
-    for (let i = 0; i < arr.length; i++) {
-      let j = Math.floor(Math.random() * (arr.length - 1));
-      let tmp = arr[i];
-      arr[i] = arr[j];
-      arr[j] = tmp;
-    }
-
-    console.log("after:  " + arr);
+    shuffleArr(arr);
   }
 
   /****************************************************************************

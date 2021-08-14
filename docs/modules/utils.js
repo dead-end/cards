@@ -72,8 +72,6 @@ function getRandomIntInclusive(min, max) {
  * The function shuffles an array in place.
  *****************************************************************************/
 export function shuffleArr(arr) {
-  console.log("before: " + arr);
-
   for (let i = 0; i < arr.length; i++) {
     //
     // Get a random index of the array
@@ -94,6 +92,4 @@ export function shuffleArr(arr) {
     arr[i] = arr[j];
     arr[j] = tmp;
   }
-
-  console.log("after:  " + arr);
 }

@@ -46,13 +46,11 @@ export default class QuestComp {
 
       clon.getElementById("cq-btn-show").onclick = this.dispatcher.onShowAnswer;
 
-      clon.getElementById(
-        "qa-btn-is-correct"
-      ).onclick = this.dispatcher.onAnswerCorrect;
+      clon.getElementById("qa-btn-is-correct").onclick =
+        this.dispatcher.onAnswerCorrect;
 
-      clon.getElementById(
-        "qa-btn-is-wrong"
-      ).onclick = this.dispatcher.onAnswerWrong;
+      clon.getElementById("qa-btn-is-wrong").onclick =
+        this.dispatcher.onAnswerWrong;
 
       clon.getElementById("qa-btn-stop").onclick = this.dispatcher.onStop;
     });
@@ -85,7 +83,7 @@ export default class QuestComp {
     );
 
     document.getElementById("qa-no").innerText = quest.idx;
-    document.getElementById("qa-correct").innerText = quest.count;
+    document.getElementById("qa-correct").innerText = quest.correct;
     document.getElementById("qa-wrong").innerText = quest.error;
 
     this._hideAnswer();

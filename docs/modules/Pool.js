@@ -2,8 +2,10 @@ import Persist from "./Persist.js";
 import { arrPercentage, fmtDate, shuffleArr } from "./utils.js";
 
 /******************************************************************************
- * The function contains a question, the answer, the index in the pool and the
- * number of times the user sets the correct answer.
+ * The class contains a question, the answer and the number of times the user
+ * sets the correct answer. The class also contains the index of the question
+ * in the pool. This allows to create an array with indices as a shuffled
+ * question array.
  *****************************************************************************/
 class Quest {
   constructor(quest, answer, idx, correct) {
@@ -25,7 +27,7 @@ class Quest {
     this.error++;
   }
 
-  learned() {
+  isLearned() {
     return this.correct === 3;
   }
 
@@ -42,25 +44,45 @@ class Quest {
  * values. The index of the char is the index of the question in the pool.
  *****************************************************************************/
 export default class Pool {
+  /****************************************************************************
+   * The constructor simply registers the event dispatcher.
+   ***************************************************************************/
   constructor(dispatcher) {
     this.dispatcher = dispatcher;
   }
-  _update(quests, obj) {
-    this.pool = [];
-    this.persist = obj;
 
-    for (let i = 0; i < quests.length; i++) {
+  /****************************************************************************
+   * The function is called with the json data from the pool file and the
+   * persist object from the local storage. We construct the pool array with
+   * the questions and answers fron the pool file and the number of correct
+   * answers from the local storage.
+   ***************************************************************************/
+  _update(json, persist) {
+    this.pool = [];
+    this.persist = persist;
+
+    for (let i = 0; i < json.length; i++) {
       this.pool[i] = new Quest(
-        quests[i].quest,
-        quests[i].answer,
+        json[i].quest,
+        json[i].answer,
         i,
         this.persist.answer[i]
       );
     }
 
+    //
+    // Create the array with the indices from the unlearned questions. The
+    // indices are used, because they can be shuffled.
+    //
+    this._createUnlearned();
     this._poolChanged(false);
   }
 
+  /****************************************************************************
+   * The function is called with the name of a pool file, which is also the id
+   * of the pool. The pool file contains json and is fetched with an ajax
+   * request.
+   ***************************************************************************/
   load(file) {
     this.id = file.file;
 
@@ -82,6 +104,85 @@ export default class Pool {
   }
 
   /****************************************************************************
+   * The function is called if the answer of the current question is correct.
+   ***************************************************************************/
+  onAnswerCorrect() {
+    //
+    // Increase the learned count for the question.
+    //
+    this.current.onAnswerCorrect();
+    //
+    // Push back the question if it is not learned.
+    //
+    this._pushBack();
+
+    //
+    // Persist the changed pool.
+    //
+    this._poolChanged(true);
+
+    //
+    // Check if the complete pool was learned
+    //
+    if (this.isLearned()) {
+      this.dispatcher.onStop();
+    }
+
+    //
+    // Get the next unlearned.
+    //
+    else {
+      this.next();
+    }
+  }
+
+  /****************************************************************************
+   * The function is called if the answer of the current question is false.
+   ***************************************************************************/
+  onAnswerWrong() {
+    //
+    // Mark the question as unlearned.
+    //
+    this.current.onAnswerWrong();
+    //
+    // Push back the question to the end of the array of unlearned questions.
+    //
+    this._pushBack();
+    //
+    // Persist the changed pool.
+    //
+    this._poolChanged(true);
+    //
+    // Get the next question
+    //
+    this.next();
+  }
+
+  /****************************************************************************
+   * The function pushes the current question index to the end of the array of
+   * unlearned indices if the question was not learned.
+   ***************************************************************************/
+  _pushBack() {
+    if (!this.current.isLearned()) {
+      this.unlearned.push(this.current.idx);
+    }
+  }
+
+  /****************************************************************************
+   * The function gets the next question from the array of unlearned.
+   ***************************************************************************/
+  next() {
+    //
+    // Remove and asign the first element from the unlearned array.
+    //
+    this.current = this.pool[this.unlearned.shift()];
+
+    this.dispatcher.onQuestChanged(this.current);
+
+    console.log("current: ", this.current.idx, " unlearned: ", this.unlearned);
+  }
+
+  /****************************************************************************
    * The function sets the number of correct answers to all questions of the
    * pool.
    ***************************************************************************/
@@ -89,86 +190,49 @@ export default class Pool {
     this.pool.forEach((elem) => {
       elem.correct = correct;
     });
+    this._createUnlearned();
     this._poolChanged(true);
   }
 
-  onAnswerCorrect() {
-    this.current.onAnswerCorrect();
-    this._poolChanged(true);
-
-    if (this.isLearned()) {
-      this.dispatcher.onStop();
-    } else {
-      this.next();
-    }
-  }
-
-  onAnswerWrong() {
-    this.current.onAnswerWrong();
-    this._poolChanged(true);
-    this.next();
-  }
-
-  next() {
-    //
-    // If we have only one question left we need no random selection.
-    //
-    if (this.unlearned.length == 1) {
-      this.current = this.unlearned[0];
-    }
-
-    //
-    // Here we have at least two questions remaining and we have to select one randomly.
-    //
-    else {
-      let nextUnlearned;
-
-      for (let i = 0; i < 3; i++) {
-        nextUnlearned =
-          this.unlearned[Math.floor(Math.random() * this.unlearned.length)];
-
-        //
-        // Ensure that we do not had the same question last time. Initially
-        // nothing is set.
-        //
-        if (!this.current || this.current != nextUnlearned) {
-          break;
-        }
-      }
-
-      this.current = nextUnlearned;
-    }
-    this.dispatcher.onQuestChanged(this.current);
-  }
-
-  isLearned() {
-    return this.unlearned.length === 0;
-  }
-
-  _updateLearned() {
-    this.unlearned = this.pool.filter((elem) => !elem.learned());
-    this._shuffle();
-  }
-
+  /****************************************************************************
+   * The function is called if the pool changed.
+   ***************************************************************************/
   _poolChanged(doPersist) {
-    this._updateLearned();
-
+    //
+    // If requested save the result to the local storage.
+    //
     if (doPersist) {
       for (let i = 0; i < this.pool.length; i++) {
-        this.persist.answer[i] = this.pool[i].count;
+        this.persist.answer[i] = this.pool[i].correct;
       }
 
       Persist.save(this.id, this.persist);
     }
+    //
+    // Delegate the event to the event dispatcher.
+    //
     this.dispatcher.onPoolChanged(this);
   }
 
-  _shuffle() {
-    let arr = this.pool
-      .filter((elem) => !elem.learned())
+  /****************************************************************************
+   * The function creates a shuffled array with the indices of the unlearned
+   * questions.
+   ***************************************************************************/
+  _createUnlearned() {
+    this.unlearned = this.pool
+      .filter((elem) => !elem.isLearned())
       .map((elem) => elem.idx);
 
-    shuffleArr(arr);
+    shuffleArr(this.unlearned);
+
+    console.log("unlearned: ", this.unlearned);
+  }
+
+  /****************************************************************************
+   * The function checks if all questions of the pool are learned.
+   ***************************************************************************/
+  isLearned() {
+    return this.unlearned.length === 0;
   }
 
   /****************************************************************************
@@ -179,7 +243,7 @@ export default class Pool {
     const correct = [0, 0, 0, 0];
 
     this.pool.forEach((elem) => {
-      correct[elem.count]++;
+      correct[elem.correct]++;
     });
 
     return correct;

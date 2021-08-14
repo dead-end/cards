@@ -74,11 +74,8 @@ function getRandomIntInclusive(min, max) {
 export function shuffleArr(arr) {
   console.log("before: " + arr);
 
-  let min = 1;
-  let max = arr.length - 1;
-
   for (let i = 0; i < arr.length; i++) {
-    let j = getRandomIntInclusive(0, arr.length);
+    let j = getRandomIntInclusive(0, arr.length - 1);
 
     console.log("i: " + i + " j: " + j);
 

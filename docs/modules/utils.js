@@ -77,7 +77,7 @@ export function shuffleArr(arr) {
   for (let i = 0; i < arr.length; i++) {
     let j = getRandomIntInclusive(0, arr.length - 1);
 
-    console.log("i: " + i + " j: " + j);
+    console.log("i: " + i + " j: " + j + " len: " + arr.length);
 
     if (i === j) {
       continue;

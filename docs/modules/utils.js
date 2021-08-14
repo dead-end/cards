@@ -66,7 +66,12 @@ export function elemAppendTmpl(idTmpl, idParent, isPrepend, fct) {
 export function shuffleArr(arr) {
   console.log("before: " + arr);
 
-  arr.sort(() => Math.random() - 0.5);
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
 
   console.log("after:  " + arr);
 }

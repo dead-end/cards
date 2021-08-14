@@ -78,13 +78,12 @@ export function shuffleArr(arr) {
   let max = arr.length - 1;
 
   for (let i = 0; i < arr.length; i++) {
-    let offset = getRandomIntInclusive(min, max);
-    let j = (i + offset) % arr.length;
+    let j = getRandomIntInclusive(0, arr.length);
 
-    console.log("i: " + i + " j: " + j + " offset: " + offset);
+    console.log("i: " + i + " j: " + j);
 
     if (i === j) {
-      console.log("mist!!!");
+      continue;
     }
 
     let tmp = arr[i];

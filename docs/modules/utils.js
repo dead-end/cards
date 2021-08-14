@@ -70,7 +70,11 @@ export function shuffleArr(arr) {
     let offset = Math.floor(Math.random() * (arr.length - 1));
     let j = (i + 1 + offset) % (arr.length - 1);
 
-    console.log(i, j, offset);
+    console.log("i: " + i + " j: " + j + " offset: " + offset);
+
+    if (i === j) {
+      console.log("mist!!!");
+    }
 
     let tmp = arr[i];
     arr[i] = arr[j];

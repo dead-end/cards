@@ -6,35 +6,31 @@ import { arrPercentage, fmtDate } from "./utils.js";
  * number of times the user sets the correct answer.
  *****************************************************************************/
 class Quest {
-  constructor(quest, answer, idx, count) {
+  constructor(quest, answer, idx, correct) {
     this.quest = quest;
     this.answer = answer;
     this.idx = idx;
-    this.count = count;
+    this.correct = correct;
     this.error = 0;
   }
 
-  correct() {
-    if (this.count >= 3) {
-      return false;
+  onAnswerCorrect() {
+    if (this.correct < 3) {
+      this.correct++;
     }
-    this.count++;
-    return this.count === 3;
   }
 
-  wrong() {
-    const changed = this.count !== 0;
-    this.count = 0;
+  onAnswerWrong() {
+    this.correct = 0;
     this.error++;
-    return changed;
   }
 
   learned() {
-    return this.count === 3;
+    return this.correct === 3;
   }
 
   touched() {
-    return this.count !== 0;
+    return this.correct !== 0;
   }
 }
 
@@ -89,15 +85,15 @@ export default class Pool {
    * The function sets the number of correct answers to all questions of the
    * pool.
    ***************************************************************************/
-  addAll(count) {
+  addAll(correct) {
     this.pool.forEach((elem) => {
-      elem.count = count;
+      elem.correct = correct;
     });
     this._poolChanged(true);
   }
 
   onAnswerCorrect() {
-    this.current.correct();
+    this.current.onAnswerCorrect();
     this._poolChanged(true);
 
     if (this.isLearned()) {
@@ -108,7 +104,7 @@ export default class Pool {
   }
 
   onAnswerWrong() {
-    this.current.wrong();
+    this.current.onAnswerWrong();
     this._poolChanged(true);
     this.next();
   }
@@ -128,9 +124,8 @@ export default class Pool {
       let nextUnlearned;
 
       for (let i = 0; i < 3; i++) {
-        nextUnlearned = this.unlearned[
-          Math.floor(Math.random() * this.unlearned.length)
-        ];
+        nextUnlearned =
+          this.unlearned[Math.floor(Math.random() * this.unlearned.length)];
 
         //
         // Ensure that we do not had the same question last time. Initially
@@ -151,8 +146,8 @@ export default class Pool {
   }
 
   _updateLearned() {
-    this.learned = this.pool.filter((elem) => elem.learned());
     this.unlearned = this.pool.filter((elem) => !elem.learned());
+    this._shuffle();
   }
 
   _poolChanged(doPersist) {
@@ -168,6 +163,26 @@ export default class Pool {
     this.dispatcher.onPoolChanged(this);
   }
 
+  _shuffle() {
+    let arr = this.pool
+      .filter((elem) => !elem.learned())
+      .map((elem) => elem.idx);
+    console.log("before: " + arr);
+
+    for (let i = 0; i < arr.length; i++) {
+      let j = Math.floor(Math.random() * (arr.length - 1));
+      let tmp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = tmp;
+    }
+
+    console.log("after:  " + arr);
+  }
+
+  /****************************************************************************
+   * The function returns an array with statistic data, which is the number of
+   * questions with 0, 1, 2 or 3 correct answers.
+   ***************************************************************************/
   getCorrect() {
     const correct = [0, 0, 0, 0];
 
@@ -178,10 +193,16 @@ export default class Pool {
     return correct;
   }
 
+  /****************************************************************************
+   * The function the percentage of correct answers for this question pool.
+   ***************************************************************************/
   getPercentage() {
     return arrPercentage(this.persist.answer, 3);
   }
 
+  /****************************************************************************
+   * The function returns a formated last modified string of the pool.
+   ***************************************************************************/
   getLastmodifiedFmt() {
     return fmtDate(this.persist.lastmodified);
   }

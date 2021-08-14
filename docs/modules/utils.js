@@ -61,8 +61,8 @@ export function elemAppendTmpl(idTmpl, idParent, isPrepend, fct) {
 }
 
 /******************************************************************************
- * The maximum is inclusive and the minimum is inclusive. It is assumed that
- * min and max are integers.
+ * The function returns a random number between min and max. Both are included
+ * and it is assumed that both parameters are integers.
  *****************************************************************************/
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -75,15 +75,21 @@ export function shuffleArr(arr) {
   console.log("before: " + arr);
 
   for (let i = 0; i < arr.length; i++) {
+    //
+    // Get a random index of the array
+    //
     let j = getRandomIntInclusive(0, arr.length - 1);
 
-    console.log("i: " + i + " j: " + j + " len: " + arr.length);
-
+    //
+    // Ensure that there is something to do
+    //
     if (i === j) {
-      console.log("continue");
       continue;
     }
 
+    //
+    // Swap i and j
+    //
     let tmp = arr[i];
     arr[i] = arr[j];
     arr[j] = tmp;

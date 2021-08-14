@@ -68,7 +68,7 @@ export function shuffleArr(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     let offset = Math.floor(Math.random() * (arr.length - 1));
-    let j = (i + offset) % (arr.length - 1);
+    let j = (i + 1 + offset) % (arr.length - 1);
 
     console.log(i, j, offset);
 

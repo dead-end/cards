@@ -1,6 +1,154 @@
 [
   {
     "quest": [
+      "Stück"
+    ],
+    "answer": [
+      "шт_у_кa"
+    ]
+  },
+  {
+    "quest": [
+      "Kann ich Ihnen helfen?"
+    ],
+    "answer": [
+      "Вам пом_о_чь?"
+    ]
+  },
+  {
+    "quest": [
+      "Das macht ... Rubel für Sie."
+    ],
+    "answer": [
+      "С вас ... рубль.",
+      "С вас ... рубл_е_й."
+    ]
+  },
+  {
+    "quest": [
+      "Geld"
+    ],
+    "answer": [
+      "д_е_ньги",
+      "~Plural~"
+    ]
+  },
+  {
+    "quest": [
+      "Was noch?"
+    ],
+    "answer": [
+      "Что ещё?"
+    ]
+  },
+  {
+    "quest": [
+      "Das wäre alles."
+    ],
+    "answer": [
+      "_Э_то всё."
+    ]
+  },
+  {
+    "quest": [
+      "mit"
+    ],
+    "answer": [
+      "с"
+    ]
+  },
+  {
+    "quest": [
+      "Picknick"
+    ],
+    "answer": [
+      "пикн_и_к"
+    ]
+  },
+  {
+    "quest": [
+      "Abendbrot",
+      "Abendessen"
+    ],
+    "answer": [
+      "_у_жин"
+    ]
+  },
+  {
+    "quest": [
+      "Käufer"
+    ],
+    "answer": [
+      "покуп_а_тель",
+      "~Maskulinum - Endung: ь~"
+    ]
+  },
+  {
+    "quest": [
+      "Bürotechnik"
+    ],
+    "answer": [
+      "_о_фисная т_е_хника"
+    ]
+  },
+  {
+    "quest": [
+      "Kopierer"
+    ],
+    "answer": [
+      "кс_е_рокс"
+    ]
+  },
+  {
+    "quest": [
+      "Drucker"
+    ],
+    "answer": [
+      "пр_и_нтер"
+    ]
+  },
+  {
+    "quest": [
+      "Faxgerät"
+    ],
+    "answer": [
+      "факс"
+    ]
+  },
+  {
+    "quest": [
+      "Scanner"
+    ],
+    "answer": [
+      "ск_а_нер"
+    ]
+  },
+  {
+    "quest": [
+      "Installation"
+    ],
+    "answer": [
+      "устан_о_вка"
+    ]
+  },
+  {
+    "quest": [
+      "Garantie"
+    ],
+    "answer": [
+      "гар_а_нтия"
+    ]
+  },
+  {
+    "quest": [
+      "Service"
+    ],
+    "answer": [
+      "с_е_рвис"
+    ]
+  },
+  {
+    "quest": [
       "hier: Süßwarenprodu­zent"
     ],
     "answer": [
@@ -106,265 +254,6 @@
     ],
     "answer": [
       "рекл_а_мa"
-    ]
-  },
-  {
-    "quest": [
-      "Flugticket"
-    ],
-    "answer": [
-      "бил_е_т на самолёт"
-    ]
-  },
-  {
-    "quest": [
-      "medizinische Geräte"
-    ],
-    "answer": [
-      "аппарат_у_ра для медиц_и_ны"
-    ]
-  },
-  {
-    "quest": [
-      "Computer"
-    ],
-    "answer": [
-      "компь_ю_тер"
-    ]
-  },
-  {
-    "quest": [
-      "Kredit"
-    ],
-    "answer": [
-      "кред_и_т"
-    ]
-  },
-  {
-    "quest": [
-      "Arbeit"
-    ],
-    "answer": [
-      "раб_о_та"
-    ]
-  },
-  {
-    "quest": [
-      "Autoreparatur"
-    ],
-    "answer": [
-      "рем_о_нт маш_и_н"
-    ]
-  },
-  {
-    "quest": [
-      "Auto"
-    ],
-    "answer": [
-      "маш_и_на"
-    ]
-  },
-  {
-    "quest": [
-      "verkaufen"
-    ],
-    "answer": [
-      "продав_а_ть",
-      "я продаю",
-      "ты продаёшь",
-      "он / она / оно продаёт",
-      "мы продаём",
-      "вы продаёте",
-      "они продают"
-    ]
-  },
-  {
-    "quest": [
-      "Hauptstadt"
-    ],
-    "answer": [
-      "стол_и_ца"
-    ]
-  },
-  {
-    "quest": [
-      "Süd-, südlich"
-    ],
-    "answer": [
-      "_ю_жный"
-    ]
-  },
-  {
-    "quest": [
-      "Asowsches Meer"
-    ],
-    "answer": [
-      "Аз_о_вское м_о_ре"
-    ]
-  },
-  {
-    "quest": [
-      "Sprachschule"
-    ],
-    "answer": [
-      "языков_а_я шк_о_ла"
-    ]
-  },
-  {
-    "quest": [
-      "Hobby"
-    ],
-    "answer": [
-      "х_о_бби"
-    ]
-  },
-  {
-    "quest": [
-      "russische Küche"
-    ],
-    "answer": [
-      "р_у_сская к_у_хня"
-    ]
-  },
-  {
-    "quest": [
-      "kaufen"
-    ],
-    "answer": [
-      "покуп_а_ть"
-    ]
-  },
-  {
-    "quest": [
-      "Markt"
-    ],
-    "answer": [
-      "рынок",
-      "рынка ~Genitiv Singular~"
-    ]
-  },
-  {
-    "quest": [
-      "besser"
-    ],
-    "answer": [
-      "л_у_чше"
-    ]
-  },
-  {
-    "quest": [
-      "Fest"
-    ],
-    "answer": [
-      "пр_а_здник"
-    ]
-  },
-  {
-    "quest": [
-      "multinational"
-    ],
-    "answer": [
-      "многонацион_а_льный"
-    ]
-  },
-  {
-    "quest": [
-      "Jahrmarkt",
-      "Messe"
-    ],
-    "answer": [
-      "_я_рмарка"
-    ]
-  },
-  {
-    "quest": [
-      "man kann",
-      "man darf"
-    ],
-    "answer": [
-      "м_о_жно"
-    ]
-  },
-  {
-    "quest": [
-      "kosten"
-    ],
-    "answer": [
-      "попр_о_бовать"
-    ]
-  },
-  {
-    "quest": [
-      "armenisch"
-    ],
-    "answer": [
-      "арм_я_нский"
-    ]
-  },
-  {
-    "quest": [
-      "weißrussisch"
-    ],
-    "answer": [
-      "белор_у_сский"
-    ]
-  },
-  {
-    "quest": [
-      "usbekisch"
-    ],
-    "answer": [
-      "узб_е_кский"
-    ]
-  },
-  {
-    "quest": [
-      "griechisch"
-    ],
-    "answer": [
-      "гр_е_ческий"
-    ]
-  },
-  {
-    "quest": [
-      "polnisch"
-    ],
-    "answer": [
-      "п_о_льский"
-    ]
-  },
-  {
-    "quest": [
-      "anderer"
-    ],
-    "answer": [
-      "другой"
-    ]
-  },
-  {
-    "quest": [
-      "hier: nationale Spezialität"
-    ],
-    "answer": [
-      "национ_а_льное бл_ю_до"
-    ]
-  },
-  {
-    "quest": [
-      "Gericht",
-      "Speise"
-    ],
-    "answer": [
-      "бл_ю_до"
-    ]
-  },
-  {
-    "quest": [
-      "Interview"
-    ],
-    "answer": [
-      "интервь_ю_",
-      "~Neutrum indeklinabel~"
     ]
   }
 ]

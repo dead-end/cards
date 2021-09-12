@@ -56,6 +56,10 @@
     "title": "Kapitel 5 Teil 3"
   },
   {
+    "file": "data/kapitel-5-4.json",
+    "title": "Kapitel 5 Teil 4"
+  },
+  {
     "file": "data/dates.json",
     "title": "Datum",
     "desc": "Wochentage, Jahreszeigen, usw."

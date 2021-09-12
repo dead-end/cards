@@ -1,6 +1,123 @@
 [
   {
     "quest": [
+      "Gemüse"
+    ],
+    "answer": [
+      "_о_вощи",
+      "~Plural~"
+    ]
+  },
+  {
+    "quest": [
+      "Getränk"
+    ],
+    "answer": [
+      "нап_и_ток",
+      "нап_и_тка ~- Genitiv Singular~"
+    ]
+  },
+  {
+    "quest": [
+      "Praline",
+      "Bonbon"
+    ],
+    "answer": [
+      "конф_е_та"
+    ]
+  },
+  {
+    "quest": [
+      "Birne"
+    ],
+    "answer": [
+      "гр_у_ша"
+    ]
+  },
+  {
+    "quest": [
+      "(Wiener) Würstchen"
+    ],
+    "answer": [
+      "сос_и_ска"
+    ]
+  },
+  {
+    "quest": [
+      "Kuchen"
+    ],
+    "answer": [
+      "пир_о_г"
+    ]
+  },
+  {
+    "quest": [
+      "Salat"
+    ],
+    "answer": [
+      "сaл_а_т"
+    ]
+  },
+  {
+    "quest": [
+      "Ananas"
+    ],
+    "answer": [
+      "анан_а_с"
+    ]
+  },
+  {
+    "quest": [
+      "Gurke"
+    ],
+    "answer": [
+      "огур_е_ц",
+      "огурц_а_ ~- Gennitiv Singular~"
+    ]
+  },
+  {
+    "quest": [
+      "Kühlschrank"
+    ],
+    "answer": [
+      "холод_и_льник"
+    ]
+  },
+  {
+    "quest": [
+      "saure Sahne"
+    ],
+    "answer": [
+      "смет_а_на"
+    ]
+  },
+  {
+    "quest": [
+      "Quark"
+    ],
+    "answer": [
+      "тв_о_рог"
+    ]
+  },
+  {
+    "quest": [
+      "Salz"
+    ],
+    "answer": [
+      "соль",
+      "~Femininum - Endung: ь~"
+    ]
+  },
+  {
+    "quest": [
+      "Zucker"
+    ],
+    "answer": [
+      "с_а_хар"
+    ]
+  },
+  {
+    "quest": [
       "Plus"
     ],
     "answer": [
@@ -138,154 +255,6 @@
     "answer": [
       "Дай ...",
       "Дайте ..."
-    ]
-  },
-  {
-    "quest": [
-      "Stück"
-    ],
-    "answer": [
-      "шт_у_кa"
-    ]
-  },
-  {
-    "quest": [
-      "Kann ich Ihnen helfen?"
-    ],
-    "answer": [
-      "Вам пом_о_чь?"
-    ]
-  },
-  {
-    "quest": [
-      "Das macht ... Rubel für Sie."
-    ],
-    "answer": [
-      "С вас ... рубль.",
-      "С вас ... рубл_е_й."
-    ]
-  },
-  {
-    "quest": [
-      "Geld"
-    ],
-    "answer": [
-      "д_е_ньги",
-      "~Plural~"
-    ]
-  },
-  {
-    "quest": [
-      "Was noch?"
-    ],
-    "answer": [
-      "Что ещё?"
-    ]
-  },
-  {
-    "quest": [
-      "Das wäre alles."
-    ],
-    "answer": [
-      "_Э_то всё."
-    ]
-  },
-  {
-    "quest": [
-      "mit"
-    ],
-    "answer": [
-      "с"
-    ]
-  },
-  {
-    "quest": [
-      "Picknick"
-    ],
-    "answer": [
-      "пикн_и_к"
-    ]
-  },
-  {
-    "quest": [
-      "Abendbrot",
-      "Abendessen"
-    ],
-    "answer": [
-      "_у_жин"
-    ]
-  },
-  {
-    "quest": [
-      "Käufer"
-    ],
-    "answer": [
-      "покуп_а_тель",
-      "~Maskulinum - Endung: ь~"
-    ]
-  },
-  {
-    "quest": [
-      "Bürotechnik"
-    ],
-    "answer": [
-      "_о_фисная т_е_хника"
-    ]
-  },
-  {
-    "quest": [
-      "Kopierer"
-    ],
-    "answer": [
-      "кс_е_рокс"
-    ]
-  },
-  {
-    "quest": [
-      "Drucker"
-    ],
-    "answer": [
-      "пр_и_нтер"
-    ]
-  },
-  {
-    "quest": [
-      "Faxgerät"
-    ],
-    "answer": [
-      "факс"
-    ]
-  },
-  {
-    "quest": [
-      "Scanner"
-    ],
-    "answer": [
-      "ск_а_нер"
-    ]
-  },
-  {
-    "quest": [
-      "Installation"
-    ],
-    "answer": [
-      "устан_о_вка"
-    ]
-  },
-  {
-    "quest": [
-      "Garantie"
-    ],
-    "answer": [
-      "гар_а_нтия"
-    ]
-  },
-  {
-    "quest": [
-      "Service"
-    ],
-    "answer": [
-      "с_е_рвис"
     ]
   }
 ]

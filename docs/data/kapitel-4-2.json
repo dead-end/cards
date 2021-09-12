@@ -1,45 +1,5 @@
 [
   {
-    "quest": [
-      "mein",
-      "meine"
-    ],
-    "answer": [
-      "мой",
-      "мо_я_",
-      "мо_и_"
-    ]
-  },
-  {
-    "quest": "alle zusammen",
-    "answer": "всё вм_е_сте"
-  },
-  {
-    "quest": [
-      "sie heißen ...",
-      "~mehrere Personen~"
-    ],
-    "answer": "их зов_у_т ..."
-  },
-  {
-    "quest": [
-      "sie heißt ...",
-      "~eine weibliche Person~"
-    ],
-    "answer": "её зов_у_т ..."
-  },
-  {
-    "quest": [
-      "dein",
-      "deine"
-    ],
-    "answer": [
-      "твой",
-      "тво_я_",
-      "тво_и_"
-    ]
-  },
-  {
     "quest": "zusammen",
     "answer": "вм_е_сте"
   },
@@ -226,57 +186,5 @@
   {
     "quest": "Rentner ",
     "answer": "пенсион_е_р"
-  },
-  {
-    "quest": [
-      "wissen",
-      "kennen"
-    ],
-    "answer": [
-      "зн_а_ть",
-      "- я зн_а_ю",
-      "- ты зн_а_ешь",
-      "- он, она, оно зн_а_ет",
-      "- мы зн_а_ем",
-      "- вы зн_а_ете",
-      "- они зн_а_ют"
-    ]
-  },
-  {
-    "quest": [
-      "Sekretär",
-      "­Sekretärin"
-    ],
-    "answer": [
-      "секрет_а_рь",
-      "~Maskulinum - Endung: ь~"
-    ]
-  },
-  {
-    "quest": "Büro ",
-    "answer": "_о_фис"
-  },
-  {
-    "quest": "Hausfrau",
-    "answer": "домохоз_я_йка"
-  },
-  {
-    "quest": [
-      "Fotograf",
-      "Fotograf­in"
-    ],
-    "answer": "фот_о_граф"
-  },
-  {
-    "quest": "oft",
-    "answer": "ч_а_сто"
-  },
-  {
-    "quest": "Dienstreise",
-    "answer": "командир_о_вка"
-  },
-  {
-    "quest": "deshalb",
-    "answer": "по_э_тому"
   }
 ]

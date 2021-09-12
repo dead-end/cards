@@ -1,5 +1,46 @@
 [
   {
+    "quest": "Supermarkt",
+    "answer": "суперм_а_ркет"
+  },
+  {
+    "quest": "Bank",
+    "answer": "б_а_нк"
+  },
+  {
+    "quest": [
+      "Werk ",
+      "Fabrik"
+    ],
+    "answer": "зав_о_д"
+  },
+  {
+    "quest": " Botschaft",
+    "answer": "пос_о_льство"
+  },
+  {
+    "quest": "Schule",
+    "answer": "шк_о_ла"
+  },
+  {
+    "quest": "Redaktion",
+    "answer": "ред_а_кция"
+  },
+  {
+    "quest": [
+      "Unternehmen",
+      "Firma"
+    ],
+    "answer": "комп_а_ния"
+  },
+  {
+    "quest": "Kino",
+    "answer": [
+      "кин_о_",
+      "~indeklinabel~"
+    ]
+  },
+  {
     "quest": [
       "Kollege",
       "Kollegin"

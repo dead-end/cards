@@ -134,5 +134,45 @@
   {
     "quest": "Studentin",
     "answer": "студ_е_нтка"
+  },
+  {
+    "quest": [
+      "mein",
+      "meine"
+    ],
+    "answer": [
+      "мой",
+      "мо_я_",
+      "мо_и_"
+    ]
+  },
+  {
+    "quest": "alle zusammen",
+    "answer": "всё вм_е_сте"
+  },
+  {
+    "quest": [
+      "sie heißen ...",
+      "~mehrere Personen~"
+    ],
+    "answer": "их зов_у_т ..."
+  },
+  {
+    "quest": [
+      "sie heißt ...",
+      "~eine weibliche Person~"
+    ],
+    "answer": "её зов_у_т ..."
+  },
+  {
+    "quest": [
+      "dein",
+      "deine"
+    ],
+    "answer": [
+      "твой",
+      "тво_я_",
+      "тво_и_"
+    ]
   }
 ]

@@ -1,5 +1,57 @@
 [
   {
+    "quest": [
+      "wissen",
+      "kennen"
+    ],
+    "answer": [
+      "зн_а_ть",
+      "- я зн_а_ю",
+      "- ты зн_а_ешь",
+      "- он, она, оно зн_а_ет",
+      "- мы зн_а_ем",
+      "- вы зн_а_ете",
+      "- они зн_а_ют"
+    ]
+  },
+  {
+    "quest": [
+      "Sekretär",
+      "­Sekretärin"
+    ],
+    "answer": [
+      "секрет_а_рь",
+      "~Maskulinum - Endung: ь~"
+    ]
+  },
+  {
+    "quest": "Büro ",
+    "answer": "_о_фис"
+  },
+  {
+    "quest": "Hausfrau",
+    "answer": "домохоз_я_йка"
+  },
+  {
+    "quest": [
+      "Fotograf",
+      "Fotograf­in"
+    ],
+    "answer": "фот_о_граф"
+  },
+  {
+    "quest": "oft",
+    "answer": "ч_а_сто"
+  },
+  {
+    "quest": "Dienstreise",
+    "answer": "командир_о_вка"
+  },
+  {
+    "quest": "deshalb",
+    "answer": "по_э_тому"
+  },
+  {
     "quest": "zu Hause",
     "answer": "д_о_ма"
   },
@@ -140,47 +192,6 @@
     "answer": [
       "уч_и_тель",
       "~Maskulinum - Endung: ь~"
-    ]
-  },
-  {
-    "quest": "Supermarkt",
-    "answer": "суперм_а_ркет"
-  },
-  {
-    "quest": "Bank",
-    "answer": "б_а_нк"
-  },
-  {
-    "quest": [
-      "Werk ",
-      "Fabrik"
-    ],
-    "answer": "зав_о_д"
-  },
-  {
-    "quest": " Botschaft",
-    "answer": "пос_о_льство"
-  },
-  {
-    "quest": "Schule",
-    "answer": "шк_о_ла"
-  },
-  {
-    "quest": "Redaktion",
-    "answer": "ред_а_кция"
-  },
-  {
-    "quest": [
-      "Unternehmen",
-      "Firma"
-    ],
-    "answer": "комп_а_ния"
-  },
-  {
-    "quest": "Kino",
-    "answer": [
-      "кин_о_",
-      "~indeklinabel~"
     ]
   }
 ]

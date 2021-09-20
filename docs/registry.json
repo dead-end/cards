@@ -80,6 +80,11 @@
     "desc": "Übung zu Pronomen und zum Genus."
   },
   {
+    "file": "data/gram-haben.json",
+    "title": "Übung - Haben",
+    "desc": "Übung zu haben und nicht haben."
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

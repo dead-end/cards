@@ -12,7 +12,7 @@
             "Du hast eine Autofabrik."
         ],
         "answer": [
-            "У вас есть автомобильный завод."
+            "У тебя есть автомобильный завод."
         ]
     },
     {
@@ -41,7 +41,9 @@
     },
     {
         "quest": [
-            "Ihr haben einen Käufer."
+            "Ihr habt einen Käufer.",
+            "Sie haben einen Käufer.",
+            "~eine Person~"
         ],
         "answer": [
             "У вас есть покупатель. "
@@ -49,7 +51,8 @@
     },
     {
         "quest": [
-            "Sie habt eine Hausfrau."
+            "Sie haben eine Hausfrau.",
+            "~mehrere Personen~"
         ],
         "answer": [
             "У них есть домохозяйка."
@@ -100,12 +103,13 @@
             "Ihr habt kein Paket."
         ],
         "answer": [
-            "У вас нет упаковка."
+            "У вас нет упаковки."
         ]
     },
     {
         "quest": [
-            "Sie haben keinen Verkäufer."
+            "Sie haben keinen Verkäufer.",
+            "~mehrere Personen~"
         ],
         "answer": [
             "У них нет продавца."

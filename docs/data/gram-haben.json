@@ -1,0 +1,114 @@
+[
+    {
+        "quest": [
+            "Ich habe einen Übersetzer."
+        ],
+        "answer": [
+            "У меня есть переводчик. "
+        ]
+    },
+    {
+        "quest": [
+            "Du hast eine Autofabrik."
+        ],
+        "answer": [
+            "У вас есть автомобильный завод."
+        ]
+    },
+    {
+        "quest": [
+            "Er hat einen Mitarbeiter."
+        ],
+        "answer": [
+            "У него есть сотрудник."
+        ]
+    },
+    {
+        "quest": [
+            "Sie hat Eier."
+        ],
+        "answer": [
+            "У неё есть яйца."
+        ]
+    },
+    {
+        "quest": [
+            "Wir haben eine Hauptstadt."
+        ],
+        "answer": [
+            "У нас есть столица."
+        ]
+    },
+    {
+        "quest": [
+            "Ihr haben einen Käufer."
+        ],
+        "answer": [
+            "У вас есть покупатель. "
+        ]
+    },
+    {
+        "quest": [
+            "Sie habt eine Hausfrau."
+        ],
+        "answer": [
+            "У них есть домохозяйка."
+        ]
+    },
+    {
+        "quest": [
+            "Ich habe keinen Markt."
+        ],
+        "answer": [
+            "У меня нет рынка."
+        ]
+    },
+    {
+        "quest": [
+            "Du hast keine Stadt."
+        ],
+        "answer": [
+            "У тебя нет города. "
+        ]
+    },
+    {
+        "quest": [
+            "Er hat keine Rubel."
+        ],
+        "answer": [
+            "У него нет рублей."
+        ]
+    },
+    {
+        "quest": [
+            "Sie hat keine Gurke."
+        ],
+        "answer": [
+            "У неё нет огурца."
+        ]
+    },
+    {
+        "quest": [
+            "Wir haben kein Getränk."
+        ],
+        "answer": [
+            "У нас нет напитка."
+        ]
+    },
+    {
+        "quest": [
+            "Ihr habt kein Paket."
+        ],
+        "answer": [
+            "У вас нет упаковка."
+        ]
+    },
+    {
+        "quest": [
+            "Sie haben keinen Verkäufer."
+        ],
+        "answer": [
+            "У них нет продавца."
+        ]
+    }
+]

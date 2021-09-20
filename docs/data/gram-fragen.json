@@ -65,11 +65,11 @@
   },
   {
     "quest": [
-      "Wie heißt wir?",
-      "Wie sind unsere Vornamen?",
+      "Wie heißen wir?",
+      "Wie sind wir Vornamen?",
       "Woher kommen wir?",
       "Was ist unsere Nazionalität?",
-      "Was ist wir von Beruf?"
+      "Was sind wir von Beruf?"
     ],
     "answer": [
       "Как нас зовут",
@@ -88,7 +88,7 @@
       "Was sind Sie von Beruf?"
     ],
     "answer": [
-      "как вас зовут?",
+      "Как вас зовут?",
       "Как ваше имя?",
       "Откуда вы?",
       "Кто вы по национальности?",

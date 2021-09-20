@@ -2,7 +2,7 @@
   {
     "quest": [
       "Wie heiße ich?",
-      "Wie mein Vorname?",
+      "Was ist mein Vorname?",
       "Woher komme ich?",
       "Was ist meine Nazionalität?",
       "Was bin ich von Beruf?"
@@ -17,8 +17,8 @@
   },
   {
     "quest": [
-      "Wie heißen du?",
-      "Wie dein Vorname?",
+      "Wie heißt du?",
+      "Was ist dein Vorname?",
       "Woher kommst du?",
       "Was ist deine Nazionalität?",
       "Was bist du von Beruf?"
@@ -73,7 +73,7 @@
     ],
     "answer": [
       "Как нас зовут",
-      "Как наши имена?",
+      "Какие наши имена?",
       "Откуда мы?",
       "Кто мы по национальности? ",
       "Кто мы по профессии?"
@@ -91,7 +91,7 @@
       "как вас зовут?",
       "Как ваше имя?",
       "Откуда вы?",
-      "Как вы по национальности?",
+      "Кто вы по национальности?",
       "Кто вы по профессии?"
     ]
   }

@@ -1,0 +1,98 @@
+[
+  {
+    "quest": [
+      "Wie heiße ich?",
+      "Wie mein Vorname?",
+      "Woher komme ich?",
+      "Was ist meine Nazionalität?",
+      "Was bin ich von Beruf?"
+    ],
+    "answer": [
+      "Как меня зовут?",
+      "Как моё имя?",
+      "Откуда я",
+      "Кто я по национальности?",
+      "Кто я по профессии?"
+    ]
+  },
+  {
+    "quest": [
+      "Wie heißen du?",
+      "Wie dein Vorname?",
+      "Woher kommst du?",
+      "Was ist deine Nazionalität?",
+      "Was bist du von Beruf?"
+    ],
+    "answer": [
+      "Как тебя зовут?",
+      "Как твоё имя",
+      "Откуда ты?",
+      "Кто ты по национальности?",
+      "Кто ты по профессии?"
+    ]
+  },
+  {
+    "quest": [
+      "Wie heißt er?",
+      "Wie ist sein Vorname?",
+      "Woher kommt er?",
+      "Was ist seine Nazionalität?",
+      "Was ist er von Beruf?"
+    ],
+    "answer": [
+      "Как его зовут?",
+      "Как его имя?",
+      "Откуда он?",
+      "Кто он по национальности?",
+      "Кто он по профессии?"
+    ]
+  },
+  {
+    "quest": [
+      "Wie heißt sie?",
+      "Wie ist ihr Vorname?",
+      "Woher kommt sie?",
+      "Was ist ihre Nazionalität?",
+      "Was ist sie von Beruf?"
+    ],
+    "answer": [
+      "Как её зовут?",
+      "Как её имя?",
+      "Откуда она?",
+      "Кто она по национальности?",
+      "Кто она по профессии?"
+    ]
+  },
+  {
+    "quest": [
+      "Wie heißt wir?",
+      "Wie sind unsere Vornamen?",
+      "Woher kommen wir?",
+      "Was ist unsere Nazionalität?",
+      "Was ist wir von Beruf?"
+    ],
+    "answer": [
+      "Как нас зовут",
+      "Как наши имена?",
+      "Откуда мы?",
+      "Кто мы по национальности? ",
+      "Кто мы по профессии?"
+    ]
+  },
+  {
+    "quest": [
+      "Wie heißen Sie?",
+      "Wie ist Ihr Vorname?",
+      "Woher kommen Sie?",
+      "Wie ist Ihre Nazionalität?",
+      "Was sind Sie von Beruf?"
+    ],
+    "answer": [
+      "как вас зовут?",
+      "Как ваше имя?",
+      "Откуда вы?",
+      "Как вы по национальности?",
+      "Кто вы по профессии?"
+    ]
+  }
+]

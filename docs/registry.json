@@ -85,6 +85,11 @@
     "desc": "Übung zu haben und nicht haben."
   },
   {
+    "file": "data/gram-fragen.json",
+    "title": "Übung - Fragen",
+    "desc": "Übung zu Fragen."
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

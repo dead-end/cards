@@ -95,6 +95,11 @@
     "desc": "Was sagen die Studenten?"
   },
   {
+    "file": "data/gedicht.json",
+    "title": "Gedicht",
+    "desc": "1, 2, 3, 4, ..."
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

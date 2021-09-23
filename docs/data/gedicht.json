@@ -1,0 +1,66 @@
+[
+  {
+    "quest": [
+      "1, 2, 3, 4,"
+    ],
+    "answer": [
+      "Раз, два, три, четыре,"
+    ]
+  },
+  {
+    "quest": [
+      "Wer wohnt bei uns in der Wohnung?"
+    ],
+    "answer": [
+      "Кто живёт у нас в квартире?."
+    ]
+  },
+  {
+    "quest": [
+      "Papa, Mama, Bruder, Schwesterchen,"
+    ],
+    "answer": [
+      "Папа, мама, брат, сестрёнка,"
+    ]
+  },
+  {
+    "quest": [
+      "Katze Murka, zwei Kätchen,"
+    ],
+    "answer": [
+      "Кошка Мурка, два котёнка,"
+    ]
+  },
+  {
+    "quest": [
+      "Mein Welpe, die Grille und ich"
+    ],
+    "answer": [
+      "Мой щенок, сверчок ия"
+    ]
+  },
+  {
+    "quest": [
+      "Das ist meine ganze Familie"
+    ],
+    "answer": [
+      "Вот и вся моя семья!"
+    ]
+  },
+  {
+    "quest": [
+      "1, 2, 3, 4, 5,"
+    ],
+    "answer": [
+      "Раз, два, три, четыре, пять,"
+    ]
+  },
+  {
+    "quest": [
+      "Ich fange an alle wieder zu zählen."
+    ],
+    "answer": [
+      "Всех начну считать опять."
+    ]
+  }
+]

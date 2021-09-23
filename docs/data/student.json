@@ -1,0 +1,126 @@
+[
+  {
+    "quest": [
+      "Was heißt das auf Russisch?"
+    ],
+    "answer": [
+      "Как по-русски?"
+    ]
+  },
+  {
+    "quest": [
+      "Was heißt ..."
+    ],
+    "answer": [
+      "Что значит ..."
+    ]
+  },
+  {
+    "quest": [
+      "Ich verstehe",
+      "Ich verstehe nicht"
+    ],
+    "answer": [
+      "Я понимаю.",
+      "Я не понимаю."
+    ]
+  },
+  {
+    "quest": [
+      "Ich kann mich nicht erinnern."
+    ],
+    "answer": [
+      "Я не помню."
+    ]
+  },
+  {
+    "quest": [
+      "Ich habe vergessen."
+    ],
+    "answer": [
+      "Я забыл. ~maskulinum~",
+      "Я забыла. ~femininum~"
+    ]
+  },
+  {
+    "quest": [
+      "Ich weiß.",
+      "Ich weiß nicht."
+    ],
+    "answer": [
+      "Я знаю.",
+      "Я не знаю."
+    ]
+  },
+  {
+    "quest": [
+      "Ich denkе, dass ..."
+    ],
+    "answer": [
+      "Я думаю, что ..."
+    ]
+  },
+  {
+    "quest": [
+      "Wie schreibt man das?"
+    ],
+    "answer": [
+      "Как это пишется?"
+    ]
+  },
+  {
+    "quest": [
+      "Sprechen Sie bitte etwas langsamer.",
+      "Sprich bitte etwas langsamer."
+    ],
+    "answer": [
+      "Пожалуйста, говорите медленнее.",
+      "Пожалуйста, говори медленнее."
+    ]
+  },
+  {
+    "quest": [
+      "Wiederholen Sie bitte.",
+      "Wiederhole bitte."
+    ],
+    "answer": [
+      "Повторите пожалуйста.",
+      "Повтори пожалуйста."
+    ]
+  },
+  {
+    "quest": [
+      "Ich habe eine Frage."
+    ],
+    "answer": [
+      "У меня вопрос."
+    ]
+  },
+  {
+    "quest": [
+      "Bitte schreiben Sie dieses Wort auf.",
+      "Kannst du bitte das Wort aufschreiben."
+    ],
+    "answer": [
+      "Запишите, пожалуйста, это слово.",
+      "Запиши, пожалуйста, это слово."
+    ]
+  },
+  {
+    "quest": [
+      "Ich habe nicht verstanden."
+    ],
+    "answer": [
+      "Я не понял",
+      "Я не поняла."
+    ]
+  },
+  {
+    "quest": [
+      "Was sagen die Studenten?"
+    ],
+    "answer": [
+      "Что говорят студенты?"
+    ]
+  }
+]

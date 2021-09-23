@@ -90,6 +90,11 @@
     "desc": "Übung zu Fragen."
   },
   {
+    "file": "data/student.json",
+    "title": "Studenten",
+    "desc": "Was sagen die Studenten?"
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

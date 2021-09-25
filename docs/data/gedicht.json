@@ -62,5 +62,31 @@
     "answer": [
       "Всех начну считать опять."
     ]
+  },
+  {
+    "quest": [
+      "(etw.) starten"
+    ],
+    "answer": [
+      "начин_а_ть"
+    ]
+  },
+  {
+    "quest": [
+      "zählen"
+    ],
+    "answer": [
+      "счит_а_ть",
+      "~[sch]~"
+    ]
+  },
+  {
+    "quest": [
+      "wiederum",
+      "schon wieder"
+    ],
+    "answer": [
+      "оп_я_ть"
+    ]
   }
 ]

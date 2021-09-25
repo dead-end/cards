@@ -27,6 +27,15 @@
   },
   {
     "quest": [
+      "Ich habe nicht verstanden."
+    ],
+    "answer": [
+      "Я не понял",
+      "Я не поняла."
+    ]
+  },
+  {
+    "quest": [
       "Ich kann mich nicht erinnern."
     ],
     "answer": [
@@ -104,15 +113,6 @@
     "answer": [
       "напишите, пожалуйста, это слово.",
       "напиши, пожалуйста, это слово."
-    ]
-  },
-  {
-    "quest": [
-      "Ich habe nicht verstanden."
-    ],
-    "answer": [
-      "Я не понял",
-      "Я не поняла."
     ]
   },
   {

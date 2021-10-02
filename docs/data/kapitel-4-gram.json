@@ -187,74 +187,73 @@
   },
   {
     "quest": [
-      "in der Stadt."
+      "in der Stadt"
     ],
     "answer": [
-      "в г_о_роде.",
+      "в г_о_роде",
       "~Maskulinum~"
     ]
   },
   {
     "quest": [
-      "im Zentrum."
+      "im Zentrum"
     ],
     "answer": [
-      "в ц_е_нтре.",
+      "в ц_е_нтре",
       "~Maskulinum~"
     ]
   },
   {
     "quest": [
-      "am Meer."
+      "am Meer"
     ],
     "answer": [
-      "на м_о_ре.",
+      "на м_о_ре",
       "~Neutrum~"
     ]
   },
   {
     "quest": [
-      "in Iw_a_nobo."
+      "am Platz"
     ],
     "answer": [
-      "в Иванове.",
-      "~Neutrum~",
-      "(Иваново)"
+      "на месте",
+      "~Neutrum~"
     ]
   },
   {
     "quest": [
-      "in Polen."
+      "in Polen"
     ],
     "answer": [
-      "в Польше.",
+      "в Польше",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "in der Straße."
+      "in der Straße"
     ],
     "answer": [
-      "на ул_и_це.",
+      "на ул_и_це",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "in Italien."
+      "in Italien"
     ],
     "answer": [
-      "в Италии.",
+      "в Италии",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "in Belgien."
+      "in Belgien"
     ],
     "answer": [
-      "в Бельгии.",
+      "в Бельгии",
       "~Femininum~"
     ]
   },
@@ -263,7 +262,7 @@
       "in der Metro"
     ],
     "answer": [
-      "в метро ",
+      "в метро",
       "~Viele Eigennamen / Fremdworte auf die einem Vokal enden werden nicht dekliniert.~"
     ]
   },

@@ -1,0 +1,261 @@
+[
+  {
+    "quest": [
+      "Woher kommen Sie / kommst du?"
+    ],
+    "answer": [
+      "Вы / ты отк_у_да?"
+    ]
+  },
+  {
+    "quest": [
+      "Ich komme aus Russland."
+    ],
+    "answer": [
+      "Я из Росс_и_и."
+    ]
+  },
+  {
+    "quest": [
+      "Kommen Sie / du aus Deutschland."
+    ],
+    "answer": [
+      "Вы / ты из Герм_а_нии?"
+    ]
+  },
+  {
+    "quest": [
+      "Ich spreche deutsch, englisch und russisch."
+    ],
+    "answer": [
+      "Я говор_ю_ по-нем_е_цком, по-англ_и_йском и по-р_у_сски."
+    ]
+  },
+  {
+    "quest": [
+      "Ich spreche etwas französisch."
+    ],
+    "answer": [
+      "Я немн_о_го говор_ю_ по франц_у_зски."
+    ]
+  },
+  {
+    "quest": [
+      "Sprechen Sie russisch?",
+      "Sprichst du russisch?"
+    ],
+    "answer": [
+      "Вы говор_и_те по-р_у_сски?",
+      "Ты говор_и_шь по-р_у_сски?"
+    ]
+  },
+  {
+    "quest": [
+      "Wo wohnen Sie?"
+    ],
+    "answer": [
+      "Где вы живёте?"
+    ]
+  },
+  {
+    "quest": [
+      "Ich wohne in Moskau."
+    ],
+    "answer": [
+      "Я жив_у_ в Москв_е_."
+    ]
+  },
+  {
+    "quest": [
+      "Wo wohnst du?"
+    ],
+    "answer": [
+      "Где ты живёшь?"
+    ]
+  },
+  {
+    "quest": [
+      "Ich wohne in Berlin."
+    ],
+    "answer": [
+      "Я жив_у_ в Берл_и_не."
+    ]
+  },
+  {
+    "quest": [
+      "Wohnen Sie in Russland?"
+    ],
+    "answer": [
+      "Вы живёте в Росс_и_и?"
+    ]
+  },
+  {
+    "quest": [
+      "Wohnst du in Deutschland?"
+    ],
+    "answer": [
+      "Ты живёшь в Герман_и_и?"
+    ]
+  },
+  {
+    "quest": [
+      "Was ist Ihre Adresse?",
+      "Was ist deine Adresse?"
+    ],
+    "answer": [
+      "Как_о_й у Вас _а_дрес?",
+      "Как_о_й у теб_я_ _а_дрес?"
+    ]
+  },
+  {
+    "quest": [
+      "Meine Adresse:",
+      "Straße Roderbruch, Haus 3, Wohnung 20"
+    ],
+    "answer": [
+      "Мой адрес:",
+      "Улица Родербрух, дом 3, кварт_и_ра 20"
+    ]
+  },
+  {
+    "quest": [
+      "Wie ist Ihre telefonnummer?",
+      "Wie ist deine telefonnummer?"
+    ],
+    "answer": [
+      "Как_о_й у вас н_о_мер телеф_о_на?",
+      "Как_о_й у теб_я_ н_о_мер телеф_о_на?"
+    ]
+  },
+  {
+    "quest": [
+      "Russland",
+      "aus Russland"
+    ],
+    "answer": [
+      "Росс_и_я ~Nominativ Singular~",
+      "(из) Росс_и_и ~Genitiv singular~"
+    ]
+  },
+  {
+    "quest": [
+      "Deutschland",
+      "aus Deutschland"
+    ],
+    "answer": [
+      "Герм_а_ния ~Nominativ Singular~",
+      "(из) Герм_а_нии ~Genitiv singular~"
+    ]
+  },
+  {
+    "quest": [
+      "England",
+      "aus England"
+    ],
+    "answer": [
+      "_А_нглия ~Nominativ Singular~",
+      "(из) _А_нглии ~Genitiv singular~"
+    ]
+  },
+  {
+    "quest": [
+      "sprechen"
+    ],
+    "answer": [
+      "~ и Konjugation~",
+      "я говорю",
+      "ты говоришь",
+      "он / она / оно говорит",
+      "мы говорим",
+      "вы говорите",
+      "они говорят"
+    ]
+  },
+  {
+    "quest": [
+      "wohnen"
+    ],
+    "answer": [
+      "~ е Konjugation~",
+      "я живу",
+      "ты живёшь",
+      "он / она / оно живёт",
+      "мы живём",
+      "вы живёте",
+      "они живут"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? In der Stadt."
+    ],
+    "answer": [
+      "Где? В городе.",
+      "~Maskulinum~"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? Im Zentrum."
+    ],
+    "answer": [
+      "Где? В центре.",
+      "~Maskulinum~"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? Am Meer."
+    ],
+    "answer": [
+      "Где? На море.",
+      "~Neutrum~"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? In Iwanobo."
+    ],
+    "answer": [
+      "Где? В Иванове.",
+      "~Neutrum~",
+      "(Иваново)"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? In Moskau."
+    ],
+    "answer": [
+      "Где? В Москве.",
+      "~Femininum~"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? In der Straße."
+    ],
+    "answer": [
+      "Где? На улице.",
+      "~Femininum~"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? In Russland."
+    ],
+    "answer": [
+      "Где? В России.",
+      "~Femininum~"
+    ]
+  },
+  {
+    "quest": [
+      "Wo? In Deutschland."
+    ],
+    "answer": [
+      "Где? В Германии. ",
+      "~Femininum~"
+    ]
+  }
+]

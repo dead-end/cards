@@ -44,6 +44,11 @@
     "title": "Kapitel 4 Teil 4"
   },
   {
+    "file": "data/kapitel-4-gram.json",
+    "title": "Kapitel 4 Grammatik",
+    "desc": "Woher kommen Sie? Sprechen Sie...?"
+  },
+  {
     "file": "data/kapitel-5-1.json",
     "title": "Kapitel 5 Teil 1"
   },

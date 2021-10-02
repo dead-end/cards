@@ -187,75 +187,102 @@
   },
   {
     "quest": [
-      "Wo? In der Stadt."
+      "in der Stadt."
     ],
     "answer": [
-      "Где? В г_о_роде.",
+      "в г_о_роде.",
       "~Maskulinum~"
     ]
   },
   {
     "quest": [
-      "Wo? Im Zentrum."
+      "im Zentrum."
     ],
     "answer": [
-      "Где? В ц_е_нтре.",
+      "в ц_е_нтре.",
       "~Maskulinum~"
     ]
   },
   {
     "quest": [
-      "Wo? Am Meer."
+      "am Meer."
     ],
     "answer": [
-      "Где? На м_о_ре.",
+      "на м_о_ре.",
       "~Neutrum~"
     ]
   },
   {
     "quest": [
-      "Wo? In Iw_a_nobo."
+      "in Iw_a_nobo."
     ],
     "answer": [
-      "Где? В Иванове.",
+      "в Иванове.",
       "~Neutrum~",
       "(Иваново)"
     ]
   },
   {
     "quest": [
-      "Wo? In Polen."
+      "in Polen."
     ],
     "answer": [
-      "Где? В Польше.",
+      "в Польше.",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "Wo? In der Straße."
+      "in der Straße."
     ],
     "answer": [
-      "Где? На ул_и_це.",
+      "на ул_и_це.",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "Wo? In Italien."
+      "in Italien."
     ],
     "answer": [
-      "Где? В Италии.",
+      "в Италии.",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "Wo? In Belgien."
+      "in Belgien."
     ],
     "answer": [
-      "Где? В Бельгии.",
+      "в Бельгии.",
       "~Femininum~"
+    ]
+  },
+  {
+    "quest": [
+      "in der Metro"
+    ],
+    "answer": [
+      "в метро ",
+      "~Viele Eigennamen / Fremdworte auf die einem Vokal enden werden nicht dekliniert.~"
+    ]
+  },
+  {
+    "quest": [
+      "im Kino"
+    ],
+    "answer": [
+      "в кино",
+      "~Viele Eigennamen / Fremdworte auf die einem Vokal enden werden nicht dekliniert.~"
+    ]
+  },
+  {
+    "quest": [
+      "im Cafe"
+    ],
+    "answer": [
+      "в кафе",
+      "~Viele Eigennamen / Fremdworte auf die einem Vokal enden werden nicht dekliniert.~"
     ]
   }
 ]

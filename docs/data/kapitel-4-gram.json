@@ -190,7 +190,7 @@
       "Wo? In der Stadt."
     ],
     "answer": [
-      "Где? В городе.",
+      "Где? В г_о_роде.",
       "~Maskulinum~"
     ]
   },
@@ -199,7 +199,7 @@
       "Wo? Im Zentrum."
     ],
     "answer": [
-      "Где? В центре.",
+      "Где? В ц_е_нтре.",
       "~Maskulinum~"
     ]
   },
@@ -208,13 +208,13 @@
       "Wo? Am Meer."
     ],
     "answer": [
-      "Где? На море.",
+      "Где? На м_о_ре.",
       "~Neutrum~"
     ]
   },
   {
     "quest": [
-      "Wo? In Iwanobo."
+      "Wo? In Iw_a_nobo."
     ],
     "answer": [
       "Где? В Иванове.",
@@ -224,10 +224,10 @@
   },
   {
     "quest": [
-      "Wo? In Moskau."
+      "Wo? In Polen."
     ],
     "answer": [
-      "Где? В Москве.",
+      "Где? В Польше.",
       "~Femininum~"
     ]
   },
@@ -236,25 +236,25 @@
       "Wo? In der Straße."
     ],
     "answer": [
-      "Где? На улице.",
+      "Где? На ул_и_це.",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "Wo? In Russland."
+      "Wo? In Italien."
     ],
     "answer": [
-      "Где? В России.",
+      "Где? В Италии.",
       "~Femininum~"
     ]
   },
   {
     "quest": [
-      "Wo? In Deutschland."
+      "Wo? In Belgien."
     ],
     "answer": [
-      "Где? В Германии. ",
+      "Где? В Бельгии.",
       "~Femininum~"
     ]
   }

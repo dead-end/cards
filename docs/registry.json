@@ -110,6 +110,11 @@
     "desc": "Übung zu: machen, arbeiten, wissen"
   },
   {
+    "file": "data/text-2.json",
+    "title": "Text 2",
+    "desc": "Übung zu: an / bei"
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

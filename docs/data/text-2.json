@@ -1,0 +1,38 @@
+[
+  {
+    "quest": [
+      "Artjom ist Russe, lebt aber in Deutschland. Er arbeitet an der Universität."
+    ],
+    "answer": [
+      "Артём русский, но он живёт в Германии. Он работает в университёте."
+    ]
+  },
+  {
+    "quest": "Lisa und Violetta arbeiten heute nicht. Sind sie im Theater.",
+    "answer": "Лиза и Виолётта сегодня не работают. Они в театре."
+  },
+  {
+    "quest": "Mein Freund ist von Beruf Journalist. Er arbeitet in der Redaktion.",
+    "answer": "Мой друг по профессии журналист. Он работает в редакции."
+  },
+  {
+    "quest": "Meine Mutter ist Ökonomin. Sie arbeitet in einer Fabrik.",
+    "answer": "Моя мать – экономист. Она работает на фабрике."
+  },
+  {
+    "quest": "Unser Großvater ist bereits Rentner, arbeitet aber noch in der Fabrik.",
+    "answer": "Наш дедушка уже пенсионер, но он ещё работает на заводе."
+  },
+  {
+    "quest": " Unsere Freunde wohnen in Moskau, in der Puschkin-Straße. Sie arbeiten bei einer Bank.",
+    "answer": "Наши друзья живут в Москве, на улице Пушкина. Они работают в банке."
+  },
+  {
+    "quest": "Mein Freund ist Sekretärin. Sie arbeitet für die Firma 'Future'.",
+    "answer": "Моя подруга – секретарь. Она работает в фирме 'Фьючер'."
+  },
+  {
+    "quest": "Und du? Wo arbeiten Sie?",
+    "answer": "А вы? Где вы работаете?"
+  }
+]

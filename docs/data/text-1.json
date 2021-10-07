@@ -6,7 +6,7 @@
         ],
         "answer": [
             "Вы знаете, кто Илья по профессии?",
-            "Да, я знаю. Илья - инженер."
+            "Да, я знаю. Илья инженер."
         ]
     },
     {
@@ -15,7 +15,7 @@
             "Ja, sie ist Rentnerin, sie arbeitet schon nicht mehr."
         ],
         "answer": [
-            "Тебя бабушкина дома?",
+            "Твоя бабушка дома?",
             "Да, она пенсионерка, она уже нет работает."
         ]
     },
@@ -51,7 +51,7 @@
     },
     {
         "quest": [
-            "Wissen Sie, wo unser Freund arbeitet?",
+            "Weisst du, wo unser Freund arbeitet?",
             "Natürlich weiß ich das. Er arbeitet im Büro."
         ],
         "answer": [

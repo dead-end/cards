@@ -114,5 +114,54 @@
         "answer": [
             "У них нет продавца."
         ]
+    },
+    {
+        "quest": [
+            "Anton hat einen Bruder."
+        ],
+        "answer": [
+            "У Антона есть брат."
+        ]
+    },
+    {
+        "quest": [
+            "Katja hat keine Schwester."
+        ],
+        "answer": [
+            "У Кати нет сестры."
+        ]
+    },
+    {
+        "quest": [
+            "Nadeschda hat eine Tochter."
+        ],
+        "answer": [
+            "У Надежды есть дочь."
+        ]
+    },
+    {
+        "quest": [
+            "Michail hat keinen Sohn."
+        ],
+        "answer": [
+            "У Михаила нет сын.",
+            "~von: Михаил~"
+        ]
+    },
+    {
+        "quest": [
+            "Lilia hat einen Freund."
+        ],
+        "answer": [
+            "У Лилии есмь подруга."
+        ]
+    },
+    {
+        "quest": [
+            "Alina hat keinen Freund."
+        ],
+        "answer": [
+            "У Алины нет друга."
+        ]
     }
 ]

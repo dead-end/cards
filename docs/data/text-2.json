@@ -8,8 +8,8 @@
     ]
   },
   {
-    "quest": "Lisa und Violetta arbeiten heute nicht. Sind sie im Theater.",
-    "answer": "Лиза и Виолётта сегодня не работают. Они в театре."
+    "quest": ["Lisa und Violetta arbeiten heute nicht. Sind sie im Theater."],
+    "answer": ["Лиза и Виолётта сегодня не работают. Они в театре."]
   },
   {
     "quest": "Mein Freund ist von Beruf Journalist. Er arbeitet in der Redaktion.",
@@ -28,7 +28,7 @@
     "answer": "Наши друзья живут в Москве, на улице Пушкина. Они работают в банке."
   },
   {
-    "quest": "Mein Freund ist Sekretärin. Sie arbeitet für die Firma 'Future'.",
+    "quest": "Mein Freundin ist Sekretärin. Sie arbeitet für die Firma 'Future'.",
     "answer": "Моя подруга – секретарь. Она работает в фирме 'Фьючер'."
   },
   {

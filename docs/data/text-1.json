@@ -11,8 +11,8 @@
     },
     {
         "quest": [
-            "Bist du bei Großmutter zu Hause?",
-            "Ja, sie ist Rentnerin, sie arbeitet nicht mehr."
+            "Ist deine Großmutter zu Hause?",
+            "Ja, sie ist Rentnerin, sie arbeitet schon nicht mehr."
         ],
         "answer": [
             "Тебя бабушкина дома?",

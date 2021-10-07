@@ -63,7 +63,9 @@
             "Ich habe keinen Markt."
         ],
         "answer": [
-            "У меня нет рынка."
+            "У меня нет рын_ка_.",
+            "~von:~ рын_ок_",
+            "~Unregelmäßig Genitiv~"
         ]
     },
     {
@@ -71,7 +73,9 @@
             "Du hast keine Stadt."
         ],
         "answer": [
-            "У тебя нет города. "
+            "У тебя нет город_а_. ",
+            "~von:~ город",
+            "~Genitiv Maskulinum:~ [_-_] => _а_"
         ]
     },
     {
@@ -79,7 +83,8 @@
             "Er hat keine Rubel."
         ],
         "answer": [
-            "У него нет рублей."
+            "У него нет рубл_ей_.",
+            "~von:~ рубл_и_ ~Plural~"
         ]
     },
     {
@@ -87,7 +92,9 @@
             "Sie hat keine Gurke."
         ],
         "answer": [
-            "У неё нет огурца."
+            "У неё нет огур_ца_.",
+            "~von:~ огур_ец_",
+            "~Unregelmäßig Genitiv~"
         ]
     },
     {
@@ -95,7 +102,9 @@
             "Wir haben kein Getränk."
         ],
         "answer": [
-            "У нас нет напитка."
+            "У нас нет напит_ка_.",
+            "~von:~ напит_ок_",
+            "~Unregelmäßig Genitiv~"
         ]
     },
     {
@@ -103,7 +112,9 @@
             "Ihr habt kein Paket."
         ],
         "answer": [
-            "У вас нет упаковки."
+            "У вас нет упаковк_и_.",
+            "~von:~ упаковк_а_",
+            "~ACHTUNG: nicht~ _ы_"
         ]
     },
     {
@@ -112,7 +123,9 @@
             "~mehrere Personen~"
         ],
         "answer": [
-            "У них нет продавца."
+            "У них нет продав_ца_.",
+            "~von:~ продав_ец_",
+            "~Unregelmäßig Genitiv~"
         ]
     },
     {
@@ -120,7 +133,9 @@
             "Anton hat einen Bruder."
         ],
         "answer": [
-            "У Антона есть брат."
+            "У Антон_а_ есть брат.",
+            "~von:~ Антон",
+            "~Genitiv Maskulinum:~ [_-_] => _а_"
         ]
     },
     {
@@ -128,7 +143,11 @@
             "Katja hat keine Schwester."
         ],
         "answer": [
-            "У Кати нет сестры."
+            "У Кат_и_ нет сестр_ы_.",
+            "~von:~ Кат_я_",
+            "~Genitiv Femininum:~ _я_ => _и_",
+            "~von:~ сестр_а_",
+            "~Genitiv Femininum:~ _а_ => _ы_"
         ]
     },
     {
@@ -136,7 +155,9 @@
             "Nadeschda hat eine Tochter."
         ],
         "answer": [
-            "У Надежды есть дочь."
+            "У Надежд_ы_ есть дочь.",
+            "~von:~ Надежд_а_",
+            "~Genitiv Femininum:~ _а_ => _ы_"
         ]
     },
     {
@@ -144,8 +165,11 @@
             "Michail hat keinen Sohn."
         ],
         "answer": [
-            "У Михаила нет сын.",
-            "~von: Михаил~"
+            "У Михаил_а_ нет сын_а_.",
+            "~von:~ Михаил",
+            "~Genitiv Maskulinum:~ [_-_] => _а_",
+            "~von:~ сын",
+            "~Genitiv Maskulinum:~ [_-_] => _а_"
         ]
     },
     {
@@ -153,15 +177,21 @@
             "Lilia hat einen Freund."
         ],
         "answer": [
-            "У Лилии есмь подруга."
+            "У Лили_и_ есмь подруга.",
+            "~von:~ Лили_я_",
+            "~Genitiv Femininum:~ _я_ => _и_"
         ]
     },
     {
         "quest": [
-            "Alina hat keinen Freund."
+            "Alina hat keinen Bier."
         ],
         "answer": [
-            "У Алины нет друга."
+            "У Алин_ы_ нет пив_а_.",
+            "~von:~ Алин_а_",
+            "~Genitiv Femininum:~ _а_ => _ы_",
+            "~von:~ пив_о_",
+            "~Genitiv Neutrum:~ _о_ => _а_"
         ]
     }
 ]

@@ -22,7 +22,7 @@
     {
         "quest": [
             "Arbeitet Ihr Sohn schon?",
-            "Nein, er ist noch ein Schuljunge."
+            "Nein, er ist noch Schüler."
         ],
         "answer": [
             "Ваш сын уже работает?",
@@ -31,7 +31,7 @@
     },
     {
         "quest": [
-            "Was machst du in der Stadt?",
+            "Was macht ihr in der Stadt?",
             "Wir arbeiten hier."
         ],
         "answer": [
@@ -42,7 +42,7 @@
     {
         "quest": [
             "Ist Ihr Bruder Student?",
-            "Nein, arbeitet er schon?"
+            "Nein, er arbeitet schon?"
         ],
         "answer": [
             "Твой брат студент?",

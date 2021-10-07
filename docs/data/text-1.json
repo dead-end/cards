@@ -1,0 +1,62 @@
+[
+    {
+        "quest": [
+            "Weißt du, wer Ilya von Beruf ist?",
+            "Ja ich weiß. Ilja ist Ingenieur."
+        ],
+        "answer": [
+            "Вы знаете, кто Илья по профессии?",
+            "Да, я знаю. Илья - инженер."
+        ]
+    },
+    {
+        "quest": [
+            "Bist du bei Großmutter zu Hause?",
+            "Ja, sie ist Rentnerin, sie arbeitet nicht mehr."
+        ],
+        "answer": [
+            "Тебя бабушкина дома?",
+            "Да, она пенсионерка, она уже нет работает."
+        ]
+    },
+    {
+        "quest": [
+            "Arbeitet Ihr Sohn schon?",
+            "Nein, er ist noch ein Schuljunge."
+        ],
+        "answer": [
+            "Ваш сын уже работает?",
+            "Нет, он ещё школьник."
+        ]
+    },
+    {
+        "quest": [
+            "Was machst du in der Stadt?",
+            "Wir arbeiten hier."
+        ],
+        "answer": [
+            "Что вы делаете в городе?",
+            "Мы здесь работаем."
+        ]
+    },
+    {
+        "quest": [
+            "Ist Ihr Bruder Student?",
+            "Nein, arbeitet er schon?"
+        ],
+        "answer": [
+            "Твой брат студент?",
+            "Нет, он уже работает?"
+        ]
+    },
+    {
+        "quest": [
+            "Wissen Sie, wo unser Freund arbeitet?",
+            "Natürlich weiß ich das. Er arbeitet im Büro."
+        ],
+        "answer": [
+            "Ты знаешь, где работает наш друг?",
+            "Конечно, я знаю. Он работает в офисе."
+        ]
+    }
+]

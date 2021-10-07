@@ -105,6 +105,11 @@
     "desc": "1, 2, 3, 4, ..."
   },
   {
+    "file": "data/text-1.json",
+    "title": "Text 1",
+    "desc": "Übung zu: machen, arbeiten, wissen"
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

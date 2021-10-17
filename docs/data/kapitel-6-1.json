@@ -1,0 +1,263 @@
+[
+  {
+    "quest": [
+      "Freizeit"
+    ],
+    "answer": [
+      "своб_о_дное вр_е_мя"
+    ]
+  },
+  {
+    "quest": [
+      "Zeit"
+    ],
+    "answer": [
+      "вр_е_мя",
+      "~Neutrum:~ -мя"
+    ]
+  },
+  {
+    "quest": [
+      "Fußball"
+    ],
+    "answer": [
+      "футб_о_л"
+    ]
+  },
+  {
+    "quest": [
+      "Musik"
+    ],
+    "answer": [
+      "м_у_зыка"
+    ]
+  },
+  {
+    "quest": [
+      "Handball"
+    ],
+    "answer": [
+      "гандб_о_л"
+    ]
+  },
+  {
+    "quest": [
+      "Volleyball"
+    ],
+    "answer": [
+      "волейб_о_л"
+    ]
+  },
+  {
+    "quest": [
+      "Federball"
+    ],
+    "answer": [
+      "бадминт_о_н"
+    ]
+  },
+  {
+    "quest": [
+      "Ballett"
+    ],
+    "answer": [
+      "бал_е_т"
+    ]
+  },
+  {
+    "quest": [
+      "Eishockey"
+    ],
+    "answer": [
+      "хокк_е_й"
+    ]
+  },
+  {
+    "quest": [
+      "Radsport"
+    ],
+    "answer": [
+      "велосп_о_рт"
+    ]
+  },
+  {
+    "quest": [
+      "Literatur"
+    ],
+    "answer": [
+      "литерат_у_ра"
+    ]
+  },
+  {
+    "quest": [
+      "Internet"
+    ],
+    "answer": [
+      "Интерн_е_т"
+    ]
+  },
+  {
+    "quest": [
+      "Gymnastik"
+    ],
+    "answer": [
+      "гимн_а_стика"
+    ]
+  },
+  {
+    "quest": [
+      "Shopping"
+    ],
+    "answer": [
+      "ш_о_пинг"
+    ]
+  },
+  {
+    "quest": [
+      "Was mögen Sie?"
+    ],
+    "answer": [
+      "Что вы л_ю_бите?"
+    ]
+  },
+  {
+    "quest": [
+      "lieben",
+      "mögen"
+    ],
+    "answer": [
+      "любить",
+      "я люблю",
+      "ты любишь",
+      "он / она / оно любит",
+      "мы любим",
+      "вы любите",
+      "они любят"
+    ]
+  },
+  {
+    "quest": [
+      "Klassik"
+    ],
+    "answer": [
+      "кл_а_ссика"
+    ]
+  },
+  {
+    "quest": [
+      "Rock"
+    ],
+    "answer": [
+      "рок"
+    ]
+  },
+  {
+    "quest": [
+      "Rap"
+    ],
+    "answer": [
+      "рэп"
+    ]
+  },
+  {
+    "quest": [
+      "Tennis"
+    ],
+    "answer": [
+      "т_е_ннис"
+    ]
+  },
+  {
+    "quest": [
+      "(Musik) hö­ren"
+    ],
+    "answer": [
+      "сл_у_шать (м_у_зыку)"
+    ]
+  },
+  {
+    "quest": [
+      "lesen"
+    ],
+    "answer": [
+      "чит_а_ть"
+    ]
+  },
+  {
+    "quest": [
+      "Sport"
+    ],
+    "answer": [
+      "спорт"
+    ]
+  },
+  {
+    "quest": [
+      "im Internet surfen (ugs.)"
+    ],
+    "answer": [
+      "сидеть в Интернете"
+    ]
+  },
+  {
+    "quest": [
+      "sitzen"
+    ],
+    "answer": [
+      "сидеть",
+      "я сижу",
+      "ты сидишь",
+      "он / она / оно сидит",
+      "мы сидим",
+      "вы сидите",
+      "они сидят"
+    ]
+  },
+  {
+    "quest": [
+      "fernse­hen"
+    ],
+    "answer": [
+      "смотреть телевизор"
+    ]
+  },
+  {
+    "quest": [
+      "schauen"
+    ],
+    "answer": [
+      "смотреть",
+      "я смотрю",
+      "ты смотришь",
+      "он / она / оно смотрит",
+      "мы смотрим",
+      "вы смотрите",
+      "они смотрят"
+    ]
+  },
+  {
+    "quest": [
+      "Fernseher"
+    ],
+    "answer": [
+      "телев_и_зор"
+    ]
+  },
+  {
+    "quest": [
+      "spazieren gehen"
+    ],
+    "answer": [
+      "гул_я_ть"
+    ]
+  },
+  {
+    "quest": [
+      "Wald"
+    ],
+    "answer": [
+      "лес",
+      "в лесу ~Präp. Singular~"
+    ]
+  }
+]

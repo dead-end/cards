@@ -1,0 +1,258 @@
+[
+  {
+    "quest": [
+      "Datscha",
+      "Landhaus"
+    ],
+    "answer": [
+      "д_а_ча"
+    ]
+  },
+  {
+    "quest": [
+      "(Obst-) Garten"
+    ],
+    "answer": [
+      "сад",
+      "в саду ~Präp. Singular~"
+    ]
+  },
+  {
+    "quest": [
+      "tele­fonieren"
+    ],
+    "answer": [
+      "говор_и_ть по телеф_о_ну"
+    ]
+  },
+  {
+    "quest": [
+      "sich treffen"
+    ],
+    "answer": [
+      "встречаться",
+      "я встречаюсь",
+      "ты встречаешься",
+      "он / она / оно встречается",
+      "мы встречаемся",
+      "вы встречаетесь",
+      "они встречаются"
+    ]
+  },
+  {
+    "quest": [
+      "mit (den) Freunden"
+    ],
+    "answer": [
+      "с друзь_я_ми"
+    ]
+  },
+  {
+    "quest": [
+      "überhaupt nicht"
+    ],
+    "answer": [
+      "совс_е_м не"
+    ]
+  },
+  {
+    "quest": [
+      "ganz",
+      "gänzlich",
+      "völlig"
+    ],
+    "answer": [
+      "совс_е_м"
+    ]
+  },
+  {
+    "quest": [
+      "machen",
+      "tun"
+    ],
+    "answer": [
+      "сделать v.",
+      "(делать uv.)"
+    ]
+  },
+  {
+    "quest": [
+      "was",
+      "dass"
+    ],
+    "answer": [
+      "что"
+    ]
+  },
+  {
+    "quest": [
+      "Ergebnis"
+    ],
+    "answer": [
+      "результ_а_т"
+    ]
+  },
+  {
+    "quest": [
+      "Umfrage"
+    ],
+    "answer": [
+      "анк_е_та"
+    ]
+  },
+  {
+    "quest": [
+      "Website"
+    ],
+    "answer": [
+      "сайт"
+    ]
+  },
+  {
+    "quest": [
+      "Krimi"
+    ],
+    "answer": [
+      "детект_и_в"
+    ]
+  },
+  {
+    "quest": [
+      "Serie"
+    ],
+    "answer": [
+      "сери_а_л"
+    ]
+  },
+  {
+    "quest": [
+      "Boxen",
+      "Boxkampf"
+    ],
+    "answer": [
+      "бокс"
+    ]
+  },
+  {
+    "quest": [
+      "Fernsehsender"
+    ],
+    "answer": [
+      "телекан_а_л"
+    ]
+  },
+  {
+    "quest": [
+      "Kultur"
+    ],
+    "answer": [
+      "культ_у_ра"
+    ]
+  },
+  {
+    "quest": [
+      "Menschen",
+      "Leute"
+    ],
+    "answer": [
+      "л_ю_ди ~Plural~"
+    ]
+  },
+  {
+    "quest": [
+      "Zeitung"
+    ],
+    "answer": [
+      "газ_е_та"
+    ]
+  },
+  {
+    "quest": [
+      "Zeitschrift",
+      "Magazin"
+    ],
+    "answer": [
+      "журн_а_л"
+    ]
+  },
+  {
+    "quest": [
+      "Buch"
+    ],
+    "answer": [
+      "кн_и_га"
+    ]
+  },
+  {
+    "quest": [
+      "Science-Fiction"
+    ],
+    "answer": [
+      "фант_а_стика"
+    ]
+  },
+  {
+    "quest": [
+      "Fantasy"
+    ],
+    "answer": [
+      "фэнтези ~Neutrum indeklinabel~"
+    ]
+  },
+  {
+    "quest": [
+      "Einwohner von Sotschi"
+    ],
+    "answer": [
+      "с_о_чинцы ~Plural~"
+    ]
+  },
+  {
+    "quest": [
+      "Forum"
+    ],
+    "answer": [
+      "ф_о_рум"
+    ]
+  },
+  {
+    "quest": [
+      "Chat"
+    ],
+    "answer": [
+      "чат"
+    ]
+  },
+  {
+    "quest": [
+      "jung"
+    ],
+    "answer": [
+      "молод_о_й"
+    ]
+  },
+  {
+    "quest": [
+      "doch"
+    ],
+    "answer": [
+      "ведь"
+    ]
+  },
+  {
+    "quest": [
+      "Olympiade"
+    ],
+    "answer": [
+      "Олимпи_а_да"
+    ]
+  },
+  {
+    "quest": [
+      "Tennis spielen"
+    ],
+    "answer": [
+      "игр_а_ть в т_е_ннис"
+    ]
+  }
+]

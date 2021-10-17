@@ -65,6 +65,14 @@
     "title": "Kapitel 5 Teil 4"
   },
   {
+    "file": "data/kapitel-6-1.json",
+    "title": "Kapitel 6 Teil 1"
+  },
+  {
+    "file": "data/kapitel-6-2.json",
+    "title": "Kapitel 6 Teil 2"
+  },
+  {
     "file": "data/dates.json",
     "title": "Datum",
     "desc": "Wochentage, Jahreszeigen, usw."

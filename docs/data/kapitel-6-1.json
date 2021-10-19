@@ -203,7 +203,8 @@
   },
   {
     "quest": [
-      "sitzen"
+      "sitzen",
+      "~konjugieren~"
     ],
     "answer": [
       "сид_е_ть",
@@ -225,7 +226,8 @@
   },
   {
     "quest": [
-      "schauen"
+      "schauen",
+      "~konjugieren~"
     ],
     "answer": [
       "смотр_е_ть",

@@ -16,5 +16,22 @@
   {
     "quest": ["geöffnet"],
     "answer": ["открыт"]
+  },
+  {
+    "quest": ["geschlossen"],
+    "answer": ["закрыто"]
+  },
+  {
+    "quest": ["Brücke"],
+    "answer": ["мост"]
+  },
+  {
+    "quest": ["Einfahrt"],
+    "answer": ["въезд", 
+ "~vjest~"]
+  },
+  {
+    "quest": [""],
+    "answer": [""]
   }
 ]

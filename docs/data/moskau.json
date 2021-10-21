@@ -1,0 +1,20 @@
+[
+  {
+    "quest": [
+      "Blume",
+      "Blumen"
+    ],
+    "answer": [
+      "цвет_о_к",
+      "цветы"
+    ]
+  },
+  {
+    "quest": ["Wäsche"],
+    "answer": ["мойка"]
+  },
+  {
+    "quest": ["geöffnet"],
+    "answer": ["открыт"]
+  }
+]

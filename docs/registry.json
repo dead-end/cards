@@ -123,6 +123,11 @@
     "desc": "Übung zu: an / bei"
   },
   {
+    "file": "data/text-3.json",
+    "title": "Text 3",
+    "desc": "Übungen von einem Blatt."
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

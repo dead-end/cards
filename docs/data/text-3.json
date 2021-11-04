@@ -1,0 +1,90 @@
+[
+  {
+    "quest": [
+      "Ich habe einen Papagei!",
+      "Er heißt Fränzis.",
+      "Ich liebe ihn sehr.",
+      "Aber er hat einen Nachteil.",
+      "Er erzählt unheimlich gerne.",
+      "Er spricht Tag und Nacht, Tag und Nacht.",
+      "Er ist so ein Schwätzer.",
+      "Es ist ein Albtraum."
+    ],
+    "answer": [
+      "У меня есть попугай!",
+      "Его зовут Фрэнсис.",
+      "Я его очень люблю.",
+      "Но у него есть один минус.",
+      "Он обожает говорить.",
+      "Он говорит день и ночь, день и ночь.",
+      "Он такой болтун.",
+      "Это кошмар."
+    ]
+  },
+  {
+    "quest": [
+      "Meine Frau ist eine Schönheit und ich liebe sie sehr.",
+      "Aber sie hat Shopping und Mode unheimlich gerne.",
+      "Sie sieht den Kanal «Mode TV» und ließt die «Cosmopolitan».",
+      "Wenn sie fernsieht, höre ich Relax FM-Radio und mache Kreuzworträtsel."
+    ],
+    "answer": [
+      "Моя жена - красавица, и я очень её люблю.",
+      "А она обожает шопинг и моду.",
+      "Она смотрит канал «Мода ТВ» и читает журнал «Космополитен».",
+      "Когда она смотрит телевизор я слушаю радио «Релакс ФМ» и разгадываю кроссворды."
+    ]
+  },
+  {
+    "quest": [
+      "Meine Mama hat es unheimlich gern, mich zu kontrollieren.",
+      "Sie weiß immer, was ich mag, was ich nicht mag, was ich tue und was ich denke.",
+      "Natürlich liebe ich meine Mutter, aber ich hasse ihre Kontrolle.",
+      "Sie denkt, ich sei immer noch ein Kind",
+      "Was soll man machen."
+    ],
+    "answer": [
+      "Моя мамочка обожает меня контролировать.",
+      "Она всегда знает, что я люблю, что не люблю, что я делаю и что я думаю.",
+      "Конечно, я люблю маму, но ненавижу её контроль.",
+      "Она думает, что я ещё ребёнок!",
+      "Что делать."
+    ]
+  },
+  {
+    "quest": [
+      "ch bin ein Musikliebhaber, weil ich Musik liebe.",
+      "Wenn ich lese, höre ich Jazz.",
+      "Wenn ich Spaghetti mache, höre ich Rock.",
+      "Und wenn ich meditiere, höre ich keine Musik.",
+      "Ich habe Karaoke unheimlich gerne.",
+      "Karaoke ist Pop und Rock und Jazz."
+    ],
+    "answer": [
+      "Я меломан, потому что я люблю музыку.",
+      "Когда я читаю, я слушаю джаз.",
+      "Когда я делаю спагетти, я слушаю рок.",
+      "А когда я медитирую, я не слушаю музыку.",
+      "Я обожаю караоке.",
+      "Караоке - это поп и рок и джаз."
+    ]
+  },
+  {
+    "quest": [
+      "Ich habe eine Freundin.",
+      "Unsere Liebe ist Harmonie und Idylle.",
+      "Sie ist Ballerina und ich habe Ballett unheimlich gerne.",
+      "Sie liebt Klassik und ich auch.",
+      "Sie ist eine Naschkatze und macht ausgezeichnete Desserts.",
+      "Ich liebe meine Ballerina."
+    ],
+    "answer": [
+      "У меня есть девушка.",
+      "Наша любовь - это гармония и идиллия.",
+      "Она балерина, а я обожаю валет.",
+      "Она любит классику, и я тоже.",
+      "Я сладкоежка, а она отлично делает десерты.",
+      "Я люблю мою балерину. "
+    ]
+  }
+]

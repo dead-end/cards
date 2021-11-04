@@ -1,0 +1,37 @@
+[
+  {
+    "quest": [
+      "Blume",
+      "Blumen"
+    ],
+    "answer": [
+      "цвет_о_к",
+      "цветы"
+    ]
+  },
+  {
+    "quest": ["Wäsche"],
+    "answer": ["мойка"]
+  },
+  {
+    "quest": ["geöffnet"],
+    "answer": ["открытo"]
+  },
+  {
+    "quest": ["geschlossen"],
+    "answer": ["закрыто"]
+  },
+  {
+    "quest": ["Brücke"],
+    "answer": ["мост"]
+  },
+  {
+    "quest": ["Einfahrt"],
+    "answer": ["въезд", 
+ "~vjest~"]
+  },
+  {
+    "quest": [""],
+    "answer": [""]
+  }
+]

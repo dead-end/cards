@@ -128,6 +128,11 @@
     "desc": "Übungen von einem Blatt."
   },
   {
+    "file": "data/text-3-words.json",
+    "title": "Text 3 Wörter",
+    "desc": "Übungen von einem Blatt."
+  },
+  {
     "file": "data/assignment.json",
     "title": "Aufgaben"
   },

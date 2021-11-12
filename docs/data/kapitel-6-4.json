@@ -1,0 +1,268 @@
+[
+  {
+    "quest": [
+      "Schwimmbad",
+      "Swimmingpool"
+    ],
+    "answer": [
+      "басс_е_йн"
+    ]
+  },
+  {
+    "quest": [
+      "Fahrrad fahren"
+    ],
+    "answer": [
+      "кат_а_ться на велосип_е_де"
+    ]
+  },
+  {
+    "quest": [
+      "Fahrrad"
+    ],
+    "answer": [
+      "велосип_е_д"
+    ]
+  },
+  {
+    "quest": [
+      "fahren",
+      "~deklinieren~"
+    ],
+    "answer": [
+      "кат_а_ться",
+      "я кат_а_юсь",
+      "ты кат_а_ешься",
+      "он / она / оно кат_а_ется",
+      "мы кат_а_емся",
+      "вы кат_а_етесь",
+      "они кат_а_ются"
+    ]
+  },
+  {
+    "quest": [
+      "laufen",
+      "rennen"
+    ],
+    "answer": [
+      "б_е_гать"
+    ]
+  },
+  {
+    "quest": [
+      "Skateboard"
+    ],
+    "answer": [
+      "скейтб_о_рд"
+    ]
+  },
+  {
+    "quest": [
+      "sich erholen",
+      "sich ausruhen"
+    ],
+    "answer": [
+      "отдых_а_ть"
+    ]
+  },
+  {
+    "quest": [
+      "Würfelspiel"
+    ],
+    "answer": [
+      "игр_а_ в к_о_сти"
+    ]
+  },
+  {
+    "quest": [
+      "gewöhnlich"
+    ],
+    "answer": [
+      "об_ы_чно"
+    ]
+  },
+  {
+    "quest": [
+      "Sonntag"
+    ],
+    "answer": [
+      "воскрес_е_нье"
+    ]
+  },
+  {
+    "quest": [
+      "Montag"
+    ],
+    "answer": [
+      "понед_е_льник"
+    ]
+  },
+  {
+    "quest": [
+      "Dienstag"
+    ],
+    "answer": [
+      "вт_о_рник"
+    ]
+  },
+  {
+    "quest": [
+      "Mittwoch"
+    ],
+    "answer": [
+      "сред_а_"
+    ]
+  },
+  {
+    "quest": [
+      "Donnerstag"
+    ],
+    "answer": [
+      "четв_е_рг"
+    ]
+  },
+  {
+    "quest": [
+      "Freitag"
+    ],
+    "answer": [
+      "п_я_тница"
+    ]
+  },
+  {
+    "quest": [
+      "Samstag"
+    ],
+    "answer": [
+      "субб_о_та"
+    ]
+  },
+  {
+    "quest": [
+      "morgen"
+    ],
+    "answer": [
+      "з_а_втра"
+    ]
+  },
+  {
+    "quest": [
+      "wann?"
+    ],
+    "answer": [
+      "когд_а_?"
+    ]
+  },
+  {
+    "quest": [
+      "Disco"
+    ],
+    "answer": [
+      "дискот_е_ка"
+    ]
+  },
+  {
+    "quest": [
+      "wohin?"
+    ],
+    "answer": [
+      "куд_а_?"
+    ]
+  },
+  {
+    "quest": [
+      ""
+    ],
+    "answer": [
+      "ход_и_ть",
+      "я хож_у_",
+      "ты х_о_дишь",
+      "он / она / оно х_о_дит",
+      "мы х_о_дим",
+      "вы х_о_дите",
+      "они х_о_дят"
+    ]
+  },
+  {
+    "quest": [
+      "besonders"
+    ],
+    "answer": [
+      "ос_о_бенно"
+    ]
+  },
+  {
+    "quest": [
+      "Baum der Freundschaft"
+    ],
+    "answer": [
+      "Д_е_рево Др_у_жбы"
+    ]
+  },
+  {
+    "quest": [
+      "Freundschaft"
+    ],
+    "answer": [
+      "др_у_жба"
+    ]
+  },
+  {
+    "quest": [
+      "dorthin"
+    ],
+    "answer": [
+      "туд_а_"
+    ]
+  },
+  {
+    "quest": [
+      "Schachspiel"
+    ],
+    "answer": [
+      "ш_а_хматы ~Pl.~"
+    ]
+  },
+  {
+    "quest": [
+      "Zoo"
+    ],
+    "answer": [
+      "зооп_а_рк"
+    ]
+  },
+  {
+    "quest": [
+      "langweilig"
+    ],
+    "answer": [
+      "ск_у_чно"
+    ]
+  },
+  {
+    "quest": [
+      "Bergsteigen",
+      "Alpinsport"
+    ],
+    "answer": [
+      "альпин_и_зм"
+    ]
+  },
+  {
+    "quest": [
+      "Berg"
+    ],
+    "answer": [
+      "гора",
+      "горы ~Nom Pl.~"
+    ]
+  },
+  {
+    "quest": [
+      "Fitnessclub"
+    ],
+    "answer": [
+      "ф_и_тнес-кл_у_б"
+    ]
+  }
+]

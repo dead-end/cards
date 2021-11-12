@@ -73,6 +73,14 @@
     "title": "Kapitel 6 Teil 2"
   },
   {
+    "file": "data/kapitel-6-3.json",
+    "title": "Kapitel 6 Teil 3"
+  },
+  {
+    "file": "data/kapitel-6-4.json",
+    "title": "Kapitel 6 Teil 4"
+  },
+  {
     "file": "data/dates.json",
     "title": "Datum",
     "desc": "Wochentage, Jahreszeigen, usw."

@@ -1,0 +1,192 @@
+[
+  {
+    "quest": [
+      "die Tomate",
+      "die Tomaten"
+    ],
+    "answer": [
+      "помид_о_р",
+      "помидоры",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "das Bonbon",
+      "die Bonbons"
+    ],
+    "answer": [
+      "конф_е_та ",
+      "конфеты",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "das Getränk",
+      "die Getränke"
+    ],
+    "answer": [
+      "нап_и_ток",
+      "напитки",
+      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и",
+      "~Vokalausfall~"
+    ]
+  },
+  {
+    "quest": [
+      "die Birne",
+      "die Birnen"
+    ],
+    "answer": [
+      "гр_у_ша",
+      "груши",
+      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+    ]
+  },
+  {
+    "quest": [
+      "das Ei",
+      "die Eier"
+    ],
+    "answer": [
+      "яйц_о_",
+      "яйца",
+      "~Neutrum: harter Stammauslaut:~ а"
+    ]
+  },
+  {
+    "quest": [
+      "die Marmelade",
+      "die Marmeladen"
+    ],
+    "answer": [
+      "вар_е_нье",
+      "варенья",
+      "~Neutrum: weicher Stammauslaut:~ я"
+    ]
+  },
+  {
+    "quest": [
+      "der Apfel",
+      "die Äpfel"
+    ],
+    "answer": [
+      "_я_блоко",
+      "яблоки",
+      "~Neutrum: weicher Stammauslaut~",
+      "~Ausnahme~"
+    ]
+  },
+  {
+    "quest": [
+      "das Würstchen",
+      "die Würstchen"
+    ],
+    "answer": [
+      "сос_и_ска",
+      "сосиски",
+      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+    ]
+  },
+  {
+    "quest": [
+      "die Frucht",
+      "die Früchte"
+    ],
+    "answer": [
+      "фрукт",
+      "фрукты",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "die Zitrone",
+      "die Zitronen"
+    ],
+    "answer": [
+      "лимо́н",
+      "лимоны",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "der Salat",
+      "die Salate"
+    ],
+    "answer": [
+      "сал_а_т",
+      "салаты",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "die Banane",
+      "die Bananen"
+    ],
+    "answer": [
+      "бан_а_н",
+      "бананы",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "das Produkt",
+      "die Produkte"
+    ],
+    "answer": [
+      "прод_у_кт",
+      "продукты",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "der Kuchen",
+      "die Kuchen"
+    ],
+    "answer": [
+      "пир_о_г",
+      "пироги",
+      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+    ]
+  },
+  {
+    "quest": [
+      "die Gurke",
+      "die Gurken"
+    ],
+    "answer": [
+      "огур_е_ц",
+      "огурцы",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы",
+      "~Vokalausfall~"
+    ]
+  },
+  {
+    "quest": [
+      "das Brötchen",
+      "die Brötchen"
+    ],
+    "answer": [
+      "б_у_лочка",
+      "булочки",
+      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+    ]
+  },
+  {
+    "quest": [
+      "die Ananas",
+      "die Ananassen :o)"
+    ],
+    "answer": [
+      "анан_а_с",
+      "ананасы",
+      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+    ]
+  }
+]

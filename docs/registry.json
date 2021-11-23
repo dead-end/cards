@@ -162,6 +162,10 @@
     "title": "Grammatik - Präpositiv"
   },
   {
+    "file": "data/gram-plural.json",
+    "title": "Grammatik - Plural"
+  },
+  {
     "file": "data/misc.json",
     "title": "Sonstiges - Test",
     "desc": "Dies ist meine Beschreibung!"

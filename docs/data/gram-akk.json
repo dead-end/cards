@@ -1,0 +1,235 @@
+[
+  {
+    "quest": [
+      "Wir schauen Fernsehen."
+    ],
+    "answer": [
+      "Мы смотрим телевизор.",
+      "~Maskulinum unbelebt =>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Der Lehrer macht Salat."
+    ],
+    "answer": [
+      "Учитель готовит салат.",
+      "~Maskulinum unbelebt =>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Ich kenne den Übersetzer."
+    ],
+    "answer": [
+      "Я знаю переводчика.",
+      "~Maskulinum belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Die Hausfrau liebt den Arzt."
+    ],
+    "answer": [
+      "Домохозяйка любит доктора.",
+      "~Maskulinum belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Der Mann schaut das Meer an."
+    ],
+    "answer": [
+      "Мужчина смотрит на море.",
+      "~Neutrum:~",
+      "- о ~=>~ -",
+      "- _е_ ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Unsere Schwester isst Marmelade."
+    ],
+    "answer": [
+      "Наша сестра ест варенье.",
+      "~Neutrum:~",
+      "- о ~=>~ -",
+      "- _е_ ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Sie kennt den Platz."
+    ],
+    "answer": [
+      "Она знает это место.",
+      "~Neutrum:~",
+      "- _о_ ~=>~ -",
+      "- е ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Wir trinken Bier."
+    ],
+    "answer": [
+      "Мы пьем пиво.",
+      "~Neutrum:~",
+      "- _о_ ~=>~ -",
+      "- е ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Gib mir die Fotografie."
+    ],
+    "answer": [
+      "Дай мне фотографию.",
+      "~Femininum:~",
+      "- а ~=>~у",
+      "- _я_ ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Mein Bruder liebt die russische Küche."
+    ],
+    "answer": [
+      "Мой брат любит русскую кухню.",
+      "~Femininum:~",
+      "- а ~=>~у",
+      "- _я_ ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Wir lesen Zeitung."
+    ],
+    "answer": [
+      "Мы читаем газету.",
+      "~Femininum:~",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Der Vater kocht Brei."
+    ],
+    "answer": [
+      "Отец кашу готовит.",
+      "~Femininum:~",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Der Mitarbeiter kennt die Kirche in der Stadt."
+    ],
+    "answer": [
+      "Сотрудник знает церковь в городе. ",
+      "~Femininum:~",
+      "- а ~=>~у",
+      "- я ~=>~ ю",
+      "- _ь_ ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Die Verkäuferin liesst die Unterschrift."
+    ],
+    "answer": [
+      "Продавщица читает подпись.",
+      "~Femininum:~",
+      "- а ~=>~у",
+      "- я ~=>~ ю",
+      "- _ь_ ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Der Arbeiter hasst die Direktoren."
+    ],
+    "answer": [
+      "Рабочий ненавидит директоров.",
+      "~belebt Maskulinum Plural:~ - ~=>~ ов"
+    ]
+  },
+  {
+    "quest": [
+      "Die Oma liebt ihre Enkel."
+    ],
+    "answer": [
+      "Бабушка любит внуков.",
+      "~belebt Maskulinum Plural:~ - ~=>~ ов"
+    ]
+  },
+  {
+    "quest": [
+      "Wir lieben unsere Töchter."
+    ],
+    "answer": [
+      "Мы любим своих дочерей.",
+      "~belebt Plural:~ ь ~=>~ ей"
+    ]
+  },
+  {
+    "quest": [
+      "Der Direktor kennt die Sekretäre."
+    ],
+    "answer": [
+      "Директор знает секретарей.",
+      "~belebt Plural:~ ь ~=>~ ей"
+    ]
+  },
+  {
+    "quest": [
+      "Er hasst die Lehrer."
+    ],
+    "answer": [
+      "Он ненавидит учителей.",
+      "~belebt Plural:~ ь ~=>~ ей"
+    ]
+  },
+  {
+    "quest": [
+      "Die Frau kocht Tomaten."
+    ],
+    "answer": [
+      "Женщина готовит помидоры.",
+      "~unbelebt Plural:~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Der Student liest Bücher."
+    ],
+    "answer": [
+      "Студент читает книги.",
+      "~unbelebt Plural:~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Der Mann isst Bonbons."
+    ],
+    "answer": [
+      "Мужчина ест конфеты.",
+      "~unbelebt Plural:~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Die Familie hasst Plätze."
+    ],
+    "answer": [
+      "Семья ненавидит места.",
+      "~unbelebt Plural:~ -"
+    ]
+  }
+]

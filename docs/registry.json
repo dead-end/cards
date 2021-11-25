@@ -166,6 +166,10 @@
     "title": "Grammatik - Plural"
   },
   {
+    "file": "data/gram-akk.json",
+    "title": "Grammatik - Akkusativ"
+  },
+  {
     "file": "data/misc.json",
     "title": "Sonstiges - Test",
     "desc": "Dies ist meine Beschreibung!"

@@ -277,7 +277,8 @@
     ],
     "answer": [
       "Бабушки любят внуков.",
-      "~belebt Maskulinum Plural:~ - ~=>~ ов"
+      "~Plural:~",
+      "- ~belebt Maskulinum:~ - ~=>~ ов"
     ]
   },
   {
@@ -286,7 +287,8 @@
     ],
     "answer": [
       "Покупатель любит продавцов.",
-      "~belebt Maskulinum Plural:~ - ~=>~ ов"
+      "~Plural:~",
+      "- ~belebt Maskulinum:~ - ~=>~ ов"
     ]
   },
   {
@@ -295,7 +297,8 @@
     ],
     "answer": [
       "Я знаю монахов.",
-      "~belebt Maskulinum Plural:~ - ~=>~ ов"
+      "~Plural:~",
+      "- ~belebt Maskulinum:~ - ~=>~ ов"
     ]
   },
   {
@@ -304,7 +307,8 @@
     ],
     "answer": [
       "Мы любим своих дочерей.",
-      "~belebt Plural:~ ь ~=>~ ей"
+      "~Plural:~",
+      "- ~belebt:~ ь ~=>~ ей"
     ]
   },
   {
@@ -313,7 +317,8 @@
     ],
     "answer": [
       "Мы слышим матерей.",
-      "~belebt Plural:~ ь ~=>~ ей"
+      "~Plural:~",
+      "- ~belebt:~ ь ~=>~ ей"
     ]
   },
   {
@@ -322,7 +327,8 @@
     ],
     "answer": [
       "Директор знает секретарей.",
-      "~belebt Plural:~ ь ~=>~ ей"
+      "~Plural:~",
+      "- ~belebt:~ ь ~=>~ ей"
     ]
   },
   {
@@ -331,7 +337,8 @@
     ],
     "answer": [
       "Он ненавидит учителей.",
-      "~belebt Plural:~ ь ~=>~ ей"
+      "~Plural:~",
+      "- ~belebt:~ ь ~=>~ ей"
     ]
   },
   {
@@ -340,7 +347,8 @@
     ],
     "answer": [
       "Женщина готовит помидоры.",
-      "~unbelebt Plural:~ -"
+      "~Plural:~",
+      "- ~unbelebt:~ -"
     ]
   },
   {
@@ -349,7 +357,8 @@
     ],
     "answer": [
       "Студент читает книги.",
-      "~unbelebt Plural:~ -"
+      "~Plural:~",
+      "- ~unbelebt:~ -"
     ]
   },
   {
@@ -358,7 +367,8 @@
     ],
     "answer": [
       "Мужчина ест конфеты.",
-      "~unbelebt Plural:~ -"
+      "~Plural:~",
+      "- ~unbelebt:~ -"
     ]
   },
   {
@@ -367,7 +377,8 @@
     ],
     "answer": [
       "Семья ненавидит места.",
-      "~unbelebt Plural:~ -"
+      "~Plural:~",
+      "- ~unbelebt:~ -"
     ]
   },
   {
@@ -376,7 +387,8 @@
     ],
     "answer": [
       "Они читают журналы.",
-      "~unbelebt Plural:~ -"
+      "~Plural:~",
+      "- ~unbelebt:~ -"
     ]
   }
 ]

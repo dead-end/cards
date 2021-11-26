@@ -54,43 +54,6 @@
   },
   {
     "quest": [
-      "das Ei",
-      "die Eier"
-    ],
-    "answer": [
-      "яйц_о_",
-      "яйца",
-      "~Neutrum:~",
-      "- _o_ ~=>~ а",
-      "- е ~=>~ я"
-    ]
-  },
-  {
-    "quest": [
-      "die Marmelade",
-      "die Marmeladen"
-    ],
-    "answer": [
-      "вар_е_нье",
-      "варенья",
-      "~Neutrum:~",
-      "- o ~=>~ а",
-      "- _е_ ~=>~ я"
-    ]
-  },
-  {
-    "quest": [
-      "der Apfel",
-      "die Äpfel"
-    ],
-    "answer": [
-      "_я_блоко",
-      "яблоки",
-      "~Neutrum: Ausnahme~"
-    ]
-  },
-  {
-    "quest": [
       "das Würstchen",
       "die Würstchen"
     ],
@@ -208,43 +171,6 @@
   },
   {
     "quest": [
-      "das Meer",
-      "die Meere"
-    ],
-    "answer": [
-      "м_о_ре",
-      "моря",
-      "- o ~=>~ а",
-      "- _е_ ~=>~ я"
-    ]
-  },
-  {
-    "quest": [
-      "der Platz",
-      "die Plätze"
-    ],
-    "answer": [
-      "м_е_сто",
-      "места",
-      "- _o_ ~=>~ а",
-      "- е ~=>~ я"
-    ]
-  },
-  {
-    "quest": [
-      "der Lehrer",
-      "die Lehrer"
-    ],
-    "answer": [
-      "учитель",
-      "учителя",
-      "~Femininum:~",
-      "- _o_ ~=>~ а",
-      "- е ~=>~ я"
-    ]
-  },
-  {
-    "quest": [
       "die Lehrerin",
       "die Lehrerinnen"
     ],
@@ -258,13 +184,89 @@
   },
   {
     "quest": [
+      "das Ei",
+      "die Eier"
+    ],
+    "answer": [
+      "яйц_о_",
+      "яйца",
+      "~Neutrum:~",
+      "- _o_ ~=>~ а",
+      "- е ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "das Meer",
+      "die Meere"
+    ],
+    "answer": [
+      "м_о_ре",
+      "моря",
+      "~Neutrum:~",
+      "- o ~=>~ а",
+      "- _е_ ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "der Platz",
+      "die Plätze"
+    ],
+    "answer": [
+      "м_е_сто",
+      "места",
+      "~Neutrum:~",
+      "- _o_ ~=>~ а",
+      "- е ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "das Gericht / die Speise",
+      "die Gerichte / die Speisen"
+    ],
+    "answer": [
+      "бл_ю_до",
+      "блюда",
+      "~Neutrum:~",
+      "- _o_ ~=>~ а",
+      "- е ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "die Marmelade",
+      "die Marmeladen"
+    ],
+    "answer": [
+      "вар_е_нье",
+      "варенья",
+      "~Neutrum:~",
+      "- o ~=>~ а",
+      "- _е_ ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "der Apfel",
+      "die Äpfel"
+    ],
+    "answer": [
+      "_я_блоко",
+      "яблоки",
+      "~Neutrum: Ausnahme~"
+    ]
+  },
+  {
+    "quest": [
       "die Kirche",
       "die Kirchen"
     ],
     "answer": [
       "церковь",
       "церкви",
-      "~Femininum:~",
+      "~Maskulinum / _Femininum_:~",
       "- _ь_ ~=>~ и"
     ]
   },
@@ -274,9 +276,9 @@
       "die Unterschriften"
     ],
     "answer": [
+      "п_о_дпись",
       "подпись",
-      "подпись",
-      "~Femininum:~",
+      "~Maskulinum / _Femininum_:~",
       "- _ь_ ~=>~ и"
     ]
   },
@@ -294,24 +296,13 @@
   },
   {
     "quest": [
-      "der Lehrer",
-      "die Lehrer"
-    ],
-    "answer": [
-      "учитель",
-      "учителя",
-      "~Maskulinum: Ausnamhe ???~"
-    ]
-  },
-  {
-    "quest": [
       "das Kloster",
       "die Klöster"
     ],
     "answer": [
-      "монастырь",
+      "монаст_ы_рь",
       "монастыри",
-      "~Maskulinum:~",
+      "~_Maskulinum_ / Femininum:~",
       "- _ь_ ~=>~ и"
     ]
   },
@@ -321,9 +312,9 @@
       "die Sekretäre"
     ],
     "answer": [
-      "секретарь",
+      "секрет_а_рь",
       "секретари",
-      "~Maskulinum:~",
+      "~_Maskulinum_ / Femininum:~",
       "- _ь_ ~=>~ и"
     ]
   },
@@ -335,7 +326,7 @@
     "answer": [
       "рубль",
       "рубли",
-      "~Maskulinum:~",
+      "~_Maskulinum_ / Femininum:~",
       "- _ь_ ~=>~ и"
     ]
   },
@@ -345,10 +336,21 @@
       "die Käufer"
     ],
     "answer": [
-      "покупатель",
+      "покуп_а_тель",
       "покупатели",
-      "~Maskulinum:~",
+      "~_Maskulinum_ / Femininum:~",
       "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "der Lehrer",
+      "die Lehrer"
+    ],
+    "answer": [
+      "учитель",
+      "учителя",
+      "~Maskulinum: Ausnamhe ???~"
     ]
   },
   {
@@ -359,7 +361,7 @@
     "answer": [
       "огур_е_ц",
       "огурцы",
-      "~Maskulinum / Femininum~",
+      "~_Maskulinum_ / Femininum:~",
       "- г, к, х, ш, щ, ч ~=>~ и",
       "- ~_default_:~ ы",
       "~Vokalausfall~"
@@ -371,9 +373,9 @@
       "die Märkte"
     ],
     "answer": [
-      "рынок",
+      "р_ы_нок",
       "рынки",
-      "~Maskulinum / Femininum~",
+      "~_Maskulinum_ / Femininum:~",
       "- г, _к_, х, ш, щ, ч ~=>~ и",
       "- ~default:~ ы",
       "~Vokalausfall~"

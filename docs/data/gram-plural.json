@@ -7,7 +7,9 @@
     "answer": [
       "помид_о_р",
       "помидоры",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -18,7 +20,9 @@
     "answer": [
       "конф_е_та ",
       "конфеты",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~  и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -29,7 +33,9 @@
     "answer": [
       "нап_и_ток",
       "напитки",
-      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и",
+      "~Maskulinum / Femininum~",
+      "- г, _к_, х, ш, щ, ч ~=>~ и",
+      "- ~default:~ ы",
       "~Vokalausfall~"
     ]
   },
@@ -41,7 +47,9 @@
     "answer": [
       "гр_у_ша",
       "груши",
-      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, _ш_, щ, ч ~=>~ и",
+      "- ~default:~ ы"
     ]
   },
   {
@@ -52,7 +60,9 @@
     "answer": [
       "яйц_о_",
       "яйца",
-      "~Neutrum: harter Stammauslaut:~ а"
+      "~Neutrum:~",
+      "- _o_ ~=>~ а",
+      "- е ~=>~ я"
     ]
   },
   {
@@ -63,7 +73,9 @@
     "answer": [
       "вар_е_нье",
       "варенья",
-      "~Neutrum: weicher Stammauslaut:~ я"
+      "~Neutrum:~",
+      "- o ~=>~ а",
+      "- _е_ ~=>~ я"
     ]
   },
   {
@@ -74,8 +86,7 @@
     "answer": [
       "_я_блоко",
       "яблоки",
-      "~Neutrum: weicher Stammauslaut~",
-      "~Ausnahme~"
+      "~Neutrum: Ausnahme~"
     ]
   },
   {
@@ -86,7 +97,9 @@
     "answer": [
       "сос_и_ска",
       "сосиски",
-      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+      "~Maskulinum / Femininum~",
+      "- г, _к_, х, ш, щ, ч ~=>~ и",
+      "- ~default:~ ы"
     ]
   },
   {
@@ -97,7 +110,9 @@
     "answer": [
       "фрукт",
       "фрукты",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -108,7 +123,9 @@
     "answer": [
       "лим_о_н",
       "лимоны",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -119,7 +136,9 @@
     "answer": [
       "сал_а_т",
       "салаты",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -130,7 +149,9 @@
     "answer": [
       "бан_а_н",
       "бананы",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -141,7 +162,9 @@
     "answer": [
       "прод_у_кт",
       "продукты",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -152,19 +175,9 @@
     "answer": [
       "пир_о_г",
       "пироги",
-      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
-    ]
-  },
-  {
-    "quest": [
-      "die Gurke",
-      "die Gurken"
-    ],
-    "answer": [
-      "огур_е_ц",
-      "огурцы",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы",
-      "~Vokalausfall~"
+      "~Maskulinum / Femininum~",
+      "- _г_, к, х, ш, щ, ч ~=>~ и",
+      "- ~default:~ ы"
     ]
   },
   {
@@ -175,7 +188,9 @@
     "answer": [
       "б_у_лочка",
       "булочки",
-      "~Maskulinum / Femininum - weicher Stammauslaut und nach Zischlaut sowie: г, к, х:~ и"
+      "~Maskulinum / Femininum~",
+      "- г, _к_, х, ш, щ, ч ~=>~ и",
+      "- ~default:~ ы"
     ]
   },
   {
@@ -186,7 +201,9 @@
     "answer": [
       "анан_а_с",
       "ананасы",
-      "~Maskulinum / Femininum - harter Stammauslaut:~ ы"
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
     ]
   },
   {
@@ -197,7 +214,8 @@
     "answer": [
       "м_о_ре",
       "моря",
-      "~Neutrum: weicher Stammauslaut:~ я"
+      "- o ~=>~ а",
+      "- _е_ ~=>~ я"
     ]
   },
   {
@@ -208,7 +226,157 @@
     "answer": [
       "м_е_сто",
       "места",
-      "~Neutrum: harter Stammauslaut:~ а"
+      "- _o_ ~=>~ а",
+      "- е ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "der Lehrer",
+      "die Lehrer"
+    ],
+    "answer": [
+      "учитель",
+      "учителя",
+      "~Femininum:",
+      "- _o_ ~=>~ а",
+      "- е ~=>~ я"
+    ]
+  },
+  {
+    "quest": [
+      "die Lehrerin",
+      "die Lehrerinnen"
+    ],
+    "answer": [
+      "учи́тельница",
+      "учи́тельницы",
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы"
+    ]
+  },
+  {
+    "quest": [
+      "die Kirche",
+      "die Kirchen"
+    ],
+    "answer": [
+      "церковь",
+      "церкви",
+      "~Femininum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "die Unterschrift",
+      "die Unterschriften"
+    ],
+    "answer": [
+      "подпись",
+      "подпись",
+      "~Femininum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "die Nazionalität",
+      "die Nazionalitäten"
+    ],
+    "answer": [
+      "национальность",
+      "национальности",
+      "~Femininum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "der Lehrer",
+      "die Lehrer"
+    ],
+    "answer": [
+      "учитель",
+      "учителя",
+      "~Maskulinum: Ausnamhe ???"
+    ]
+  },
+  {
+    "quest": [
+      "das Kloster",
+      "die Klöster"
+    ],
+    "answer": [
+      "монастырь",
+      "монастыри",
+      "~Maskulinum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "der Sekretär",
+      "die Sekretäre"
+    ],
+    "answer": [
+      "секретарь",
+      "секретари",
+      "~Maskulinum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "der Rubel",
+      "die Rubel"
+    ],
+    "answer": [
+      "рубль",
+      "рубли",
+      "~Maskulinum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "der Käufer",
+      "die Käufer"
+    ],
+    "answer": [
+      "потребитель",
+      "потребители",
+      "~Maskulinum:",
+      "- _ь_ ~=>~ и"
+    ]
+  },
+  {
+    "quest": [
+      "die Gurke",
+      "die Gurken"
+    ],
+    "answer": [
+      "огур_е_ц",
+      "огурцы",
+      "~Maskulinum / Femininum~",
+      "- г, к, х, ш, щ, ч ~=>~ и",
+      "- ~_default_:~ ы",
+      "~Vokalausfall~"
+    ]
+  },
+  {
+    "quest": [
+      "der Markt",
+      "die Märkte"
+    ],
+    "answer": [
+      "рынок",
+      "рынки",
+      "~Maskulinum / Femininum~",
+      "- г, _к_, х, ш, щ, ч ~=>~ и",
+      "- ~default:~ ы",
+      "~Vokalausfall~"
     ]
   }
 ]

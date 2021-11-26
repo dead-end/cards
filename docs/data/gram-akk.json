@@ -5,7 +5,20 @@
     ],
     "answer": [
       "Мы смотрим телевизор.",
-      "~Maskulinum unbelebt =>~ -"
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Sie schauen den Film."
+    ],
+    "answer": [
+      "Вы смотрите фильм.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
     ]
   },
   {
@@ -14,7 +27,31 @@
     ],
     "answer": [
       "Учитель готовит салат.",
-      "~Maskulinum unbelebt =>~ -"
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Das Kind trinkt Tee."
+    ],
+    "answer": [
+      "Ребенок пьет чай.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Wir machen einen Kuchen."
+    ],
+    "answer": [
+      "Мы делаем пирог.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
     ]
   },
   {
@@ -23,7 +60,9 @@
     ],
     "answer": [
       "Я знаю переводчика.",
-      "~Maskulinum belebt =>~ а"
+      "~Maskulinum Singular:~",
+      "- ~unbelebt =>~ -",
+      "- ~_belebt_ =>~ а"
     ]
   },
   {
@@ -31,8 +70,32 @@
       "Die Hausfrau liebt den Arzt."
     ],
     "answer": [
-      "Домохозяйка любит доктора.",
-      "~Maskulinum belebt =>~ а"
+      "Домохозяйка любит врача.",
+      "~Maskulinum Singular:~",
+      "- ~unbelebt =>~ -",
+      "- ~_belebt_ =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Bruder und Schwester lieben den Vater."
+    ],
+    "answer": [
+      "Брат и сестра любят отца.",
+      "~Maskulinum Singular:~",
+      "- ~unbelebt =>~ -",
+      "- ~_belebt_ =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Oma hört den Enkel."
+    ],
+    "answer": [
+      "Бабушка слышит внука.",
+      "~Maskulinum Singular:~",
+      "- ~unbelebt =>~ -",
+      "- ~_belebt_ =>~ а"
     ]
   },
   {
@@ -41,7 +104,18 @@
     ],
     "answer": [
       "Мужчина смотрит на море.",
-      "~Neutrum:~",
+      "~Neutrum Singular:~",
+      "- о ~=>~ -",
+      "- _е_ ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Das Schülerin hört die Aufgabe."
+    ],
+    "answer": [
+      "Школьница слышит задание.",
+      "~Neutrum Singular:~",
       "- о ~=>~ -",
       "- _е_ ~=>~ -"
     ]
@@ -52,7 +126,7 @@
     ],
     "answer": [
       "Наша сестра ест варенье.",
-      "~Neutrum:~",
+      "~Neutrum Singular:~",
       "- о ~=>~ -",
       "- _е_ ~=>~ -"
     ]
@@ -63,7 +137,7 @@
     ],
     "answer": [
       "Она знает это место.",
-      "~Neutrum:~",
+      "~Neutrum Singular:~",
       "- _о_ ~=>~ -",
       "- е ~=>~ -"
     ]
@@ -74,9 +148,45 @@
     ],
     "answer": [
       "Мы пьем пиво.",
-      "~Neutrum:~",
+      "~Neutrum Singular:~",
       "- _о_ ~=>~ -",
       "- е ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Die Eltern lesen das Buch."
+    ],
+    "answer": [
+      "Родители читают книгу.",
+      "~Femininum Singular:~",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Sie hassen die Familie."
+    ],
+    "answer": [
+      "Они ненабидят семью.",
+      "~Femininum Singular:~",
+      "- а ~=>~у",
+      "- _я_ ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Die Mönch lieben die Kirche."
+    ],
+    "answer": [
+      "Монахи любят церковь.",
+      "~Femininum Singular:~",
+      "- а ~=>~у",
+      "- я ~=>~ ю",
+      "- _ь_ ~=>~ -"
     ]
   },
   {
@@ -85,7 +195,7 @@
     ],
     "answer": [
       "Дай мне фотографию.",
-      "~Femininum:~",
+      "~Femininum Singular:~",
       "- а ~=>~у",
       "- _я_ ~=>~ ю",
       "- ь ~=>~ -"
@@ -97,7 +207,7 @@
     ],
     "answer": [
       "Мой брат любит русскую кухню.",
-      "~Femininum:~",
+      "~Femininum Singular:~",
       "- а ~=>~у",
       "- _я_ ~=>~ ю",
       "- ь ~=>~ -"
@@ -109,7 +219,7 @@
     ],
     "answer": [
       "Мы читаем газету.",
-      "~Femininum:~",
+      "~Femininum Singular:~",
       "- _а_ ~=>~у",
       "- я ~=>~ ю",
       "- ь ~=>~ -"
@@ -121,7 +231,7 @@
     ],
     "answer": [
       "Отец готовит кашу.",
-      "~Femininum:~",
+      "~Femininum Singular:~",
       "- _а_ ~=>~у",
       "- я ~=>~ ю",
       "- ь ~=>~ -"
@@ -133,7 +243,7 @@
     ],
     "answer": [
       "Сотрудник знает церковь в городе. ",
-      "~Femininum:~",
+      "~Femininum Singular:~",
       "- а ~=>~у",
       "- я ~=>~ ю",
       "- _ь_ ~=>~ -"
@@ -145,7 +255,7 @@
     ],
     "answer": [
       "Продавщица читает подпись.",
-      "~Femininum:~",
+      "~Femininum Singular:~",
       "- а ~=>~у",
       "- я ~=>~ ю",
       "- _ь_ ~=>~ -"
@@ -157,15 +267,34 @@
     ],
     "answer": [
       "Рабочий ненавидит директоров.",
+      "~Plural:~",
+      "- ~belebt Maskulinum:~ - ~=>~ ов"
+    ]
+  },
+  {
+    "quest": [
+      "Omas lieben Enkel."
+    ],
+    "answer": [
+      "Бабушки любят внуков.",
       "~belebt Maskulinum Plural:~ - ~=>~ ов"
     ]
   },
   {
     "quest": [
-      "Die Oma liebt ihre Enkel."
+      "Der Käufer liebt die Verkäufer."
     ],
     "answer": [
-      "Бабушка любит внуков.",
+      "Покупатель любит продавцов.",
+      "~belebt Maskulinum Plural:~ - ~=>~ ов"
+    ]
+  },
+  {
+    "quest": [
+      "Ich kenne die Mönche."
+    ],
+    "answer": [
+      "Я знаю монахов.",
       "~belebt Maskulinum Plural:~ - ~=>~ ов"
     ]
   },
@@ -175,6 +304,15 @@
     ],
     "answer": [
       "Мы любим своих дочерей.",
+      "~belebt Plural:~ ь ~=>~ ей"
+    ]
+  },
+  {
+    "quest": [
+      "Wir hören die Mütter."
+    ],
+    "answer": [
+      "Мы слышим матерей.",
       "~belebt Plural:~ ь ~=>~ ей"
     ]
   },
@@ -229,6 +367,15 @@
     ],
     "answer": [
       "Семья ненавидит места.",
+      "~unbelebt Plural:~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Sie lesen Zeitschriften."
+    ],
+    "answer": [
+      "Они читают журналы.",
       "~unbelebt Plural:~ -"
     ]
   }

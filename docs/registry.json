@@ -163,11 +163,13 @@
   },
   {
     "file": "data/gram-plural.json",
-    "title": "Grammatik - Plural"
+    "title": "Grammatik - Plural",
+    "desc": "Jede Menge Nominativ Singular und Plural."
   },
   {
     "file": "data/gram-akk.json",
-    "title": "Grammatik - Akkusativ"
+    "title": "Grammatik - Akkusativ",
+    "desc": "Kurze Sätze mit dem Akkusativ."
   },
   {
     "file": "data/misc.json",

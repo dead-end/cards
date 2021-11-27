@@ -12,10 +12,10 @@
   },
   {
     "quest": [
-      "Sie schauen den Film."
+      "Schauen Sie den Film?"
     ],
     "answer": [
-      "Вы смотрите фильм.",
+      "Вы смотрите фильм?",
       "~Maskulinum Singular:~",
       "- ~_unbelebt_ =>~ -",
       "- ~belebt =>~ а"

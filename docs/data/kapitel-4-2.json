@@ -136,7 +136,10 @@
     "answer": "тр_о_е дет_е_й"
   },
   {
-    "quest": "arbeiten",
+    "quest": [
+      "arbeiten",
+      "~konjugieren~"
+    ],
     "answer": [
       "раб_о_тать",
       "- я раб_о_таю",
@@ -157,7 +160,8 @@
   {
     "quest": [
       "machen",
-      "tun "
+      "tun ",
+      "~konjugieren~"
     ],
     "answer": [
       "д_е_лать",

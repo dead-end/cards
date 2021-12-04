@@ -48,7 +48,10 @@
     "answer": "_А_встрия"
   },
   {
-    "quest": "sprechen",
+    "quest": [
+      "sprechen",
+      "~konjugieren~"
+    ],
     "answer": [
       "говор_и_ть",
       "- я говор_ю_",

@@ -27,7 +27,7 @@
   {
     "quest": [
       "fahren",
-      "~deklinieren~"
+      "~konjugieren~"
     ],
     "answer": [
       "кат_а_ться",
@@ -171,7 +171,8 @@
   },
   {
     "quest": [
-      "gehen"
+      "gehen",
+      "~konjugieren~"
     ],
     "answer": [
       "ход_и_ть",

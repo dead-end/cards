@@ -27,7 +27,8 @@
   },
   {
     "quest": [
-      "sich treffen"
+      "sich treffen",
+      "~konjugieren~"
     ],
     "answer": [
       "встречаться",

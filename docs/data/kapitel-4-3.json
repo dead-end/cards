@@ -2,7 +2,8 @@
   {
     "quest": [
       "wissen",
-      "kennen"
+      "kennen",
+      "~konjugieren~"
     ],
     "answer": [
       "зн_а_ть",

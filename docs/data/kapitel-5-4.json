@@ -57,7 +57,8 @@
     },
     {
         "quest": [
-            "verkaufen"
+            "verkaufen",
+            "~konjugieren~"
         ],
         "answer": [
             "продав_а_ть",

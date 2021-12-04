@@ -12,10 +12,10 @@
   },
   {
     "quest": [
-      "Sie schauen den Film."
+      "Schauen Sie den Film?"
     ],
     "answer": [
-      "Вы смотрите фильм.",
+      "Вы смотрите фильм?",
       "~Maskulinum Singular:~",
       "- ~_unbelebt_ =>~ -",
       "- ~belebt =>~ а"
@@ -92,7 +92,7 @@
       "Oma hört den Enkel."
     ],
     "answer": [
-      "Бабушка слышит внука.",
+      "Бабушка слушает внука.",
       "~Maskulinum Singular:~",
       "- ~unbelebt =>~ -",
       "- ~_belebt_ =>~ а"
@@ -114,7 +114,7 @@
       "Das Schülerin hört die Aufgabe."
     ],
     "answer": [
-      "Школьница слышит задание.",
+      "Школьница слушает задание.",
       "~Neutrum Singular:~",
       "- о ~=>~ -",
       "- _е_ ~=>~ -"
@@ -316,7 +316,7 @@
       "Wir hören die Mütter."
     ],
     "answer": [
-      "Мы слышим матерей.",
+      "Мы слушаем матерей.",
       "~Plural:~",
       "- ~belebt:~ ь ~=>~ ей"
     ]

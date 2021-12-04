@@ -457,9 +457,10 @@
     ],
     "answer": [
       "Я пишу имя и фамилию.",
-      "~Maskulinum Singular:~",
-      "- ~_unbelebt_ =>~ -",
-      "- ~belebt =>~ а"
+      "~Femininum Singular:~",
+      "- а ~=>~у",
+      "- _я_ ~=>~ ю",
+      "- ь ~=>~ -"
     ]
   },
   {
@@ -503,8 +504,8 @@
     "answer": [
       "Покупатель читает гарантию.",
       "~Femininum Singular:~",
-      "- _а_ ~=>~у",
-      "- я ~=>~ ю",
+      "- а ~=>~у",
+      "- _я_ ~=>~ ю",
       "- ь ~=>~ -"
     ]
   },
@@ -525,6 +526,23 @@
     ],
     "answer": [
       "Я люблю пиво. Дайте мне три бутылки. "
+    ]
+  },
+  {
+    "quest": [
+      "Ich liebe Bier. Geben Sie mir drei Flaschen."
+    ],
+    "answer": [
+      "Я люблю пиво. Дайте мне три бутылки. "
+    ]
+  },
+  {
+    "quest": [
+      "Ich und meine Frau kennen die Schauspieler und Schauspielerinnen."
+    ],
+    "answer": [
+      "Я и моя с жена знаем актеров и актрис.",
+      "актрис ~Ausnahme~"
     ]
   }
 ]

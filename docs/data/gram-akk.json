@@ -390,5 +390,141 @@
       "~Plural:~",
       "- ~unbelebt:~ -"
     ]
+  },
+  {
+    "quest": [
+      "Der Händler verkauft Zeitungen und Magazine."
+    ],
+    "answer": [
+      "Дилер продает газеты и журналы.",
+      "~Plural:~",
+      "- ~unbelebt:~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Unser Freund verkauft Auto."
+    ],
+    "answer": [
+      "Наш друг продает машину.",
+      "~Maskulinum Singular:~",
+      "- ~unbelebt =>~ -",
+      "- ~_belebt_ =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Die Mitarbeiterin verkauft Wurst, Milch und Eier auf dem Markt."
+    ],
+    "answer": [
+      "Сотрудница продает на рынке колбасу, сосиски, молоко и яйца."
+    ]
+  },
+  {
+    "quest": [
+      "Die Familie kauft Fisch, Käse, Tomaten und Marmelade im Supermarkt."
+    ],
+    "answer": [
+      "Семья покупает в супермаркете рыбу, сыр, помидоры и варенье."
+    ]
+  },
+  {
+    "quest": [
+      "Der Freund kauft das Auto im Autosalon."
+    ],
+    "answer": [
+      "Друг покупает машину в автосалоне.",
+      "~Femininum Singular:~",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Die Freunde kaufen Kuchen im Kirchen Laden."
+    ],
+    "answer": [
+      "Друзья покупают пирог в церковной лавке.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Ich schreibe den Vornamen und Namen."
+    ],
+    "answer": [
+      "Я пишу имя и фамилию.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Die Studentin schreibt den Dialog."
+    ],
+    "answer": [
+      "Студент пишет диалог.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Vater und Mutter kaufen eine Katze und einen Hund."
+    ],
+    "answer": [
+      "Отец и мать покупают кошку и собаку.",
+      "~Femininum Singular:~",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Ich schaue den Stuard an."
+    ],
+    "answer": [
+      "Я смотрю на стюарда.",
+      "~Maskulinum Singular:~",
+      "- ~_unbelebt_ =>~ -",
+      "- ~belebt =>~ а"
+    ]
+  },
+  {
+    "quest": [
+      "Der Käufer liesst die Garantie."
+    ],
+    "answer": [
+      "Покупатель читает гарантию.",
+      "~Femininum Singular:~",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Geben Sie mir Bonbons, eine Schachtel."
+    ],
+    "answer": [
+      "Дайте мне конфету, одну коробку.",
+      "- _а_ ~=>~у",
+      "- я ~=>~ ю",
+      "- ь ~=>~ -"
+    ]
+  },
+  {
+    "quest": [
+      "Ich liebe Bier. Geben Sie mir drei Flaschen."
+    ],
+    "answer": [
+      "Я люблю пиво. Дайте мне три бутылки. "
+    ]
   }
 ]

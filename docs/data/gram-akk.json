@@ -406,7 +406,7 @@
       "Unser Freund verkauft das Auto."
     ],
     "answer": [
-      "Наш друг продает машину.",
+      "Наш друг продаёт машину.",
       "~Maskulinum Singular:~",
       "- ~unbelebt =>~ -",
       "- ~_belebt_ =>~ а"
@@ -417,7 +417,7 @@
       "Die Mitarbeiterin verkauft Wurst, Milch und Eier auf dem Markt."
     ],
     "answer": [
-      "Сотрудница продает на рынке колбасу, сосиски, молоко и яйца."
+      "Сотрудница продаёт на рынке колбасу, сосиски, молоко и яйца."
     ]
   },
   {

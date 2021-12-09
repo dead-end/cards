@@ -406,7 +406,7 @@
       "Unser Freund verkauft das Auto."
     ],
     "answer": [
-      "Наш друг продает машину.",
+      "Наш друг продаёт машину.",
       "~Maskulinum Singular:~",
       "- ~unbelebt =>~ -",
       "- ~_belebt_ =>~ а"
@@ -414,10 +414,10 @@
   },
   {
     "quest": [
-      "Die Mitarbeiterin verkauft Wurst, Milch und Eier auf dem Markt."
+      "Die Mitarbeiterin verkauft Wurst, Würstchen, Milch und Eier auf dem Markt."
     ],
     "answer": [
-      "Сотрудница продает на рынке колбасу, сосиски, молоко и яйца."
+      "Сотрудница продаёт на рынке колбасу, сосиски, молоко и яйца."
     ]
   },
   {
@@ -468,7 +468,7 @@
       "Die Studentin schreibt den Dialog."
     ],
     "answer": [
-      "Студент пишет диалог.",
+      "Студентка пишет диалог.",
       "~Maskulinum Singular:~",
       "- ~_unbelebt_ =>~ -",
       "- ~belebt =>~ а"
@@ -533,7 +533,7 @@
       "Ich und meine Frau kennen die Schauspieler und Schauspielerinnen."
     ],
     "answer": [
-      "Я и моя с жена знаем актеров и актрис.",
+      "Я и моя жена знаем актёров и актрис.",
       "~Ausnahme Akkusativ Plural:~ актрис "
     ]
   }

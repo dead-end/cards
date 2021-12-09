@@ -1,0 +1,130 @@
+[
+  {
+    "quest": [
+      "Schnee und Schneemuster",
+      "Schneesturm auf dem Feld, Gespräche",
+      "Um fünf schon dunkel",
+      "Tag - Schlittschuhe, Schneebälle, Schlitten",
+      "Abend - Großmutters Geschichten",
+      "Hier ist er - Winter!"
+    ],
+    "answer": [
+      "Снег да сн_е_жные уз_о_ры,",
+      "В п_о_ле вь_ю_га, разгов_о_ры,",
+      "В пять час_о_в уж тьм_а_,",
+      "День - коньк_и_, снежк_и_, сал_а_зки,",
+      "В_е_чер - б_а_бушкины ск_а_зки,",
+      "Вот он_а_ - зим_а_!"
+    ]
+  },
+  {
+    "quest": [
+      "der Schnee"
+    ],
+    "answer": [
+      "снег"
+    ]
+  },
+  {
+    "quest": [
+      "das Muster"
+    ],
+    "answer": [
+      "уз_о_р"
+    ]
+  },
+  {
+    "quest": [
+      "die Schneemuster"
+    ],
+    "answer": [
+      "снежные узоры"
+    ]
+  },
+  {
+    "quest": [
+      "das Feld"
+    ],
+    "answer": [
+      "п_о_ле"
+    ]
+  },
+  {
+    "quest": [
+      "der Schneesturm"
+    ],
+    "answer": [
+      "вь_ю_га "
+    ]
+  },
+  {
+    "quest": [
+      "das Gespräch"
+    ],
+    "answer": [
+      "разгов_о_р"
+    ]
+  },
+  {
+    "quest": [
+      "fünf Uhr"
+    ],
+    "answer": [
+      "пять часов",
+      "час ~Stunde~"
+    ]
+  },
+  {
+    "quest": [
+      "schon"
+    ],
+    "answer": [
+      "уж_е_",
+      "уж ~Abkürzung~"
+    ]
+  },
+  {
+    "quest": [
+      "das Dunkel"
+    ],
+    "answer": [
+      "тьма",
+      "~kein Plura~"
+    ]
+  },
+  {
+    "quest": [
+      "der Schlittschuh",
+      "die Schlittschuhe"
+    ],
+    "answer": [
+      "конёк",
+      "коньки"
+    ]
+  },
+  {
+    "quest": [
+      "der Schneeball"
+    ],
+    "answer": [
+      "снеж_о_к"
+    ]
+  },
+  {
+    "quest": [
+      "der Schlitten"
+    ],
+    "answer": [
+      "сал_а_зки"
+    ]
+  },
+  {
+    "quest": [
+      "Geschichte",
+      "Märchen"
+    ],
+    "answer": [
+      "ск_а_зка"
+    ]
+  }
+]

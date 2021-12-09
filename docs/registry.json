@@ -121,6 +121,11 @@
     "desc": "1, 2, 3, 4, ..."
   },
   {
+    "file": "data/gedicht-2.json",
+    "title": "Gedicht",
+    "desc": "Winter / Schnee"
+  },
+  {
     "file": "data/text-1.json",
     "title": "Text 1",
     "desc": "Übung zu: machen, arbeiten, wissen"

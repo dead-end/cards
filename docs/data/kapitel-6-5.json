@@ -1,0 +1,231 @@
+[
+  {
+    "quest": [
+      "na"
+    ],
+    "answer": [
+      "ну"
+    ]
+  },
+  {
+    "quest": [
+      "Spiel"
+    ],
+    "answer": [
+      "игр_а_"
+    ]
+  },
+  {
+    "quest": [
+      "Surfing"
+    ],
+    "answer": [
+      "сёрфинг"
+    ]
+  },
+  {
+    "quest": [
+      "Golf"
+    ],
+    "answer": [
+      "гольф"
+    ]
+  },
+  {
+    "quest": [
+      "richtig"
+    ],
+    "answer": [
+      "пр_а_вильно"
+    ]
+  },
+  {
+    "quest": [
+      "nicht richtig",
+      "falsch"
+    ],
+    "answer": [
+      "непр_а_вильно"
+    ]
+  },
+  {
+    "quest": [
+      "Reisebüro"
+    ],
+    "answer": [
+      "турф_и_рма"
+    ]
+  },
+  {
+    "quest": [
+      "Urlaub"
+    ],
+    "answer": [
+      "_о_тпуск"
+    ]
+  },
+  {
+    "quest": [
+      "Reiseunternehmen"
+    ],
+    "answer": [
+      "тур"
+    ]
+  },
+  {
+    "quest": [
+      "Ski laufen"
+    ],
+    "answer": [
+      "кат_а_ться на л_ы_жах"
+    ]
+  },
+  {
+    "quest": [
+      "Ski"
+    ],
+    "answer": [
+      "лыжи ~Plural~"
+    ]
+  },
+  {
+    "quest": [
+      "Tauchen"
+    ],
+    "answer": [
+      "д_а_йвинг"
+    ]
+  },
+  {
+    "quest": [
+      "hier: Wasserball"
+    ],
+    "answer": [
+      "поло ~n indeklinabel~"
+    ]
+  },
+  {
+    "quest": [
+      "Rafting"
+    ],
+    "answer": [
+      "р_а_фтинг"
+    ]
+  },
+  {
+    "quest": [
+      "Bergsteiger"
+    ],
+    "answer": [
+      "альпин_и_ст"
+    ]
+  },
+  {
+    "quest": [
+      "einfach klasse ~ugs.~"
+    ],
+    "answer": [
+      "пр_о_сто класс"
+    ]
+  },
+  {
+    "quest": [
+      "teuer"
+    ],
+    "answer": [
+      "д_о_рого"
+    ]
+  },
+  {
+    "quest": [
+      "Keine Ursache.",
+      "Nichts zu danken."
+    ],
+    "answer": [
+      "Не за что."
+    ]
+  },
+  {
+    "quest": [
+      "Alles Gute!"
+    ],
+    "answer": [
+      "Всег_о_ д_о_брого!"
+    ]
+  },
+  {
+    "quest": [
+      "Bis Samstag!"
+    ],
+    "answer": [
+      "До субб_о_ты!"
+    ]
+  },
+  {
+    "quest": [
+      "Alles Gute!"
+    ],
+    "answer": [
+      "Всег_о_ хор_о_шего!"
+    ]
+  },
+  {
+    "quest": [
+      "Kurort"
+    ],
+    "answer": [
+      "г_о_род-кур_о_рт"
+    ]
+  },
+  {
+    "quest": [
+      "Exkursion",
+      "Ausflug",
+      "Führung"
+    ],
+    "answer": [
+      "экскурсия"
+    ]
+  },
+  {
+    "quest": [
+      "Delfinarium"
+    ],
+    "answer": [
+      "дельфинарий"
+    ]
+  },
+  {
+    "quest": [
+      "Region",
+      "~administrative Einheit Russlands~"
+    ],
+    "answer": [
+      "край"
+    ]
+  },
+  {
+    "quest": [
+      "Erholung"
+    ],
+    "answer": [
+      "_о_тдых"
+    ]
+  },
+  {
+    "quest": [
+      "Sonne"
+    ],
+    "answer": [
+      "с_о_лнце"
+    ]
+  },
+  {
+    "quest": [
+      "Konzert"
+    ],
+    "answer": [
+      "конц_е_рт"
+    ]
+  }
+]
